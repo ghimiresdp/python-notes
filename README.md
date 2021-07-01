@@ -1,5 +1,9 @@
-# python-level1
-A repository for Python Level 1 course, content, and lab exercises.
+# Python Level 1 Course
+> A repository for Python Level 1 course, content, and lab exercises.
+
+This course is specifically designed for my students who are learning basic level python course.
+
+You can always `clone` or `fork` the repository and review the course contents, examples, and attend exercises.
 
 The course has the folder structure as follows:
 
@@ -25,11 +29,13 @@ The course has the folder structure as follows:
 .    .
 ```
 
-If you want to practice exercises contained in this repo then please `fork` this repository to your own account and modify as per your requirements.
+> If you're directly **cloning** the repository, I suggest you to solve in the different branch than the `main` branch to avoid conflicts if the course content changes.
 
-> I suggest you not to make any changes in the `main` branch in your repository too so that you can pull and rebase future changes to your `fork`.
 
-### Pulling future changes
+
+> If you're **forking**, I suggest you not to make any changes in the `main` branch in your repository too so that you can pull and rebase future changes to your `fork`.
+
+## Pulling future changes for your forks
 
 for pulling the future changes you can add `remote` in your local repository with the commands below:
 
@@ -68,3 +74,5 @@ for pulling the future changes you can add `remote` in your local repository wit
     ```
     git push origin main
     ```
+
+Please do visit my website [sudipghimire.com.np](https://sudipghimire.com.np) to know about my engagements.

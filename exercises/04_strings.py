@@ -2,7 +2,7 @@
 © https://sudipghimire.com.np
 
 
-Variables exercises
+Hello world Program Exercise
 
 
 Please read the note carefully and try to solve the problem below:
