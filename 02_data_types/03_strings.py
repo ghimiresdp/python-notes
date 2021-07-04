@@ -1,6 +1,5 @@
+# https://sudipghimire.com.np
 """
-© https://sudipghimire.com.np
-
 Strings in Python
 
 - single quotes

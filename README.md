@@ -13,9 +13,6 @@ You can always `clone` or `fork` the repository and review the course contents, 
     - Python Environment Setup, IDE Setup
     - Hello World in Python
     - Running Python Programs
-    - Python Lab and Interaction session
-    - Assignment 1
-    - Assignment 1 Discussion
 
 2. **Data Types and variables**
     - Variables
@@ -23,8 +20,9 @@ You can always `clone` or `fork` the repository and review the course contents, 
     - Strings, String Formatting methods
     - Lists
     - Tuples
-    - Dictionary
     - Sets
+    - Dictionary
+    - Type Hinting in Python (only for python 3.6 and later)
     - Type conversion
 
 3. **Basic Operations**

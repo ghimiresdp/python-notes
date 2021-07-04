@@ -1,6 +1,6 @@
+# https://sudipghimire.com.np
 """
 Formatting Strings in Python
-https://sudipghimire.com.np
 
 Formatting strings:
 - %s

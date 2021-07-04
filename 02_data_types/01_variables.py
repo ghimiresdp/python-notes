@@ -1,6 +1,5 @@
+# https://sudipghimire.com.np
 """
-© https://sudipghimire.com.np
-
 Variables in Python
 
 let us suppose we have a statement as follows:
