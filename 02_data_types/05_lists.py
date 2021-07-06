@@ -13,14 +13,29 @@ Lists
     - lists do not need data to be unique
 """
 
+list_one = [1, 2, 3, 4, 5]
+
 # creating a list
 numbers = [18, 24, 56, 21, 44, 27, 99, 100, 64, 44]
 animals = ['cat', 'dog', 'tiger']
 random_lists = [1, 'John', 'Moon', True, 45.62]
 
+# in case of a list, new line do not terminate the statement until it finds the closing brackets
+# indentation doesnot matter inside lists, but is recommended.
+animals = [
+    "cat",
+    "dog",
+    'tiger',
+]
+print(animals)
+
 # accessing an item of a list
 print(numbers[0])
 print(animals[2])
+
+# if we try to access the item with the index larger than the length of the list, it throws an exception
+# list index out of range
+# animals[10]  -> results in list index out of range exception
 
 # accessing an item of a list with reverse index
 print(animals[-1])
@@ -29,12 +44,19 @@ print(random_lists[-3])
 # accessing a range of items from a list with `[<a>:<b>]`
 # a -> start of the range (inclusive)
 # b -> end of the range (exclusive)
+# can also be the negative index
+
+
 
 print(random_lists[2:4])
+print(random_lists[-3:-1])
 
 # a or b can be empty
-print(random_lists[2:])  # in this case, it counts from the index 2 upto the end of the list
-print(random_lists[:4])  # in this case, it counts from the beginning upto 4th index of the list
+# in this case, it counts from the index 2 upto the end of the list
+print(random_lists[2:])
+# n[0:4] is equivalent to n[:4])
+# in this case, it counts from the beginning upto 4th index of the list
+print(random_lists[:4])
 
 # length of a list
 print(animals.__len__())
@@ -49,6 +71,8 @@ numbers[2:4] = [16, 18]
 animals.append("Monkey")
 
 # adding an item to the specific index
+# the first parameter would be the index
+# the second parameter would be the value
 animals.insert(2, "ion")
 
 # adding multiple items to the list (Extending)
@@ -89,3 +113,24 @@ index(value)    -> returns the index of the first element with the given value
 count(value)    -> returns the count of elements with the given value
 
 """
+animals_2 = animals.copy()
+animals.sort()
+animals.reverse()
+animals.index('cat')
+animals.count('cat')
+
+# nested lists
+x = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+# we can visualize it in the matrix form also
+
+x = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# accessing an item of the nested list
+print(x[0])     # [1,2,3]
+
+print(x[0][0])  # [1]
