@@ -1,0 +1,31 @@
+# to install the requirements
+# in the console type 'pip install -r requirements.txt'
+
+# using the virtual environment
+# first, activate the virtual environment
+# "python -m pip install -r requirements.txt"
+
+
+# if you have multiple versions of python installed, you might
+# want to specify the version of python
+# "python -3.8 -m pip install -r requirements.txt"
+
+
+# installing single package from command line
+# pip install <package_name>
+
+# example: 'pip install django'
+# example: 'pip install django==2.2.15' # specifying specific version of the package
+# example: 'pip install -U django'  # upgrading if not the latest version
+# example: 'python -m pip install django'   # when you are using virtual environment
+# example: 'python -3.7 -m pip install django'  # when you are using different version of python itself
+
+jupyter
+django==3.2
+
+
+
+# checking the installed requirements in your environment
+
+# pip freeze
+

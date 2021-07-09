@@ -100,9 +100,9 @@ You can always `clone` or `fork` the repository and review the course contents, 
 The course has the folder structure as follows:
 
 ```
-|-- exercises
-|    |-- 01_basics.py
-|    |-- 02_variables.py
+|-- practice
+|    |-- 01.py
+|    |-- 02.py
 |
 |-- res
 |    |-- 01_basics.pdf
