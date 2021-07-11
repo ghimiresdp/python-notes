@@ -121,14 +121,17 @@ You can practice these methods of sets
 # %%
 # d = a vs d = a.copy() 
 
-# d = a     # shallow copy
+# d = a
+# assignment statement in python do not copy objects, but create a binding between target and the source.
+# it has the reference if a in the variable d instead of copying the whole object.
+# here, changing `a` will affect the value in `d`
 
-# it has the reference if a in the variable d instead of copying
-# changing a will affect the value in d
-
-# d = a.copy()  # hard copy
-# It does not have any reference to the original variable
-# changing `a` will not affect hte value in `d`
+# d = a.copy()  # shallow copy
+# it constructs a new compound object and then (to the extent possible) inserts references into it
+# to the objects found in the original.
+# once the value is changed in in any of them, it is not reflected in this case.
+# changing `a` will not affect the value in `d`
+# for more detail about shallow copy, please check https://docs.python.org/3/library/copy.html
 
 
 a = set(range(0, 12))
