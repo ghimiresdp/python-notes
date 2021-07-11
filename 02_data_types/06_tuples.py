@@ -66,13 +66,20 @@ tuple_1 = (*tuple_1, 10, 11, 12)
 print(tuple_1)
 
 """
- Significance of * in python
+ Significance of * in python iterables
  `*<iterable>` -> extract all of those elements and return every
   elements as the individual one
-  this can be used in:
+  The process is also known as destructuring
+
+  Destructuring can be used with:
   - lists eg: `*[1,2,3]` or `*list_one`
   - tuples eg: `*(1,2,3)` or `*tuple_one`
   - sets  eg: `*{1,2,3}` or `*list_one`
+
+  We can use destructured elements to:
+  - dynamically pass arguments to the function eg: do_something(*args)
+  - concatenate two iterables eg: nex_list = [*list_1, *list_2]
+  - add extra item while returning the reponse to the client. (We'll deal with this on python level 2)
 """
 
 #%%
