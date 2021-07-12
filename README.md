@@ -32,7 +32,8 @@ You can always `clone` or `fork` the repository and review the course contents, 
     - Logical Operations
     - Bitwise Operations
     - Membership Operations
-    - Identity Operations Advanced Mathematical functions and constants
+    - Identity Operations
+    - Advanced Mathematical functions and constants
 
 4. **Decision Making**
     - if statement
