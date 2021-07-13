@@ -1,11 +1,12 @@
 # https://sudipghimire.com.np
+# %% [markdown]
 """
-Dictionary
+## Dictionary
 
 - Dictionaries are similar to lists or sets
 - They are represented by key-value pairs
 - dictionaries are ordered (since python 3.7)
-- they are written in curley brackets or braces {}
+- they are written inside curley brackets or braces {}
 - keys must be unique otherwise the later one replaces the previous key-value pair
 - dictionaries are mutable.
 - dictionaries can have multiple data types in their key-value pair
@@ -18,7 +19,7 @@ person = {
     'name': 'Spock',
     'age': 20,
     'married': False,
-    'positions':['Lieutenant', 'Captain', 'Commander']
+    'positions': ['Lieutenant', 'Captain', 'Commander']
 }
 
 
@@ -38,15 +39,28 @@ person = {
 
 print(person['name'])
 print(person['married'])
+print(person['age'])
+
 
 # %% if the key doesnot exist, it gives exception
+
+# print(person['father'])   # gives an error
+
 # we can avoid exceptions by using `get()` method
 # using the get() method, if it doesn't find any key, it returns None by default
-print(person.get('name'))
-print(person.get('father'))
+
+print(person.get('name'))           # Spock
+print(person.get('middle_name'))    # None
 
 # if we want some default value to be passed, we can pass it as a second argument
-print(person.get('father', 'not specified in the dictionary'))
+print(person.get('father', False))
+
+# occupation the default must be `student`
+print(person.get('occupation', 'student'))
+
+# if the value exists, then it is going to ignore the default value (or the second argument)
+
+print(person.get('name', 'John Doe'))
 
 # %% finding out the length of the dictionary
 
@@ -58,12 +72,24 @@ print(len(person))
 
 person['gender'] = 'male'
 person['occupation'] = 'Science Officer'
+person['middle_name'] = 'shiva'
+
 print(person)
 
 # %% updating items
 person['age'] = 50
+person['gender'] = 'female'
 
 # %% updating/adding multiple items
+
+other_fields = {
+    'age': 60,
+    'origin': 'Vulcan',
+    'species': 'Half-vulcan, half-human',
+    'affiliation': 'starfleet'
+}
+
+person.update(other_fields)
 
 person.update({
     'age': 60,
@@ -73,13 +99,41 @@ person.update({
 })
 
 
+
+### 2 more fields father, mother
+
+person.update({
+    'father':'Father',
+     'mother':'Mother'
+})
+
+
+
+
+
 # %% Removing an item from the dictionary
 
 person.pop('occupation')
 
+#popping the element again from the dictionary gives key error.
+
+# if we want to use the popped item in the future, then we have to assign it a
+# variable.
+popped_item = person.pop('father')
+
 # %% removing the last item using popitem()
-# popitem method follows LIFO process
+# popitem method follows LIFO process (remember: push and pop)
 person.popitem()
+
+# popitem() returns keys and values as  a tuple so we can catch them if we want to use it later.
+(k, v) = person.popitem() # or  # this is more preferred
+
+# we can ignore any one of them using single underscore `_`
+(_, v) = person.popitem() # we do not want key
+(k, _) = person.popitem() # we do not want value
+
+
+tuple_1 = person.popitem()  # store every values as a tuple
 
 # %% looping through a dictionary
 
@@ -130,10 +184,12 @@ yoda = {
 print(yoda['affiliation']['organization'])
 
 
-# %% other dictionary methods
+# %% [markdown] other dictionary methods
 """
-- copy()
-- fromkeys()
-- setdefault()
-- clear()
+- `copy()` method
+- `fromkeys()` method
+- `setdefault()` method
+- `clear()` method
 """
+
+# %%
