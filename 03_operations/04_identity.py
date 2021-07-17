@@ -3,12 +3,12 @@
 Identity operations
 - used to compare whether they are same object or not
 - they are not used to compare for equality
-- identity operators are: 
-    1. is
-    2. is not
+- identity operators are:
+    1. `is`
+    2. `is not`
 """
 
-# %% The right one
+# %% The right method
 
 print(type('abc') is str)   # True
 
@@ -25,7 +25,7 @@ print(list1 == list3)     # True
 print(type(list1) is not int)  # True
 
 
-# %% the wrong one
+# %% the wrong method
 print(1 + 4 is 6-1)
 # this gives equality but it shows warning to use  double equals
 # rather than `is` since it is not intended to compare

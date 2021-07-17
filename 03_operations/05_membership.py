@@ -19,9 +19,15 @@ x = [1, 2, 3, 4, 5]
 print(5 in x)   # True
 print(10 in x)  # False
 
+people = ['John', 'Jane', 'Janet']
+
+print('John' in people)         # True
+print('Mohammad' in people)     # False
+
 
 # %% `not in` operator
 # this is just opposite of `in` operator
+print('John' not in people)     # False
 
 print(5 not in x)   # False
 print(10 not in x)  # True
