@@ -44,3 +44,6 @@ print(5 > 4)        # True
 print(4 >= 5)        # False
 print(4 >= 4)        # True
 print(5 >= 4)        # True
+print('A' > 'B')     # False
+
+# ASCII

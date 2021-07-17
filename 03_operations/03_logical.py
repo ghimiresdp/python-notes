@@ -44,6 +44,13 @@ print(not False)    # True
 
 print(not((4 < 5) or (5 < 3)))
 
+# Explanation
+# not( (4<5) or (5<3) )
+# not( True or (5<3) )
+# not( True or False )
+# not( True )
+# False
+
 # %%
 # we can assign the values first and perform operations later
 
@@ -60,11 +67,9 @@ can_dog_bark = True
 can_john_speak_French = True
 
 print(
-    not((
-        not(can_cat_fly or can_dog_bark)
-        or
-        (can_snake_walk)
-    ) and can_john_speak_French)
+    not(
+        (not(can_cat_fly or can_dog_bark)or(can_snake_walk))
+        and can_john_speak_French)
 )
 
 # %%
@@ -75,3 +80,4 @@ print(not True or not False)       # True
 print(not (True or not False))     # False
 print((not True) or (not False))   # True
 # %%
+

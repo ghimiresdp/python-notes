@@ -61,7 +61,7 @@ print(type(PI))
 
 # %% trying to convert incompatible data type gives us value error
 PI = "3.1415"
-PI = int(PI)    # gives Value Error
+PI = int(float(PI))    # gives Value Error
 
 # %% we can always check if it can be typecasted
 
@@ -71,4 +71,33 @@ if PI.isdigit():  # it checks if PI is int or not
 else:
     PI = float(PI)
 print(type(PI))
+# %%
+
+x = [5.7, 8.12, 6, 18, 12.99, 45.86, 33.44]
+
+# no type casting
+result = 0
+for a in x:
+    result = result + a
+print(result)
+
+# typecasting in the loop
+result = 0
+for a in x:
+    result = result + int(a)
+print(result)
+
+# typecasting in the result
+result = 0
+for a in x:
+    result = result + a
+print(int(result))
+# %%
+# application 1 : removing the duplicates
+x = [1, 3, 5, 2, 7, 8, 3, 0, 1, 6, 3, 9, 3]
+
+x = list(set(x))
+print(x)
+
+
 # %%

@@ -14,16 +14,25 @@ from typing import Dict, List
 
 
 # %% Some Examples of hinting in statements
+
 a: int = 5                  # same as a = 5
+
+x: str = "ssdsd"
+
 b: float = 5.5              # same as b = 5.5
 c: str = 'Tyrion Lannister'
-d: list = [1, 2, 3, 4, 5]
+d: list = [1, 2, 3, 4, 5, 'abc']
 e: tuple = (1, 2, 3)
 
+# List<int>
 
 # %% Compound Types
-l1: List[int] = [4, 5]
-l2: List['int | str'] = ['abc', 45]
+import typing
+from typing import List
+l1: List['int'] = [4, 5]
+
+
+l2: List = ['abc', 45]
 
 d1: Dict[str, str] = {'k': 'v'}
 
@@ -31,3 +40,8 @@ d1: Dict[str, str] = {'k': 'v'}
 # these are the basic Type hintings.
 # Creating custom types will be discussed in the python L2 course since
 # this part requires the knowledge of classes and inheritance
+
+import math
+def add_int(x, y):
+    
+    return( math.floor(x) + y)

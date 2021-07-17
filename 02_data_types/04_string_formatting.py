@@ -33,10 +33,10 @@ print(formatted_string)  # My name is John Doe. I am 25 years old !!
 # b -> number of characters expected after the decimal point.
 #  45.335
 
-print("the value is:%10.3f" % (44.2345345))  # output:    44.235
-print("the value is:%10.3f" % (2244.3234234))  # output:  2244.323
-print("the value is:%10.3f" % (23423423.234234))  # output:23423423.234 (it uses more than 10 characters here)
-print("the value is:%10d" % (234234))  # output:   234234
+print("the value is:%10.3f" % 44.2345345)  # output:    44.235
+print("the value is:%10.3f" % 2244.3234234)  # output:  2244.323
+print("the value is:%10.3f" % 23423423.234234)  # output:23423423.234 (it uses more than 10 characters here)
+print("the value is:%10d" % 234234)  # output:   234234
 
 # `format() method`
 """

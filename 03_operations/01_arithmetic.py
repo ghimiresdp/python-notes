@@ -46,11 +46,13 @@ e2 = 5.5 % 2.3   # float and float
 e3 = 4.7 % 2     # integer and float
 
 # %% Exponentiation
+
 f1 = 5 ** 4       # integer and integer
 f2 = 5.5 ** 2.3   # float and float
 f3 = 4.7 ** 2     # integer and float
 
 # %% Integer Division
+print(5//2)
 g1 = 45//2
 g2 = 45.8//5.1  # 8.0   # integer equivalent of float
 

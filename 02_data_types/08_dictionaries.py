@@ -156,8 +156,8 @@ for value in person.values():
 
 # %% Getting both keys and values of the dict
 
-for (k, v) in person.items():
-    print(f'the {k} is {v}')
+for (key, value) in person.items():
+    print(f'the {key} is {value}')
 
 
 # %% copy() method
@@ -171,7 +171,7 @@ print(spock)
 yoda = {
     'name': 'Yoda',
     'age': 900,
-    'species': 'Yoda\'s',
+    'species': "Yoda's",
     'language': 'Galactic Basic',
     'affiliation': {
         'organization': 'Jedi',
@@ -182,14 +182,17 @@ yoda = {
 }
 
 print(yoda['affiliation']['organization'])
-
+print(yoda['affiliation']['weapons'][1])
 
 # %% [markdown] other dictionary methods
 """
-- `copy()` method
 - `fromkeys()` method
 - `setdefault()` method
 - `clear()` method
 """
 
+yoda1 = yoda.fromkeys(['name', 'age', 'language', 'father'])
+
 # %%
+
+yoda.setdefault('age', 910)
