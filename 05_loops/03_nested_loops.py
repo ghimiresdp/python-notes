@@ -49,12 +49,6 @@ if i1 < i2:
 print(x)
 
 # %% pattern generation 1
-
-for x in range(1, 6):
-    for y in range(1, x + 1):
-        print(y, end=' ')
-    print()
-
 """
 1
 1 2
@@ -62,14 +56,12 @@ for x in range(1, 6):
 1 2 3 4
 1 2 3 4 5
 """
-
-# %% pattern generation 2
-
 for x in range(1, 6):
-    for y in range(1, 6):
-        print(y * x, end='\t')
+    for y in range(1, x + 1):
+        print(y, end=' ')
     print()
 
+# %% pattern generation 2
 """
 1	2	3	4	5
 2	4	6	8	10
@@ -77,6 +69,11 @@ for x in range(1, 6):
 4	8	12	16	20
 5	10	15	20	25
 """
+for x in range(1, 6):
+    for y in range(1, 6):
+        print(y * x, end='\t')
+    print()
+
 # %%
 """
 1	2	3	4	5
@@ -91,12 +88,6 @@ for x in range(1, 6):
     print()
 
 # %% pattern generation 3
-
-for x in range(6):
-    for y in range(1, x + 1):
-        print(x, end='\t')
-    print()
-
 """
 1
 2	2
@@ -138,11 +129,11 @@ for x in range(1, 6):
 
 # pattern 3: combine each step of pattern 1 and 2
 
-[				]1
-[			]1	2	3
-[		]1	2	3	4	5
-[	]1	2	3	4	5	6	7
-[]1	2	3	4	5	6	7	8	9
+1.  [				]1
+2.  [			]1	2	3
+3.  [		]1	2	3	4	5
+4.  [	]1	2	3	4	5	6	7
+5.  []1	2	3	4	5	6	7	8	9
 
 # The final output:
 1. 				    1
@@ -151,6 +142,15 @@ for x in range(1, 6):
 4.	    1	2	3	4	5	6	7
 5.  1	2	3	4	5	6	7	8	9
 """
+
+# %% the simpler method
+for x in range(1, 6):
+    print('\t' * (5 - x), end='')
+    for y in range(1, (x * 2)):
+        print(y, end='\t')
+    print()
+
+# %% the other method
 for x in [1, 3, 5, 7, 9]:
 
     # pattern 1 (printing the spaces)
