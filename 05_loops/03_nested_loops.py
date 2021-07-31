@@ -51,15 +51,23 @@ print(x)
 # %% pattern generation 1
 """
 1
-1 2
-1 2 3
-1 2 3 4
-1 2 3 4 5
+1	2
+1	2	3
+1	2	3	4
+1	2	3	4	5
 """
+
 for x in range(1, 6):
     for y in range(1, x + 1):
-        print(y, end=' ')
+        print(y, end='\t')
     print()
+
+# %% advanced usage
+for x in range(1, 6):
+    print('\t'.join([str(y) for y in range(1, x + 1)]))
+
+# %% more advanced usage
+print('\n'.join(['\t'.join([str(y) for y in range(1, x + 1)]) for x in range(1, 6)]))
 
 # %% pattern generation 2
 """
@@ -74,6 +82,13 @@ for x in range(1, 6):
         print(y * x, end='\t')
     print()
 
+# %% advanced usage
+for x in range(1, 6):
+    print('\t'.join([str(y * x) for y in range(1, 6)]))
+
+# %% more advanced usage
+print('\n'.join(['\t'.join([str(y * x) for y in range(1, 6)]) for x in range(1, 6)]))
+
 # %%
 """
 1	2	3	4	5
@@ -87,6 +102,12 @@ for x in range(1, 6):
         print(y ** x, end='\t')
     print()
 
+# %% advanced usage
+for x in range(1, 6):
+    print('\t'.join([str(y ** x) for y in range(1, 6)]))
+# %% more advanced usage
+print('\n'.join(['\t'.join([str(y ** x) for y in range(1, 6)]) for x in range(1, 6)]))
+
 # %% pattern generation 3
 """
 1
@@ -95,11 +116,18 @@ for x in range(1, 6):
 4	4	4	4
 5	5	5	5	5
 """
-# %%
+# simpler method
 for x in range(1, 6):
     for _ in range(1, x + 1):
         print(x, end='\t')
     print()
+
+# %% advanced usage
+for x in range(1, 6):
+    print('\t'.join([str(x) for x in range(1, x + 1)]))
+
+# %% more advanced usage
+print('\n'.join(['\t'.join([str(x) for y in range(1, x + 1)]) for x in range(1, 6)]))
 
 # %% pattern generation 4
 
@@ -143,12 +171,20 @@ for x in range(1, 6):
 5.  1	2	3	4	5	6	7	8	9
 """
 
-# %% the simpler method
+# the simpler method
 for x in range(1, 6):
     print('\t' * (5 - x), end='')
     for y in range(1, (x * 2)):
         print(y, end='\t')
     print()
+
+# %% advanced usage
+for x in range(1, 6):
+    print('\t' * (5 - x), end='')
+    print('\t'.join([str(y) for y in range(1, (x * 2))]))
+
+# %% more advanced usage
+print('\n'.join(['\t' * (5 - x) + '\t'.join([str(y) for y in range(1, (x * 2))]) for x in range(1, 6)]))
 
 # %% the other method
 for x in [1, 3, 5, 7, 9]:
@@ -172,7 +208,7 @@ for x in [1, 3, 5, 7, 9]:
     print()
     # print(f'[{spaces}]')
 
-# %% advanced method
+# %% the other method [advanced]
 for x in [r for r in range(1, 10) if r % 2 != 0]:
     print('\t' * ((9 - x) // 2), end='')
     for y in range(1, x + 1):
