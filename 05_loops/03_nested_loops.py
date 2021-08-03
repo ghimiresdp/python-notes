@@ -62,6 +62,47 @@ for x in range(1, 6):
         print(y, end='\t')
     print()
 
+# %%
+
+# line 1
+for x in range(1, 2):
+    print(x, end='\t')
+print()
+
+# line 2
+for x in range(1, 3):
+    print(x, end='\t')
+print()
+
+# line 3
+for x in range(1, 4):
+    print(x, end='\t')
+print()
+
+# line 4
+for x in range(1, 5):
+    print(x, end='\t')
+print()
+
+# line 5
+for x in range(1, 6):
+    print(x, end='\t')
+print()
+
+# now we have to see what is changing
+# here values in range are changing i.e. [2,3,4,5,6]
+# we have to create a range from 2 -> 6
+# the function is range(2,7)
+
+# the solution would be -> for x in range(2,7)
+
+# %%
+
+for x in range(2, 7):
+    for y in range(1, x):
+        print(y, end='\t')
+    print()
+
 # %% advanced usage
 for x in range(1, 6):
     print('\t'.join([str(y) for y in range(1, x + 1)]))
@@ -115,7 +156,16 @@ print('\n'.join(['\t'.join([str(y ** x) for y in range(1, 6)]) for x in range(1,
 3	3	3
 4	4	4	4
 5	5	5	5	5
+
+variations:
+1.  [1, 2, 3, 4, 5] or [2, 3, 4, 5, 6]
+
 """
+for x in range(1, 6):
+    for y in range(1, x+1):
+        print(x, end='\t')
+    print()
+#%%
 # simpler method
 for x in range(1, 6):
     for _ in range(1, x + 1):
@@ -170,6 +220,60 @@ print('\n'.join(['\t'.join([str(x) for y in range(1, x + 1)]) for x in range(1, 
 4.	    1	2	3	4	5	6	7
 5.  1	2	3	4	5	6	7	8	9
 """
+# %%
+
+# ________________ line 1
+print('\t' * 4, end='\t')
+for y in range(1, 2):
+    print(y, end='\t')
+print()
+
+# ________________ line 2
+print('\t' * 3, end='\t')
+for y in range(1, 4):
+    print(y, end='\t')
+print()
+
+# ________________ line 3
+print('\t' * 2, end='\t')
+for y in range(1, 6):
+    print(y, end='\t')
+print()
+
+# ________________ line 4
+print('\t' * 1, end='\t')
+for y in range(1, 8):
+    print(y, end='\t')
+print()
+
+# ________________ line 5
+print('\t' * 0, end='\t')
+for y in range(1, 10):
+    print(y, end='\t')
+print()
+
+# the next step is finding out the changes (variables)
+# 1. no. of spaces is varying [4, 3, 2, 1, 0]
+# 2. end of range is varying [2, 4, 6, 8, 10]
+# next we generate pattern
+
+# [1, 2, 3, 4, 5]
+
+# [4, 3, 2, 1, 0]
+# [2, 4, 6, 8, 10]
+
+
+# %%
+for x in range(1, 6):
+    print('\t' * (5-x), end='\t')
+    for y in range(1, 2*x):
+        print(y, end='\t')
+    print()
+
+
+# %%
+
+
 
 # the simpler method
 for x in range(1, 6):
