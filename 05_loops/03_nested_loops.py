@@ -162,10 +162,10 @@ variations:
 
 """
 for x in range(1, 6):
-    for y in range(1, x+1):
+    for y in range(1, x + 1):
         print(x, end='\t')
     print()
-#%%
+# %%
 # simpler method
 for x in range(1, 6):
     for _ in range(1, x + 1):
@@ -265,14 +265,12 @@ print()
 
 # %%
 for x in range(1, 6):
-    print('\t' * (5-x), end='\t')
-    for y in range(1, 2*x):
+    print('\t' * (5 - x), end='\t')
+    for y in range(1, 2 * x):
         print(y, end='\t')
     print()
 
-
 # %%
-
 
 
 # the simpler method

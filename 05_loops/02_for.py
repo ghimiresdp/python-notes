@@ -11,6 +11,9 @@ for(<assignment>; <condition>; <update>)
 for (int x =0; x<10; x++){
     // sdsd
 }
+# for python
+for <element> in <iterable>:
+    statement(s)
 """
 
 # %% basic syntax
