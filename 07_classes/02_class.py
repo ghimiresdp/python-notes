@@ -34,7 +34,7 @@ species_man = 'human'
 
 
 class Animal:
-    species = ''  # class attribute (private)
+    species = ''  # class attribute (public)
     __legs = 4  # private (accessible only within a class)
     _word = "nothing"  # protected
 
