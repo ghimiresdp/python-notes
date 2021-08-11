@@ -1,4 +1,5 @@
 # © https://sudipghimire.com.np
+# %%
 """
 Python Lambdas
 - lambdas are also known as anonymous functions
