@@ -61,11 +61,12 @@ You can always `clone` or `fork` the repository and review the course contents, 
     - Introduction to **Object Oriented Programming**
     - Class
     - Class Variable and instance variable
-    - Methods | Functions vs Methods
+    - Methods,  Functions vs Methods
     - the `__init__()` method and the `self` parameter
     - built-in class attributes
-    - Encapsulation in python [ `_` , `__` in identifier]
     - Object
+    - Encapsulation in python [ `_` , `__` in identifier]
+    - getters and setters
     - Overrides
     - Operator Overloading
 
