@@ -29,9 +29,8 @@ def dec2bin(n: int):
 
 print(dec2bin(14))
 
-##
+# %%
 
-x = 14
 """
 1. x = 14
 
@@ -99,3 +98,64 @@ def factorial(x: int):
 
 
 print(factorial(5))
+
+
+# %%
+class Customer:
+    __logged_in = False
+
+    # decorator function
+    def is_logged_in(fn):
+        def caller(self, *args, **kwargs):
+            if self.__logged_in:
+                return fn(self, *args, **kwargs)
+            else:
+                print("you're not logged in")
+
+        return caller
+
+    @is_logged_in
+    def book_trip(self):
+        print('trip booked')
+
+    def login(self, username, password):
+        if username == 'john' and password == 'p@55w0rd':  # your logic here
+            self.__logged_in = True
+
+            print("[ logged in ]".center(60, '='))
+
+            print("Welcome to the dashboard".center(60, ' '))
+        else:
+            print("invalid credentials...")
+
+    def logout(self):
+        self.__logged_in = False
+        print("[ logged out ]".center(60, '='))
+
+
+# %%
+
+john = Customer()
+john.book_trip()  # you are not logged in
+
+john.login('jane', 'p@55w0rd')  # logged in
+john.book_trip()  # You're not logged in
+
+john.login('john', 'p@55w0rd')  # logged in
+john.book_trip()  # Welcome to the dashboard
+
+john.logout()  # logged out
+john.book_trip()  # you're not logged in
+
+# %% output
+"""
+you're not logged in
+invalid credentials...
+you're not logged in
+=======================[ logged in ]========================
+                  Welcome to the dashboard
+trip booked
+=======================[ logged out ]=======================
+============================================================
+you're not logged in
+"""

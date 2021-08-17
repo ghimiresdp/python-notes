@@ -69,6 +69,7 @@ You can always `clone` or `fork` the repository and review the course contents, 
     - getters and setters
     - Overrides
     - Operator Overloading
+    - class methods and static methods
 
 8. **Inheritance**
     - Parent Class
