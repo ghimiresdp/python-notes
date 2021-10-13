@@ -13,11 +13,17 @@ You can always `clone` or `fork` the repository and review the course contents, 
     - Python Environment Setup, IDE Setup
     - Hello World in Python
     - Running Python Programs
+    - comments and documentation
+      - Single Line Comments
+      - inline Comments
+      - Multiline Comments
+      - Docstrings
+    - indentation
 
 2. **Data Types and variables**
     - Variables
     - Numbers (boolean, int, long, float, complex)
-    - Strings, String Formatting methods
+    - Strings
     - Lists
     - Tuples
     - Sets
@@ -70,27 +76,26 @@ You can always `clone` or `fork` the repository and review the course contents, 
     - Overrides
     - Operator Overloading
     - class methods and static methods
+    - inheritance
+      - Parent Class
+      - Child Class
+      - `super()` function
+      - Mixins
 
-8. **Inheritance**
-    - Parent Class
-    - Child Class
-    - `super()` function
-    - Mixins
-
-9. **Python Modules and packages**
+8. **Python Modules and packages**
     - Introduction to modular programming
     - `__init__.py` file
     - An example of modular python program | importing the module
     - from keyword
 
-10. **File I/O**
-    - `open()` function
-    - `close()` method
-    - `write()` method
-    - `read()` method
-    - `with` keyword
+9. **File I/O**
+   - `open()` function
+   - `close()` method
+   - `write()` method
+   - `read()` method
+   - `with` keyword
 
-11. **Exceptions and Exception Handling**
+10. **Exceptions and Exception Handling**
     - Introduction to Exceptions in Python
     - Standard Errors
     - `try`, `except` keyword
