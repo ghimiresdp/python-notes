@@ -26,7 +26,7 @@ sdsdsd
 numbers = (18, 24, 56, 21, 44, 27, 99, 100, 64, 44,)
 
 animals = ('cat', 'dog', 'tiger')
-random_lists = (1, 'John', 'Moon', True, 45.62)
+random_tuples = (1, 'John', 'Moon', True, 45.62)
 
 # %%
 # similar to lists, new line do not terminate the statement until it finds closing bracket

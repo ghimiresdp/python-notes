@@ -56,7 +56,7 @@ Please read the note carefully and try to solve the problem below:
         - you can then comment the line that gives exception to continue to the next question.
     e. Now add `leopard` agin in the index 2 using `insert()` method.
     f. Again, remove `rhino` from the list using remove() method.
-    
+
     note: you can print the values of list after each successful operations to see what is being changed.
 """
 # answer 2

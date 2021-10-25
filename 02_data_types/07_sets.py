@@ -119,7 +119,7 @@ You can practice these methods of sets
 
 
 # %%
-# d = a vs d = a.copy() 
+# d = a vs d = a.copy()
 
 # d = a
 # assignment statement in python do not copy objects, but create a binding between target and the source.

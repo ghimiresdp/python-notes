@@ -53,7 +53,6 @@ first_name = ""
 
 # c
 
-
 """
 3. Use a function `input()`  to input the the name and age from the command line and
    display the formatted text as instructed below:
@@ -70,5 +69,4 @@ first_name = ""
 # answer 3
 
 
-
-
+# %%
