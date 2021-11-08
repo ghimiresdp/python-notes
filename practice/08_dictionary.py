@@ -94,7 +94,7 @@ Please read the note carefully and try to solve the problem below:
 
     a. print the value of the first affiliation of `Dooku` from the dictionary
     b. add new affiliation 'Sith' to Dooku
-    c. pop the key 'master' from the yoda using `popitem()` method
+    c. pop the key 'master' from the dictionary
 
 """
 # Answer 3
