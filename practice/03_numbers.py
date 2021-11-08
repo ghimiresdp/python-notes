@@ -25,5 +25,3 @@ note: please try to print the value of the variable in each and every steps or q
 
 
 #  answer 3
-
-
