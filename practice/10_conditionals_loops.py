@@ -1,7 +1,7 @@
 """
 © https://sudipghimire.com.np
 
-Conditional Exercises
+Conditional and loop Exercises
 """
 import math
 
