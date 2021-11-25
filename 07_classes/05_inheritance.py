@@ -38,15 +38,6 @@ Animal
         - Wild
         - Herbivorous
         - Carnivorous
-
-Bank
-    attributes:
-        - capital
-        - interest rate
-
-    variants:
-        - branches
-        - dev banks
 """
 
 
@@ -75,15 +66,8 @@ class Square(Rectangle):
     def __init__(self, width):
         super().__init__(width=width, height=width)
 
-        # del self.area
-        # self.width = width
-        # self.height = width
-
     def diagonal_length(self):
         return self.width * (2 ** .5)
-
-    # def area(self):
-    #     return None
 
 
 # %%
@@ -113,16 +97,3 @@ print(isinstance(room_2, Rectangle))
 print(issubclass(Square, Rectangle))
 print(issubclass(Rectangle, Square))
 print(issubclass(Rectangle, object))
-
-# %% monkey patching (generally not recommended)
-room_1.name = "My Room"
-print(room_1.name)
-
-
-def print_room_name(self):
-    print(self.name)
-
-
-room_1.print_room_name = print_room_name
-
-room_1.print_room_name(room_1)

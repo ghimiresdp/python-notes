@@ -134,46 +134,21 @@ john.set_legs(3)
 print(john.get_legs())  # returns 3
 
 
-# %% more on getter setter
-
-class Students:
-    def __init__(self):
-        self.students_list = []
-        self.teachers_list = ['John', 'Jane']
-
-    def notify_teachers(self, student, status):
-        for teacher in self.teachers_list:
-            print(f'notify <teacher: {teacher}> that <student: {student}> has {status}')
-
-
-# %% not a good way
-class_1 = Students()
-
-# adding_new_student
-new_student = 'Roshan'
-class_1.students_list = ['Roshan']
-class_1.notify_teachers(new_student, 'joined')
-
-# adding another student
-new_student = 'Ashish'
-class_1.students_list.append('Ashish')
-class_1.notify_teachers(new_student, 'joined')
-
-# removing Ashish from the class
-class_1.students_list.remove('Ashish')
-class_1.notify_teachers('Ashish', 'left')
-
-
-# %% we use getter and setter instead
+# %% Better Example
 class Students:
     def __init__(self):
         self.__students_list = []
         self.__teachers_list = ['John', 'Jane']
 
-    # changes the string representation of a class
+    # changes the string representation of an instance
     def __str__(self):
         return f'<Class: Students>'
 
+    # changes the string representation of the object (works with REPL)
+    def __repr__(self):
+        return f'<Class: Students>'
+
+    # operator overloading
     def __add__(self, other: 'Students'):
         return [*self.list_students(), *other.list_students()]
 
@@ -186,11 +161,11 @@ class Students:
 
     def add_student(self, name):
         self.__students_list.append(name)
-        class_1.notify_teachers(name, 'joined')
+        self.notify_teachers(name, 'joined')
 
     def remove_student(self, name):
         self.__students_list.remove(name)
-        class_1.notify_teachers(name, 'left')
+        self.notify_teachers(name, 'left')
 
     def notify_teachers(self, student, status):
         for teacher in self.__teachers_list:
@@ -199,19 +174,13 @@ class Students:
 
 # %%
 class_2 = Students()
-class_3 = Students()
 
-# adding new student
-class_2.add_student('Roshan')
-class_2.add_student('Ashish')
-class_2.add_student('Rocky')
-class_2.add_student('Penny')
-
-class_3.add_student('Ram')
-class_3.add_student('Shyam')
-
+class_2.add_student('John')
+class_2.add_student('Jane')
+class_2.add_student('Jennifer')
+class_2.add_student('Pem')
 
 # %%
 class_2.display_students()
 # %%
-class_2.remove_student('Penny')
+class_2.remove_student('Pem')
