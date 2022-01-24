@@ -14,7 +14,6 @@ This file contains the basic hello world program structure that can be written i
 
 
 # in python files
-
 print('hello world')
 
 # in consoles
