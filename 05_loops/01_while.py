@@ -25,11 +25,7 @@ while value.lower() != 'e':
 print('exiting now!!')
 
 # %% another example with numbers
-value = 1
-while value != 0:
-    value = int(input('Enter a number to display[0 to exit]: '))
-    print(f'You Entered: {value}')
-print('exiting now!!')
+
 # %% infinite loop:
 # while True:
 #     print('This loop does not end')
@@ -82,3 +78,6 @@ while x <= 4:
         y += 1
     print()
     x += 1
+
+
+# While Else

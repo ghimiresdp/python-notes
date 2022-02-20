@@ -81,3 +81,17 @@ print(not (True or not False))     # False
 print((not True) or (not False))   # True
 # %%
 
+
+
+# if it is cloudy today and if it rained yesterday, then it rains today
+# in other conditions it doesn't rain
+
+cloudy = False
+rained = True
+
+rains = cloudy and rained
+
+if rains:
+    print("it rains today")
+else:
+    print("It does not rain today")

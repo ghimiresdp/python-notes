@@ -106,4 +106,3 @@ Please read the note carefully and try to solve the problem below:
 
 
 # 3.c
-

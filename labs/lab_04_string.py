@@ -11,7 +11,7 @@ Please read the note carefully and try to solve the problem below:
 """
 
 """
-1. Create two variablrs first_name, and last_name and print the sentence in the format below:
+1. Create two variables first_name, and last_name and print the sentence in the format below:
    suppose first_name is John and last_name is Doe
    "My name is John Doe"
 

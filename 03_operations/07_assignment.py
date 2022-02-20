@@ -19,6 +19,8 @@ Assignment operations:
 # %% = operator
 x = 50
 print(x)
+
+ x, y = 5, 10
 # %% += operator
 
 x += 2      # x = x + 2

@@ -78,9 +78,3 @@ print(~5)        # 1 0 1 0
 
 # %% Bitwise XOR operator `^`
 
-# %% Bitwise SHIFT LEFT operator `<<`
-# 0 1 0 1 0 0
-# 1 0 1 0 0 0
-# 0 0 1 0 1 0
-# _ _ _ _ _ _
-# %% Bitwise SHIFT RIGHT operator `>>`
