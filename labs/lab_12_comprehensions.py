@@ -7,9 +7,9 @@ Comprehension Exercises
 '''
 1. convert the following loop to list comprehension
 '''
-list = []
+lst = []
 for x in range(10):
-    list.append(2*x+1)
+    lst.append(2*x+1)
 
 # Answer Here
 
@@ -35,6 +35,7 @@ for x in range(10):
 # Answer Here
 
 '''
+
 4.  A mathematical function is defined by y = (4x ** 2) + (3 * x) - 6
     i. Create a generator function to generate first 1000 integers starting from -100 and store to a variable y.
     ii. Create a list using list comprehension to generate the same values

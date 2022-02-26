@@ -156,3 +156,4 @@ Example if arguments are (5,6,7,8)
 the result should be 31 [ 5*2 + 6/2 + 7*2 + 8/2 ]
 """
 # answer
+
