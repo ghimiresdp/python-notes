@@ -18,10 +18,13 @@ class ABC:
     def my_property(self):
         # property body
 """
+
 # %%
+
 
 # Using regular getter and setter
 class Student:
+
     def __init__(self, count: int):
         self.__count = count
 
@@ -34,10 +37,9 @@ class Student:
 
 
 class_1 = Student(10)
-print(class_1.get_count())      # Getter
+print(class_1.get_count())  # Getter
 class_1.set_count(11)
-print(class_1.get_count())      # Setter
-
+print(class_1.get_count())  # Setter
 
 # %%
 # it can be achieved using the property decorator as follows
@@ -66,15 +68,18 @@ def <method_name>(params):
     method body
 
 """
+
+
 class Students:
-    def __init__(self, count:int):
+
+    def __init__(self, count: int):
         self.__count = count
 
     @property
-    def count(self):        # Getter
+    def count(self):  # Getter
         return self.__count
 
-    @count.setter           # Setter
+    @count.setter  # Setter
     def count(self, value):
         print("I can do other things while updating my value")
         self.__count = value
