@@ -1,4 +1,7 @@
 """
+© https://sudipghimire.com.np
+
+
 @property decorator in python classes
 
 - They look like regular object variables but are capable of attaching custom behavior to the class.
