@@ -3,7 +3,7 @@
 
 Hello world Program
 
-Note:  Please refer to the file "chapter1.pdf" for this note
+Note:  Please refer to the file "chapter 1 Basics.md" for this note
 
 This file contains the basic hello world program structure that can be written in either of:
 
