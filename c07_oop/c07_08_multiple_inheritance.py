@@ -1,4 +1,6 @@
 """
+© https://sudipghimire.com.np
+
 Multiple Inheritance.
 
 Multiple inheritance means inheriting the behavior from 2 or more parent classes.
