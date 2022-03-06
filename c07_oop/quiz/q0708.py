@@ -15,7 +15,7 @@ Create a child class HeavyVehicle and inherit all the attributes from the parent
 
 Create a child class Bike and inherit all the attributes from the parent class Vehicle
     - change the wheels_count from 4 to 2 in the initializer
-    - add setter or getter methods to add bike number, and owner name
+    - add setter or getter methods or property to add bike number, and owner name
     - try adding property instead of setter or getter for passenger/ pillion attribute
 
 create different instances of Vehicle, HeavyVehicle, and Bike and check whether each other are subclasses
