@@ -1,6 +1,9 @@
+- **created by**: Sudip Ghimire
+- **URL**: https://www.sudipghimire.com.np
+- **Github**: https://github.com/ghimiresdp
 # Project: School Management System
 
-> This project aims students to prepare them for a core understanding of core python features and an object oriented programming.
+> This project aims students to prepare them for a understanding of core python features and an object oriented programming.
 
 ## prerequisites:
 - json module

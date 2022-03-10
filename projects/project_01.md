@@ -1,22 +1,25 @@
+- **created by**: Sudip Ghimire
+- **URL**: https://www.sudipghimire.com.np
+- **Github**: https://github.com/ghimiresdp
 # Project: Rock Paper Scissor
 
 ## prerequisites:
 - Python Level 1 Course upto Chapter 7
 - `random` library
 
-Rock Paper Scissors is a game that is played with other people by
-showing different symbols randomly. For Example you and your friend show the the random symbol  The symbols are as follows:
+Rock Paper Scissors is a multi-player game that is played by showing different symbols randomly.
+For Example you and your friend show the the random symbol  The symbols are as follows:
 
-- **Rock**
-- **Paper**
-- **Scissors**
+- **Rock** 👊
+- **Paper** 🤚
+- **Scissors** ✌️
 
 
 Game Rules:
 
-- A rock Beats Scissors
-- Scissors beat paper by cutting it, and
-- Paper veats rock by covering it.
+- `Rock` breaks the `Scissor`
+- `Scissor` cuts the `Paper`
+- `Paper` covers the `Rock`
 
 ## Instructions
 
@@ -99,10 +102,10 @@ If you win for 3 consecutive times, it should show `CONGRATULATIONS, YOU WON THE
 
 
 ```
+John     : Rock
+Computer : SCISSOR
 +-------------------------------------------------------+
 |                      Game Statistics                  |
-+.......................................................+
-|  [_] You:   PAPER         [X] COMPUTER: SCISSOR       |
 +.......................................................+
 |  Total Rounds:     2      |  Total Draws:      0      |
 |  Computer:         1      |  John:             1      |

@@ -19,7 +19,7 @@ The above statement says, set the value `5` to the variable `x` somewhere in a m
  There are few rules to create a variable name which are as follows:
 
 1. Python identifiers can start with alphabetical characters.
-   
+
    ```python
    # Example
    name = "John Doe"
@@ -27,9 +27,9 @@ The above statement says, set the value `5` to the variable `x` somewhere in a m
    ```
 
 2. They can start with underscore `_` character.
-   
+
    variables starting with `_` are generally used as protected attributes.
-   
+
    ```python
    # Example
    _name = "John Doe"
@@ -37,7 +37,7 @@ The above statement says, set the value `5` to the variable `x` somewhere in a m
    ```
 
 3. Variables can not start with numeric characters but can exist in between or at the end.
-   
+
    ```python
    # Example
    # 1name = "John Doe"       # incorrect identifier name
@@ -46,7 +46,7 @@ The above statement says, set the value `5` to the variable `x` somewhere in a m
    ```
 
 4. We can't use special characters like `space`, `tab`, `+`, `-`, etc.
-   
+
    ```python
    # The following are not allowed
    """
@@ -59,7 +59,7 @@ The above statement says, set the value `5` to the variable `x` somewhere in a m
    ```
 
 5. We use `snake_case` for variable definition
-   
+
    Even though python supports CamelCase identifier name, it is generally not recommended to use. PEP recommends using `snake_case` identifiers over other type.
 
 

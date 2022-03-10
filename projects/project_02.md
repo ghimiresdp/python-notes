@@ -1,3 +1,6 @@
+- **created by**: Sudip Ghimire
+- **URL**: https://www.sudipghimire.com.np
+- **Github**: https://github.com/ghimiresdp
 # PROJECT: A Hangman Game
 
 ## prerequisites:
@@ -53,7 +56,7 @@ Welcome John!! lets start the exciting game
 
 Lets start with the word:
 
-What its the process in OOP when a child class derrives all the features
+What is the process in OOP when a child class derrives all the features
 and characters from it's parent class?
 
 total attempts: 0
