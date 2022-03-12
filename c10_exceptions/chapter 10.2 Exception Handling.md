@@ -80,3 +80,16 @@ def print_index(index: int):
 print_index(3)  # runs the `try` block then `else` block and then `finally` block at the end.
 print_index(8)  # runs the `try` block, then `IndexError` block and then `finally` block at the end.
 ```
+
+
+## Catching Multiple exceptions in the single `except` block
+
+We can catch multiple exceptions by calling them as the tuple of exceptions.
+
+```python
+try:
+    x = a / b
+except (TypeError, ZeroDivisionError) as e:
+    print(f"Error Spotted..{e}")
+```
+The above `except` code block catches both `TypeError` and `ZeroDivisionError` without needing to create different catch blocks.
