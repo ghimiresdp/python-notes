@@ -1,3 +1,7 @@
+- **created by**: Sudip Ghimire
+- **URL**: https://www.sudipghimire.com.np
+- **Github**: https://github.com/ghimiresdp
+
 # JSON module
 
 ## introduction to JSON
@@ -100,7 +104,7 @@ To dump the dictionary into the json file, we need to open file in a `write mode
 ```python
 import json
 
-with open ("filename.json", 'w') as file:
+with open("filename.json", 'w') as file:
     json.dump(person, file)
 ```
 The above command saves the output in the file `filename.json` inside the current working directory.

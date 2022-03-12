@@ -1,3 +1,7 @@
+- **created by**: Sudip Ghimire
+- **URL**: https://www.sudipghimire.com.np
+- **Github**: https://github.com/ghimiresdp
+
 # `random` Module
 
 Reference: https://docs.python.org/3/library/random.html

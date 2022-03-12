@@ -1,3 +1,7 @@
+- **created by**: Sudip Ghimire
+- **URL**: https://www.sudipghimire.com.np
+- **Github**: https://github.com/ghimiresdp
+
 # File Handling in Python
 
 - Python is capable of handling or manipulating data stored in files.
@@ -14,7 +18,7 @@
 2. `w`: **Writing** mode
    - It will create a new file if it does not exist, otherwise will erase the file and allow you to write to it.
 
-3. `a`: **Apend** mode
+3. `a`: **Append** mode
    - It will write data to the end of the file.
    - It does not erase the file, and the file must exist for this mode
 
@@ -46,24 +50,46 @@
 13. `ab+`: **Binary Apend** mode
     -  same as `a+` mode but forced in binary mode
 
+## Opening and closing a file in python
+- We use `open()` function to open the file.
+- We use `file.close()` method to close the file.
+
+**Basic Syntax**
+```python
+file_obj = open(filename, mode)
+# do our stuff over here
+file_obj.close()
+```
 
 ## Reading a file
 
 ```python
-with open (filename, 'r') as f:
+file = open("my_file.txt", "r")
+file.read()
+file.close()
+```
+
+### The newer approach using `with` keyword.
+- If we open the file with `with` keyword, then we do not need to explicitly close the file.
+- It automatically closes the file whenever it goes out of the scope.
+
+```python
+with open(filename, 'r') as f:
+    # do our stuff here
     f.read()
+print("At this point, the file is closed")
 ```
 
 ## Writing into a file
 ```python
-with open (filename, 'w') as f:
+with open(filename, 'w') as f:
     f.write(filedata)
 ```
 
 
 ## Appending into a file
 ```python
-with open (filename, 'a') as f:
+with open(filename, 'a') as f:
     f.write(filedata)
 ```
 
