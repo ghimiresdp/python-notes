@@ -1,6 +1,6 @@
 # Chapter 1 Fundamentals of Python
 
-## [go to course contents](../../)
+## [go to course contents](https://github.com/ghimiresdp/python-level1/)
 
 ## Contents:
 
