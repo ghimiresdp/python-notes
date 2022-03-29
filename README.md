@@ -109,27 +109,43 @@ You can `clone` or `fork` the repository and review the course contents, example
     - User Defined Exceptions
     - Total
 
-The course has the folder structure as follows:
+## Folder Structure
+The repository has its folder structure as shown in example below:
+```
+📂 python-level1
+ |-- 📂 course
+ |    |-- 📂 chapter_1
+ |    |    |-- 📜 chapter 1 theory 1.md
+ |    |    |-- 📜 chapter 1 theory 2.md
+ |    |    |-- 📄 ...
+ |    |    |-- 📂 code
+ |    |    |    |-- 📄 c0101.py
+ |    |    |    |-- 📄 c0102.py
+ |    |    |    |-- 📄 ...
+ |    |    |
+ |    |    |-- 📂 quiz
+ |    |    |    |-- 📜 chapter 1 quiz.md
+ |    |    |    |-- 📂 solutions
+ |    |    |         |-- 📄 solution_1.py
+ |    |    |         |-- 📄 solution_2.py
+ |    |    |         |-- 📄 ...
+ |    |
+ |    |-- 📂 ...
+ |
+ |-- 📂 projects
+ |    |-- 📂 project_1
+ |    |    |-- 📜 Project 1 Requirement Specification.md
+ |    |    |-- 🗃️ Media file for Requirements
+ |    |    |-- 🗃️ ...
+ |    |    |-- 📂 project_1 (solution)
+ |    |         |-- 📂 contents
+ |    |         |-- 📄 contents
+ |    |         |-- 📄 contents
+ |    |
+ |    |-- 📂 ...
 
 ```
-|-- practice
-|    |-- 01.py
-|    |-- 02.py
-|
-|-- res
-|    |-- 01_basics.pdf
-|    |-- 02_variables.pdf
-|  ...
-|
-|-- 01_basics
-|    |-- 01_hello_world.py
-|
-|-- 02_data_types
-|    |-- 01_variables.py
-|    |-- 02_numbers.py
-|  ...
 
-```
 
 > If you're directly **cloning** the repository, I suggest you to solve in the different branch than the `main` branch to avoid conflicts if the course content changes.
 
