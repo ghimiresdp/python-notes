@@ -1,17 +1,15 @@
 """
-© https://sudipghimire.com.np
+Q0102 solutions
 
-1. Print "Hello World" using print() function
-2. Comment the line from the above solution and try running the program again. Explain what happens and why it happens
-3. Create a multiline comment using Triple single and double quotes and add your content
-
+https://sudipghimire.com.np
 """
-# Answers
 
 # 1
 print("Hello World")
 
-#2
+# 2
+# print("Hello World")
+
 """
 When above line is commented, Nothing gets printed since the comment line is ignored by the interpreter.
 """

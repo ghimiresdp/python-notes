@@ -19,6 +19,7 @@ You can `clone` or `fork` the repository and review the course contents, example
       - Multiline Comments
       - Docstrings
     - indentation
+    - [Chapter 1 Quiz](course/c01_basics/quiz/README.md)
 
 2. [**Data Types and variables**](course/c02_data_types/)
     - [Variables](course/c02_data_types/Chapter%202.1%20Variables.md)
