@@ -4,15 +4,15 @@
 
 This course is specifically designed for my students who are learning basic level python course.
 
-You can always `clone` or `fork` the repository and review the course contents, examples, and attend exercises.
+You can `clone` or `fork` the repository and review the course contents, examples, and attend exercises.
 
-## Contents
+## Course Contents _(Links will be updated accordingly)_
 
-1. **Fundamentals of Python**
-    - Introduction to Python
-    - Python Environment Setup, IDE Setup
-    - Hello World in Python
-    - Running Python Programs
+1. [**Fundamentals of Python**](course/c01_basics/)
+    - [Introduction to Python](course/c01_basics/Chapter%201%20Basics.md)
+    - [Python Environment Setup, IDE Setup](course/c01_basics/Chapter%201%20Basics.md#installing-python)
+    - [Hello World in Python](course/c01_basics/Chapter%201%20Basics.md#hello-world-with-idle)
+    - [Running Python Programs](course/c01_basics/Chapter%201%20Basics.md#creating-editing-and-running-python-files)
     - comments and documentation
       - Single Line Comments
       - inline Comments
@@ -20,10 +20,11 @@ You can always `clone` or `fork` the repository and review the course contents, 
       - Docstrings
     - indentation
 
-2. **Data Types and variables**
-    - Variables
-    - Numbers (boolean, int, long, float, complex)
-    - Strings
+2. [**Data Types and variables**](course/c02_data_types/)
+    - [Variables](course/c02_data_types/Chapter%202.1%20Variables.md)
+    - [Numeric Data Types](course/c02_data_types/Chapter%202.2%20Numeric%20Data%20Types.md)
+    - [Strings](course/c02_data_types/Chapter%202.3%20Strings.md)
+    - [String Formatting](course/c02_data_types/chapter%202.4%20string%20formatting.md)
     - Lists
     - Tuples
     - Sets
@@ -87,6 +88,9 @@ You can always `clone` or `fork` the repository and review the course contents, 
     - `__init__.py` file
     - An example of modular python program | importing the module
     - from keyword
+    - `datetime` module
+    - `random` module
+    - `json` module
 
 9. **File I/O**
    - `open()` function

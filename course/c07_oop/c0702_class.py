@@ -59,6 +59,7 @@ The basics of class includes the following:
 
 """
 
+
 class Person:
     first_name = ''
     last_name = ''
@@ -90,10 +91,10 @@ print(mickey.first_name)
 mickey.show_fullname()
 
 
-#example of a class (Animal) with the __init__() method
+# example of a class (Animal) with the __init__() method
 class Animal:
-    name = ""       # Class Attribute
-    paws = 0        # Instance Attribute
+    name = ""  # Class Attribute
+    paws = 0  # Instance Attribute
     word = ""
 
     def __init__(self, name, word):
@@ -102,7 +103,6 @@ class Animal:
         """
         self.name = name
         self.word = word
-
 
     def __str__(self):
         return f"Instance of Animal named {self.name}"
