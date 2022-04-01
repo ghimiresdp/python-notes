@@ -3,10 +3,31 @@ https://sudipghimire.com.np
 
 Please read the note carefully and try to solve the problem below:
 
+**Table of Contents**
+- [Chapter 2 Data Types Quiz](#chapter-2-data-types-quiz)
+  - [Quiz Q0201](#quiz-q0201)
+  - [Quiz Q0202](#quiz-q0202)
+  - [Quiz Q0203](#quiz-q0203)
+  - [Quiz Q0204](#quiz-q0204)
+  - [Quiz Q0205](#quiz-q0205)
+  - [Quiz Q0206](#quiz-q0206)
+  - [Quiz Q0207](#quiz-q0207)
+  - [Quiz Q0208](#quiz-q0208)
+  - [Quiz Q0209](#quiz-q0209)
+  - [Quiz Q0210](#quiz-q0210)
+  - [Quiz Q0211](#quiz-q0211)
+  - [Quiz Q0212](#quiz-q0212)
+  - [Quiz Q0213](#quiz-q0213)
+  - [Quiz Q0214](#quiz-q0214)
+  - [Quiz Q0215](#quiz-q0215)
+  - [Quiz Q0216](#quiz-q0216)
+  - [Quiz Q0217](#quiz-q0217)
 ## Quiz Q0201
 1. Assign `55` to the variable `x` and print it in the console
 2. change the value of variable to be `60`
 3. add x by `10` again and print the value.
+
+**[Click](solution/q0201.py)** to see the solution
 
 ## Quiz Q0202
 1. create a variable `x` and assign any _integer_ value in it
@@ -18,6 +39,7 @@ Please read the note carefully and try to solve the problem below:
    type(4.5)
    ```
 
+**[Click](solution/q0202.py)** to see the solution
 ## Quiz Q0203
 Create two variables `first_name`, and `last_name` and print the sentence in the format below:
 
@@ -28,6 +50,8 @@ Create two variables `first_name`, and `last_name` and print the sentence in the
 3. use _f-strings_ to achieve the same result
 4. use `%s` formatting method to achieve the same result
 
+**[Click](solution/q0203.py)** to see the solution
+
 ## Quiz Q0204
 Assign a variable  pi and assign value `3.14159265`
 
@@ -35,6 +59,8 @@ Assign a variable  pi and assign value `3.14159265`
 2. use *formatting strings* to show pi with 2 digits after the decimal but allocate 10 spaces for the variable.
 3. use f-string to show the result in the following format:
     "The value of PIE is        3.14" ( hint: `"%<a>.<b>f"` )
+
+**[Click](solution/q0204.py)** to see the solution
 
 ## Quiz Q0205
 Use a function `input()`  to input the the name and age from the command line and display the formatted text as instructed below:
@@ -44,6 +70,7 @@ Use a function `input()`  to input the the name and age from the command line an
 3. Show a sentence describing the user name and age using *different formatting methods*.
    - hint: Output would be a sentence similar to `Hello 20 years old John!!`.
 
+**[Click](solution/q0205.py)** to see the solution
 ## Quiz Q0206
 Write a program to create an empty list named `my_list` and
 1. Add numbers 5 and 9 to the list using `append()` method
@@ -55,6 +82,7 @@ Write a program to create an empty list named `my_list` and
 5. Now remove the second item using `pop()` method and see if the item exists in the list
     - you can print the list before and after using the `pop()` method.
 
+**[Click](solution/q0206.py)** to see the solution
 ## Quiz Q0207
 Write a program to add 5 different wild animals to a list named `wild`.
 
@@ -75,6 +103,8 @@ Example: tiger, lion, deer, bear, zebra
 
 Note: *you can check output after each successive operations.*
 
+**[Click](solution/q0207.py)** to see the solution
+
 ## Quiz Q0208
 Try creating a multi-dimensional list or nested list `multi` containing different numbers.
 
@@ -90,6 +120,8 @@ Try creating a multi-dimensional list or nested list `multi` containing differen
     - **Bonus**: *Try using nested foreach to access each item inside of the inner list*
     - **Bonus**: *Try finding out the length of each inner list*
 6. Finally clear the list `multi` using the `clear()` method and verify if the list is empty or not.
+
+**[Click](solution/q0208.py)** to see the solution
 
 ## Quiz Q0209
 Write a program to create a tuple to add 5 different numbers.

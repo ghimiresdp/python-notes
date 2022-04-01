@@ -9,6 +9,16 @@ https://sudipghimire.com.np
   - [Quiz Q0504](#quiz-q0504)
   - [Quiz Q0505](#quiz-q0505)
   - [Quiz Q0606](#quiz-q0606)
+    - [Pattern 1](#pattern-1)
+    - [Pattern 2](#pattern-2)
+    - [Pattern 3](#pattern-3)
+    - [Pattern 4](#pattern-4)
+    - [Pattern 5](#pattern-5)
+    - [Pattern 6](#pattern-6)
+    - [Pattern 7](#pattern-7)
+    - [Pattern 8](#pattern-8)
+    - [Pattern 9](#pattern-9)
+    - [Pattern 10  (Bonus Exercise)](#pattern-10--bonus-exercise)
   - [Quiz Q0607](#quiz-q0607)
   - [Quiz Q0608](#quiz-q0608)
 
@@ -90,7 +100,7 @@ Let us take a number `145`:
 
 Generate patterns below using nested loops:
 
-Pattern 1
+### Pattern 1
 ```
 *
 *   *
@@ -99,7 +109,7 @@ Pattern 1
 *   *   *   *   *
 ```
 
-Pattern 2
+### Pattern 2
 ```
 1
 1   3
@@ -108,7 +118,7 @@ Pattern 2
 1   3   5   7   9
 ```
 
-Pattern 3
+### Pattern 3
 ```
 1
 2   2
@@ -117,7 +127,7 @@ Pattern 3
 5   5   5   5   5
 ```
 
-Pattern 4
+### Pattern 4
 ```
 1
 2   1
@@ -126,7 +136,7 @@ Pattern 4
 5   4   3   2   1
 ```
 
-Pattern 5
+### Pattern 5
 ```
 1   2   3   4   5
 2   4   6   8   10
@@ -135,7 +145,7 @@ Pattern 5
 5   10  15  20  25
 ```
 
-Pattern 6
+### Pattern 6
 ```
 A
 A   P
@@ -144,7 +154,7 @@ A   P   P   L
 A   P   P   L   E
 ```
 
-Pattern 7
+### Pattern 7
 ```
                 *
             *   *
@@ -153,7 +163,7 @@ Pattern 7
 *   *   *   *   *
 ```
 
-Pattern 8
+### Pattern 8
 ```
                 1
             1   3
@@ -162,7 +172,7 @@ Pattern 8
 1   3   5   7   9
 ```
 
-Pattern 9
+### Pattern 9
 ```
                 A
             A   P
@@ -171,7 +181,7 @@ Pattern 9
 A   P   P   L   E
 ```
 
-Pattern 10  (Bonus Exercise)
+### Pattern 10  (Bonus Exercise)
 ```
                 1
             1   2   1

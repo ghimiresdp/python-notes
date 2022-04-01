@@ -4,6 +4,10 @@ https://sudipghimire.com.np
 
 Please read the note carefully and try to solve the problem below:
 
+**Table of contents**
+- [Chapter 1 Quiz](#chapter-1-quiz)
+  - [Quiz: Q0101](#quiz-q0101)
+  - [Quiz: Q0102](#quiz-q0102)
 
 ## Quiz: Q0101
 1. Try to replicate the line below and change  `'hello world'` to `[your name]` and `print` it in the terminal.
@@ -19,7 +23,8 @@ Please read the note carefully and try to solve the problem below:
 
 4. If error occurs in any of the above step, please note the line number and the message where the exception is thrown
 """
-### [click](solution/q0101.py) to see the solution
+
+**[Click](solution/q0101.py)** to see the solution
 
 
 ## Quiz: Q0102
@@ -27,4 +32,4 @@ Please read the note carefully and try to solve the problem below:
 2. Comment the line from the above solution and try running the program again. Explain what happens and why it happens
 3. Create a multiline comment using Triple single `'''` and double quotes `"""` and add your content.
 
-### [click](solution/q0102.py) to see the solution
+**[Click](solution/q0102.py)** to see the solution

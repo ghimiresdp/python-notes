@@ -2,7 +2,13 @@
 https://sudipghimire.com.np
 
 Please read the note carefully and try to solve the problem below:
-
+**Table of contents**
+- [Chapter 4 Decision Making Quiz](#chapter-4-decision-making-quiz)
+  - [Quiz Q0401](#quiz-q0401)
+  - [Quiz Q0402](#quiz-q0402)
+  - [Quiz Q0403](#quiz-q0403)
+  - [Quiz Q0404](#quiz-q0404)
+  - [Quiz Q0405](#quiz-q0405)
 
 ## Quiz Q0401
 Write a program to input a number from the terminal and check whether a number is an integer or not.
