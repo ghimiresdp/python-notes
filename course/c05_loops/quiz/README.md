@@ -60,7 +60,7 @@ b = 1
 Write a program to create a list of 100 Natural numbers.
 1. Find the sum of all numbers from the list using `for` loop.
 2. Find the sum of squares of all numbers from the list using `for` loop.
-3. If each item of a list is represented by `x`, evaluate the value y = $x ^ 2$ + $2x$ + $2$ where `y` is the resulting expression for each item of the list.
+3. If each item of a list is represented by `x`, evaluate the value y = `x**2 + 2x + 2` where `y` is the resulting expression for each item of the list.
 4. Find the average of the list.
 
 
@@ -214,7 +214,7 @@ for x in range(10):
 1   2   3   4   5
 ```
 
-4. A mathematical function is defined by y = $4x ^ 2$ + $3x$ - $6$
+4. A mathematical function is defined by y = `4x ** 2 + 3x - 6`
     1. Create a generator function to generate first 1000 integers starting from -100 and store to a variable y.
     2. Create a list using list comprehension to generate the same values
     3. Compare the memory usage by those variables created in steps `i` and `ii` using `__sizeof__()` method.

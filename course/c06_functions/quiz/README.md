@@ -151,3 +151,11 @@ Create lambda functions for the following:
    output_sentence = 'A-quick-brown-fox-jumps-over-the-lazy-dog.'
    ```
 
+
+# Quiz Q0611
+Write recursive functions to find out the following:
+
+1. sum of first n natural numbers
+2. factorial of a non-negative number
+3. sum of digits of the number
+4. print the nth element of the fibonacci series `[1, 1, 2, 3, 5, 8, 13, 21,...]`
