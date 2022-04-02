@@ -123,3 +123,31 @@ Write a function that accepts any number of arguments
 find out the sum of all numbers by multiplying by `2` if it is odd and dividing by `2` if it is even.
 
 Example:  if arguments are `(5,6,7,8)`, then the result should be ` 31` (5 * 2 + 6 / 2 + 7 * 2 + 8 / 2)
+
+
+## Quiz Q0609
+Convert the following function to a lambda function
+
+```python
+def odd_or_even(num):
+    if num%2==0:
+        return 'even'
+    else:
+        return 'odd'
+```
+
+## Quiz Q0610
+Create lambda functions for the following:
+
+1. A lambda function that accepts a number and returns the square of it.
+2. A lambda function that accepts a list of numbers and returns the list of squares of them
+3. A lambda function that accepts the length in meter and returns the value in feet.
+4. A lambda function that accepts 3 integer arguments for month, year, and day, and returns a single string in format `YYYY/MM/DD` format.
+5. A lambda that accepts a sentence and returns the sentence with spaces replaced by hyphens.
+   ``` python
+   # example
+   input_sentence = 'A quick brown fox jumps over the lazy dog.'
+
+   output_sentence = 'A-quick-brown-fox-jumps-over-the-lazy-dog.'
+   ```
+
