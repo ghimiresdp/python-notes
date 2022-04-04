@@ -40,3 +40,43 @@ We can also pass named arguments in the format string which is independent of or
 print("Hi {n}, is the value {pi:10.2f}?".format(pi=3.1415, n=name))
 ```
 ## F-strings
+Source: https://peps.python.org/pep-0498/
+
+F-strings were introduced in python 3.6. With the help of f-strings, we can format our string in even easier way. F-strings were created since all formattings are not supported using `%`-formatting methods.
+
+F-strings provide a concise, readable way to include the value of Python expressions inside strings. F-strings are also called as templated strings where we use variable inside a string to generate dynamic content.
+
+F-strings are always written inside quotation marks starting with f ( i.e.`f''` or `f""` ).
+
+**Basic structure of f-strings**
+```python
+# adding only value
+f'content {statement}  content'
+
+# adding formatted value
+f'content {statement: format} content'
+```
+
+
+example:
+
+```python
+PI = 3.1415926535
+
+print(f"The valueo of pi is {PI}.")
+
+print(f"The value of pi is {PI: 5.3f}.")    # formatting the floating point characters
+
+```
+
+Unlike `%` formatting, we can even pass complex statements inside the formatted string.
+
+Example:
+
+```python
+word = 'Hello World'
+
+print(f'The word "{word}" has {word.__len__()} characters.')
+print(f'The word "{word}" in upper case is {word.upper()}.')
+
+```
