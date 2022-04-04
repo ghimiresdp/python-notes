@@ -79,4 +79,6 @@ word = 'Hello World'
 print(f'The word "{word}" has {word.__len__()} characters.')
 print(f'The word "{word}" in upper case is {word.upper()}.')
 
+# even complex one
+print(f'The word {name}  is {"long" if name.__len__() > 10 else "short"}')
 ```
