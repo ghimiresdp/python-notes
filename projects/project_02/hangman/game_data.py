@@ -50,7 +50,7 @@ questions = [
     },
     {
         'word': 'iteration',
-        'definition': 'The method of running a sequence of instructions or code in a repeated manned'
+        'definition': 'The method of running a sequence of instructions or code in a repeated manner '
                       'until specific result is achieved'
     },
 ]
