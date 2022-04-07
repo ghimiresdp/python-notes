@@ -1,55 +1,49 @@
 import random
+
 import game_data
 
 CONSOLE_WIDTH = 120
 
 
+class Question:
+    def __init__(self, word: str, definition: str):
+        self.word = word.upper()
+        self.definition = definition
+        hints = sorted(random.sample(range(word.__len__()), k=word.__len__() // 3 + 1))
+        self.progress = [char if idx in hints else '_' for idx, char in enumerate(list(self.word))]
+        self.lives = self.word.__len__() - hints.__len__()
+        self.attempts = 0
+        self.correct = 0
+
+    @staticmethod
+    def print_centered(value: str):
+        print(value.center(CONSOLE_WIDTH))
+
+    def display_progress(self, display_index=True):
+        box_width = int(.8 * CONSOLE_WIDTH)
+        self.print_centered(f'+{"-" * box_width}+')
+        self.print_centered(
+            '|'+' TOTAL ATTEMPTS: {:<10d} CORRECT GUESSES: {:<10d} REMAINING LIVES: {:<10d}'.format(
+                self.attempts, self.correct, self.lives
+            ).strip().center(box_width)+'|'
+        )
+        self.print_centered(f'+{"-" * box_width}+')
+        self.print_centered(f'|{" " * box_width}|')
+        self.print_centered(f'|{" ".join(self.progress).center(box_width)}|')
+        self.print_centered(f'|{" " * box_width}|')
+        self.print_centered(f'+{"-" * box_width}+')
+
+
 class Hangman:
-    GUESSES = [
-        {
-            'word': 'computer',
-            'hint': 'An electronic device that is used for storing, and computing data in digital form.'
-        },
-        {
-            'word': 'programming',
-            'hint': 'The process of instructing the computer todo certain task.'
-        },
-        {
-            'word': 'inheritance',
-            'hint':
-            'The process by which a child class takes a base from an another class to retain similar implementation'
-        },
-        {
-            'word': 'polymorphism',
-            'hint':
-            'The ability of a program in OOP that is able to show different characteristics in different situations'
-        },
-        {
-            'word': 'dictionary',
-            'hint': 'A data type in python that has key-value pair'
-        },
-        {
-            'word': 'comprehension',
-            'hint': 'A method of generating different collection data types based on another collection of data'
-        },
-        {
-            'word': 'lambda',
-            'hint': 'An anonymous function that is used as one liner function'
-        },
-        {
-            'word':
-            'iteration',
-            'hint':
-            'The method of running a sequence of instructions or code in a repeated manned until specific result is achieved'
-        },
-    ]
-    MESSAGES = [
+    messages = [
         'We are so excited to have you on our team, {name}!',
         'We are thrilled to have you at our terminal, {name}!',
         'Welcome {name}!! lets start the exciting game',
     ]
+    question: Question = None
 
-    def print_separator(self):
+    @staticmethod
+    def print_separator():
         print('=' * CONSOLE_WIDTH)
 
     def display_graphics(self):
@@ -63,16 +57,15 @@ class Hangman:
         self.print_separator()
 
     def __init__(self):
-        self.username = ''
         self.display_graphics()
-
-    def _randomize(self):
-        return NotImplemented
+        self.username = input('Please Enter your Name: ')
+        print(self.messages[random.randrange(0, self.messages.__len__())].format(name=self.username))
+        self.print_separator()
 
     def play(self):
-        self.username = input('Please Enter your Name: ')
-        print(self.MESSAGES[random.randrange(0, self.MESSAGES.__len__())].format(name=self.username))
-        self.print_separator()
+        random_index = random.randrange(0, game_data.questions.__len__())
+        self.question = Question(**game_data.questions[random_index])
+        self.question.display_progress()
 
 
 if __name__ == '__main__':
