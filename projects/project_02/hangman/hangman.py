@@ -30,7 +30,7 @@ class Question:
         self.attempts = 0
         self.correct = 0
 
-    def display_game_screen(self):
+    def render_game(self):
         clear_screen = lambda: os.system('cls' if os.name == 'nt' else 'clear')
         clear_screen()
         box_width = int(.8 * CONSOLE_WIDTH)
@@ -40,37 +40,54 @@ class Question:
             ) else '_' if c == '_' else ' ') for idx, c in
             enumerate(self.progress)
         ])
-        self.print_centered(f'+{"-" * box_width}+')
+        self.print_centered("\u2583" * box_width)
+        print()
         self.print_centered(
-            '|' + ' TOTAL ATTEMPTS: {:<10d} CORRECT GUESSES: {:<10d} REMAINING LIVES: {:<10d}'.format(
+            ' TOTAL ATTEMPTS: {:<10d} CORRECT GUESSES: {:<10d} REMAINING LIVES: {:<10d}'.format(
                 self.attempts, self.correct, self.lives
-            ).strip().center(box_width) + '|'
+            ).strip().center(box_width)
         )
-        self.print_centered(f'+{"-" * box_width}+')
-        self.print_centered(f'|{" " * box_width}|')
-        self.print_centered(f'|{hint.center(box_width)}|')
-        self.print_centered('|' + (' '.join([
+        print()
+        self.print_centered("\u2594" * box_width)
+        print()
+        print()
+        self.print_centered(hint.center(box_width))
+        self.print_centered((' '.join([
             (str(idx) if ch == '_' else '').center(3) for idx, ch in enumerate(self.progress)
-        ])).center(box_width) + '|')
-        self.print_centered(f'|{" " * box_width}|')
-        self.print_centered(f'+{"-" * box_width}+')
+        ])).center(box_width))
+        print()
+        print()
+        self.print_centered("\u2594" * box_width)
         self.print_centered(
-            '|' + ' Quit: {:<15s} Select Number: {:<15s} Re-shuffle: {:<15s}'.format(
+            ' Quit: {:<15s} Select Number: {:<15s} Re-shuffle: {:<15s}'.format(
                 'Q', '[NUM]', 'R'
-            ).strip().center(box_width) + '|'
+            ).strip().center(box_width)
         )
-        self.print_centered(f'+{"-" * box_width}+')
+        self.print_centered("\u2583" * box_width)
 
     def insert_guess(self, option: str):
         valid = True
-        if option.isnumeric():
-            idx = int(option)
-            if self.progress[idx] == '_':
-                self.__editing = True
-                self.display_game_screen()
-                value = input('Enter a character to insert: ')
+        if not option.isnumeric():
+            valid = False
+        idx = int(option)
+        if not self.progress[idx] == '_':
+            valid = False
         if not valid:
             print('Invalid options added')
+        else:
+            self.attempts += 1
+            self.__editing = True
+            self.__selected_index = idx
+            self.render_game()
+            value = input('Enter a character to insert: ').upper()
+            if value == self.word[idx]:
+                self.progress[idx] = value
+                self.correct += 1
+            else:
+                self.lives -= 1
+            self.__editing = False
+        if '_' not in self.progress:
+            print('Congratulations!! You Won the game !!')
 
 
 class Hangman:
@@ -106,13 +123,13 @@ class Hangman:
         while True:
             print(self.question.definition)
             print("Guess the answer:")
-            self.question.display_game_screen()
+            self.question.render_game()
             option = input("\n\t\tEnter Option: ")
             if option.lower() == 'q':
                 break
             elif option.lower() == 'r':
                 self.question.randomize_guess()
-                self.question.display_game_screen()
+                self.question.render_game()
             else:
                 self.question.insert_guess(option)
 
