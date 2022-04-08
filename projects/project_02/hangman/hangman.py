@@ -1,9 +1,9 @@
 import os
 import random
-
+import textwrap
 import game_data
 
-CONSOLE_WIDTH = 120
+CONSOLE_WIDTH = 80
 
 
 class Question:
@@ -31,8 +31,6 @@ class Question:
         self.correct = 0
 
     def render_game(self):
-        clear_screen = lambda: os.system('cls' if os.name == 'nt' else 'clear')
-        clear_screen()
         box_width = int(.8 * CONSOLE_WIDTH)
         hint = ' '.join([
             c.center(3, '|' if all(
@@ -50,6 +48,8 @@ class Question:
         print()
         self.print_centered("\u2594" * box_width)
         print()
+        for line in textwrap.wrap(self.definition, width=box_width):
+            self.print_centered(line)
         print()
         self.print_centered(hint.center(box_width))
         self.print_centered((' '.join([
@@ -96,40 +96,70 @@ class Hangman:
         'We are thrilled to have you at our terminal, {name}!',
         'Welcome {name}!! lets start the exciting game',
     ]
-    question: Question = None
+    question: Question
 
     @staticmethod
-    def print_separator():
-        print('=' * CONSOLE_WIDTH)
+    def print_centered(value: str):
+        print(value.center(CONSOLE_WIDTH))
 
     def display_graphics(self):
-        for line in game_data.GRAPHICS:
+        for line in game_data.graphics:
             for blank, fill in line:
-                print(' ' * blank, '/' * fill, end='', sep='')
+                print(' ' * blank, '\u2588' * fill, end='', sep='')
             print()
 
-        print('\n'.join(''))
-        self.print_separator()
+    def clear_screen(self):
+        os.system('cls' if os.name == 'nt' else 'clear')
 
     def __init__(self):
+        self.set_random_question()
+        self.clear_screen()
         self.display_graphics()
         self.username = input('Please Enter your Name: ')
-        print(self.messages[random.randrange(0, self.messages.__len__())].format(name=self.username))
-        self.print_separator()
+        self.__editing=False
+        self.__selected_index = 0
 
-    def play(self):
+    def render(self):
+        clear_screen = lambda: os.system('cls' if os.name == 'nt' else 'clear')
+        clear_screen()
+        self.display_graphics()
+        hint = ' '.join([
+            c.center(3, '|' if all(
+                (self.__editing, self.__selected_index == idx, c == '_')) else '_' if c == '_' else ' ')
+            for idx, c in enumerate(self.question.progress)
+        ])
+        self.print_centered("\u2583" * CONSOLE_WIDTH)
+        print()
+        self.print_centered(' TOTAL ATTEMPTS: {:<10d} CORRECT GUESSES: {:<10d} REMAINING LIVES: {:<10d}'.format(
+            self.question.attempts, self.question.correct, self.question.lives).strip().center(CONSOLE_WIDTH))
+        print()
+        self.print_centered("\u2594" * CONSOLE_WIDTH)
+        print()
+        for line in textwrap.wrap(self.question.definition, width=CONSOLE_WIDTH):
+            self.print_centered(line)
+        print()
+        self.print_centered(hint.center(CONSOLE_WIDTH))
+        self.print_centered((' '.join([(str(idx) if ch == '_' else '').center(3)
+                                       for idx, ch in enumerate(self.question.progress)])).center(CONSOLE_WIDTH))
+        print()
+        print()
+        self.print_centered("\u2594" * CONSOLE_WIDTH)
+        self.print_centered(' Quit: {:<15s} Select Number: {:<15s} Re-shuffle: {:<15s}'.format(
+            'Q', '[NUM]', 'R').strip().center(CONSOLE_WIDTH))
+        self.print_centered("\u2583" * CONSOLE_WIDTH)
+
+    def set_random_question(self):
         random_index = random.randrange(0, game_data.questions.__len__())
         self.question = Question(**game_data.questions[random_index])
+
+    def play(self):
         while True:
-            print(self.question.definition)
-            print("Guess the answer:")
-            self.question.render_game()
+            self.render()
             option = input("\n\t\tEnter Option: ")
             if option.lower() == 'q':
                 break
             elif option.lower() == 'r':
                 self.question.randomize_guess()
-                self.question.render_game()
             else:
                 self.question.insert_guess(option)
 
