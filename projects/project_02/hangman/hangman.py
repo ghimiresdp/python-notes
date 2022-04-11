@@ -1,93 +1,38 @@
 import os
 import random
+import textwrap
+from typing import Tuple
+from game_data import WINNER, LOOSER, HANGMAN
 
-import game_data
-
-CONSOLE_WIDTH = 120
+CONSOLE_WIDTH = 80
 
 
 class Question:
-    __editing = False
-    __selected_index = 0
 
     def __init__(self, word: str, definition: str):
         self.word = word.upper()
         self.definition = definition
-        self.attempts = 0
-        self.correct = 0
-        self.lives = 0
-        self.progress = []
-        self.randomize_guess()
+        self.__progress = sorted(random.sample(range(word.__len__()), k=(2 * word.__len__()) // 3))
 
-    @staticmethod
-    def print_centered(value: str):
-        print(value.center(CONSOLE_WIDTH))
+    @property
+    def remaining(self):
+        return self.__progress
 
-    def randomize_guess(self):
-        hints = sorted(random.sample(range(self.word.__len__()), k=self.word.__len__() // 3 + 1))
-        self.progress = [char if idx in hints else '_' for idx, char in enumerate(list(self.word))]
-        self.lives = self.word.__len__() - hints.__len__()
-        self.attempts = 0
-        self.correct = 0
+    @property
+    def hints(self):
+        return (['_' if idx in self.remaining else char for idx, char in enumerate(list(self.word))])
 
-    def render_game(self):
-        clear_screen = lambda: os.system('cls' if os.name == 'nt' else 'clear')
-        clear_screen()
-        box_width = int(.8 * CONSOLE_WIDTH)
-        hint = ' '.join([
-            c.center(3, '|' if all(
-                (self.__editing, self.__selected_index == idx, c == '_')
-            ) else '_' if c == '_' else ' ') for idx, c in
-            enumerate(self.progress)
-        ])
-        self.print_centered("\u2583" * box_width)
-        print()
-        self.print_centered(
-            ' TOTAL ATTEMPTS: {:<10d} CORRECT GUESSES: {:<10d} REMAINING LIVES: {:<10d}'.format(
-                self.attempts, self.correct, self.lives
-            ).strip().center(box_width)
-        )
-        print()
-        self.print_centered("\u2594" * box_width)
-        print()
-        print()
-        self.print_centered(hint.center(box_width))
-        self.print_centered((' '.join([
-            (str(idx) if ch == '_' else '').center(3) for idx, ch in enumerate(self.progress)
-        ])).center(box_width))
-        print()
-        print()
-        self.print_centered("\u2594" * box_width)
-        self.print_centered(
-            ' Quit: {:<15s} Select Number: {:<15s} Re-shuffle: {:<15s}'.format(
-                'Q', '[NUM]', 'R'
-            ).strip().center(box_width)
-        )
-        self.print_centered("\u2583" * box_width)
-
-    def insert_guess(self, option: str):
-        valid = True
-        if not option.isnumeric():
-            valid = False
-        idx = int(option)
-        if not self.progress[idx] == '_':
-            valid = False
-        if not valid:
-            print('Invalid options added')
-        else:
-            self.attempts += 1
-            self.__editing = True
-            self.__selected_index = idx
-            self.render_game()
-            value = input('Enter a character to insert: ').upper()
-            if value == self.word[idx]:
-                self.progress[idx] = value
-                self.correct += 1
-            else:
-                self.lives -= 1
-            self.__editing = False
-        if '_' not in self.progress:
-            print('Congratulations!! You Won the game !!')
+    def insert_guess(self, value: str) -> Tuple[bool, bool]:
+        """
+        Returns 2 values (correct: `bool`, changed: `bool`)
+        """
+        value = value.upper()
+        changed = False
+        for idx in self.__progress:
+            if self.word[idx] == (value):
+                changed = True
+                self.__progress.remove(idx)
+        return True if value in self.word else False, changed
 
 
 class Hangman:
@@ -96,42 +41,95 @@ class Hangman:
         'We are thrilled to have you at our terminal, {name}!',
         'Welcome {name}!! lets start the exciting game',
     ]
-    question: Question = None
-
-    @staticmethod
-    def print_separator():
-        print('=' * CONSOLE_WIDTH)
-
-    def display_graphics(self):
-        for line in game_data.GRAPHICS:
-            for blank, fill in line:
-                print(' ' * blank, '/' * fill, end='', sep='')
-            print()
-
-        print('\n'.join(''))
-        self.print_separator()
+    questions = [
+        {
+            'word': 'computer',
+            'definition': 'An electronic device that is used for storing, and computing data in digital form.'
+        },
+        {
+            'word': 'programming',
+            'definition': 'The process of instructing the computer todo certain task.'
+        },
+        {
+            'word':
+            'inheritance',
+            'definition':
+            'The process by which a child class takes a base from an another class to retain similar implementation'
+        },
+        {
+            'word':
+            'polymorphism',
+            'definition':
+            'The ability of a program in OOP that is able to show different characteristics in different situations'
+        },
+        {
+            'word': 'dictionary',
+            'definition': 'A data type in python that has key-value pair'
+        },
+        {
+            'word': 'comprehension',
+            'definition': 'A method of generating different collection data types based on another collection of data'
+        },
+        {
+            'word': 'lambda',
+            'definition': 'An anonymous function that is used as one liner function'
+        },
+        {
+            'word':
+            'iteration',
+            'definition':
+            'The method of running a sequence of instructions or code in a repeated manner '
+            'until specific result is achieved'
+        },
+    ]
+    question: Question
 
     def __init__(self):
-        self.display_graphics()
-        self.username = input('Please Enter your Name: ')
-        print(self.messages[random.randrange(0, self.messages.__len__())].format(name=self.username))
-        self.print_separator()
+        self.set_random_question()
+        self.__lives = 3
+        self.__attempts = 0
+
+    def clear_screen(self):
+        os.system('cls' if os.name == 'nt' else 'clear')
+
+    def render(self):
+        hint = ' '.join([c.center(3, '_' if c == '_' else ' ') for idx, c in enumerate(self.question.hints)])
+        print("=" * CONSOLE_WIDTH)
+        print(f' TOTAL ATTEMPTS: {self.__attempts:<10d} REMAINING LIVES: {self.__lives:<10d}'.strip().center(
+            CONSOLE_WIDTH))
+        print("-" * CONSOLE_WIDTH, end='\n\n')
+        for line in textwrap.wrap(self.question.definition, width=CONSOLE_WIDTH):
+            print(line.center(CONSOLE_WIDTH))
+        print()
+        print(hint.center(CONSOLE_WIDTH), end='\n\n')
+        print("-" * CONSOLE_WIDTH)
+        print(f'Shuffle Questions: {1:<5d}Quit : 0'.center(CONSOLE_WIDTH))
+        print("=" * CONSOLE_WIDTH)
+
+    def set_random_question(self):
+        random_index = random.randrange(0, self.questions.__len__())
+        question = Question(**self.questions[random_index])
+        self.question = question
 
     def play(self):
-        random_index = random.randrange(0, game_data.questions.__len__())
-        self.question = Question(**game_data.questions[random_index])
         while True:
-            print(self.question.definition)
-            print("Guess the answer:")
-            self.question.render_game()
-            option = input("\n\t\tEnter Option: ")
-            if option.lower() == 'q':
+            self.clear_screen()
+            print(LOOSER if self.__lives == 0 else WINNER if self.question.remaining.__len__() == 0 else HANGMAN)
+
+            self.render()
+            option = input("Enter Option [0 / 1 / a-z]: ".rjust(CONSOLE_WIDTH // 2))
+            if option == '0':
+                print("See you Again!!".center(CONSOLE_WIDTH))
                 break
-            elif option.lower() == 'r':
-                self.question.randomize_guess()
-                self.question.render_game()
+            elif option == '1':
+                self.__init__()
             else:
-                self.question.insert_guess(option)
+                if self.question.remaining.__len__()>0:
+                    correct, changed = self.question.insert_guess(option)
+                    if changed:
+                        self.__attempts += 1
+                    if not correct:
+                        self.__lives -= 1
 
 
 if __name__ == '__main__':
