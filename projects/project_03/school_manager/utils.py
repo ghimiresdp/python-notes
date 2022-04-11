@@ -1,6 +1,6 @@
-import shutil
-
 import os
+
+RECORD_PATH = 'records'
 
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')

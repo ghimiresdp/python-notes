@@ -1,18 +1,33 @@
-from utils import clear_screen, display_message
+import json
+from typing import List
+from utils import clear_screen, display_message, RECORD_PATH
 
 
 class Student:
-    def __init__(self) -> None:
-        pass
+
+    def __init__(self, name: str, roll: int, age:int, major: str) -> None:
+        self.name = name
+        self.roll = roll
+        self.age = age
+        self.major = major
+
 
     def show_menu(self):
         print('Student Management Screen')
 
 
-class Grade:
+class ClassRoom:
     message = ''
     def __init__(self, name) -> None:
         self.name = name
+        self.__students: List[Student] = []
+
+    def save_record(self):
+        with open(f"{RECORD_PATH}/{self.name}.json", 'w') as file:
+            json.dump({
+                'name': self.name,
+                'students': [s.__dict__ for s in self.__students]
+            }, file)
 
     def _rename(self):
         self.message='This feature is unimplemented'
