@@ -22,12 +22,16 @@ class ClassRoom:
         self.name = name
         self.__students: List[Student] = []
 
+    def load_record(self, students: list):
+        for std in students:
+            self.__students.append(Student(**std))
+
     def save_record(self):
-        with open(f"{RECORD_PATH}/{self.name}.json", 'w') as file:
+        with open(f"{RECORD_PATH}/{self.name}.json", 'w', encoding='utf-8') as file:
             json.dump({
                 'name': self.name,
                 'students': [s.__dict__ for s in self.__students]
-            }, file)
+            }, file, indent=2)
 
     def _rename(self):
         self.message='This feature is unimplemented'
@@ -36,7 +40,20 @@ class ClassRoom:
         self.message='This feature is unimplemented'
 
     def _add_student(self):
-        self.message='This feature is unimplemented'
+        self.message = ''
+        clear_screen()
+        print('[ Adding Student ]'.center(80, '='))
+        try:
+            std = Student(
+                name = input("Enter Student name: "),
+                roll = int(input("Enter Student roll: ")),
+                age = int(input("Enter Student age: ")),
+                major = input("Enter Student major: "),
+            )
+            self.__students.append(std)
+            self.message=f'Student "{std.name}" successfully added'
+        except ValueError:
+            self.message = 'invalid data entered'
 
     def _remove_student(self):
         self.message='This feature is unimplemented'

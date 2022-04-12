@@ -1,3 +1,4 @@
+import shutil
 from typing import List
 from school import ClassRoom
 from utils import RECORD_PATH, clear_screen, display_message
@@ -8,12 +9,16 @@ class SchoolManager:
     message = ''
     def __init__(self) -> None:
         self.__classes: List[ClassRoom] = []
-        for file_path in os.listdir(RECORD_PATH):
-            if file_path.endswith('.json'):
-                with open(f"{RECORD_PATH}/{file_path}") as f:
-                    class_data = json.load(f)
-                class_room = ClassRoom(class_data['name'])
-                self.__classes.append(class_room)
+        if os.path.exists(RECORD_PATH):
+            for file_path in os.listdir(RECORD_PATH):
+                if file_path.endswith('.json'):
+                    with open(f"{RECORD_PATH}/{file_path}", 'r', encoding='utf-8') as file:
+                        class_data = json.load(file)
+                    class_room = ClassRoom(class_data['name'])
+                    class_room.load_record(class_data['students'])
+                    self.__classes.append(class_room)
+        else:
+            os.mkdir(RECORD_PATH)
 
 
     def __create_class(self):
@@ -27,6 +32,8 @@ class SchoolManager:
 
     def __manage_class(self):
         self.message = ''
+        clear_screen()
+        print('[ Select class to manage ]'.center(80, '='))
         for idx, cls in enumerate(self.__classes):
             print(f'{idx+1}: {cls.name}')
         print('0: Back to main menu')
@@ -41,10 +48,11 @@ class SchoolManager:
 
 
     def __exit(self):
-        print('Saving all records ane exiting..')
+        print('Saving all records and exiting..')
         for cls in self.__classes:
-            print(cls.name)
+            print(cls.name, end='\t')
             cls.save_record()
+            print('saved')
         quit()
 
     def show_menu(self):
@@ -64,7 +72,7 @@ class SchoolManager:
         }
         while True:
             clear_screen()
-            print(f'[ School Management System ]'.center(80,'='))
+            print('[ School Management System ]'.center(80,'='))
             for k, v in menu_items.items():
                 print(f'{k}: {v["title"]}')
             if self.message.__len__()>0:

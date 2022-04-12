@@ -70,7 +70,7 @@ remaining lives: 5
 
 ```
 
-After showing the word above, the user should now be able to select the position and add the word at the position.
+After showing the word above, the user should now be able to select the position and add the character at the position.
 
 example output:
 
