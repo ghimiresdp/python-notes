@@ -37,7 +37,16 @@ class ClassRoom:
         self.message='This feature is unimplemented'
 
     def _list_students(self):
-        self.message='This feature is unimplemented'
+        clear_screen()
+        print(f'[ Class "{self.name}" Student ]'.center(80, '='), end='\n\n')
+        print('+', '-' * 6, '+', '-' * 32, '+', '-' * 5, '+', '-' * 17, '+', sep='')
+        print(f"| {'Roll':4s} | {'Name'.center(30)} | {'Age':3s} | {'Major'.center(15)} |")
+        print('+', '-' * 6, '+', '-' * 32, '+', '-' * 5, '+', '-' * 17, '+', sep='')
+        for std in self.__students:
+            print(f"| {std.roll:4d} | {std.name:30s} | {std.age:3d} | {std.major:15s} |")
+        print('+', '-' * 6, '+', '-' * 32, '+', '-' * 5, '+', '-' * 17, '+', sep='')
+        input("\nPress Enter to go back: ")
+
 
     def _add_student(self):
         self.message = ''
@@ -91,6 +100,7 @@ class ClassRoom:
             }
         }
         clear_screen()
+        self.message= ''
         while True:
             clear_screen()
             print(f'[ Managing class {self.name} ]'.center(80,'='))
@@ -99,10 +109,10 @@ class ClassRoom:
             if self.message.__len__() > 0:
                 display_message(self.message)
             try:
-                option = input("Please select an option: ")
+                option = input("\nPlease select an option: ")
                 if option=='0':
                     return
                 menu_items[option]['action']()
 
-            except KeyError:
-                self.message = "Option not available"
+            except (KeyError, ValueError):
+                self.message = "Invalid option supplied"

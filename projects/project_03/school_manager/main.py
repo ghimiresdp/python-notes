@@ -31,23 +31,27 @@ class SchoolManager:
         self.message= f"Class {name} successfully created"
 
     def __manage_class(self):
-        self.message = ''
-        clear_screen()
-        print('[ Select class to manage ]'.center(80, '='))
-        for idx, cls in enumerate(self.__classes):
-            print(f'{idx+1}: {cls.name}')
-        print('0: Back to main menu')
-        try:
-            option = int(input("Please select an option: "))
-            if option == 0:
-                return
-            self.__classes[option-1].show_menu()
-        except (ValueError, IndexError):
-            self.message ='Invalid opton supplied'
+        while True:
+            clear_screen()
+            print('[ Select class to manage ]'.center(80, '='))
+            for idx, cls in enumerate(self.__classes):
+                print(f'{idx+1}: {cls.name}')
+            print('0: Back to main menu')
+            if self.message.__len__() > 0:
+                display_message(self.message)
+            try:
+                option = int(input("\nPlease select an option: "))
+                if option == 0:
+                    self.message = ''
+                    return
+                self.__classes[option-1].show_menu()
+            except (ValueError, IndexError):
+                self.message ='Invalid option supplied'
 
 
 
     def __exit(self):
+        clear_screen()
         print('Saving all records and exiting..')
         for cls in self.__classes:
             print(cls.name, end='\t')
@@ -78,7 +82,7 @@ class SchoolManager:
             if self.message.__len__()>0:
                 display_message(self.message)
             try:
-                option = input("Please select an option: ")
+                option = input("\nPlease select an option: ")
                 menu_items[option]['action']()
 
             except KeyError:
