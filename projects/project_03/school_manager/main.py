@@ -1,4 +1,6 @@
 import shutil
+from traceback import print_last
+from turtle import clear
 from typing import List
 from school import ClassRoom
 from utils import RECORD_PATH, clear_screen, display_message
@@ -49,16 +51,6 @@ class SchoolManager:
                 self.message ='Invalid option supplied'
 
 
-
-    def __exit(self):
-        clear_screen()
-        print('Saving all records and exiting..')
-        for cls in self.__classes:
-            print(cls.name, end='\t')
-            cls.save_record()
-            print('saved')
-        quit()
-
     def show_menu(self):
         menu_items = {
             '1': {
@@ -71,7 +63,6 @@ class SchoolManager:
             },
             '0': {
                 'title': 'Quit application',
-                'action': self.__exit
             },
         }
         while True:
@@ -83,6 +74,10 @@ class SchoolManager:
                 display_message(self.message)
             try:
                 option = input("\nPlease select an option: ")
+
+                if option=='0':
+                    display_message("Good bye!!")
+                    return
                 menu_items[option]['action']()
 
             except KeyError:

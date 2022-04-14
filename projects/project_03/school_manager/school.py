@@ -60,12 +60,23 @@ class ClassRoom:
                 major = input("Enter Student major: "),
             )
             self.__students.append(std)
+            self.save_record()
             self.message=f'Student "{std.name}" successfully added'
         except ValueError:
             self.message = 'invalid data entered'
 
     def _remove_student(self):
-        self.message='This feature is unimplemented'
+        try:
+            roll: int = int(input("Enter the roll number of a student to remove from the class: "))
+            students_count = self.__students.__len__()
+            self.__students = [s for s in self.__students if s.roll !=roll]
+            if students_count == self.__students.__len__():
+                self.message = f'No student with roll "{roll}" found'
+                return
+            self.save_record()
+            self.message='student successfully removed'
+        except (ValueError, IndexError):
+            self.message = 'Invalid Option Supplied'
 
 
     def _modify_student(self):
