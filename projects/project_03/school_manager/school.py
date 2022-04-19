@@ -14,6 +14,31 @@ class Student:
     def show_menu(self):
         print('Student Management Screen')
 
+    def modify(self) -> bool:
+        clear_screen()
+        changed = False
+        print(f'[ Modifying "{self.name}" ]'.center(80, '='), end='\n\n')
+        name = input(f"Enter New name [Enter to set {self.name}]")
+        if name.__len__():
+            self.name = name
+            changed=True
+
+        roll = input(f"Enter New name [Enter to set {self.roll}]")
+        if roll.__len__():
+            self.roll = int(roll)
+            changed=True
+
+        age = input(f"Enter New name [Enter to set {self.age}]")
+        if age.__len__():
+            self.age = int(age)
+            changed=True
+
+        major = input(f"Enter New name [Enter to set {self.major}]")
+        if major.__len__():
+            self.major = major
+            changed=True
+        return changed
+
 
 class ClassRoom:
     message = ''
@@ -75,7 +100,17 @@ class ClassRoom:
             self.message = 'Invalid Option Supplied'
 
     def _modify_student(self):
-        self.message='This feature is unimplemented'
+        try:
+            roll: int = int(input("Enter the roll number of a student to modify: "))
+            student = [s for s in self.__students if s.roll == roll][0]
+            success = student.modify()
+            if success:
+                self.save_record()
+                self.message = 'student successfully updated'
+            else:
+                self.message = "No Changes were made"
+        except (ValueError, IndexError):
+            self.message = 'Student not found'
 
     def show_menu(self):
         menu_items = {
