@@ -116,8 +116,13 @@ You can `clone` or `fork` the repository and review the course contents, example
     - Total
 
 11. **[Python Package Management](course/c11_pip/)**
-	- [Introduction to Symantic Versioning](course/c11_pip/c0101%20symver.md)
-	- [PIP and its usage](course/c11_pip/c0102%20pip.md)
+	- [Introduction to Symantic Versioning](course/c11_pip/c1101%20symver.md)
+	- [PIP and its usage](course/c11_pip/c1102%20pip.md)
+
+12. **[Virtual Environments](course/c12_virtual_environment/)**
+	- [Introduction to virtual enviromnemts](course/c12_virtual_environment/c1201%20virtual%20environment%20intro.md)
+	- [VENV and its usage](course/c12_virtual_environment/c1202%20venv.md)
+	- [PIPENV and its usage](course/c12_virtual_environment/c1203%20pipenv.md)
 
 ## Folder Structure
 The repository has its folder structure as shown in example below:
