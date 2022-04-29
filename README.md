@@ -115,9 +115,9 @@ You can `clone` or `fork` the repository and review the course contents, example
     - User Defined Exceptions
     - Total
 
-11. **[Python Package Management](course/c01_pip/)**
-	- [Introduction to Symantic Versioning](course/c01_pip/c0101%20symver.md)
-	- [PIP and its usage](course/c01_pip/c0102%20pip.md)
+11. **[Python Package Management](course/c11_pip/)**
+	- [Introduction to Symantic Versioning](course/c11_pip/c0101%20symver.md)
+	- [PIP and its usage](course/c11_pip/c0102%20pip.md)
 
 ## Folder Structure
 The repository has its folder structure as shown in example below:
