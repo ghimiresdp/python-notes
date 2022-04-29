@@ -1,114 +1,123 @@
 # Python Level 1 Course
 
-> A repository for Python Level 1 course, content, and lab exercises.
+**_A repository for Python course notes, examples, and lab exercises._**
 
 This course is specifically designed for my students who are learning basic level python course.
 
 You can `clone` or `fork` the repository and review the course contents, examples, and attend exercises.
 
+## Course Difficulty Level:
+
+- **Chapter 1 - 10**: Easy
+- **Chapter 11 - 20**: Medium
+
 ## Course Contents _(Links will be updated accordingly)_
 
-### Chapter 1. [**Fundamentals of Python**](course/c01_basics/)
-- [Introduction to Python](course/c01_basics/Chapter%201%20Basics.md)
-- [Python Environment Setup, IDE Setup](course/c01_basics/Chapter%201%20Basics.md#installing-python)
-- [Hello World in Python](course/c01_basics/Chapter%201%20Basics.md#hello-world-with-idle)
-- [Running Python Programs](course/c01_basics/Chapter%201%20Basics.md#creating-editing-and-running-python-files)
-- comments and documentation
-    - Single Line Comments
-    - inline Comments
-    - Multiline Comments
-    - Docstrings
-- indentation
-- [Chapter 1 Quiz](course/c01_basics/quiz/README.md)
+1. **[Fundamentals of Python](course/c01_basics/)**
+   - [Introduction to Python](course/c01_basics/Chapter%201%20Basics.md)
+   - [Python Environment Setup, IDE Setup](course/c01_basics/Chapter%201%20Basics.md#installing-python)
+   - [Hello World in Python](course/c01_basics/Chapter%201%20Basics.md#hello-world-with-idle)
+   - [Running Python Programs](course/c01_basics/Chapter%201%20Basics.md#creating-editing-and-running-python-files)
+   - comments and documentation
+       - Single Line Comments
+       - inline Comments
+       - Multiline Comments
+       - Docstrings
+   - indentation
+   - [Chapter 1 Quiz](course/c01_basics/quiz/README.md)
 
-### Chapter 2. [Data Types and variables](course/c02_data_types/)
- - [Variables](course/c02_data_types/Chapter%202.1%20Variables.md)
- - [Numeric Data Types](course/c02_data_types/Chapter%202.2%20Numeric%20Data%20Types.md)
- - [Strings](course/c02_data_types/Chapter%202.3%20Strings.md)
- - [String Formatting](course/c02_data_types/chapter%202.4%20string%20formatting.md)
- - Lists
- - Tuples
- - Sets
- - Dictionary
- - Type Hinting in Python (only for python 3.6 and later)
- - Type conversion
+2. **[Data Types and variables](course/c02_data_types/)**
+    - [Variables](course/c02_data_types/Chapter%202.1%20Variables.md)
+    - [Numeric Data Types](course/c02_data_types/Chapter%202.2%20Numeric%20Data%20Types.md)
+    - [Strings](course/c02_data_types/Chapter%202.3%20Strings.md)
+    - [String Formatting](course/c02_data_types/chapter%202.4%20string%20formatting.md)
+    - Lists
+    - Tuples
+    - Sets
+    - Dictionary
+    - Type Hinting in Python (only for python 3.6 and later)
+    - Type conversion
 
-### Chapter 3. [Basic Operations](course/c03_operations/)
- - Arithmetic Operations
- - Assignment Operations (single, multiple)
- - Relational Operations
- - Logical Operations
- - Bitwise Operations
- - Membership Operations
- - Identity Operations
- - Advanced Mathematical functions and constants
+3. **[Basic Operations](course/c03_operations/)**
+    - Arithmetic Operations
+    - Assignment Operations (single, multiple)
+    - Relational Operations
+    - Logical Operations
+    - Bitwise Operations
+    - Membership Operations
+    - Identity Operations
+    - Advanced Mathematical functions and constants
 
-### Chapter 4. [Decision Making](course/c04_decision_making/)
- - if statement
- - if else statement
- - if elif else statement
+4. **[Decision Making](course/c04_decision_making/)**
+    - if statement
+    - if else statement
+    - if elif else statement
 
-### Chapter 5. [Loops](course/c05_loops/)
- - For Loop
- - While Loop
- - Nested Loop
- - `break`, `continue`, and `pass` statements
+5. **[Loops](course/c05_loops/)**
+    - For Loop
+    - While Loop
+    - Nested Loop
+    - `break`, `continue`, and `pass` statements
 
-### Chapter 6. [Functions](course/c06_functions/)
- - Defining a function
- - Calling a function
- - the `return` statement
- - the `pass` statement
- - Local Variables and Global variables
- - required vs default arguments
- - arguments and keyword arguments
- - function with variable length arguments
- - Anonymous or Lambda functions
+6. **[Functions](course/c06_functions/)**
+    - Defining a function
+    - Calling a function
+    - the `return` statement
+    - the `pass` statement
+    - Local Variables and Global variables
+    - required vs default arguments
+    - arguments and keyword arguments
+    - function with variable length arguments
+    - Anonymous or Lambda functions
 
-### Chapter 7. [Classes](course/c07_oop/)
- - Introduction to **Object Oriented Programming**
- - Class
- - Class Variable and instance variable
- - Methods,  Functions vs Methods
- - the `__init__()` method and the `self` parameter
- - built-in class attributes
- - Object
- - Encapsulation in python [ `_` , `__` in identifier]
- - getters and setters
- - Overrides
- - Operator Overloading
- - class methods and static methods
- - inheritance
-   - Parent Class
-   - Child Class
-   - `super()` function
-   - Mixins
+7. **[Classes](course/c07_oop/)**
+    - Introduction to **Object Oriented Programming**
+    - Class
+    - Class Variable and instance variable
+    - Methods,  Functions vs Methods
+    - the `__init__()` method and the `self` parameter
+    - built-in class attributes
+    - Object
+    - Encapsulation in python [ `_` , `__` in identifier]
+    - getters and setters
+    - Overrides
+    - Operator Overloading
+    - class methods and static methods
+    - inheritance
+      - Parent Class
+      - Child Class
+      - `super()` function
+      - Mixins
 
-### Chapter 8. [Python Modules and packages](course/c08_modules_packages/)
- - Introduction to modular programming
- - `__init__.py` file
- - An example of modular python program | importing the module
- - from keyword
- - `datetime` module
- - `random` module
- - `json` module
+8. **[Python Modules and packages](course/c08_modules_packages/)**
+    - Introduction to modular programming
+    - `__init__.py` file
+    - An example of modular python program | importing the module
+    - from keyword
+    - `datetime` module
+    - `random` module
+    - `json` module
 
-### Chapter 9. [File I/O](course/c09_file/)
-- `open()` function
-- `close()` method
-- `write()` method
-- `read()` method
-- `with` keyword
+9. **[File I/O](course/c09_file/)**
+   - `open()` function
+   - `close()` method
+   - `write()` method
+   - `read()` method
+   - `with` keyword
 
-### Chapter 10. [Exceptions and Exception Handling](course/c10_exceptions/)
-- Introduction to Exceptions in Python
-- Standard Errors
-- `try`, `except` keyword
-- `try` `except` `else`
-- `finally` keyword
-- `raise` keyword
-- User Defined Exceptions
-- Total
+10. **[Exceptions and Exception Handling](course/c10_exceptions/)**
+    - Introduction to Exceptions in Python
+    - Standard Errors
+    - `try`, `except` keyword
+    - `try` `except` `else`
+    - `finally` keyword
+    - `raise` keyword
+    - User Defined Exceptions
+    - Total
+
+11. **[Python Package Management](course/c01_pip/)**
+	- [Introduction to Symantic Versioning](course/c01_pip/c0101%20symver.md)
+	- [PIP and its usage](course/c01_pip/c0102%20pip.md)
 
 ## Folder Structure
 The repository has its folder structure as shown in example below:
