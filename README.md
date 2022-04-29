@@ -130,6 +130,8 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [`filter()` function](course/c13_advanced_functions/chapter%2013.3%20filter.md)
     - [`map()` function]()
 
+14. **[Regular Expressions (REGEX)](course/c14_regex/)
+
 
 ## Folder Structure
 The repository has its folder structure as shown in example below:
