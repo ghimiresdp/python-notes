@@ -2,7 +2,7 @@
 - **URL**: https://www.sudipghimire.com.np
 - **Github**: https://github.com/ghimiresdp
 
-# Dependency management in Python
+# 11.2. Dependency management in Python
 
 There are various dependency management tools available in python. some of them are `pip`, `conda`, `poetry`, etc. `pip` comes by default with python and is used as the default package manager by majority of developers and companies while `conda` is popular among data scientists with little exposure in software development.
 

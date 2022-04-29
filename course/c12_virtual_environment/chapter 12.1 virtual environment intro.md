@@ -2,7 +2,7 @@
 - **URL**: https://www.sudipghimire.com.np
 - **Github**: https://github.com/ghimiresdp
 
-# Introduction to Virtual environments
+# 12.1. Introduction to Virtual environments
 
 Let us consider that we have to work simultaneously on 2 different projects with different package dependencies as follows
 

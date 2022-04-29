@@ -2,10 +2,10 @@
 - **URL**: https://www.sudipghimire.com.np
 - **Github**: https://github.com/ghimiresdp
 
-# `venv` and its usage
+# 12.2. `venv` and its usage
 ref: https://docs.python.org/3/library/venv.html
 
-The venv module provides support for creating lightweight “virtual environments” with their own site directories, optionally isolated from system site directories
+The venv module provides support for creating lightweight “virtual environments” with their own site directories, optionally isolated from system site directories.
 
 ## Installing `venv` in our system:
 If We're using windows&reg;OS, the package `venv` is installed along with python with newer versions

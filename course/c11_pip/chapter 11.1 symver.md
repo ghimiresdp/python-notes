@@ -2,7 +2,7 @@
 - **URL**: https://www.sudipghimire.com.np
 - **Github**: https://github.com/ghimiresdp
 
-# Symantic Versioning system
+# 11.1. Symantic Versioning system
 
 Ref: https://semver.org/
 
