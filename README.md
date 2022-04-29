@@ -124,6 +124,13 @@ You can `clone` or `fork` the repository and review the course contents, example
 	- [VENV and its usage](course/c12_virtual_environment/c1202%20venv.md)
 	- [PIPENV and its usage](course/c12_virtual_environment/c1203%20pipenv.md)
 
+13. **[Python Advanced Functions](course/c13_advanced_functions/)**
+    - [`groupby()` function](course/c13_advanced_functions/chapter%2013.1%20groupby.md)
+    - [`sorted()` function](course/c13_advanced_functions/chapter%2013.2%20sorted.md)
+    - [`filter()` function](course/c13_advanced_functions/chapter%2013.3%20filter.md)
+    - [`map()` function]()
+
+
 ## Folder Structure
 The repository has its folder structure as shown in example below:
 ```
