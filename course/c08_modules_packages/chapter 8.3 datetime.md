@@ -15,9 +15,10 @@
   - [Datetime Operations](#datetime-operations)
     - [Adding `timedelta` to the`datetime` instance.](#adding-timedelta-to-thedatetime-instance)
     - [Subtracting two `datetime` instances](#subtracting-two-datetime-instances)
-  - [Parsing and formatting the datetime](#parsing-and-formatting-the-datetime)
-    - [The `strftime()` method](#the-strftime-method)
-    - [The `strptime()` method](#the-strptime-method)
+  - [Parsing and formatting datetime strings](#parsing-and-formatting-datetime-strings)
+    - [Parsing a datetime string](#parsing-a-datetime-string)
+    - [Formatting a datetime string](#formatting-a-datetime-string)
+    - [Some useful datetime formatting codes:](#some-useful-datetime-formatting-codes)
 
 # `Datetime` Module
 
@@ -148,22 +149,46 @@ diff_2 = datetime_1 - datetime_2	# 76 days, 16:45:29
 **Note**: _Subtracting two `date` or `datetime` instances always give `timedelta` instance._
 
 
-## Parsing and formatting the datetime
-- We can parse the date from the string with the `strptime()` method and format the date string with the `strftime()` method.
+## Parsing and formatting datetime strings
+### Parsing a datetime string
 
-### The `strftime()` method
-The `strftime()` method takes format string and returns the formatted date string.
-```python
-today = date.today()
-print(today.strftime("%b %d, %Y"))   # Mar 10, 2022
-```
-
-### The `strptime()` method
-the `strptime()` method takes 2 parameters `datetime string` and the format string to parse the datetime. It returns the `datetime` object.
+We can parse a datetime string by using `datetime.strptime()` method. the `strptime()` method takes 2 arguments
+`date_string`
+and `format` to parse the string.
 
 ```python
-date_str = "2000/12/31"
-date_time = datetime.strptime(date_str, "%Y/%m/%d")
+from datetime import datetime
+
+datetime = datetime.strptime('1999/12/31', '%Y/%m/%d')  # 1999-12-31 00:00:00
 ```
 
-Please refer to https://docs.python.org/3/library/datetime.html for more information about the datetime module and their operations.
+### Formatting a datetime string
+
+We can format a `date` or `datetime` instance to a datetime string by using `datetime.strftime()` method.
+
+```python
+from datetime import date, datetime
+
+d1 = date(1999, 12, 31)
+d_str = d1.strftime('%Y/%m/%d')  # 1999/12/31
+d_str2 = d1.strftime('%b %d, %Y')  # Dec 31, 1999
+
+dt1 = datetime(1999, 12, 31, 23, 59, 30)
+dt_str = dt1.strftime('%Y/%m/%d, %HH:%MM:%SS')  # 1999/12/31, 23H:59M:30S
+```
+
+### Some useful datetime formatting codes:
+
+- `%a`: Weekday abbreviated name (`Sun`, `Mon`, ..., `Sat`)
+- `%A`: Weekday full name (`Sunday`, `Monday`, ..., `Saturday`)
+- `%d`: Day of the month (`01`, `02`, ..., `31`)
+- `%b`: Month abbreviated name (`Jan`, `Feb`, ..., `Dec`)
+- `%B`: Month full name (`January`, `February`, ..., `December`)
+- `%m`: Month as number (`01`, `02`, ..., `12`)
+- `%Y`: Year with Century (`1999`, `2000`, ...)
+- `%H`: 24-Hour Clock (`00`, `01`, ..., `23`)
+- `%M`: Minutes (`00`, `01`, ..., `59`)
+- `%S`: Seconds (`00`, `01`, ..., `59`)
+
+For more formatting options, we can check
+out [https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes).
