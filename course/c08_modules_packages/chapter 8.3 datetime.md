@@ -5,15 +5,19 @@
 **Table of Contents**
 - [`Datetime` Module](#datetime-module)
   - [`datetime` Constants](#datetime-constants)
-- [Initializing the `date` class](#initializing-the-date-class)
-- [initializing the `datetime` class](#initializing-the-datetime-class)
-- [Initializing the `timedelta` class](#initializing-the-timedelta-class)
-- [datetime operations](#datetime-operations)
-  - [addition](#addition)
-  - [Subtraction](#subtraction)
-- [Parsing and formatting the datetime](#parsing-and-formatting-the-datetime)
-  - [The `strftime()` method](#the-strftime-method)
-  - [The `strptime()` method](#the-strptime-method)
+  - [`datetime` Data types](#datetime-data-types)
+    - [1. class `datetime.date`](#1-class-datetimedate)
+    - [2. class `datetime.time`](#2-class-datetimetime)
+    - [3. class `datetime.datetime`](#3-class-datetimedatetime)
+    - [4. class `datetime.timedelta`](#4-class-datetimetimedelta)
+    - [5. class `datetime.tzinfo`](#5-class-datetimetzinfo)
+    - [6. class `datetime.timezone`](#6-class-datetimetimezone)
+  - [Datetime Operations](#datetime-operations)
+    - [Adding `timedelta` to the`datetime` instance.](#adding-timedelta-to-thedatetime-instance)
+    - [Subtracting two `datetime` instances](#subtracting-two-datetime-instances)
+  - [Parsing and formatting the datetime](#parsing-and-formatting-the-datetime)
+    - [The `strftime()` method](#the-strftime-method)
+    - [The `strptime()` method](#the-strptime-method)
 
 # `Datetime` Module
 
@@ -31,82 +35,130 @@ The  `datetime` module exports following constants.
 - `datetime.MAXYEAR`: 9999
 
 
-# Initializing the `date` class
+## `datetime` Data types
 
-- We can initialize the `date` class by arguments in order `year`, `month`, and `day`.
-- We can also initialize the class by named argument in any order.
+The `datetime` module exports following data types:
 
+### 1. class `datetime.date`
+
+The `datetime.date` class can create a `date` object that accepts 3 parameters, i.e. `year`, `month`, and `day` as
+numbers to instantiate the `date` object.
+
+**initializing `date` object**
 ```python
 from datetime import date
 
-date_1 = date(1999, 12,31)
-date_2 = date(day=20, month=10, year=1990)
-
-date_3 = date.today()   # it gives the current system date
+date_1 = date(1999, 12, 31)  # 1999-12-31
+date_2 = date(year=1999, month=12, day=31)
 ```
 
-# initializing the `datetime` class
-- We can initialize the `datetime` class by arguments in order `year`, `month`, `day`, `hour`, `minute`, `second`, `microsecond`, `tzinfo` where `year`, `month` and `day` are required.
-- We can also initialize the class by named argument in any order.
+### 2. class `datetime.time`
+The `datetime.time` class accepts `hour`, `minute`, `second`, `microsecond`, `tzinfo` (optional) parameters that has
+default values of 0. the `datetime.time` class creates `time` object.
 
+**initializing `time` object**
+
+```python
+from datetime import time
+
+time1 = time(hour=5)    # 05:00:00
+time2 = time(hour=5, minute=50) # 05:50:00
+time3 = time(hour=5, minute=50, second=30)  # 05:50:30
+time4 = time(hour=5, minute=50, second=30, microsecond=100)  # 05:50:30.000100
+```
+
+### 3. class `datetime.datetime`
+The class `datetime.datetime` is a combination of `datetime.date` and `datetime.time` classes. It can accept all
+attributes of both `date`, and `time` objects. the parameters of `datetime` class are as follows:
+
+`datetime(year, month, day[, hour[, minute[, second[, microsecond[,tzinfo]]]]])`
+
+The `year`, `month` and `day` arguments are required. `tzinfo` may be None, or an instance of a tzinfo subclass. The remaining
+arguments may be ints and has default value `0`.
+
+**initializing `datetime` object**
 ```python
 from datetime import datetime
 
-time_1 = datetime(1999, 12, 31, 23, 59, 59, 999999)
-time_2 = datetime(year=1990, month=1, day=31, hour=23, minute=58, second=59, microsecond=999900)
-
-time_3 = datetime.now() # it gives the current system date and time
-
+datetime_1 = datetime(1999, 12,31, 23,59,59, 100)   # 1999-12-31 23:59:59.000100
 ```
 
-# Initializing the `timedelta` class
+### 4. class `datetime.timedelta`
+A `datetime.timedelta` class is a duration of time that expresses the difference between two `date`, `time`, or
+`datetime` instances to microsecond resolution
 
-- `timedelta` class is the class that is used to store the amount of time rather than current or previous time.
-- example of `timedelta` is 10 minutes, or 1 year
-- we can initialize the `timedelta` class by providine any or all of the named arguments `days`, `seconds`, `microseconds`, `milliseconds`, `minutes`, `hours` and `weeks`.
-
+**initializing the `timedelta` object
 ```python
 from datetime import timedelta
 
-# the value is 5 minutes and 30 seconds
-td_1 = timedelta(minutes = 5, seconds=30)
+d1 = timedelta(hours= 10)
+d2 = timedelta(days=30, hours=20, minutes=50, seconds=30)   # 30 days, 20:50:30
 ```
 
+### 5. class `datetime.tzinfo`
+`tzinfo` is an abstract base class for time zone information objects. these are used by the datetime and time class to
+provide ta customizable notion of time adjustment.
 
-# datetime operations
 
-## addition
-We can add `timedelta` to a `date` or `time` or `datetime` or a `timedelta` instance but adding two `datetime` or `date` instances is not allwoed.
+### 6. class `datetime.timezone`
+ `timezone` class is a class that implements `tzinfo` abstract base class that has a fixed offset from the UTC.
 
 ```python
-date_next_week = date.today() + timedelta(days=7)
-
-time_next_hr = datetime.now() + timedelta(hours=1)
-
+from datetime import timezone, timedelta
+tz1 = timezone(offset=timedelta(hours=5, minutes=45))
 ```
 
-## Subtraction
-We can subtract two `date` or `datetime` instances to get the difference as `timedelta` object.
+
+
+## Datetime Operations
+
+### Adding `timedelta` to the`datetime` instance.
+
+We can add `timedelta` value to `date` or `datetime` instance to get the new `date` or `datetime`.
 
 ```python
-today = date.today()
-new_year = date(2022, 1, 1)
+from datetime import date, datetime, timedelta
 
-difference = today - new_year   # the difference is timedelta instance
+date_1 = date(1999, 12, 31)
+date_2 = date_1 + timedelta(days=5)  # 2000-01-05
 
+datetime_1 = datetime(1999, 12, 31, 12, 30, 50)
+
+datetime_2 = datetime_1 + timedelta(days=5, hours=10)  # 2000-01-05 22:30:50
 ```
 
-# Parsing and formatting the datetime
+**Note**: _we cannot add two `date` or `datetime` instances to get a new `date` or `datetime` instance._
+
+### Subtracting two `datetime` instances
+
+We can subtract one `date` or `datetime` instance from another `date` or `datetime` instance to get the time difference
+as `timedelta` instance.
+
+```python
+from datetime import date, datetime
+date_1 = date(1999, 12, 31)
+date_2 = date(1999, 10, 15)
+diff_1 = date_1 - date_2	# 77 days, 0:00:00
+
+datetime_1 = datetime(1999, 12, 31, 12, 30, 50)
+datetime_2 = datetime(1999, 10, 15, 19, 45, 21)
+diff_2 = datetime_1 - datetime_2	# 76 days, 16:45:29
+```
+
+**Note**: _Subtracting two `date` or `datetime` instances always give `timedelta` instance._
+
+
+## Parsing and formatting the datetime
 - We can parse the date from the string with the `strptime()` method and format the date string with the `strftime()` method.
 
-## The `strftime()` method
+### The `strftime()` method
 The `strftime()` method takes format string and returns the formatted date string.
 ```python
 today = date.today()
 print(today.strftime("%b %d, %Y"))   # Mar 10, 2022
 ```
 
-## The `strptime()` method
+### The `strptime()` method
 the `strptime()` method takes 2 parameters `datetime string` and the format string to parse the datetime. It returns the `datetime` object.
 
 ```python
