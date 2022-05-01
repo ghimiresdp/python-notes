@@ -26,16 +26,18 @@ There are various special characters in regex which are listed as follows:
 
 Regular expression escape sequences not only escapes regular characters but special characters too.
 for example if we want to include a character `*` in regular expression, it has it's own meaning which means it needs to be escaped. by writing `\*`
+ |   SN | Symbol | Description                                                                            |
+ | ---: | ------ | -------------------------------------------------------------------------------------- |
+ |    1 | `\A`   | Matches only at the start of the string                                                |
+ |    2 | `\b`   | Matches the empty string but only ar the beginning or the end of the string.           |
+ |    3 | `B`    | Matches the empty string but only when it is not at the beginning or the end of a word |
+ |    4 | `\d`   | Matches a number from 0-9                                                              |
+ |    5 | `\D`   | Matches a character except a number from 0-9                                           |
+ |    6 | `\s`   | Matches white space character such as space or tab                                     |
+ |    7 | `\S`   | Matches a character except white space characters                                      |
+ |    8 | `\w`   | Matches a character that contains alphanumeric character or `_` character              |
+ |    9 | `\W`   | Matches any character except alphanumeric or `_` character                             |
+ |   10 | `\Z`   | Matches only at the end of the string                                                  |
 
-`\A` Matches only at the start of the string
-`\b` Matches the empty string but only ar the beginning or the end of the string.
-`B` Matches the empty string but only when it is not at the beginning or the end of a word
-`\d` Matches a number from 0-9
-`\D` Matches a character except a number from 0-9
-`\s` Matches white space character such as space or tab
-`\S` Matches a character except white space characters
-`\w` Matches a character that contains alphanumeric character or `_` character
-`\W` Matches any character except alphanumeric or `_` character
-`\Z` Matches only at the end of the string
 
 
