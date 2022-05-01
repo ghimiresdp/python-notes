@@ -131,6 +131,9 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [`map()` function]()
 
 14. **[Regular Expressions (REGEX)](course/c14_regex/)
+    - [Introduction to regular expressions](course/c14_regex/chapter%2014.1%20regular%20expressions.md)
+    - [REGEX special characters](course/c14_regex/chapter%2014.2%20regex%20special%20characters.md)
+    - [The `re` module](course/c14_regex/chapter%2014.3%20the%20re%20module)
 
 
 ## Folder Structure
