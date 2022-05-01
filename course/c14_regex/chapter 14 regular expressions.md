@@ -57,3 +57,12 @@ print(re.findall(r'J\w*n', str_1))
 
 # ['John', 'Jan', 'Jenn', 'Joan', 'Jon']
 ```
+
+
+In above examples, we can see ordinary characters like `J`, `n`, etc. and special characters like `.`, `\`, `[ ]`, etc. A combination of those characters creates a regular expression.
+
+For Example
+
+- `"Ap+le"` matches  words `Aple`, `Apple`, `Appple`, etc.
+- `"b..k"` matches  words `book`, `beak`, `b ok`, etc.
+
