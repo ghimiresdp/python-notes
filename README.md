@@ -135,6 +135,12 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [REGEX special characters](course/c14_regex/chapter%2014.2%20regex%20special%20characters.md)
     - [The `re` module](course/c14_regex/chapter%2014.3%20the%20re%20module)
 
+15. [**Advanced Data Structures**](course/c15_data_structures/)
+16. [**Decorators**](course/c16_decorators/)
+17. [**Mixins**](course/c17_mixins/)
+18. [**`http` module**](course/c18_python_http/)
+19. [**`requests` library**](course/c19_requests/)
+20. [**Advanced Type hinting**](course/c20_advanced_type_hinting/)
 
 ## Folder Structure
 The repository has its folder structure as shown in example below:
