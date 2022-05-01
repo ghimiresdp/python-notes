@@ -1,4 +1,13 @@
-# REGEX Special characters in Regex
+- **created by**: Sudip Ghimire
+- **URL**: https://www.sudipghimire.com.np
+- **Github**: https://github.com/ghimiresdp
+
+**Table of Contents**
+- [14.2. REGEX Special characters in Regex](#142-regex-special-characters-in-regex)
+  - [Special Characters](#special-characters)
+  - [Escape Sequences in a regular expression](#escape-sequences-in-a-regular-expression)
+  - [Set of characters in regex](#set-of-characters-in-regex)
+# 14.2. REGEX Special characters in Regex
 
 There are various special characters in regex which are listed as follows:
 
@@ -39,5 +48,6 @@ for example if we want to include a character `*` in regular expression, it has 
  |    9 | `\W`   | Matches any character except alphanumeric or `_` character                             |
  |   10 | `\Z`   | Matches only at the end of the string                                                  |
 
+## Set of characters in regex
 
 
