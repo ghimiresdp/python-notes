@@ -2,30 +2,34 @@
 - **URL**: https://www.sudipghimire.com.np
 - **Github**: https://github.com/ghimiresdp
 
-# `Datetime` Library
+**Table of Contents**
+- [`Datetime` Module](#datetime-module)
+  - [`datetime` Constants](#datetime-constants)
+- [Initializing the `date` class](#initializing-the-date-class)
+- [initializing the `datetime` class](#initializing-the-datetime-class)
+- [Initializing the `timedelta` class](#initializing-the-timedelta-class)
+- [datetime operations](#datetime-operations)
+  - [addition](#addition)
+  - [Subtraction](#subtraction)
+- [Parsing and formatting the datetime](#parsing-and-formatting-the-datetime)
+  - [The `strftime()` method](#the-strftime-method)
+  - [The `strptime()` method](#the-strptime-method)
+
+# `Datetime` Module
 
 Reference: https://docs.python.org/3/library/datetime.html
 
 
-A datetime library is the python standard library that supplies classes for manipulating dates and times.
+The `datetime` module supplies different classes for manipulating date and time instances. We can perform different
+mathematical operations
 
-Basic classes that are used in daily life:
+## `datetime` Constants
 
-- `datetime.date`
-- `datetime.time`
-- `datetime.datetime`
-- `datetime.timedelta`
+The  `datetime` module exports following constants.
 
-## Importing package and components
+- `datetime.MINYEAR`: 1
+- `datetime.MAXYEAR`: 9999
 
-
-```python
-# importing the whole package
-import datetime
-
-# importing individual components
-from datetime import date, datetime, timedelta
-```
 
 # Initializing the `date` class
 
