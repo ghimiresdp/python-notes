@@ -50,4 +50,27 @@ for example if we want to include a character `*` in regular expression, it has 
 
 ## Set of characters in regex
 
+A set of characters in regex are denoted inside a pair of square brackets [].
+Unlike special characters in regular regex, special characters (such as `*`, `+`, etc) inside
+large brackets has no meaning.
 
+**some of the regex set matches are as follows:**
+
+|   SN | Symbol        | Description                                                                         |
+| ---: | ------------- | ----------------------------------------------------------------------------------- |
+|    1 | `[abc]`       | matches either of `a`, `b` or `c`.                                                  |
+|    2 | `[a-m]`       | matches either of character from `a` to `m`                                         |
+|    3 | `[a-m0-5]`    | matches either of character from `a` to `m` followed by number from `0` to `5`      |
+|    4 | `[0-9A-Fa-f]` | matches any hexadecimal character from `0-9` and `a-f` or `A-F`                     |
+|    5 | `[^abc]`      | matches either of character except `abc`                                            |
+|    6 | `[0123]`      | matches either of `0`, `1`, `2`, or `3`                                             |
+|    7 | `[ab][12]`    | matches either of `a1`, `a2`, `b1`, or `b2`                                         |
+|    8 | `[+*]`        | matches either of `+` or  `*` characters (but no matches for number of occurrences) |
+
+
+We can also find the number of occurrences of set of characters by specifying `*`, `+` or `?` after brackets.
+
+**For Example:**
+
+- `[0-9A-Fa-f]+` matches any number of occurrences that matches `[0-9A-Fa-f]`. Example: `0`, `1`, `1A`, `ff0c`, etc.
+- `[\d]{4}` matches exactly 4 numeric characters from the string.
