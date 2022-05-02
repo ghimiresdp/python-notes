@@ -63,6 +63,29 @@ None
 """
 ```
 
+**Example 2**: compile a regular expression that can match hexadecimal strings:
+```py
+import re
+
+strings = ["0xaa", 'FA04', 'Ak45','As40', '0x5h', '0x56']
+
+pat = re.compile(r'^(0x)?[0-9A-Fa-f]+$')
+
+for st in strings:
+    print(pat.match(st))
+
+# output
+"""
+<re.Match object; span=(0, 4), match='0xaa'>
+<re.Match object; span=(0, 4), match='FA04'>
+None
+None
+None
+<re.Match object; span=(0, 4), match='0x56'>
+"""
+```
+Explanation: Here the pattern looks for optional `0x` character which can be represented to display hexadecimal digit. and the pattern should contain at least 1 digit from 0-9 or a-f in any case.
+
 ## `re.search()` function
 ## `re.match()` function
 ## `re.findall()` function
