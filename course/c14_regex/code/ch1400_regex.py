@@ -1,6 +1,17 @@
 import re
 
-str_1 = 'John, Jane, Jennifer, Joan, Jon, Adam, Eve'
+# compile
+countries = ['USA', 'Japan', 'Angola', 'China', 'Algeria', 'Nepal', 'Argentina', 'Albania']
+
+# a word that starts with A and ends with a
+pattern = re.compile(r'^A\w*a$')
+
+for country in countries:
+    print(pattern.match(country))
 
 
-print(re.findall(r'J\w*n', str_1))
+# findall
+countries = 'USA, Japan, Angola, China, Algeria, Nepal, Argentina, Albania'
+
+pattern = re.compile(r'A\w*a')
+print(pattern.findall(countries))
