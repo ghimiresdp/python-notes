@@ -10,8 +10,17 @@ for country in countries:
     print(pattern.match(country))
 
 
-# findall
-countries = 'USA, Japan, Angola, China, Algeria, Nepal, Argentina, Albania'
+# compile example 2
 
-pattern = re.compile(r'A\w*a')
-print(pattern.findall(countries))
+strings = ["0xaa", 'FA04', 'Ak45','As40', '0x5h', '0x56']
+
+pat = re.compile(r'^(0x)?[0-9A-Fa-f]+$')
+
+for st in strings:
+    print(pat.match(st))
+
+# # findall
+# countries = 'USA, Japan, Angola, China, Algeria, Nepal, Argentina, Albania'
+
+# pattern = re.compile(r'A\w*a')
+# print(pattern.findall(countries))
