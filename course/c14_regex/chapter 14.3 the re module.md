@@ -26,9 +26,15 @@ The `re` module contains several functions that helps finding out, compiling and
 
 ## `re.compile()` function
 
-The `re.compile()` function compiles the regular expression from the regular string. takes 2 arguments:
+The `re.compile()` function compiles the regular expression from the regular string to a regular expression object. It takes 2 arguments:
 - `pattern`: a regular expression as a string
 - `flags`: a value that can be specified to modify default behavior. _defaults to 0_
+  Some example of flags are as follows:
+    - `re.A` or `re.ASCII`: Matches only ASCII matching instead of unicode matching.
+    - `re.I` or `re.IGNORECASE`: Expressions like `[A-Z]` also matches lowercase when this flag is specified
+    - `re.M` or `re.MULTILINE`: The pattern character `^` also matches the beginning of each line.
+    - `re.X` or `re.VERBOSE`: This flag allows us to write regex in a more readable way
+    - `re.DEBUG`: Displays debug information
 - The function returns a `re.Pattern` object which can then be used to match, search, or find all occurrences with that pattern.
 
 **Example**: A regular expression that extracts the name of a country that starts with A and ends with a
@@ -87,6 +93,7 @@ None
 Explanation: Here the pattern looks for optional `0x` character which can be represented to display hexadecimal digit. and the pattern should contain at least 1 digit from 0-9 or a-f in any case.
 
 ## `re.search()` function
+
 ## `re.match()` function
 ## `re.findall()` function
 ## `re.split()` function
