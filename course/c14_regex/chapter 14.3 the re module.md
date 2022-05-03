@@ -115,6 +115,27 @@ print(results)
 ```
 
 ## `re.match()` function
+If zero or more characters at the beginning of the string match the regular expression pattern, it returns a corresponding match object.
+It returns`None` if there is no match for the regex. The `re.match()` function takes 3 parameters which are as follows:
+
+- _pattern_: the regex pattern
+- _string_: the string in which we try to find the match
+- _flag_: the flag to change the default behavior of the regex. ([similar to `re.compile()` function](#recompile-function))
+
+**Example 4**: Match if the first word contains a letter `e` in the second position.
+```py
+import re
+
+text = 'Dear sir'
+print(re.match(r'[a-z]e\w+', text, re.I))
+"""
+# output
+<re.Match object; span=(0, 4), match='Dear'>
+"""
+```
+
+**Note**: _It does not return any matches if it can't match at the beginning of the string. If we want to locate a match anywhere in the string then we can use [the `re.search()` function](#research-function) instead._
+
 ## `re.findall()` function
 ## `re.split()` function
 ## `re.sub()` function
