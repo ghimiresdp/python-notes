@@ -42,3 +42,8 @@ print(re.findall(r'A[a-z]+a', countries))
 
 ['Angola', 'Algeria', 'Argentina', 'Albania']
 """
+
+
+# split
+countries = 'USA, Japan; Angola! China, Algeria% Nepal; Argentina/ Albania'
+print(re.split(r'\W+', countries))
