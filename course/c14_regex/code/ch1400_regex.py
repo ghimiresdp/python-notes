@@ -19,6 +19,15 @@ pat = re.compile(r'^(0x)?[0-9A-Fa-f]+$')
 for st in strings:
     print(pat.match(st))
 
+
+# search()
+text = "Dear sir, I've emailed you last week regarding the assignment. I've also sent you another mail specifying the next assignment."
+
+results = re.search(r'e?mail(ed)?', text)
+print(results)
+
+
+
 # # findall
 # countries = 'USA, Japan, Angola, China, Algeria, Nepal, Argentina, Albania'
 
