@@ -57,8 +57,9 @@ pattern = re.compile(r'^A\w*a$')
 for country in countries:
     print(pattern.match(country))
 
-# Output
 """
+# Output
+
 None
 None
 <re.Match object; span=(0, 6), match='Angola'>
@@ -81,8 +82,9 @@ pat = re.compile(r'^(0x)?[0-9A-Fa-f]+$')
 for st in strings:
     print(pat.match(st))
 
-# output
 """
+# output
+
 <re.Match object; span=(0, 4), match='0xaa'>
 <re.Match object; span=(0, 4), match='FA04'>
 None
@@ -110,10 +112,11 @@ text = "Dear sir, I've emailed you last week regarding the assignment. I've also
 
 results = re.search(r'e?mail(ed)?', text)
 print(results)
-
+"""
 # Output
-# <re.Match object; span=(15, 22), match='emailed'>
 
+<re.Match object; span=(15, 22), match='emailed'>
+"""
 ```
 
 
@@ -174,7 +177,9 @@ import re
 countries = 'USA, Japan; Angola! China, Algeria% Nepal; Argentina/ Albania'
 print(re.split(r'\W+', countries))
 
-"""Output:
+"""
+# Output:
+
 ['USA', ' Japan', ' Angola', ' China', ' Algeria', ' Nepal', ' Argentina', ' Albania']
 """
 ```
@@ -183,3 +188,18 @@ print(re.split(r'\W+', countries))
 ## `re.sub()` function
 **Syntax**: _`re.sub(pattern, repl, string, count=0, flags=0)`_
 
+
+**Example 7**: replace all the random separators by comma from the countries from the above string:
+
+```py
+import re
+
+countries = 'USA, Japan; Angola! China, Algeria% Nepal; Argentina/ Albania'
+print(re.sub(r'\W+', ', ', countries))
+
+"""
+# Output
+
+USA, Japan, Angola, China, Algeria, Nepal, Argentina, Albania
+"""
+```
