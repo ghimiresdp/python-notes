@@ -136,6 +136,24 @@ print(re.match(r'[a-z]e\w+', text, re.I))
 
 **Note**: _It does not return any matches if it can't match at the beginning of the string. If we want to locate a match anywhere in the string then we can use [the `re.search()` function](#research-function) instead._
 
+**Note** _if we want to match the whole string with the regex, then we can use `re.fullmatch()` function instead._
+
 ## `re.findall()` function
+The `re.findall()` function returns all non-overlapping matches of pattern in the string as a list of strings. Matches are scanned rom left to right and are returned in order. If there are no matches, it returns an empty list.
+
+**Example 5**: list out all countries that starts with A and ends with a from a string separated by comma
+```py
+countries = 'USA, Japan, Angola, China, Algeria, Nepal, Argentina, Albania'
+
+print(re.findall(r'A[a-z]+a', countries))
+
+"""
+# Output
+
+['Angola', 'Algeria', 'Argentina', 'Albania']
+"""
+```
+
 ## `re.split()` function
+
 ## `re.sub()` function
