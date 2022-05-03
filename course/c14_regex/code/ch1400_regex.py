@@ -33,7 +33,12 @@ print(re.match(r'[a-z]e\w+', text, re.I))
 """
 
 # # findall
-# countries = 'USA, Japan, Angola, China, Algeria, Nepal, Argentina, Albania'
+countries = 'USA, Japan, Angola, China, Algeria, Nepal, Argentina, Albania'
 
-# pattern = re.compile(r'A\w*a')
-# print(pattern.findall(countries))
+print(re.findall(r'A[a-z]+a', countries))
+
+"""
+# Output
+
+['Angola', 'Algeria', 'Argentina', 'Albania']
+"""
