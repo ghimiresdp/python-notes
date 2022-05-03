@@ -37,7 +37,7 @@ The `re.compile()` function compiles the regular expression from the regular str
     - `re.DEBUG`: Displays debug information
 - The function returns a `re.Pattern` object which can then be used to match, search, or find all occurrences with that pattern.
 
-**Example**: A regular expression that extracts the name of a country that starts with A and ends with a
+**Example 1**: A regular expression that extracts the name of a country that starts with A and ends with a
 ```python
 import re
 countries = ['USA', 'Japan', 'Angola', 'China', 'Algeria', 'Nepal', 'Argentina', 'Albania']
@@ -93,6 +93,26 @@ None
 Explanation: Here the pattern looks for optional `0x` character which can be represented to display hexadecimal digit. and the pattern should contain at least 1 digit from 0-9 or a-f in any case.
 
 ## `re.search()` function
+
+The `re.search()` function starts scanning the string for the first match of the regex and returns a corresponding match object.
+It returns `None` if there is no match throughout the string.
+
+**Note**: _It does not return multiple match objects if the string contains multiple matches._
+
+**Example 3**:search for the pattern which contains _mail_ or _email_.
+
+```py
+import re
+
+text = "Dear sir, I've emailed you last week regarding the assignment. I've also sent you another mail specifying the next assignment."
+
+results = re.search(r'e?mail(ed)?', text)
+print(results)
+
+# Output
+# <re.Match object; span=(15, 22), match='emailed'>
+
+```
 
 ## `re.match()` function
 ## `re.findall()` function
