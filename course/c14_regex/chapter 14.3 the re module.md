@@ -25,6 +25,7 @@ or you can look at the official documentation from https://docs.python.org/3/lib
 The `re` module contains several functions that helps finding out, compiling and matching regular expressions. Some of the functions are as follows:
 
 ## `re.compile()` function
+**Syntax**: _`re.compile(pattern, flags=0)`_
 
 The `re.compile()` function compiles the regular expression from the regular string to a regular expression object. It takes 2 arguments:
 - `pattern`: a regular expression as a string
@@ -93,6 +94,7 @@ None
 Explanation: Here the pattern looks for optional `0x` character which can be represented to display hexadecimal digit. and the pattern should contain at least 1 digit from 0-9 or a-f in any case.
 
 ## `re.search()` function
+**Syntax**: _`re.search(pattern, string, flags=0)`_
 
 The `re.search()` function starts scanning the string for the first match of the regex and returns a corresponding match object.
 It returns `None` if there is no match throughout the string.
@@ -114,7 +116,10 @@ print(results)
 
 ```
 
+
 ## `re.match()` function
+**Syntax**: _`re.match(pattern, string, flags=0)`_
+
 If zero or more characters at the beginning of the string match the regular expression pattern, it returns a corresponding match object.
 It returns`None` if there is no match for the regex. The `re.match()` function takes 3 parameters which are as follows:
 
@@ -138,7 +143,10 @@ print(re.match(r'[a-z]e\w+', text, re.I))
 
 **Note** _if we want to match the whole string with the regex, then we can use `re.fullmatch()` function instead._
 
+
 ## `re.findall()` function
+**Syntax**: _`re.findall(pattern, string, flags=0)`_
+
 The `re.findall()` function returns all non-overlapping matches of pattern in the string as a list of strings. Matches are scanned rom left to right and are returned in order. If there are no matches, it returns an empty list.
 
 **Example 5**: list out all countries that starts with A and ends with a from a string separated by comma
@@ -155,5 +163,23 @@ print(re.findall(r'A[a-z]+a', countries))
 ```
 
 ## `re.split()` function
+**Syntax**: _`re.split(pattern, string, maxsplit=0, flags=0)`_
+
+The `re.split()` function splits the string by the occurrences of pattern. It is similar to `string.split()` method in behavior but with the help of regular expressions, we can even split strings in a powerful way with less code. we can also pass _maxsplit_ to specify maximum number of splits that can be executed by the function if the string is longer one.
+
+**Example 6**: separate all the name of countries separated by any special characters
+```py
+import re
+
+countries = 'USA, Japan; Angola! China, Algeria% Nepal; Argentina/ Albania'
+print(re.split(r'\W+', countries))
+
+"""Output:
+['USA', ' Japan', ' Angola', ' China', ' Algeria', ' Nepal', ' Argentina', ' Albania']
+"""
+```
+
 
 ## `re.sub()` function
+**Syntax**: _`re.sub(pattern, repl, string, count=0, flags=0)`_
+
