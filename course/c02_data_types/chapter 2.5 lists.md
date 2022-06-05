@@ -50,4 +50,29 @@ animals = [
 ]
 ```
 
+## Accessing an item of a list
+we can use index of an item inside a large bracket to access an item from the list. The index of the first item starts at `0` and increases as it moves towards the next item.
 
+For example we have a list as follows:
+
+```py
+animals = ['cat', 'dog', 'tiger']
+```
+
+To access `cat` from the list, we have to write the following statement
+
+```py
+# assigning the value to a new variable
+x = animals[0]
+
+# printing the value of the item
+print(animals[0])
+```
+
+We can also use negative index to access index of the list in reverse order.
+
+For example, If we want to access the last item, we can use the index `-1`. Similarly for second last item, we can use the index `-2`.
+
+```py
+print(animals[-1])  # tiger
+```
