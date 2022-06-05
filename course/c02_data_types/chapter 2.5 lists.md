@@ -76,3 +76,39 @@ For example, If we want to access the last item, we can use the index `-1`. Simi
 ```py
 print(animals[-1])  # tiger
 ```
+
+## Getting the slice of a list
+
+To access the slice of items from the list, we can use start and end of the index inside large brackets separated by a colon `:`. In this case, starting index will be inclusive in the slice whereas ending index will be exclusive.
+
+For example:
+
+```py
+prime = [2, 3, 5, 7, 11, 13, 17, 19]
+
+# Accessing [3, 5, 7]
+slice_1 = prime[1:4]
+```
+
+**Accessing first 5 items from the list:
+
+```py
+slice_2 = prime[0:5]    # this takes out a slice from index 0 to 4
+```
+
+**Note:**: _If we do not provide the starting index, the slice will be taken from the first index and if we do not provide the ending index, the slice will be taken up to the last index of the list._
+
+Example:
+
+```py
+prime = [2, 3, 5, 7, 11, 13, 17, 19]
+
+# The following statement slices the list from first item up to index of 2
+print(prime[:3])    # [2,3,5]
+
+# The following statement slices the list from item of index 5 up to the last.
+print(prime[5:])    # [13, 17, 19]
+
+# The following statement takes all items since starting and ending indices are not provided.
+print(prime[:])  # [2, 3, 5, 7, 11, 13, 17, 19]
+```
