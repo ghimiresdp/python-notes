@@ -63,7 +63,7 @@ example:
 ```python
 PI = 3.1415926535
 
-print(f"The valueo of pi is {PI}.")
+print(f"The value of pi is {PI}.")
 
 print(f"The value of pi is {PI: 5.3f}.")    # formatting the floating point characters
 

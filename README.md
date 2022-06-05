@@ -1,6 +1,6 @@
-# Python Level 1 Course
+# Python Notes
 
-**_A repository for Python course notes, examples, and lab exercises._**
+**_A repository for Python course notes, examples, and lab exercises targeted to my students and interns._**
 
 This course is specifically designed for my students who are learning basic level python course.
 
