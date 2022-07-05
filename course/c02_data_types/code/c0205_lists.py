@@ -59,6 +59,8 @@ print(random_lists[:4])
 # %%
 # length of a list
 print(animals.__len__())
+print(len(animals))
+
 # %%
 # Updating a value of a list
 animals[0] = 'Elephant'
@@ -72,7 +74,7 @@ animals.append("Monkey")
 # adding an item to the specific index
 # the first parameter would be the index
 # the second parameter would be the value
-animals.insert(2, "ion")
+animals.insert(2, "Lion")
 # %%
 # adding multiple items to the list (Extending)
 more_animals = ['Chimpanzee', 'Fox', 'Deer']
