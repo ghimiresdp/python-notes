@@ -14,6 +14,10 @@
         - [The `list.append()` method](#the-listappend-method)
         - [The `list.insert()` method](#the-listinsert-method)
         - [The `list.extend()` method](#the-listextend-method)
+    - [Removing items from the list](#removing-items-from-the-list)
+        - [The `list.pop()` method](#the-listpop-method)
+        - [The `list.remove()` method](#the-listremove-method)
+        - [The `list.clear()` method](#the-listclear-method)
 
 # Chapter 2.5. Lists
 
@@ -214,4 +218,49 @@ more_animals = ['Chimpanzee', 'Fox', 'Deer']
 animals.extend(more_animals)
 print(animals)
 # ['cat', 'dog', 'tiger', 'Chimpanzee', 'Fox', 'Deer']
+```
+
+
+## Removing items from the list
+
+Similar to appending items, removing items is also possible with various ways. Some of them are as follows:
+### The `list.pop()` method
+Similar to `list.append()`, the `pop()` method pops out the last item from the list if we pass no arguments to the method.
+
+```py
+animals = ['cat', 'dog', 'tiger', 'Chimpanzee', 'Fox']
+animals.pop()
+print(animals)
+# ['cat', 'dog', 'tiger', 'Chimpanzee']
+```
+
+If we want to remove an item at nth index, then we need to specify an index of the item.
+```py
+animals = ['cat', 'dog', 'tiger', 'Chimpanzee', 'Fox']
+# I want to remove 'tiger' which is at index 2
+animals.pop(2)
+print(animals)
+# ['cat', 'dog', 'Chimpanzee', 'Fox']
+```
+
+### The `list.remove()` method
+
+Sometimes, we do not know the index of an item we want to remove. At this point, we can use `remove()` method. With this method, we can directly pass the value as an argument.
+
+```py
+animals = ['cat', 'dog', 'tiger', 'Chimpanzee', 'Fox']
+animals.remove('dog')
+print(animals)
+# ['cat', 'tiger', 'Chimpanzee', 'Fox']
+```
+
+### The `list.clear()` method
+
+The `clear()` method removes all items from the list and makes it an empty list.
+
+```py
+animals = ['cat', 'dog', 'tiger', 'Chimpanzee', 'Fox']
+animals.clear()
+print(animals)
+# []
 ```
