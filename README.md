@@ -31,7 +31,7 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [Numeric Data Types](course/c02_data_types/Chapter%202.2%20Numeric%20Data%20Types.md)
     - [Strings](course/c02_data_types/Chapter%202.3%20Strings.md)
     - [String Formatting](course/c02_data_types/chapter%202.4%20string%20formatting.md)
-    - Lists
+    - [Lists](course/c02_data_types/chapter%202.5%20lists.md)
     - Tuples
     - Sets
     - Dictionary
