@@ -4,9 +4,9 @@
 
 [go to course contents](https://github.com/ghimiresdp/python-level1/)
 -----------------------
-# Chapter 2: Python Variables and Data Types
+# Chapter 2.3 Strings
 **Table of Contents**
-- [Chapter 2: Python Variables and Data Types](#chapter-2-python-variables-and-data-types)
+- [Chapter 2.3 Strings](#chapter-23-strings)
     - [Introduction to Strings](#introduction-to-strings)
     - [Escape Characters](#escape-characters)
     - [String Concatenation](#string-concatenation)

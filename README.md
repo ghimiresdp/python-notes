@@ -26,40 +26,35 @@ You can `clone` or `fork` the repository and review the course contents, example
    - indentation
    - [Chapter 1 Quiz](course/c01_basics/quiz/README.md)
 
-2. **[Data Types and variables](course/c02_data_types/)**
+2. **[Variables, basic data type and operations](course/c02_data_types)**
     - [Variables](course/c02_data_types/Chapter%202.1%20Variables.md)
     - [Numeric Data Types](course/c02_data_types/Chapter%202.2%20Numeric%20Data%20Types.md)
     - [Strings](course/c02_data_types/Chapter%202.3%20Strings.md)
-    - [String Formatting](course/c02_data_types/chapter%202.4%20string%20formatting.md)
-    - [Lists](course/c02_data_types/chapter%202.5%20lists.md)
-    - Tuples
-    - Sets
-    - Dictionary
-    - Type Hinting in Python (only for python 3.6 and later)
-    - Type conversion
+    - [String Formatting](course/c02_data_types/Chapter%202.4%20string%20formatting.md)
+    - [Basic Operations](course/c02_data_types/Chapter%202.5%20Operations.md)
 
-3. **[Basic Operations](course/c03_operations/)**
-    - Arithmetic Operations
-    - Assignment Operations (single, multiple)
-    - Relational Operations
-    - Logical Operations
-    - Bitwise Operations
-    - Membership Operations
-    - Identity Operations
-    - Advanced Mathematical functions and constants
+[comment]: <> (    - Type Hinting in Python &#40;only for python 3.6 and later&#41;)
 
-4. **[Decision Making](course/c04_decision_making/)**
+[comment]: <> (    - Type conversion)
+
+3. **[Advanced Data Types](course/c03_advanced_data_types)**
+    - [List](course/c03_advanced_data_types/chapter%203.1%20Lists.md)
+    - [Tuple]()
+    - [Dictionary]()
+    - [Set]()
+
+4. **[Decision Making](course/c04_decision_making)**
     - if statement
     - if else statement
     - if elif else statement
 
-5. **[Loops](course/c05_loops/)**
+5. **[Loops](course/c05_loops)**
     - For Loop
     - While Loop
     - Nested Loop
     - `break`, `continue`, and `pass` statements
 
-6. **[Functions](course/c06_functions/)**
+6. **[Functions](course/c06_functions)**
     - Defining a function
     - Calling a function
     - the `return` statement
@@ -70,7 +65,7 @@ You can `clone` or `fork` the repository and review the course contents, example
     - function with variable length arguments
     - Anonymous or Lambda functions
 
-7. **[Classes](course/c07_oop/)**
+7. **[Classes](course/c07_oop)**
     - Introduction to **Object Oriented Programming**
     - Class
     - Class Variable and instance variable
@@ -89,7 +84,7 @@ You can `clone` or `fork` the repository and review the course contents, example
       - `super()` function
       - Mixins
 
-8. **[Python Modules and packages](course/c08_modules_packages/)**
+8. **[Python Modules and packages](course/c08_modules_packages)**
     - Introduction to modular programming
     - `__init__.py` file
     - An example of modular python program | importing the module
@@ -98,14 +93,14 @@ You can `clone` or `fork` the repository and review the course contents, example
     - `random` module
     - `json` module
 
-9. **[File I/O](course/c09_file/)**
+9. **[File I/O](course/c09_file)**
    - `open()` function
    - `close()` method
    - `write()` method
    - `read()` method
    - `with` keyword
 
-10. **[Exceptions and Exception Handling](course/c10_exceptions/)**
+10. **[Exceptions and Exception Handling](course/c10_exceptions)**
     - Introduction to Exceptions in Python
     - Standard Errors
     - `try`, `except` keyword
@@ -115,68 +110,60 @@ You can `clone` or `fork` the repository and review the course contents, example
     - User Defined Exceptions
     - Total
 
-11. **[Python Package Management](course/c11_pip/)**
+11. **[Python Package Management](course/c11_pip)**
 	- [Introduction to Symantic Versioning](course/c11_pip/c1101%20symver.md)
 	- [PIP and its usage](course/c11_pip/c1102%20pip.md)
 
-12. **[Virtual Environments](course/c12_virtual_environment/)**
+12. **[Virtual Environments](course/c12_virtual_environment)**
 	- [Introduction to virtual enviromnemts](course/c12_virtual_environment/c1201%20virtual%20environment%20intro.md)
 	- [VENV and its usage](course/c12_virtual_environment/c1202%20venv.md)
 	- [PIPENV and its usage](course/c12_virtual_environment/c1203%20pipenv.md)
 
-13. **[Python Advanced Functions](course/c13_advanced_functions/)**
+13. **[Python Advanced Functions](course/c13_advanced_functions)**
     - [`groupby()` function](course/c13_advanced_functions/chapter%2013.1%20groupby.md)
     - [`sorted()` function](course/c13_advanced_functions/chapter%2013.2%20sorted.md)
     - [`filter()` function](course/c13_advanced_functions/chapter%2013.3%20filter.md)
     - [`map()` function]()
 
-14. **[Regular Expressions (REGEX)](course/c14_regex/)**
+14. **[Regular Expressions (REGEX)](course/c14_regex)**
     - [Introduction to regular expressions](course/c14_regex/chapter%2014.1%20regular%20expressions.md)
     - [REGEX special characters](course/c14_regex/chapter%2014.2%20regex%20special%20characters.md)
     - [The `re` module](course/c14_regex/chapter%2014.3%20the%20re%20module)
 
-15. [**Advanced Data Structures**](course/c15_data_structures/)
-16. [**Decorators**](course/c16_decorators/)
-17. [**Mixins**](course/c17_mixins/)
-18. [**`http` module**](course/c18_python_http/)
-19. [**`requests` library**](course/c19_requests/)
-20. [**Advanced Type hinting**](course/c20_advanced_type_hinting/)
+15. [**Advanced Data Structures**](course/c15_data_structures)
+16. [**Decorators**](course/c16_decorators)
+17. [**Mixins**](course/c17_mixins)
+18. [**`http` module**](course/c18_python_http)
+19. [**`requests` library**](course/c19_requests)
+20. [**Advanced Type hinting**](course/c20_advanced_type_hinting)
 
 ## Folder Structure
 The repository has its folder structure as shown in example below:
 ```
-📂 python-level1
- |-- 📂 course
- |    |-- 📂 chapter_1
- |    |    |-- 📜 chapter 1 theory 1.md
- |    |    |-- 📜 chapter 1 theory 2.md
- |    |    |-- 📄 ...
- |    |    |-- 📂 code
- |    |    |    |-- 📄 c0101.py
- |    |    |    |-- 📄 c0102.py
- |    |    |    |-- 📄 ...
- |    |    |
- |    |    |-- 📂 quiz
- |    |    |    |-- 📜 chapter 1 quiz.md
- |    |    |    |-- 📂 solutions
- |    |    |         |-- 📄 solution_1.py
- |    |    |         |-- 📄 solution_2.py
- |    |    |         |-- 📄 ...
- |    |
- |    |-- 📂 ...
- |
- |-- 📂 projects
- |    |-- 📂 project_1
- |    |    |-- 📜 Project 1 Requirement Specification.md
- |    |    |-- 🗃️ Media file for Requirements
- |    |    |-- 🗃️ ...
- |    |    |-- 📂 project_1 (solution)
- |    |         |-- 📂 contents
- |    |         |-- 📄 contents
- |    |         |-- 📄 contents
- |    |
- |    |-- 📂 ...
-
+python-notes
+├── LICENSE
+├── README.md
+├── course
+│   ├── c01_basics
+│   │   ├── Chapter 1 Basics.md
+│   │   ├── README.md
+│   │   ├── code
+│   │   │   ├── c0101_hello_world.py
+│   │   │   └── c0102_comments.py
+│   │   └── quiz
+│   │       ├── README.md
+│   │       └── solution
+│   │           ├── q0101.py
+│   │           └── q0102.py
+│   └── ...
+│
+├── projects
+│   ├── project_01
+│   │   ├── project_01_requirements.md
+│   │   └── rock_paper_scissor
+│   │       ├── README.md
+│   │       └── game.py
+│   └── ...
 ```
 
 
