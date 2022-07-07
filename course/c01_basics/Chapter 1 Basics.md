@@ -1,8 +1,24 @@
 - **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **Github**: https://github.com/ghimiresdp
+- **URL**: [https://www.sudipghimire.com.np](https://www.sudipghimire.com.np)
+- **Github**: [https://github.com/ghimiresdp](https://github.com/ghimiresdp)
 
 # Chapter 1: Python Basics
+
+**Table of Contents**
+- [Chapter 1: Python Basics](#chapter-1-python-basics)
+    - [What is python?](#what-is-python)
+    - [What is an interpreter](#what-is-an-interpreter)
+    - [Features of python](#features-of-python)
+        - [Python is easy to code](#python-is-easy-to-code)
+        - [Among programming languages, Python grammar is closest to English grammar.](#among-programming-languages-python-grammar-is-closest-to-english-grammar)
+        - [Some notable features of python for programmers coming from other programming languages](#some-notable-features-of-python-for-programmers-coming-from-other-programming-languages)
+    - [Why we choose python?](#why-we-choose-python)
+    - [Installing Python](#installing-python)
+        - [Windows](#windows)
+        - [Linux and Mac OS](#linux-and-mac-os)
+    - [Getting Started](#getting-started)
+    - [Hello World with IDLE](#hello-world-with-idle)
+    - [Creating, editing, and running python files.](#creating-editing-and-running-python-files)
 
 ## What is python?
 
@@ -103,10 +119,10 @@ Unlike other programming languages, python do not need to end the statement with
 - When we insert a new line, python automatically identifies whether statement is complete or not.
 
 - If the brackets are open, it do not terminate the statement with new line.
-  
+
   ```python
   x = 5     # terminates the statement
-  
+
   person = {                  # does not terminate the statement
       'name': 'Jon Doe'
   }                           # statement will be terminated here
@@ -117,7 +133,7 @@ Unlike other programming languages, python do not need to end the statement with
 - standard indentation type in python is space however tab character in modern IDEs and code editors are automatically converted into spaces by default.
 
 - standard indentation size is 4.
-  
+
   ```python
   for value in range(1,10):
       print(f"I am inside the loop and the value is {value}")
@@ -129,14 +145,14 @@ Unlike other programming languages, python do not need to end the statement with
 - we can even use one kind of quotation mark inside another without escaping the character.
 
 - however using similar kind of quotation inside a string requires escaping the character
-  
+
   ```python
   print("I'm Jon Doe.")
   print('He said, "I\'m Jon Doe".')
   ```
 
 - Python variables are dynamically typed. Unlike other statically typed languages, we do not need to specify the data type in python.
-  
+
   ```python
   x = 5       # it automatically assigns data type as int
   y = 5.5     # it automatically assigns data type as float
