@@ -1,8 +1,10 @@
+- **created by**: Sudip Ghimire
+- **URL**: [https://www.sudipghimire.com.np](https://www.sudipghimire.com.np)
+- **GitHub**: [https://github.com/ghimiresdp](https://github.com/ghimiresdp)
+
 # Python Notes
 
 **_A repository for Python course notes, examples, and lab exercises targeted to my students and interns._**
-
-This course is specifically designed for my students who are learning basic level python course.
 
 You can `clone` or `fork` the repository and review the course contents, examples, and attend exercises.
 
@@ -32,10 +34,8 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [Strings](course/c02_data_types/Chapter%202.3%20Strings.md)
     - [String Formatting](course/c02_data_types/Chapter%202.4%20string%20formatting.md)
     - [Basic Operations](course/c02_data_types/Chapter%202.5%20Operations.md)
-
-[comment]: <> (    - Type Hinting in Python &#40;only for python 3.6 and later&#41;)
-
-[comment]: <> (    - Type conversion)
+    - Type Hinting in Python (only for python 3.6 and later)
+    - Type conversion
 
 3. **[Advanced Data Types](course/c03_advanced_data_types)**
     - [List](course/c03_advanced_data_types/chapter%203.1%20Lists.md)
@@ -167,50 +167,14 @@ python-notes
 ```
 
 
-> If you're directly **cloning** the repository, I suggest you to solve in the different branch than the `main` branch to avoid conflicts if the course content changes.
+> If you're directly **cloning** the repository, I suggest you to solve in the different branch than the `main` branch
+> to avoid conflicts if the course content changes.
 
-
-
-> If you're **forking**, I suggest you not to make any changes in the `main` branch in your repository too so that you can pull and rebase future changes to your `fork`.
+> If you're **forking**, I suggest you not to make any changes in the `main` branch in your repository too so that you
+> can pull and rebase future changes to your `fork`.
 
 ## Pulling future changes for your forks
 
 for pulling the future changes you can add `remote` in your local repository with the commands below:
 
-1. Add remote to your local repository
-    ```
-    git remote add upstream https://github.com/ghimiresdp/python-level1.git
-
-    ```
-
-1. Fetch the changes to your local repository
-
-    ```
-    git fetch upstream
-    ```
-
-1. checkout to the main branch
-
-    ```
-    git checkout main
-    ```
-
-
-1. After fetching, simply merge or rebase your code with either of the commands below:
-
-    - ```
-      git rebase upstream/main
-      ```
-      or
-    - ```
-      git merge upstream/main
-      ```
-
-
-1. Push to your remote repository
-
-    ```
-    git push origin main
-    ```
-
-Please do visit my website [sudipghimire.com.np](https://sudipghimire.com.np) to know about my engagements.
+Please do visit my website [sudipghimire.com.np](https://sudipghimire.com.np) to know more about my engagements.
