@@ -1,9 +1,15 @@
 - **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
+- **URL**: [https://www.sudipghimire.com.np](https://www.sudipghimire.com.np)
+- **GitHub**: [https://github.com/ghimiresdp](https://github.com/ghimiresdp)
 
-# Chapter 2: Python Variables and Data Types
+[go to course contents](https://github.com/ghimiresdp/python-level1/)
+-----------------------
 
+# Chapter 2.1: Python Variables and Constants
+**Table of Contents**
+- [Chapter 2.1: Python Variables and Constants](#chapter-21-python-variables-and-constants)
+    - [Variables](#variables)
+    - [Constants](#constants)
 ## Variables
 
 let us suppose we have a statement as follows:
@@ -76,4 +82,15 @@ Name = 'cow'            # valid but not recommended by PEP
 first_name = 'John'     # valid
 firstName = 'John'      # valid but not recommended by PEP
 FirstName = 'John'      # valid but not recommended by PEP
+```
+
+## Constants
+
+There are no constants on python, however we use UPPERCASE identifier to make developer know that the value shall
+never be changed.
+
+```python
+PI = 3.1415
+PROJECT_NAME = 'Python Notes'
+PROJECT_VERSION = '1.0.0'
 ```

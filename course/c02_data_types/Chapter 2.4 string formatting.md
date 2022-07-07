@@ -1,8 +1,18 @@
 - **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
+- **URL**: [https://www.sudipghimire.com.np](https://www.sudipghimire.com.np)
+- **GitHub**: [https://github.com/ghimiresdp](https://github.com/ghimiresdp)
+
+[go to course contents](https://github.com/ghimiresdp/python-level1/)
+-----------------------
 
 # Chapter 2.4: String Formatting
+
+**Table of Contents**
+- [Chapter 2.4: String Formatting](#chapter-24-string-formatting)
+    - [Formatting Strings with `%s`, `%d` and `%f`](#formatting-strings-with-s-d-and-f)
+    - [Format method `format()`](#format-method-format)
+        - [`format()` method with named arguments](#format-method-with-named-arguments)
+    - [F-strings](#f-strings)
 
 Python has various methods for formatting strings. It has the capability to format strings, numbers, their precision, and many more. some of the methods to format the strings are as follows:
 
