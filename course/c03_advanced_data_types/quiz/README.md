@@ -1,4 +1,4 @@
-# Chapter 3 Operations Quiz
+# Chapter 3 Advanced Data Types and Operations Quiz
 
 https://sudipghimire.com.np
 
@@ -6,7 +6,7 @@ Please read the note carefully and try to solve the problem below:
 
 **Table of Contents**
 
-- [Chapter 3 Operations Quiz](#chapter-3-operations-quiz)
+- [Chapter 3 Advanced Data Types and Operations Quiz](#chapter-3-advanced-data-types-and-operations-quiz)
     - [Quiz Q0301](#quiz-q0301)
     - [Quiz Q0302](#quiz-q0302)
     - [Quiz Q0303](#quiz-q0303)
