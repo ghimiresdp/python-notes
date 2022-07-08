@@ -1,10 +1,12 @@
+- **created by**: Sudip Ghimire
+- **URL**: [https://www.sudipghimire.com.np](https://www.sudipghimire.com.np)
+- **GitHub**: [https://github.com/ghimiresdp](https://github.com/ghimiresdp)
+
+[go to course contents](https://github.com/ghimiresdp/python-level1/)
+-----------------------
 # Chapter 1 Fundamentals of Python
 
-## [go to course contents](https://github.com/ghimiresdp/python-level1/)
-
-## Contents:
-
-
+**Table of Contents**
 - [Introduction to Python](Chapter%201%20Basics.md)
 - [Python Environment Setup, IDE Setup](Chapter%201%20Basics.md#installing-python)
 - [Hello World in Python](Chapter%201%20Basics.md#hello-world-with-idle)
@@ -18,4 +20,4 @@
 
 
 ## Quiz
-- [Chapter 1 Quiz](quiz/)
+- [Chapter 1 Quiz](quiz)
