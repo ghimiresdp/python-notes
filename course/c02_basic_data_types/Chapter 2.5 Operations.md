@@ -18,7 +18,13 @@
         - [Modulus](#modulus)
         - [Exponentiation](#exponentiation)
         - [Integer Division](#integer-division)
-    - [relational operations](#relational-operations)
+    - [Relational Operations](#relational-operations)
+        - [equals (`==`)](#equals-)
+        - [not equals (`!=`)](#not-equals-)
+        - [less than (`<`)](#less-than-)
+        - [less than or equals (`<=`)](#less-than-or-equals-)
+        - [greater than (`>`)](#greater-than-)
+        - [greater than or equals (`>=`)](#greater-than-or-equals-)
     - [logical operations](#logical-operations)
     - [identity operations](#identity-operations)
     - [membership operations](#membership-operations)
@@ -108,7 +114,68 @@ g2 = 45.8 // 5.1  # 8.0   # integer equivalent of float
 
 ```
 
-## relational operations
+## Relational Operations
+
+Relational operations or comparison operations compare 2 values and returns either `True` or `False`. When
+comparing `less than` or `greater than` in strings or sequences, it compares the ASCII value using lexicographical
+ordering.
+
+### equals (`==`)
+
+```python
+print(5 == 6)  # False
+print(4 + 1 == 6 - 1)  # True
+print('John' == 'John')  # True
+```
+
+### not equals (`!=`)
+
+```python
+print(5 != 6)  # True
+print(4 + 1 != 6 - 1)  # False
+print('John' != 'John')  # False
+
+```
+
+### less than (`<`)
+
+```python
+print(4 < 5)  # True
+print(4 < 4)  # False
+print(5 < 4)  # False
+print('Jane' < 'John')  # True
+
+```
+
+### less than or equals (`<=`)
+
+```python
+print(4 <= 5)  # True
+print(4 <= 4)  # True
+print(5 <= 4)  # False
+print([1, 2, 3] <= [1, 3, 2])  # True
+
+```
+
+### greater than (`>`)
+
+```python
+print(4 > 5)  # False
+print(4 > 4)  # False
+print(5 > 4)  # True
+print('Jane' > 'John')  # False
+print([1, 2, 3] > [1, 3, 2])  # False
+
+```
+
+### greater than or equals (`>=`)
+
+```python
+print(4 >= 5)  # False
+print(4 >= 4)  # True
+print(5 >= 4)  # True
+print('A' >= 'B')  # False
+```
 
 ## logical operations
 

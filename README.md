@@ -28,12 +28,12 @@ You can `clone` or `fork` the repository and review the course contents, example
    - indentation
    - [Chapter 1 Quiz](course/c01_basics/quiz/README.md)
 
-2. **[Variables, basic data type and operations](course/c02_data_types)**
-    - [Variables](course/c02_data_types/Chapter%202.1%20Variables.md)
-    - [Numeric Data Types](course/c02_data_types/Chapter%202.2%20Numeric%20Data%20Types.md)
-    - [Strings](course/c02_data_types/Chapter%202.3%20Strings.md)
-    - [String Formatting](course/c02_data_types/Chapter%202.4%20string%20formatting.md)
-    - [Basic Operations](course/c02_data_types/Chapter%202.5%20Operations.md)
+2. **[Variables, basic data type and operations](course/c02_basic_data_types)**
+    - [Variables](course/c02_basic_data_types/Chapter%202.1%20Variables.md)
+    - [Numeric Data Types](course/c02_basic_data_types/Chapter%202.2%20Numeric%20Data%20Types.md)
+    - [Strings](course/c02_basic_data_types/Chapter%202.3%20Strings.md)
+    - [String Formatting](course/c02_basic_data_types/Chapter%202.4%20string%20formatting.md)
+    - [Basic Operations](course/c02_basic_data_types/Chapter%202.5%20Operations.md)
     - Type Hinting in Python (only for python 3.6 and later)
     - Type conversion
 
