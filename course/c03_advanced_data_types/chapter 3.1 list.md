@@ -1,10 +1,14 @@
 - **created by**: Sudip Ghimire
 - **URL**: https://www.sudipghimire.com.np
 - **GitHub**: https://github.com/ghimiresdp
+[go to course contents](https://github.com/ghimiresdp/python-level1/)
+-----------------------
+
+# Chapter 3.1. Lists
 
 **Table of Contents**
 
-- [Chapter 2.5. Lists](#chapter-25-lists)
+- [Chapter 3.1. Lists](#chapter-31-lists)
     - [Creating a list](#creating-a-list)
     - [Accessing an item of a list](#accessing-an-item-of-a-list)
     - [Getting the slice of a list](#getting-the-slice-of-a-list)
@@ -25,8 +29,6 @@
         - [`sort()`](#sort)
         - [`index()`](#index)
         - [`count()`](#count)
-
-# Chapter 2.5. Lists
 
 **Ref**: https://docs.python.org/3.9/tutorial/introduction.html#lists
 

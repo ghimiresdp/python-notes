@@ -26,7 +26,7 @@ You can `clone` or `fork` the repository and review the course contents, example
        - Multiline Comments
        - Docstrings
    - indentation
-   - [Chapter 1 Quiz](course/c01_basics/quiz/README.md)
+   - [Chapter 1 Quiz](course/c01_basics/quiz)
 
 2. **[Variables, basic data type and operations](course/c02_basic_data_types)**
     - [Variables](course/c02_basic_data_types/Chapter%202.1%20Variables.md)
@@ -36,12 +36,13 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [Basic Operations](course/c02_basic_data_types/Chapter%202.5%20Operations.md)
     - Type Hinting in Python (only for python 3.6 and later)
     - Type conversion
+    - [Chapter 2 Quiz](course/c02_basic_data_types/quiz)
 
 3. **[Advanced Data Types](course/c03_advanced_data_types)**
-    - [List](course/c03_advanced_data_types/chapter%203.1%20Lists.md)
-    - [Tuple]()
-    - [Dictionary]()
-    - [Set]()
+    - [List](course/c03_advanced_data_types/chapter%203.1%20list.md)
+    - [Tuple](course/c03_advanced_data_types/chapter%203.2%20tuple.md)
+    - [Dictionary](course/c03_advanced_data_types/chapter%203.3%20dictionary.md)
+    - [Set](course/c03_advanced_data_types/chapter%203.4%20set.md)
 
 4. **[Decision Making](course/c04_decision_making)**
     - if statement
