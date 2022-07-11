@@ -29,7 +29,7 @@ You can `clone` or `fork` the repository and review the course contents, example
    - [Chapter 1 Quiz](course/c01_basics/quiz)
 
 2. **[Variables, basic data type and operations](course/c02_basic_data_types)**
-    - [Variables](course/c02_basic_data_types/Chapter%202.1%20Variables.md)
+    - [Variables, constants, and keywords](course/c02_basic_data_types/Chapter%202.1%20Variables.md)
     - [Numeric Data Types](course/c02_basic_data_types/Chapter%202.2%20Numeric%20Data%20Types.md)
     - [Strings](course/c02_basic_data_types/Chapter%202.3%20Strings.md)
     - [String Formatting](course/c02_basic_data_types/Chapter%202.4%20string%20formatting.md)
