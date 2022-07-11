@@ -26,6 +26,10 @@
         - [greater than (`>`)](#greater-than-)
         - [greater than or equals (`>=`)](#greater-than-or-equals-)
     - [logical operations](#logical-operations)
+        - [`and` operation](#and-operation)
+        - [`or` operation](#or-operation)
+        - [`not` operation](#not-operation)
+        - [Compound logical operations](#compound-logical-operations)
     - [identity operations](#identity-operations)
     - [membership operations](#membership-operations)
     - [bitwise operations](#bitwise-operations)
@@ -178,6 +182,97 @@ print('A' >= 'B')  # False
 ```
 
 ## logical operations
+
+Logical operations are performed on boolean values. The following are logical operations available in python.
+
+### `and` operation
+
+- **Syntax**: `[value_1] and [value_2]`
+- returns true when both `value_1` and `value_2` are `True`.
+
+```python
+print(True and True)        # True
+print(True and False)       # False
+print(False and True)       # False
+print(False and False)      # False
+```
+An another example
+```python
+is_married = True
+has_children = False
+is_life_complete = is_married and has_children
+
+print(is_life_complete)     # False
+```
+
+### `or` operation
+
+- **Syntax**: `[value_1] or [value_2]`
+- returns true when any or all of `value_1` and `value_2` are `True`.
+
+```python
+print(True or True)        # True
+print(True or False)       # True
+print(False or True)       # True
+print(False or False)      # False
+```
+
+an another example:
+```python
+is_father_rich = True
+has_high_income = False
+is_rich = is_father_rich or has_high_income
+
+print(is_rich)          # True
+```
+### `not` operation
+
+- **Syntax**: `not [value]`
+- returns the negative of the `value`.
+
+```python
+print(not True)     # False
+print(not False)    # True
+
+is_work = False
+print(not is_work)  # True
+```
+
+### Compound logical operations
+
+We can combine multiple logical operations to form a compound logical operation.
+We use compound logical operation to perform advanced operations.
+We generally use brackets to combine multiple logical operations.
+
+some example are shown below:
+
+```python
+print(True or False or True)                # True
+print(True and False or False and True)     # False
+
+# in some conditions, use of brackets alter the expected result
+print(not True or not False)                # True
+print(not (True or not False))              # False
+print((not True) or (not False))            # True
+```
+
+another example:
+
+``` python
+# if it is cloudy today and if it rained yesterday, then it rains today
+# in other conditions it doesn't rain
+cloudy = False
+rained = True
+
+rains = cloudy and rained
+
+if rains:
+    print("it rains today")
+else:
+    print("It does not rain today")
+
+# it does not rain today
+```
 
 ## identity operations
 
