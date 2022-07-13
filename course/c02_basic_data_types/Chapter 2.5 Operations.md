@@ -191,18 +191,20 @@ Logical operations are performed on boolean values. The following are logical op
 - returns true when both `value_1` and `value_2` are `True`.
 
 ```python
-print(True and True)        # True
-print(True and False)       # False
-print(False and True)       # False
-print(False and False)      # False
+print(True and True)  # True
+print(True and False)  # False
+print(False and True)  # False
+print(False and False)  # False
 ```
+
 An another example
+
 ```python
 is_married = True
 has_children = False
 is_life_complete = is_married and has_children
 
-print(is_life_complete)     # False
+print(is_life_complete)  # False
 ```
 
 ### `or` operation
@@ -211,28 +213,30 @@ print(is_life_complete)     # False
 - returns true when any or all of `value_1` and `value_2` are `True`.
 
 ```python
-print(True or True)        # True
-print(True or False)       # True
-print(False or True)       # True
-print(False or False)      # False
+print(True or True)  # True
+print(True or False)  # True
+print(False or True)  # True
+print(False or False)  # False
 ```
 
 an another example:
+
 ```python
 is_father_rich = True
 has_high_income = False
 is_rich = is_father_rich or has_high_income
 
-print(is_rich)          # True
+print(is_rich)  # True
 ```
+
 ### `not` operation
 
 - **Syntax**: `not [value]`
 - returns the negative of the `value`.
 
 ```python
-print(not True)     # False
-print(not False)    # True
+print(not True)  # False
+print(not False)  # True
 
 is_work = False
 print(not is_work)  # True
@@ -240,20 +244,19 @@ print(not is_work)  # True
 
 ### Compound logical operations
 
-We can combine multiple logical operations to form a compound logical operation.
-We use compound logical operation to perform advanced operations.
-We generally use brackets to combine multiple logical operations.
+We can combine multiple logical operations to form a compound logical operation. We use compound logical operation to
+perform advanced operations. We generally use brackets to combine multiple logical operations.
 
 some example are shown below:
 
 ```python
-print(True or False or True)                # True
-print(True and False or False and True)     # False
+print(True or False or True)  # True
+print(True and False or False and True)  # False
 
 # in some conditions, use of brackets alter the expected result
-print(not True or not False)                # True
-print(not (True or not False))              # False
-print((not True) or (not False))            # True
+print(not True or not False)  # True
+print(not (True or not False))  # False
+print((not True) or (not False))  # True
 ```
 
 another example:
@@ -275,6 +278,35 @@ else:
 ```
 
 ## identity operations
+
+Identity operation compares whether 2 objects are same objects or not. Remember,
+They are not used to compare for equality. There are 2 basic identity operations
+1. `is`
+2. `is not`
+
+```python
+print(type('abc') is str)       # True
+```
+
+```python
+list1 = ['abc', 'def']
+list2 = list1           # same object is referenced here
+list3 = list1.copy()    # shallow copy is made here
+
+print(list1 is list2)   # True
+print(list1 is list3)   # False
+
+print(type(list1) is not int)  # True
+
+```
+
+**Note**: Sometimes, we use identity operations in wrong places. for example:
+
+```python
+print((1 + 4) is (6 - 1))
+```
+The above statement gives the equality, but still shows warning suggesing `==`
+instead of `is` operator.
 
 ## membership operations
 
