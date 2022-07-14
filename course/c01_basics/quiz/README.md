@@ -10,19 +10,21 @@ Please read the note carefully and try to solve the problem below:
   - [Quiz: Q0102](#quiz-q0102)
 
 ## Quiz: Q0101
-1. Try to replicate the line below and change  `'hello world'` to `[your name]` and `print` it in the terminal.
-    ```python
-    print("hello world")
-    ```
+1. Try to replicate the line below and change  `'hello world'` to `[your name]`
+   and `print` it in the terminal.
+
+```python
+print("hello world")
+```
+
 
 2. Try adding two numbers and print the value in the terminal. (example: `print(5+6)`)
-2. Try adding more than 2 numbers and see the results
+3. Try adding more than 2 numbers and see the results
     Example: `print(3+4+5)`
-3. Try printing hello world without quotation `''` or inverted comma and see if any error  occurs
+4. Try printing hello world without quotation `''` or inverted comma and see if any error  occurs
     Example: `print(Hello World)`
 
-4. If error occurs in any of the above step, please note the line number and the message where the exception is thrown
-"""
+5. If error occurs in any of the above step, please note the line number and the message where the exception is thrown.
 
 **[Click](solution/q0101.py)** to see the solution
 
