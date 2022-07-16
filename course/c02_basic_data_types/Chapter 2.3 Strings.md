@@ -12,6 +12,7 @@
     - [String Concatenation](#string-concatenation)
     - [Finding out the length of the string](#finding-out-the-length-of-the-string)
     - [Capitalization, Upper Case and Lower Case conversion](#capitalization-upper-case-and-lower-case-conversion)
+    - [Finding out the index of a sub-string](#finding-out-the-index-of-a-sub-string)
 
 ## Introduction to Strings
 
@@ -93,7 +94,10 @@ We can find out the length of the string by 2 different ways which are as follow
 
 ## Capitalization, Upper Case and Lower Case conversion
 
-python has plenty of options in changing the case of the string. Capitalization is the process of capitalizing the first character of the string. Upper and Lower case conversion just converts the string to its respective cases.
+python has plenty of options in changing the case of the string.
+Capitalization is the process of capitalizing the first character of the string.
+Upper and Lower case conversion just converts the string to its respective
+cases.
 
 ```python
 'john'.capitalize()    # John
@@ -101,5 +105,22 @@ python has plenty of options in changing the case of the string. Capitalization 
 'JOHN'.lower()         # john
 
 text = 'A quick brown fox jumps over the lazy dog.'
-print(text.upper())    # A QUICK BROWN FOX JUMPS OVER THE LAZY DOG
+print(text.upper())    # A QUICK BROWN FOX JUMPS OVER THE LAZY DOG
+```
+
+## Finding out the index of a sub-string
+We can use `str.index()` method to find out the index of the sub-string. If a
+string contains more than one substring of same value, it returns the index of
+the first substring.
+
+```python
+data = "My name is John."
+print(data.index('John'))       # 11
+```
+The above code finds out the index from where the sub-string `John` starts from.
+
+```python
+data = 'He is John. John is a programmer.'
+print(data.index('John'))       # 6
+print(data.index('John', 8))    # 12
 ```
