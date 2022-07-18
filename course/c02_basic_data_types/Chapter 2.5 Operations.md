@@ -310,6 +310,35 @@ instead of `is` operator.
 
 ## membership operations
 
+Membership Operation checks if an element is present in the specified object
+or collection or not.
+
+Basic Membership Operators:
+
+- `in`
+- `not in`
+
+Example 1:
+
+```py
+sentence = 'A quick brown fox jumps over the lazy dog.'
+print('fox' in sentence)    # True
+print('monkey' in sentence) # False
+
+print('fox' not in sentence)    # False
+print('monkey' not in sentence) # True
+
+```
+Example 2:
+```py
+x = [1, 2, 3, 4, 5]
+print(5 in x)   # True
+print(10 in x)  # False
+
+print(2 not in x)   # False
+print(20 not in x)  # True
+```
+
 ## bitwise operations
 
 ## assignment operations
