@@ -341,4 +341,23 @@ print(20 not in x)  # True
 
 ## bitwise operations
 
+
+
 ## assignment operations
+
+Assignment Operations assign values from right side operands to left side
+operand/operands. Following are assignment operations used in python:
+
+- `=`
+- `+=`
+- `-=`
+- `*=`
+- `/=`
+- `%=`
+- `//=`
+- `**=`
+- `&=`
+- `|=`
+- `^=`
+- `>>=`
+- `<<=`
