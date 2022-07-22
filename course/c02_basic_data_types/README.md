@@ -18,3 +18,4 @@ Unlike other programming languages, we do not declare data type explicitly. Sinc
 - [2.3. Strings](Chapter%202.3%20Strings.md)
 - [2.4. String Formatting](Chapter%202.4%20string%20formatting.md)
 - [2.5. Basic Operations](Chapter%202.5%20Operations.md)
+- [2.6. Type Casting/conversion](Chapter%202.6%20Typecasting.md)

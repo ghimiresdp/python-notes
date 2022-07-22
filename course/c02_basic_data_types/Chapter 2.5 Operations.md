@@ -348,16 +348,26 @@ print(20 not in x)  # True
 Assignment Operations assign values from right side operands to left side
 operand/operands. Following are assignment operations used in python:
 
-- `=`
-- `+=`
-- `-=`
-- `*=`
-- `/=`
-- `%=`
-- `//=`
-- `**=`
-- `&=`
-- `|=`
-- `^=`
-- `>>=`
-- `<<=`
+1.  `=`
+    - example: `x = 5`
+
+1.  `+=`
+    - example: `x += 5`
+    - equivalent code: `x = x + 5`
+
+1.  `-=`
+    - example: `x -= 5`
+    - equivalent code: `x = x - 5`
+
+**Other assignment operations:**
+
+1.  `*=`
+2.  `/=`
+3.  `%=`
+4.  `//=`
+5.  `**=`
+6.  `&=`
+7.  `|=`
+8.  `^=`
+9.  `>>=`
+10. `<<=`
