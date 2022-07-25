@@ -35,7 +35,7 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [String Formatting](course/c02_basic_data_types/Chapter%202.4%20string%20formatting.md)
     - [Basic Operations](course/c02_basic_data_types/Chapter%202.5%20Operations.md)
     - Type Hinting in Python (only for python 3.6 and later)
-    - Type conversion
+    - [Type Conversion / Typecasting](course/c02_basic_data_types/Chapter%202.6%20Typecasting.md)
     - [Chapter 2 Quiz](course/c02_basic_data_types/quiz)
 
 3. **[Advanced Data Types](course/c03_advanced_data_types)**
@@ -45,13 +45,14 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [Set](course/c03_advanced_data_types/chapter%203.4%20set.md)
 
 4. **[Decision Making](course/c04_decision_making)**
-    - if statement
-    - if else statement
-    - if elif else statement
+    - [if statement](course/c04_decision_making/README.md#if-condition)
+    - [if else statement](course/c04_decision_making/README.md#if-else-condition)
+    - [if elif else statement](course/c04_decision_making/README.md#if-elif-else-condition)
+    - [Nested branching](course/c04_decision_making/README.md#nested-conditions)
 
 5. **[Loops](course/c05_loops)**
-    - For Loop
     - While Loop
+    - For Loop
     - Nested Loop
     - `break`, `continue`, and `pass` statements
 
