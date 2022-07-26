@@ -8,7 +8,13 @@
 # Chapter 4. Decision Making
 
 **Table of Contents**
-
+- [Chapter 4. Decision Making](#chapter-4-decision-making)
+    - [Introduction](#introduction)
+    - [`if` condition](#if-condition)
+    - [`if else` condition](#if-else-condition)
+    - [`if elif else` condition](#if-elif-else-condition)
+    - [single statement conditional branching](#single-statement-conditional-branching)
+    - [Nested Conditions](#nested-conditions)
 
 ## Introduction
 
