@@ -20,6 +20,34 @@
 
 ## Introduction
 
+We can visualize python dictionaries as regular dictionary book. If we want to
+find the meaning of the word `apple`, we search for the keyword `apple` and find the value associated to it.
+
+Dictionaries in python are similar to lists but contains key-value pairs.
+We generally access items of the dictionary using the key instead of index.
+
+Some of the features of dictionary are as follows:
+- Dictionaries are similar to lists but represented by _key-value_ pairs
+- Dictionaries are ordered (since python 3.7)
+- They are written inside _curley-brackets_ or _braces_ `{}`
+- Keys must be unique otherwise the later one replaces the original one
+- Dictionaries are mutable.
+- Dictionaries can have multiple data types in their key-value pair
+
+**Structure/syntax**
+```python
+{key_1: value_1, key_2: value2, ...}
+
+# multiline
+{
+    key_1: value_1,
+    key_2: value_2,
+    ...
+    key_n: value_n
+}
+
+```
+
 ## Creating a dictionary
 
 ## Adding/updating an item to the dictionary
