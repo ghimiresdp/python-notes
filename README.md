@@ -51,9 +51,9 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [Nested branching](course/c04_decision_making/README.md#nested-conditions)
 
 5. **[Loops](course/c05_loops)**
-    - While Loop
-    - For Loop
-    - Nested Loop
+    - [While Loop](course/c05_loops/chapter%205.1%20while%20loop.md)
+    - [For Loop](course/c05_loops/chapter%205.2%20for%20loop.md)
+    - [Nested Loop]()
     - `break`, `continue`, and `pass` statements
 
 6. **[Functions](course/c06_functions)**
