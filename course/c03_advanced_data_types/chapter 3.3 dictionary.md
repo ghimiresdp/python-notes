@@ -8,6 +8,7 @@
 # Chapter 3.3. Dictionary
 
 **Table of Contents**
+
 - [Chapter 3.3. Dictionary](#chapter-33-dictionary)
     - [Introduction](#introduction)
     - [Creating a dictionary](#creating-a-dictionary)
@@ -20,13 +21,14 @@
 
 ## Introduction
 
-We can visualize python dictionaries as regular dictionary book. If we want to
-find the meaning of the word `apple`, we search for the keyword `apple` and find the value associated to it.
+We can visualize python dictionaries as regular dictionary book. If we want to find the meaning of the word `apple`, we
+search for the keyword `apple` and find the value associated to it.
 
-Dictionaries in python are similar to lists but contains key-value pairs.
-We generally access items of the dictionary using the key instead of index.
+Dictionaries in python are similar to lists but contains key-value pairs. We generally access items of the dictionary
+using the key instead of index.
 
 Some of the features of dictionary are as follows:
+
 - Dictionaries are similar to lists but represented by _key-value_ pairs
 - Dictionaries are ordered (since python 3.7)
 - They are written inside _curley-brackets_ or _braces_ `{}`
@@ -35,6 +37,7 @@ Some of the features of dictionary are as follows:
 - Dictionaries can have multiple data types in their key-value pair
 
 **Structure/syntax**
+
 ```python
 {key_1: value_1, key_2: value2, ...}
 
@@ -43,12 +46,45 @@ Some of the features of dictionary are as follows:
     key_1: value_1,
     key_2: value_2,
     ...
-    key_n: value_n
+        key_n: value_n
 }
 
 ```
 
 ## Creating a dictionary
+
+We can create a dictionary by adding key value pairs within curley brackets.
+
+**Example 1:**
+
+```python
+dict_1 = {'a': 1, 'b': 2, 'c': 3}
+```
+
+**Example 2:**_multiline dictionary_
+
+```python
+person = {
+    'name': 'Spock',
+    'age': 20,
+    'married': False,
+    'positions': ['Lieutenant', 'Captain', 'Commander'],
+}
+```
+
+**Example 3:** _If we add the duplicate key, the second key-value pair replaces the original one_
+
+```python
+person = {
+    'name': 'Spock',
+    'age': 20,
+    'married': False,
+    'age': 21,
+}
+print(person)
+
+# Out: {'name': 'Spock', 'age': 21, 'married': False}
+```
 
 ## Adding/updating an item to the dictionary
 
