@@ -12,11 +12,12 @@
 - [Chapter 3.3. Dictionary](#chapter-33-dictionary)
     - [Introduction](#introduction)
     - [Creating a dictionary](#creating-a-dictionary)
+    - [Getting values from the dictionary](#getting-values-from-the-dictionary)
     - [Adding/updating an item to the dictionary](#addingupdating-an-item-to-the-dictionary)
     - [Adding/updating multiple items to the dictionary](#addingupdating-multiple-items-to-the-dictionary)
     - [removing an item from the dictionary](#removing-an-item-from-the-dictionary)
     - [popping out an arbitrary item from the dictionary](#popping-out-an-arbitrary-item-from-the-dictionary)
-    - [getting keys, values and items of the dictionary](#getting-keys-values-and-items-of-the-dictionary)
+    - [getting list of keys, values and items of the dictionary](#getting-list-of-keys-values-and-items-of-the-dictionary)
     - [Some useful dictionary methods](#some-useful-dictionary-methods)
 
 ## Introduction
@@ -86,6 +87,41 @@ print(person)
 # Out: {'name': 'Spock', 'age': 21, 'married': False}
 ```
 
+## Getting values from the dictionary
+
+Similar to lists or tuple, we can get values from the dictionary using keys
+inside the large brackets of the dictionary.
+
+```python
+person = {
+    'name': 'Spock',
+    'age': 20,
+    'married': False,
+    'age': 21,
+}
+
+print(person['name'])       # Spock
+print(person['married'])    # False
+```
+
+Sometimes we are not sure whether the key exists in the dictionary yet, in this
+case, we can use the `dict.get()` method to get the value from the key, or
+return the fallback value (the default value is `None`)
+
+Example:
+
+```python
+income = {
+    'salary': 2000,
+    'lease': 1000,
+    'stock': 1200,
+}
+
+# print(salary['remittance'])       # KeyError
+print(salary.get('remittance'))     # None
+print(salary.get('remittance', 0))  # 0
+
+```
 ## Adding/updating an item to the dictionary
 
 
@@ -95,7 +131,7 @@ print(person)
 
 ## popping out an arbitrary item from the dictionary
 
-## getting keys, values and items of the dictionary
+## getting list of keys, values and items of the dictionary
 
 ## Some useful dictionary methods
 
