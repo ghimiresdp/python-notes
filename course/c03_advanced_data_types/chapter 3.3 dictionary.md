@@ -60,6 +60,9 @@ We can create a dictionary by adding key value pairs within curley brackets.
 
 ```python
 dict_1 = {'a': 1, 'b': 2, 'c': 3}
+
+# using type hinting for dictionary
+dict_2: dict = {'a': 1, 'b': 2, 'c': 3}
 ```
 
 **Example 2:**_multiline dictionary_
@@ -124,8 +127,49 @@ print(salary.get('remittance', 0))  # 0
 ```
 ## Adding/updating an item to the dictionary
 
+We can directly use Assignment operator to add/update values of the dictionary.
+To do so, we use the key of the dictionary inside the large brackets followed by
+`=` sign and then the value to assign/update the value.
+
+```python
+income = {
+    'salary': 2000,
+    'lease': 1000,
+    'stock': 1200,
+}
+
+income['freelancing'] = 700     # this adds new key `freelancing` to the dict
+income['salary'] = 2200     # this updates the existing key `salary` to 2200
+print(income)
+
+# {'salary': 2200, 'lease': 1000, 'stock': 1200, 'freelancing': 700}
+
+```
 
 ## Adding/updating multiple items to the dictionary
+
+We can add/update multiple items to the dictionary using update method, or using
+unpacking methods.
+**Example 1:**
+```python
+income = {
+    'salary': 2000,
+    'lease': 1000,
+    'stock': 1200,
+}
+
+other_sources = {
+    'uber': 600,            # new item
+    'remittance': 700,      # new item
+    'salary':2400           # existing item
+}
+income.update(other_sources)
+print(income)
+
+# {'salary': 2400, 'lease': 1000, 'stock': 1200, 'uber': 600, 'remittance': 700}
+```
+
+
 
 ## removing an item from the dictionary
 
