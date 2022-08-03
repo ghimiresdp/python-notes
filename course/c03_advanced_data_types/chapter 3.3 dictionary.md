@@ -121,8 +121,8 @@ income = {
 }
 
 # print(salary['remittance'])       # KeyError
-print(salary.get('remittance'))     # None
-print(salary.get('remittance', 0))  # 0
+print(income.get('remittance'))     # None
+print(income.get('remittance', 0))  # 0
 
 ```
 ## Adding/updating an item to the dictionary
@@ -170,8 +170,29 @@ print(income)
 ```
 
 
-
 ## removing an item from the dictionary
+
+We can use `pop()` method to remove an item from the dictionary. the `pop()`
+method takes one argument. If the argument is one of the keys of the dictionary,
+then it removes the item with that key. If the key does not exist in the
+dictionary, then it throws key error.
+
+
+```python
+income = {
+    'salary': 2000,
+    'lease': 1000,
+    'stock': 1200,
+    'uber': 600,
+}
+
+income.pop('salary')
+# {'lease': 1000, 'stock': 1200, 'uber': 600}
+
+income.pop('occupation')
+# KeyError: 'occupation'
+
+```
 
 ## popping out an arbitrary item from the dictionary
 
