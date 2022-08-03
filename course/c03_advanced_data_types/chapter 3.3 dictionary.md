@@ -177,6 +177,8 @@ method takes one argument. If the argument is one of the keys of the dictionary,
 then it removes the item with that key. If the key does not exist in the
 dictionary, then it throws key error.
 
+The `dict.pop()` method returns the value of the key that is supplied in the
+argument of the method.
 
 ```python
 income = {
@@ -189,14 +191,58 @@ income = {
 income.pop('salary')
 # {'lease': 1000, 'stock': 1200, 'uber': 600}
 
+value = income.pop('uber')
+print(value)
+# 600
+
 income.pop('occupation')
 # KeyError: 'occupation'
 
 ```
 
 ## popping out an arbitrary item from the dictionary
+We can use `dict.popitem()` to remove an arbitrary item from the dictionary.
+the `popitem()` method do not take any argument and returns both `key` and
+`value` as a tuple.
+
+```python
+income = {
+    'salary': 2000,
+    'lease': 1000,
+    'stock': 1200,
+    'uber': 600,
+}
+
+(key, value) = income.popitem()
+
+print(key, value)
+# uber 600
+```
+
 
 ## getting list of keys, values and items of the dictionary
+
+We can use `dict.keys()`, `dict.values()`, and `dict.items()` to get the
+list-like iterables from the dictionary.
+
+
+```python
+person = {
+    'name': 'Spock',
+    'age': 20,
+    'married': False,
+}
+
+print(person.keys())
+# dict_keys(['name', 'age', 'married'])
+
+print(person.values())
+# dict_values(['Spock', 20, False])
+
+print(person.items())
+# dict_items([('name', 'Spock'), ('age', 20), ('married', False)])
+```
+
 
 ## Some useful dictionary methods
 
