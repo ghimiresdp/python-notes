@@ -94,28 +94,91 @@ even.remove(10)
 print(even)
 # {2, 4, 6, 8}
 ```
-Here removing an item with either of the method gives the same result, however
-if an item does not exist in the set then the `remove()` method throws a
-KeyError.
+
+Here removing an item with either of the method gives the same result, however if an item does not exist in the set then
+the `remove()` method throws a KeyError.
 
 ```python
 even = {2, 4, 6, 8, 10}
-even.discard(12)
+even.discard(12)  # does not throw any error
 
-even.remove(12) # KeyError: 12
+even.remove(12)  # KeyError: 12
 ```
 
 ## finding out the length of the set
 
+similar to other iterables, we can use `len()` function or `__len__()`
+method to find the length of the list.
+
+```python
+odd = {1, 3, 5, 7, 9, 11}
+print(len(odd))  # 6
+print(odd.__len__())  # 6
+```
+
 ## Mathematical model of the set
+
+Sets are useful when we want to find out the similarity, difference, etc using different set methods. We can perform
+different operations between sets which are as follows.
 
 ### Union
 
+Union gives all the items that are contained in either of the set. This gives all items without any duplicate number of
+items. In mathematics, it is represented by `A U B`.
+
+```python
+odd = {1, 3, 5, 7, 9, 11}
+prime = {2, 3, 5, 7, 11}
+
+print(odd.union(prime))     # {1, 2, 3, 5, 7, 9, 11}
+print(odd | prime)          # {1, 2, 3, 5, 7, 9, 11}
+```
+
 ### Intersection
+
+Intersection gives common items that represents both sets. In mathematics, it is represented by `A n B`.
+
+```python
+odd = {1, 3, 5, 7, 9, 11}
+prime = {2, 3, 5, 7, 11}
+
+print(odd.intersection(prime))  # {11, 3, 5, 7}
+print(odd & prime)              # {11, 3, 5, 7}
+
+```
 
 ### Difference
 
+Difference gives sets that are contained in only the specified set. If there are any common, they are discarded. In
+mathematics, it is represented by `A - B` or `B - A`. It is also called as `A-Only` and `B-only`
+
+
+```python
+odd = {1, 3, 5, 7, 9, 11}
+prime = {2, 3, 5, 7, 11}
+
+print(odd.difference(prime))    # {1, 9}
+print(odd - prime)              # {1, 9}
+
+print(prime.difference(odd))    # {2}
+print(prime - odd)              # {2}
+```
+
 ### Symmetric Difference
+
+A symmetric difference between two sets can be defined by the items that share no common intersections. In mathematics,
+it is represented by
+`(A U B) - (A n B)` or `(A - B) U (B - A)`
+
+```python
+odd = {1, 3, 5, 7, 9, 11}
+prime = {2, 3, 5, 7, 11}
+
+print(odd.symmetric_difference(prime))  # {1, 2, 9}
+print(odd ^ prime)                      # {1, 2, 9}
+
+```
+
 
 ## Accessing items of a set
 
@@ -137,3 +200,15 @@ for item in prime:
 - `set.issuperset()`
 
 ## Practical Implementation: removing duplicate of a list
+
+If we want to remove duplicate of a list, we can just typecast a list to the set and again back to list so that all
+duplicates are removed.
+
+**Note**: while removing duplicates with this method, it is not guarenteed that the list becomes ordered as previous.
+
+```python
+numbers = [1, 5, 3, 2, 6, 5, 3, 7, 1, 0, 10, 5, 6, 8]
+numbers = list(set(numbers))
+print(numbers)
+# [0, 1, 2, 3, 5, 6, 7, 8, 10]
+```
