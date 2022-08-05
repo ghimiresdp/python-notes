@@ -121,6 +121,11 @@ Now the value is greater than 10
 
 ## The `break` and the `continue` Statement
 
+To skip execution in some conditions, we can use `continue` statement. The
+`break` statement breakes the execution out of the loop. These statements are
+useful when we have infinite number of iterations and want to break on some
+conditions.
+
 **Syntax:**
 ```python
 while <condition>:
@@ -131,4 +136,73 @@ while <condition>:
 
     if <some condition>:
         continue
+```
+
+**Example 1:**
+
+```python
+x = 0
+while x < 100:  # this indicates x can loop until it is 100
+    x += 1
+    if x % 3 == 0:
+        continue    # this statement skips for all multiples of x
+    if x > 10:
+        break   # This statement breaks the loop whenever the value of x > 10
+    print('The current value of x is: ', x)
+
+```
+
+**Output:**
+```
+The current value of x is:  1
+The current value of x is:  2
+The current value of x is:  4
+The current value of x is:  5
+The current value of x is:  7
+The current value of x is:  8
+The current value of x is:  10
+```
+
+
+**Example 2:**
+Write a program that displays all words entered by the user.
+- The program should sensor slightly offensive words and skip execution for one time
+- The program should immediately exit when highly offensive words are used
+- Check the word if it is palindrome if it is not offensive.
+
+```python
+offensive = ['dull', 'ugly', 'short',]
+highly_offensive = ['dog', 'shit', 'damn', 'beat',]
+
+while True:
+    word = input('\nEnter The word: ').lower()
+    if word in offensive:
+        print(f'The word {word[0]}{"*" * (len(word) - 1)} is offensive, so skipping execution...')
+        continue
+    if word in highly_offensive:
+        print("You used Highly offensive word, Good Bye!!")
+        break
+    if word == word[::-1]:
+        print('The word is palindrome')
+    else:
+        print('The word is not palindrome')
+
+```
+
+**Output:**
+```
+Enter The word: human
+The word is not palindrome
+
+Enter The word: rotator
+The word is palindrome
+
+Enter The word: ugly
+The word u*** is offensive, so skipping execution...
+
+Enter The word: short
+The word s**** is offensive, so skipping execution..
+.
+Enter The word: dog
+You used Highly offensive word, Good Bye!!
 ```
