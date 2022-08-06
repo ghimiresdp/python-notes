@@ -10,6 +10,7 @@
     - [A generic while loop](#a-generic-while-loop)
     - [While else](#while-else)
     - [The `break` and the `continue` Statement](#the-break-and-the-continue-statement)
+    - [Nested While Loop](#nested-while-loop)
 
 ## Introduction to while loop
 
@@ -66,6 +67,9 @@ display the list at the end.
 ```python
 name_list = []
 name = ''
+
+# we'll deal with break statement later
+# at that time we'll be using while True
 while name.lower() != 'exit':
     name = input('Enter the name: ')
     name_list.append(name)
@@ -201,8 +205,65 @@ Enter The word: ugly
 The word u*** is offensive, so skipping execution...
 
 Enter The word: short
-The word s**** is offensive, so skipping execution..
-.
+The word s**** is offensive, so skipping execution...
+
 Enter The word: dog
 You used Highly offensive word, Good Bye!!
+```
+
+
+## Nested While Loop
+
+Nested while loop is used when we want to loop inside an another loop.If the
+outer loop is capable of iterating 5 times and inner one is capable of iterating
+10 times, then the total Nested loop can run `5 * 10 = 50` times.
+
+**Example 1:** Multiplication Table from 4 to 6
+
+```python
+num = 4
+
+while num <= 6:
+    mul = 1
+    while mul <= 10:
+        print(f'{num:>2}  X {mul:>2}  =  {(num * mul):>2}')
+        mul += 1
+    print()
+    num += 1
+```
+
+**Output:**
+```
+ 4  X  1  =   4
+ 4  X  2  =   8
+ 4  X  3  =  12
+ 4  X  4  =  16
+ 4  X  5  =  20
+ 4  X  6  =  24
+ 4  X  7  =  28
+ 4  X  8  =  32
+ 4  X  9  =  36
+ 4  X 10  =  40
+
+ 5  X  1  =   5
+ 5  X  2  =  10
+ 5  X  3  =  15
+ 5  X  4  =  20
+ 5  X  5  =  25
+ 5  X  6  =  30
+ 5  X  7  =  35
+ 5  X  8  =  40
+ 5  X  9  =  45
+ 5  X 10  =  50
+
+ 6  X  1  =   6
+ 6  X  2  =  12
+ 6  X  3  =  18
+ 6  X  4  =  24
+ 6  X  5  =  30
+ 6  X  6  =  36
+ 6  X  7  =  42
+ 6  X  8  =  48
+ 6  X  9  =  54
+ 6  X 10  =  60
 ```
