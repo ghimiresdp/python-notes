@@ -6,3 +6,8 @@
 
 **Table of contents**:
 
+- [**Introduction to functions**]()
+- [**Function with default arguments**]()
+- [**Arbitrary Arguments and Keyword Arguments**]()
+- [**Recursive Functions**]()
+- [**Lambda Functions**]()
