@@ -267,3 +267,26 @@ while num <= 6:
  6  X  9  =  54
  6  X 10  =  60
 ```
+
+**Example 2:** A simple timer that runs for 24 hours
+
+```python
+import time
+hour = 0
+while hour < 24:
+    minute = 0
+    while minute < 60:
+        second = 0
+        while second < 60:
+            time.sleep(1)
+            current_time = f'Time Elapsed: {hour:0>2} : {minute:0>2} : {second:0>2}'
+            print(current_time, end='\r')
+            second += 1
+        minute += 1
+    hour += 1
+```
+
+**Output:** _example at 3 minutes and 39 seconds_
+```
+Time Elapsed: 00 : 03 : 59
+```
