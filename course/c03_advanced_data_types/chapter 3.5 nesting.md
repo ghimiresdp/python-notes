@@ -11,7 +11,6 @@
 - [Chapter 3.5. Nesting of Iterables](#chapter-35-nesting-of-iterables)
 - [Introduction to nesting](#introduction-to-nesting)
     - [Creating a nested iterable](#creating-a-nested-iterable)
-    - [Nesting between list, tuple, dictionary, and set](#nesting-between-list-tuple-dictionary-and-set)
     - [Accessing items from the nested iterable](#accessing-items-from-the-nested-iterable)
     - [Modifying items of the nested iterable](#modifying-items-of-the-nested-iterable)
     - [Nesting Useful Examples:](#nesting-useful-examples)
@@ -55,7 +54,23 @@ person = {
 }
 ```
 
-## Nesting between list, tuple, dictionary, and set
+**Example 3:** _Nesting between different data types_
+The example below shows a `list` of students(`dict`) in which the value of the
+key `'majors'` is a `tuple` of `strings`
+```python
+students = [
+    {
+        'name': 'John Doe',
+        'age': 20,
+        'majors': ('Mathematics', 'Physics')
+    },
+    {
+        'name': 'Jane Doe',
+        'age': 21,
+        'majors': ('Biology', 'Neurosurgery')
+    },
+]
+```
 
 ## Accessing items from the nested iterable
 
