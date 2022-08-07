@@ -3,7 +3,7 @@
 - **GitHub**: https://github.com/ghimiresdp
 
 [go to course contents](https://github.com/ghimiresdp/python-level1/)
------------------------
+<hr>
 
 # Chapter 4. Decision Making
 

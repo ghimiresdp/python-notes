@@ -1,9 +1,10 @@
 - **created by**: Sudip Ghimire
-- **URL**: [https://www.sudipghimire.com.np](https://www.sudipghimire.com.np)
-- **GitHub**: [https://github.com/ghimiresdp](https://github.com/ghimiresdp)
+- **URL**: https://www.sudipghimire.com.np
+- **GitHub**: https://github.com/ghimiresdp
 
 [go to course contents](https://github.com/ghimiresdp/python-level1/)
------------------------
+<hr>
+
 # Chapter 1 Fundamentals of Python
 
 **Table of Contents**

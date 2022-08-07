@@ -1,6 +1,9 @@
 - **created by**: Sudip Ghimire
 - **URL**: https://www.sudipghimire.com.np
-- **Github**: https://github.com/ghimiresdp
+- **GitHub**: https://github.com/ghimiresdp
+
+[go to course contents](https://github.com/ghimiresdp/python-level1/)
+<hr>
 
 # Chapter 8 Modules and Packages
 
