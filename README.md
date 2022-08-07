@@ -57,15 +57,16 @@ You can `clone` or `fork` the repository and review the course contents, example
     - `break`, `continue`, and `pass` statements
 
 6. **[Functions](course/c06_functions)**
-    - Defining a function
-    - Calling a function
-    - the `return` statement
-    - the `pass` statement
-    - Local Variables and Global variables
-    - required vs default arguments
-    - arguments and keyword arguments
-    - function with variable length arguments
-    - Anonymous or Lambda functions
+    - [Introduction to Functions](course/c06_functions/Chapter%206.1%20function.md)
+        - Defining a function
+        - Calling a function
+        - the `return` statement
+        - the `pass` statement
+        - Local Variables and Global variables
+    - [default arguments](course/c06_functions/Chapter%206.2%20default%20arguments.md)
+    - [arguments and keyword arguments](course/c06_functions/Chapter%206.Chapter%206.3%20args%20kwargs.md)
+    - [Recursive Functions](course/c06_functions/Chapter%206.Chapter%206.4%20recursive%20functions.md)
+    - [Lambda functions](course/c06_functions/Chapter%206.5%20lambda.md)
 
 7. **[Classes](course/c07_oop)**
     - Introduction to **Object Oriented Programming**
