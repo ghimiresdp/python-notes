@@ -12,8 +12,7 @@
 - [Introduction to nesting](#introduction-to-nesting)
     - [Creating a nested iterable](#creating-a-nested-iterable)
     - [Accessing items from the nested iterable](#accessing-items-from-the-nested-iterable)
-    - [Modifying items of the nested iterable](#modifying-items-of-the-nested-iterable)
-    - [Nesting Useful Examples:](#nesting-useful-examples)
+    - [Modifying items from the nested iterable](#modifying-items-from-the-nested-iterable)
 
 # Introduction to nesting
 Nesting is the process of creating an iterable inside another iterable.
@@ -73,8 +72,76 @@ students = [
 ```
 
 ## Accessing items from the nested iterable
+The example below represents a detail of a fictional `Star Wars` Movie. The
+example below shows statements for getting different elements from the data
+shown below:
 
-## Modifying items of the nested iterable
+```python
+person = {
+    'name': 'Yoda',
+    'age': 900,
+    'species': "Yoda's",
+    'language': 'Galactic Basic',
+    'affiliation': {
+        'name': 'Jedi',
+        'member_size': 12,
+        'weapons': ['Force', 'Lightsaber', 'swords', 'batons']
+    },
+    'weapon': 'lightsaber',
+}
 
+print(person['affiliation']['name'])            # 'Jedi'
+print(person['affiliation']['weapons'][1])      # 'Lightsaber'
+```
 
-## Nesting Useful Examples:
+## Modifying items from the nested iterable
+Modifying items inside of the nested iterable is similar to that of regular
+iterables.
+
+```python
+students = [
+    {
+        'name': 'John Doe',
+        'age': 20,
+        'majors': ('Mathematics', 'Physics')
+    },
+    {
+        'name': 'Jane Doe',
+        'age': 21,
+        'majors': ('Biology', 'Neurosurgery')
+    },
+]
+
+# Adding a new student to the list of students
+new_student = {
+    'name': 'John Lennon',
+    'age': 50,
+    'Majors': ('Music', 'Vocals')
+}
+students.append(new_student)
+
+# changing the age of `john doe` from 20 to 30
+students[0]['age'] = 30
+
+print(students)
+```
+
+**Output:**(Reformatted)
+```
+[
+    {
+        'name': 'John Doe'
+        'age': 30, 'majors': ('Mathematics', 'Physics'),
+    },
+    {
+        'name': 'Jane Doe',
+        'age': 21,
+        'majors': ('Biology', 'Neurosurgery')
+    },
+    {
+        'name': 'John Lennon'
+        'age': 50,
+        'Majors': ('Music', 'Vocals')
+    }
+]
+```
