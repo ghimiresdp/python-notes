@@ -70,8 +70,74 @@ print(multiples)
 
 ## Using For loop with string, list, tuple, set, and dictionary
 
+**Example 1:** For Loop with String
 
-##
+```python
+name = 'Hello World!'
+for char in name:
+    print(f'Ascii value of [ {char} ]: ', ord(char))
+```
+
+**Output:**
+```
+Ascii value of [ H ]:  72
+Ascii value of [ e ]:  101
+Ascii value of [ l ]:  108
+Ascii value of [ l ]:  108
+Ascii value of [ o ]:  111
+Ascii value of [   ]:  32
+Ascii value of [ W ]:  87
+Ascii value of [ o ]:  111
+Ascii value of [ r ]:  114
+Ascii value of [ l ]:  108
+Ascii value of [ d ]:  100
+Ascii value of [ ! ]:  33
+```
+
+**Example 2:** For Loop with List / tuple / set
+
+```python
+odd = [1, 3, 5, 7, 9]
+double_odd = []
+for num in odd:
+    double_odd.append(2 * num)
+print(double_odd)
+
+# Output: [2, 6, 10, 14, 18]
+
+even = (2, 4, 6, 8, 10)
+for num in even:
+    print(num, end=' ')
+
+# Output: 2 4 6 8 10
+
+
+prime = {2, 3, 5, 7 ,11}
+for num in prime:
+    print(num, end=', ')
+
+# Output: 2, 3, 5, 7, 11
+```
+
+**Example 3:** For loop with dictionary
+```python
+person = {
+    'name': 'Spock',
+    'age': 90,
+    'address': 'Vulcan'
+}
+
+for key, value in person.items():
+    print(f'The {key} is {value}')
+```
+
+**Output:**
+```
+The name is Spock
+The age is 90
+The address is Vulcan
+```
+
 # Nested For Loop
 
 #
