@@ -12,7 +12,7 @@
 - [Introduction to For Loop](#introduction-to-for-loop)
     - [The Range Function](#the-range-function)
     - [Using For loop with string, list, tuple, set, and dictionary](#using-for-loop-with-string-list-tuple-set-and-dictionary)
-- [Nested For Loop](#nested-for-loop)
+    - [Nested For Loop](#nested-for-loop)
 
 # Introduction to For Loop
 A For Loop iterates over a sequence of items over the iterable in the order that
@@ -138,6 +138,40 @@ The age is 90
 The address is Vulcan
 ```
 
-# Nested For Loop
+## Nested For Loop
 
-#
+**Example 1:**
+```python
+nested = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+for x in nested:
+    for y in x:
+        print(y, end=' ')
+
+# Output: 1 2 3 4 5 6 7 8 9
+```
+
+**Example 2:**
+
+```python
+lang = {
+    'low level': ['Machine Level', 'Assembly'],
+    'high level': ['C++', 'Java', 'Python']
+}
+
+for lang_type in lang:
+    for lng in lang[lang_type]:
+        print(f'The {lang_type} programming language is {lng}')
+```
+
+**Output:**
+```
+The low level programming language is Machine Level
+The low level programming language is Assembly
+The high level programming language is C++
+The high level programming language is Java
+The high level programming language is Python
+```
