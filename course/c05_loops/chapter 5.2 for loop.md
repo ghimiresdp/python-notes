@@ -13,6 +13,8 @@
     - [The Range Function](#the-range-function)
     - [Using For loop with string, list, tuple, set, and dictionary](#using-for-loop-with-string-list-tuple-set-and-dictionary)
     - [Nested For Loop](#nested-for-loop)
+    - [The `enumerate()` function](#the-enumerate-function)
+    - [The `zip()` function](#the-zip-function)
 
 # Introduction to For Loop
 A For Loop iterates over a sequence of items over the iterable in the order that
@@ -175,3 +177,22 @@ The high level programming language is C++
 The high level programming language is Java
 The high level programming language is Python
 ```
+
+
+## The `enumerate()` function
+The `enumerate()` function enumerates the value of an iterable with the index of
+that item.
+example if we have a list `['a', 'b', 'c', 'd', 'e']`, then the `enumerate()`
+function gives the tuple of the index of the list and the item on typecasting.
+
+**Example:**
+```python
+items = [chr(val) for val in range(65, 70)] # convert ASCII value to character
+print(items)
+# ['A', 'B', 'C', 'D', 'E']
+
+print(list(enumerate(items)))
+# [(0, 'A'), (1, 'B'), (2, 'C'), (3, 'D'), (4, 'E')]
+```
+
+## The `zip()` function

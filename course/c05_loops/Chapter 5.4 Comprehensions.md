@@ -95,7 +95,7 @@ dict_1 = {key: key**2 for key in range(1, 6)}
 ```
 
 
-## Generator comprehension
+## Generator Comprehension
 
 As List Comprehension does an eager execution, it will be computationally
 inefficient and will use more memory. So if we want to optimize our system to
