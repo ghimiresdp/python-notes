@@ -53,6 +53,8 @@ You can `clone` or `fork` the repository and review the course contents, example
 5. **[Loops, Pattern Generation, and Comprehension](course/c05_loops)**
     - [While Loop](course/c05_loops/chapter%205.1%20while%20loop.md)
     - [For Loop](course/c05_loops/chapter%205.2%20for%20loop.md)
+        - the `enumerate()` function
+        - the `zip()` function
     - `break`, `continue`, and `pass` statements
     - [Pattern Generation](course/c05_loops/Chapter%205.3%20Pattern%20Generation.md)
     - [Comprehensions](course/c05_loops/Chapter%205.4%20Comprehensions.md)
