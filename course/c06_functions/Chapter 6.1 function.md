@@ -86,6 +86,9 @@ Programming is made dynamic with the help of functions that accept arguments.
 Whenever we call the function, we can pass arguments so that our code can be
 made more modular and reusable.
 
+**Note:** <i>If we pass less or more arguments than expected, then it raises the
+`TypeError` saying either the argument is missing or more arguments given.</i>
+
 **Example 1:** a function that accepts 2 arguments and returns the added number.
 
 ```python
@@ -109,4 +112,51 @@ def simple_interest(principal, time, rate):
 
 si_1 = simple_interest(1000, 2, 10) # 200
 si_2 = simple_interest(5000, 3, 20) # 3000
+
+si_3 = simple_interest(1000, 2)
+# TypeError: simple_interest() missing 1 required positional argument: 'rate'
+
+
+si_3 = simple_interest(1000, 2, 10, 5)
+#TypeError: simple_interest() takes 3 positional arguments but 4 were given
+
+```
+
+**Example 3:** A function that has loop inside it
+
+```python
+def print_multiple(value, iteration):
+    for x in range(1, iteration+1):
+        print(f'iteration {x}:', value)
+
+print_multiple('Hello there!!', 5)
+```
+
+**Output:**
+```
+iteration 1: Hello there!!
+iteration 2: Hello there!!
+iteration 3: Hello there!!
+iteration 4: Hello there!!
+iteration 5: Hello there!!
+```
+
+**Example 4:** A function that returns the double of a number if it is even and
+triple of a number if it is odd.
+
+```python
+
+def double_triple(number):
+    if number % 2 == 0:
+        return 2 * number
+    else:
+        return 3 * number
+
+print(double_triple(4)) # 8
+print(double_triple(5)) # 15
+
+# functions can also be used in comprehensions
+list_1 = [double_triple(n) for n in range(1, 6)]
+print(list_1)
+# [3, 4, 9, 8, 15]
 ```
