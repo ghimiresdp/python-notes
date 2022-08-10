@@ -45,6 +45,13 @@ def <function_name> (<arg1>, <arg2>, .., <arg_n>,):
     statement[s]
 ```
 
+**Rules for defining a python function**
+- python functions are created using `camel_case`
+- parameters inside functions are separated by comma`,` along with spaces
+- while using named parameters, we do not surround `=` with spaces.
+- python function argument type is hinted with the type using `:`
+- function return type is hinted with right arrow (`-` and `>` sign). i.e. `->`
+
 **Example:** Basic Function definition
 
 ```python
@@ -103,11 +110,12 @@ print(result_2) # 15
 
 ```
 
-**Example 2:** A function that finds out the simple interest
+**Example 2:** A function that finds out the simple interest along with type
+hinting
 
 ```python
 
-def simple_interest(principal, time, rate):
+def simple_interest(principal: float, time: int, rate: float) -> float:
     return (principal * time * rate) / 100
 
 si_1 = simple_interest(1000, 2, 10) # 200
