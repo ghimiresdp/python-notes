@@ -42,3 +42,18 @@ example of builtin functions:
 def <function_name> (<arg1>, <arg2>, .., <arg_n>,):
     statement[s]
 ```
+
+**Example:** Basic Function definition
+
+```python
+def my_function():
+    print("I am inside the function")
+
+print('I am outside of the function')
+my_function()
+my_function()
+```
+In the above code, the function `my_function()` is defined or prototyped using
+`def` keyword. the empty parenthesis `()` represents that there are no
+arguments that needs to be passed to the function. Whenever it is called, it
+should print `'I am inside the function'`.
