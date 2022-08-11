@@ -12,6 +12,8 @@
     - [The `return` statement](#the-return-statement)
     - [Function with arguments](#function-with-arguments)
     - [Local, Non-local and Global variables](#local-non-local-and-global-variables)
+        - [The `global` keyword](#the-global-keyword)
+        - [The `nonlocal` keyword](#the-nonlocal-keyword)
 
 ## Introduction
 Function is a block of code that runs when it is called. Unlike other statements
@@ -186,7 +188,12 @@ x = 10  # global variable
 def my_function():
     y = 20      # local variable (it's scope is only inside a function)
     print(x)    # 10
+
+def my_next_function():
+    print(x)    # 10 since there is no local variable x, it uses global one
+
 print(x)        # 10
+my_function()
 # print(y)      # raises an exception since it is a local variable.
 ```
 
@@ -203,3 +210,49 @@ print(message)  # Hello world
 Here, even the variable `message` was initialized as a global variable,
 redefining it inside the function does not impact the global variable. once the
 scope of the local variable ends, the value will be default to the global value.
+
+### The `global` keyword
+
+If we want to access the global variable inside the function, it is possible
+but whenever we want to assign the value of the global variable and try to
+access it, it instead creates a new local variable with scope inside of the
+function. To avoid this, we use the `global` keyword.
+
+```python
+x = 'Hello world'
+def my_function():
+    global x
+    x = 'Hi there'
+my_function()
+print(x)    # Hi there
+```
+
+### The `nonlocal` keyword
+
+Non-local variables are those variables which are declared within nested
+functions. Non-local refers to the local variables of the outer function. We
+use `nonlocal` keyword to access those variables of outer functions which are
+not global.
+
+```python
+x = 10
+def outer_function():
+    x = 20
+    def inner_function():
+        nonlocal x
+        x += 10
+        print('The value of non-local x = ', x)
+    print('Before calling inner function, x = ', x)
+    inner_function()
+    print('After calling inner function, x = ', x)
+outer_function()
+print('After calling outer function, x = ', x)
+```
+
+**Output:**
+```
+Before calling inner function, x =  20
+The value of non-local x =  30
+After calling inner function, x =  30
+After calling outer function, x =  10
+```
