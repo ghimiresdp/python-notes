@@ -11,6 +11,7 @@
     - [Introduction](#introduction)
     - [The `return` statement](#the-return-statement)
     - [Function with arguments](#function-with-arguments)
+    - [Local, Non-local and Global variables](#local-non-local-and-global-variables)
 
 ## Introduction
 Function is a block of code that runs when it is called. Unlike other statements
@@ -45,10 +46,12 @@ def <function_name> (<arg1>, <arg2>, .., <arg_n>,):
     statement[s]
 ```
 
-**Rules for defining a python function**
-- python functions are created using `camel_case`
+**PEP 8 Guidelines for defining a python function**
+- python functions are created using `snake_case` names
+- top level functions are separated with 2 blank lines
 - parameters inside functions are separated by comma`,` along with spaces
-- while using named parameters, we do not surround `=` with spaces.
+- we should not surround `=` with spaces while using named
+  parameters and default vaues.
 - python function argument type is hinted with the type using `:`
 - function return type is hinted with right arrow (`-` and `>` sign). i.e. `->`
 
@@ -168,3 +171,35 @@ list_1 = [double_triple(n) for n in range(1, 6)]
 print(list_1)
 # [3, 4, 9, 8, 15]
 ```
+
+## Local, Non-local and Global variables
+
+- **Global Variables** are those variables which are not defined inside
+  any function and have a global scope.
+- **Local Variables** are those variables which are defined inside a
+  function and it's scope is limited to that function only.
+
+
+**Example 1:** variable scopes
+```python
+x = 10  # global variable
+def my_function():
+    y = 20      # local variable (it's scope is only inside a function)
+    print(x)    # 10
+print(x)        # 10
+# print(y)      # raises an exception since it is a local variable.
+```
+
+**Example 2:**
+```python
+message = 'Hello world'
+
+def my_function():
+    message = 'Hi there'
+    print(message)  # Hi there
+my_function()
+print(message)  # Hello world
+```
+Here, even the variable `message` was initialized as a global variable,
+redefining it inside the function does not impact the global variable. once the
+scope of the local variable ends, the value will be default to the global value.
