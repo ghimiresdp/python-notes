@@ -10,10 +10,10 @@
 
 **Table of Contents**
 - [Chapter 6.2: Default parameters in functions](#chapter-62-default-parameters-in-functions)
-    - [Introductions](#introductions)
+    - [Introduction](#introductions)
 
 
-## Introductions
+## Introduction
 
 While defining function, we can add default values to some or all parameters so
 that it takes default value when we do not pass values while calling the
