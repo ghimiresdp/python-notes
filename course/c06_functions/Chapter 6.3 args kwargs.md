@@ -51,7 +51,30 @@ print(add_numbers(1, 2, 3, 4))   # 10
 print(add_numbers(1, 2, 3, 4, 5))    # 15
 print(add_numbers(1, 2, 3, 4, 5, 6)) # 21
 ```
-Here, add_number needs at lease 2 numbers to calulate the sum but is capable of
+Here, add_number needs at lease 2 numbers to calculate the sum but is capable of
 accepting any number of arguments and perform addition
 
 ## Arbitrary number of keyword arguments
+Arbitrary number of keyword arguments are those arguments which are used as
+named parameters in a function call. They are extra arguments which will be
+treated as a dictionary whenever we want to access keys and values from it.
+
+```python
+def display_student_detail(name, age, **kwargs):
+    print(f'[ details of {age} years old student: {name}]')
+    for key, value in kwargs.items():
+        print(f'The {key} is {value}')
+
+display_student_detail(
+    'John Doe', 20,
+    subject='Science', class_teacher='John Lennon', address='Singapore'
+)
+
+```
+**Output:**
+```
+[ details of 20 years old student: John Doe]
+The subject is Science
+The class_teacher is John Lennon
+The address is Singapore```
+```
