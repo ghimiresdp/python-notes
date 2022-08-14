@@ -11,6 +11,7 @@
 - [Chapter 6.5: Lambda Expressions](#chapter-65-lambda-expressions)
     - [Introduction](#introduction)
     - [Lambda function with Zero arguments](#lambda-function-with-zero-arguments)
+    - [Ternary operators on lambda functions](#ternary-operators-on-lambda-functions)
 
 ## Introduction
 
@@ -34,6 +35,7 @@ written after the colon `:`, will be treated as return statement.
 
 ```python
 add_num = lambda a,b: a+b
+
 print(add_num(5, 6))  # 11
 ```
 
@@ -46,5 +48,14 @@ with zero arguments, we just use `lambda` keyword before a colon `:`.
 
 ```python
 hello_world = lambda: "Hello World"
+
 print(hello_world())    # Hello World
+```
+
+## Ternary operators on lambda functions
+
+```python
+odd_even = lambda num: 'Even' if num % 2 == 0 else 'Odd
+
+print(odd_even(14))     # Even
 ```
