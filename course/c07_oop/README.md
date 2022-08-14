@@ -8,3 +8,14 @@
 # Chapter 7 Object-Oriented Programming (OOP)
 
 **Table of contents**:
+
+- [Introduction to OOP](Chapter%207.1%20oop.md)
+    - Class
+    - Class Attributes, Methods and the `self` parameter
+    - The constructor method
+    - Built-in class attributes
+    - object
+- [Encapsulation](Chapter%207.2%20Encapsulation.md)
+- [Operator Overloading](Chapter%207.3%20Operator%20Overloading.md)
+- [Class Methods and Static Methods](Chapter%207.4%20Class%20Methods%20and%20Static%20Methods.md)
+- [Inheritance and Polymorphism](Chapter%207.5%20Inheritance%20and%20Polymorphism.md)

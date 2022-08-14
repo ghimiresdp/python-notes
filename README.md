@@ -72,19 +72,17 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [Lambda functions](course/c06_functions/Chapter%206.5%20lambda.md)
 
 7. **[Classes](course/c07_oop)**
-    - Introduction to **Object Oriented Programming**
-    - Class
-    - Class Variable and instance variable
-    - Methods,  Functions vs Methods
-    - the `__init__()` method and the `self` parameter
-    - built-in class attributes
-    - Object
-    - Encapsulation in python [ `_` , `__` in identifier]
-    - getters and setters
-    - Overrides
-    - Operator Overloading
-    - class methods and static methods
-    - inheritance
+    - [Introduction to Object Oriented Programming](course/c07_oop/Chapter%207.1%20oop.md)
+        - Class
+        - Class attributes, methods, and the `self` parameter
+        - the Constructor method
+        - built-in class attributes
+        - object
+    - [Encapsulation in python ( `_` , `__` in identifier)](course/c07_oop/Chapter%207.Chapter%207.2%20Encapsulation.md)
+        - getters and setters
+    - [Operator Overloading](course/c07_oop/Chapter%207.Chapter%207.3%20Operator%20Overloading.md)
+    - [Class methods and Static methods](course/c07_oop/Chapter%207.Chapter%207.4%20Class%20Methods%20and%20Static%20Methods.md)
+    - [Inheritance and Polymorphism](course/c07_oop/Chapter%207.Chapter%207.5%20Inheritance%20and%20Polymorphism.md)
       - Parent Class
       - Child Class
       - `super()` function
@@ -99,14 +97,14 @@ You can `clone` or `fork` the repository and review the course contents, example
     - `random` module
     - `json` module
 
-9. **[File I/O](course/c09_file)**
+9.  **[File I/O](course/c09_file)**
    - `open()` function
    - `close()` method
    - `write()` method
    - `read()` method
    - `with` keyword
 
-10. **[Exceptions and Exception Handling](course/c10_exceptions)**
+11. **[Exceptions and Exception Handling](course/c10_exceptions)**
     - Introduction to Exceptions in Python
     - Standard Errors
     - `try`, `except` keyword
@@ -116,7 +114,7 @@ You can `clone` or `fork` the repository and review the course contents, example
     - User Defined Exceptions
     - Total
 
-11. **[Python Package Management](course/c11_pip)**
+12. **[Python Package Management](course/c11_pip)**
 	- [Introduction to Symantic Versioning](course/c11_pip/c1101%20symver.md)
 	- [PIP and its usage](course/c11_pip/c1102%20pip.md)
 
