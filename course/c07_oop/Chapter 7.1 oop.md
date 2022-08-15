@@ -10,11 +10,14 @@
 **Table of contents**:
 - [Chapter 7.1 Object-Oriented Programming (OOP)](#chapter-71-object-oriented-programming-oop)
     - [Introduction to OOP](#introduction-to-oop)
+        - [Building blocks of an OOP](#building-blocks-of-an-oop)
+        - [Features Of Object-Oriented Programming](#features-of-object-oriented-programming)
     - [Python Classes](#python-classes)
         - [Attributes, Methods, and the `self` parameter](#attributes-methods-and-the-self-parameter)
         - [The constructor method](#the-constructor-method)
         - [Built-in Class Attributes](#built-in-class-attributes)
         - [Object](#object)
+    - [In python, everything are objects](#in-python-everything-are-objects)
 
 
 ## Introduction to OOP
@@ -78,6 +81,35 @@ attributes all of these can be represented with the following:
 
 ## Python Classes
 
+Python classes can be created using a `class` keyword.
+
+**Basic Structure of a class**
+```python
+class ClassName:
+    <attributes>
+    <functions>
+```
+
+### PEP-8 Conventions for creating a class
+
+- class names should be written in `UpperCamelCase`.
+- class attributes and methods should be written in `snake_case`.
+- We should separate classes with 2 blank lines and methods with a blank line.
+
+**Example:**
+```python
+class Person:
+    first_name = ''
+    last_name = ''
+
+    def show_full_name(self):
+        return f'{self.first_name} {self.last_name}'
+```
+
+The above example uses `first_name` and `last_name` as attributes of the class
+`Person` whereas `show_full_name()` as the method that binds to the person
+
+
 ### Attributes, Methods, and the `self` parameter
 
 
@@ -86,3 +118,5 @@ attributes all of these can be represented with the following:
 ### Built-in Class Attributes
 
 ### Object
+
+## In python, everything are objects
