@@ -155,7 +155,11 @@ called first. The `__init__()` method also requires `self` as the first
 parameter.
 
 To initialize the class, we write the name of the class along with parameters
-that is accepted by an initializer class.
+that is accepted by an initializer class. The example below uses a class
+`Person` with the initializer method that accepts `first_name`, and `last_name`.
+The `self` parameter is itself passed by the class whenever it is called. The
+instance `perspn_1` is a variable that has all the features that are prototyped
+by the class `Person`.
 
 ```python
 class Person:
@@ -167,9 +171,29 @@ class Person:
         self.first_name = first_name
         self.last_name = last_name
 
-person_1 = Person()
-# prints out "Hi I am Initialized"
+    def full_name(self):
+        return(f'{self.first_name} {self.last_name}')
 
+
+person_1 = Person('John', 'Doe')
+# prints out "Hi I am Initialized"
+```
+
+Here, the statement, `self.first_name = first_name` will set the first name
+for an instance `person_1`.
+
+We use `.` notation to access attributes and methods of the instance.
+
+for example, to access the first name, we can write `person_1.first_name`.
+
+```python
+person = Person('John', 'Lennon')
+
+# Accessing the attribute
+print(person.first_name)    # John
+
+# Accessing the method
+print(person.full_name())   # John Lennon
 ```
 
 ### Class Attributes and Instance attributes
