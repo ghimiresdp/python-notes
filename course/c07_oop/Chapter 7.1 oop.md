@@ -198,6 +198,44 @@ print(person.full_name())   # John Lennon
 
 ### Class Attributes and Instance attributes
 
+Those Attributes that are declared during the class definition are known as
+class attributes. Unless overridden, the class attribute points out the class
+and is accessible even before initialization of the class. If we want to declare
+an instance attribute, we need to define an attribute after `self` keyword
+otherwise it would create a local variable instead of an instance attribute.
+
+On the other hand, Instance attributes are declared inside the `__init__()`
+method and are only accessible after initializing the class. The example below
+shows different attributes declared within a class.
+
+```python
+class Animal:
+    category = 'Vertibrate'     # Class Attribute
+    legs = 4
+
+    def __init__(self, name, child):
+        self.name = name        # Instance Attribute
+        self.child = child
+        word = 'Moo'    # Local variable (Inaccessible outside of a method)
+
+print(Animal.category)  # Vertebrate
+
+# print(Animal.name)
+# AttributeError: type object 'Animal' has no attribute 'name'
+
+cow = Animal(name='Cow', child='calf')
+
+print(cow.name) # Cow
+```
+
+- To access the class attribute `category`, we do not need to instantiate the
+  class.
+- To access the instance attribute `name`, we need to instantiate the class by
+  using `Animal(name='cow', child='calf')`
+- If we try to access the attribute `name` without initialization of the class,
+  it throws an `AttributeError` saying
+  `type object 'Animal' has no attribute 'name'`.
+
 ### Built-in Class Attributes
 
 ### Object
