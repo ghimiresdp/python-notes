@@ -13,8 +13,11 @@
         - [Building blocks of an OOP](#building-blocks-of-an-oop)
         - [Features Of Object-Oriented Programming](#features-of-object-oriented-programming)
     - [Python Classes](#python-classes)
+        - [PEP-8 Conventions for creating a class](#pep-8-conventions-for-creating-a-class)
+    - [Basic Building block of Classes](#basic-building-block-of-classes)
         - [Attributes, Methods, and the `self` parameter](#attributes-methods-and-the-self-parameter)
-        - [The constructor method](#the-constructor-method)
+        - [Initializing the class, Constructor Method, and uses of `self`.](#initializing-the-class-constructor-method-and-uses-of-self)
+        - [Class Attributes and Instance attributes](#class-attributes-and-instance-attributes)
         - [Built-in Class Attributes](#built-in-class-attributes)
         - [Object](#object)
     - [In python, everything are objects](#in-python-everything-are-objects)
@@ -86,8 +89,11 @@ Python classes can be created using a `class` keyword.
 **Basic Structure of a class**
 ```python
 class ClassName:
-    <attributes>
-    <functions>
+    attr_1 = value
+    attr_2 = value
+
+    def method_1(self):
+        function body
 ```
 
 ### PEP-8 Conventions for creating a class
@@ -109,11 +115,64 @@ class Person:
 The above example uses `first_name` and `last_name` as attributes of the class
 `Person` whereas `show_full_name()` as the method that binds to the person
 
+## Basic Building block of Classes
+
+Classes are made up of the following building blocks:
+
+- Attributes
+    - Class Attribute
+    - Instance Attribute
+- Methods
+    - Class Methods
+    - Static Methods
+    - initializer method
+- Instance
+
 
 ### Attributes, Methods, and the `self` parameter
 
+- All the variables defined inside a class are attributes.
+- Attribute acts as a state of the class which changes over time and condition
+- All functions defined inside a class are known as methods
+- All instance methods use the first parameter `self` which references the
+  instance itself.
 
-### The constructor method
+```python
+class Person:
+    first_name = '' # Attribute
+    last_name = ''
+
+    def show_fullname(self):    # method
+        print(f"{self.first_name} {self.last_name}")
+```
+
+### Initializing the class, Constructor Method, and uses of `self`.
+
+The constructor method is a method that initializes the class. in python,
+`__init__()` method is used as a constructor method which prototypes an instance
+of the class. When we create an object of the class, the `__init__()` method is
+called first. The `__init__()` method also requires `self` as the first
+parameter.
+
+To initialize the class, we write the name of the class along with parameters
+that is accepted by an initializer class.
+
+```python
+class Person:
+    first_name = ''
+    last_name = ''
+
+    def __init__(self, first_name, last_name):
+        print("Hi I am Initialized")
+        self.first_name = first_name
+        self.last_name = last_name
+
+person_1 = Person()
+# prints out "Hi I am Initialized"
+
+```
+
+### Class Attributes and Instance attributes
 
 ### Built-in Class Attributes
 
