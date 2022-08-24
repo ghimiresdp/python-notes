@@ -172,7 +172,7 @@ class Person:
         self.last_name = last_name
 
     def full_name(self):
-        return(f'{self.first_name} {self.last_name}')
+        return f'{self.first_name} {self.last_name}'
 
 
 person_1 = Person('John', 'Doe')
@@ -236,7 +236,49 @@ print(cow.name) # Cow
   it throws an `AttributeError` saying
   `type object 'Animal' has no attribute 'name'`.
 
-### Built-in Class Attributes
+### Built-in Class/Instance Attributes
+
+Python classes has some built-in attributes which will be available to all
+classes. some of the attributes are as follows:
+
+- `object.__str__()`: returns the string representation of the object
+- `object.__dict__`: the dictionary representation of the object
+- `object.__doc__`: the documentation string of the class
+- `object.__sizeof__()`: returns the size of object in bytes
+
+**Example:**
+```python
+class Person:
+    """
+    The class Person stores the first_name, last_name, and age of a
+    person
+    """
+    def __init__(self, first_name, last_name, age):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+
+    def __str__(self):
+        return f'Person<{self.first_name}>'
+
+john = Person('John', 'Lennon', 50)
+
+print('The String Representation is:', john.__str__())
+print('The dictionary representation is:', john.__dict__)
+print('The document string is:', john.__doc__)
+print('The size of a class is:', john.__sizeof__())
+```
+
+**Output:**
+```
+The String Representation is: Person<John>
+The dictionary representation is: {'first_name': 'John', 'last_name': 'Lennon', 'age': 50}
+The document string is:
+    The class Person stores the first_name, last_name, and age of a
+    person
+
+The size of a class is: 32
+```
 
 ### Object
 
