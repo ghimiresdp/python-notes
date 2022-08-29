@@ -8,6 +8,12 @@
 # Chapter 7.2 Encapsulation
 
 **Table of contents**:
+- [Chapter 7.2 Encapsulation](#chapter-72-encapsulation)
+    - [Introduction](#introduction)
+        - [Why do we use Getters and Setters instead of public attributes?](#why-do-we-use-getters-and-setters-instead-of-public-attributes)
+    - [The `@property` decorator](#the-property-decorator)
+        - [Why do we use `@property` instead of getters and setters?](#why-do-we-use-property-instead-of-getters-and-setters)
+        - [decorators that we can use to create a property](#decorators-that-we-can-use-to-create-a-property)
 
 ## Introduction
 
@@ -20,7 +26,7 @@ The methods that are bound with protected attributes are called as getters and
 setters. the **getter** method takes no arguments and **setter** takes one
 argument except `self`.
 
-**Why do we use Getters and Setters instead of public attributes?**
+### Why do we use Getters and Setters instead of public attributes?
 
 - It helps hiding or prevents modifying the state of the structured data
   preventing the unauthorized access.
@@ -108,21 +114,21 @@ py_class.remove_student(john)
 # here the value __is_large will be set to False
 ```
 
-# The `@property` decorator
+## The `@property` decorator
 
 - They look like regular object variables but are capable of attaching custom behavior to the class.
 - They are used as better alternative of getters and setters
 - whenever we create a property inside a class, it's behavior will be tightly
   controlled.
 
-**Why do we use `@property` instead of getters and setters?**
+### Why do we use `@property` instead of getters and setters?
 
 - Property decorators make the function behave like an attribute so that we can
   just use an assignment operator instead of calling a method to access or set
   values of the variable.
 - It makes the code look much cleaner than using getters and setters.
 
-**decorators that we can use to create a property**
+### decorators that we can use to create a property
 - `@property`: used for creating a getter
 - `@property_name.setter`: Used for creating a setter
 - `@property_name.deleter`: Used for creating a deleter
