@@ -106,5 +106,62 @@ py_class.add_student(Student("John Denver", 4))
 
 py_class.remove_student(john)
 # here the value __is_large will be set to False
+```
 
+# The `@property` decorator
+
+- They look like regular object variables but are capable of attaching custom behavior to the class.
+- They are used as better alternative of getters and setters
+- whenever we create a property inside a class, it's behavior will be tightly
+  controlled.
+
+**Why do we use `@property` instead of getters and setters?**
+
+- Property decorators make the function behave like an attribute so that we can
+  just use an assignment operator instead of calling a method to access or set
+  values of the variable.
+- It makes the code look much cleaner than using getters and setters.
+
+**decorators that we can use to create a property**
+- `@property`: used for creating a getter
+- `@property_name.setter`: Used for creating a setter
+- `@property_name.deleter`: Used for creating a deleter
+
+**Example:**
+```python
+class Students:
+
+    def __init__(self, count: int):
+        self.__count = count
+
+    @property
+    def count(self):  # Getter
+        return self.__count
+
+    @count.setter  # Setter
+    def count(self, value):
+        print("I can do other things while updating my value")
+        self.__count = value
+
+    @count.deleter
+    def count(self):
+        self.__count=0
+
+
+class_1 = Students(10)
+
+# without property, we have to call the count() method
+# but with property, we can use it like a variable or an attribute
+print(class_1.count)
+
+# without property, we have to call the set_count(11) method to change the
+# value
+# but with property, we can use assignment operator
+class_1.count = 11
+print(class_1.count)
+
+# instead of deleting the attribute, we added custom behavior that sets count
+# to 0 when we use `del` keyword.
+del class_1.count
+print(class_1.count)
 ```
