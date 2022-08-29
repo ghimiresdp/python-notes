@@ -4,7 +4,7 @@
 Encapsulation
 
 - It is the process of restricting the direct access to the data.
-- Encapsulation is achieved by bundling the data along with methods to make the data usable.
+- Encapsulation is achieved by binding the data along with methods to make the data usable.
 - When the attribute becomes private, we do not have direct access to the data that time we use
   getters and setters to retrieve and set the value to the variable.
 
