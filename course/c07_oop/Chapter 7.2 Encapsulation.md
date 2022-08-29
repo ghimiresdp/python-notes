@@ -9,7 +9,6 @@
 
 **Table of contents**:
 
-
 ## Introduction
 
 Encapsulation is the process of restricting the direct access to the data.
@@ -29,8 +28,8 @@ argument except `self`.
   the user modifying the public attribute might forget to reflect changes in
   the another.
 
-
 **example**
+
 ```python
 class MyClass:
     # protected attribute (accessible from outside of class)
@@ -48,6 +47,7 @@ class MyClass:
         # __age.
         self._name = f'Unknown: {age}'
 
+
 c1 = MyClass()
 
 # print(c1.__age)
@@ -58,9 +58,53 @@ print()
 c1.set_age(30)
 # here the age is set to 30 and also the state _name is changed accordingly.
 
-print(c1.get_age()) # 30
+print(c1.get_age())  # 30
 
 # We can access the protected member if it starts with a single _
-print(c1._name)     # Unknown: 30
+print(c1._name)  # Unknown: 30
 ```
 
+**Example 2:** An advanced class representation which takes list of
+`Student` objects and changes the state `__is_large` when the number of
+students is more than 3
+
+```python
+class Student:
+
+    def __init__(self, name, roll):
+        self.name = name
+        self.roll = roll
+
+    def __str__(self) -> str:
+        return self.name
+
+
+class ClassRoom:
+    def __init__(self, name):
+        self.__is_large = False
+        self.__students = []
+        self.name = name
+
+    def add_student(self, student: Student):  # setter
+        self.__students.append(student)
+        self.__is_large = True if self.__students.__len__() > 3 else False
+
+    def remove_student(self, student: Student):  # setter / deleter
+        if student in self.__students:
+            self.__students.remove(student)
+            self.__is_large = True if self.__students.__len__() > 3 else False
+        else:
+            print(f"Student with name {student.name} does not exist")
+
+john = Student("Jon Doe", 1)
+py_class = ClassRoom("Python for Beginners")
+py_class.add_student(john)
+py_class.add_student(Student("John Lennon", 2))
+py_class.add_student(Student("John Legend", 3))
+py_class.add_student(Student("John Denver", 4))
+# here the value __is_large will be set to True
+
+py_class.remove_student(john)
+# here the value __is_large will be set to False
+
+```
