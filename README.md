@@ -48,7 +48,9 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [if statement](course/c04_decision_making/README.md#if-condition)
     - [if else statement](course/c04_decision_making/README.md#if-else-condition)
     - [if elif else statement](course/c04_decision_making/README.md#if-elif-else-condition)
-    - [Nested branching](course/c04_decision_making/README.md#nested-conditions)
+    - [the `match` statement](course/c04_decision_making/README.md#the-match-condtion)
+    - [ternary operators](course/c04_decision_making/README.md#ternary-operators)
+    - [Nested conditions](course/c04_decision_making/README.md#nested-conditions)
 
 5. **[Loops, Pattern Generation, and Comprehension](course/c05_loops)**
     - [While Loop](course/c05_loops/chapter%205.1%20while%20loop.md)
