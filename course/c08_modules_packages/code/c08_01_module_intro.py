@@ -14,10 +14,7 @@ from animal import Animal, DomesticAnimal
 # we can also use small brackets so that we can import in different lines
 
 from animal import (
-    DOMESTIC,
-    WILD,
     Animal,
-    DomesticAnimal,
     DomesticAnimal,
     WILD,
     DOMESTIC,
