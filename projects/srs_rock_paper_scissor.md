@@ -108,7 +108,7 @@ Computer : SCISSOR
 |                      Game Statistics                  |
 +.......................................................+
 |  Total Rounds:     2      |  Total Draws:      0      |
-|  Computer:         1      |  John:             1      |
+|  Computer:         1      |  John:             3      |
 |                                                       |
 |   +-----------------------------------------------+   |
 |   |      CONGRATULATIONS, YOU WON THE MATCH       |   |
