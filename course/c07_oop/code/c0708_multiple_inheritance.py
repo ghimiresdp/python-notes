@@ -45,7 +45,6 @@ child = Child()
 print(child.x)
 
 
-
 class Shop:
     def __init__(self) -> None:
         self.__reg_no=0

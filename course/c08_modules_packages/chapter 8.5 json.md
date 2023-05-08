@@ -130,6 +130,6 @@ To load the dictionary from the json file, we need to open file in a `read mode`
 ```python
 import json
 
-with open ("filename.json", 'r'):
-    dict_1 = json.loads(json_string)
+with open ("filename.json", 'r') as file:
+    dict_1 = json.load(file)
 ```
