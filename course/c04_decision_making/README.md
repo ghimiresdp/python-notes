@@ -102,44 +102,21 @@ else:
 
 ## The `if elif else` condition
 
-The `if elif else` condition adds more flexibility to branching providing more than one conditions.
+The `if elif else` condition adds more flexibility to branching providing more
+than one conditions.
 
 **Syntax**
 
 ```python
 if < condition 1 >:
-    code
-    block
-    that
-    runs
-    only
-    when
-    condition
-    satisfies
+    # code block that runs only when condition satisfies
 elif < condition 2 >:
-    code
-    block
-    that
-    runs if the
-    condition
-    1
-    satisfies and condition
-    2
-    satisfies
-    ...
+    # code block that runs if the condition 1 satisfies and condition 2 satisfies
+    # ...
 elif < condition n >:
-    ...
+    # ...
 else:
-    code
-    block
-    that
-    runs
-    only if all
-    of
-    above
-    condition
-    does
-    not satisfy
+    # code block that runs only if all of above condition does not satisfy
 ```
 
 **example**

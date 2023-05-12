@@ -32,20 +32,24 @@
 
 ## What is an interpreter
 
-- A computer program that directly executes instructions without    requiring to be compiled to a machine level code.
+- A computer program that directly executes instructions without requiring to be
+  compiled to a machine level code.
 - The code executes line-by-line when required
 - Unlike compiler, it runs instructions until the line where error is spotted
-- It does not generate intermediary code, hence, is highly efficient in terms of memory
+- It does not generate intermediary code, hence, is highly efficient in terms of
+  memory
 - Drawback: Needs to be interpreted every time
-- Programming languages such as Perl, Python, MATLAB, QBasic are interpreted programming languages
+- Programming languages such as Perl, Python, MATLAB, QBasic are interpreted
+  programming languages
 
 ## Features of python
 
 ### Python is easy to code
 
-Python syntax is too easy and the code is so cleaner that anyone (even non-programmers understand python code easily)
+Python syntax is easy and the code is cleaner so that anyone can understand the
+python code easily.
 
-Hello world program in **C++** and **Java** vs **Python**
+#### Hello world program in **`C++`** and **`Java`** vs **`Python`**
 
 **C++**
 
