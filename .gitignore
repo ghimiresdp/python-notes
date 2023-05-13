@@ -136,3 +136,6 @@ dmypy.json
 
 **/records/
 tmp/
+
+# pdf exports of markdown files
+course/**/*.pdf
