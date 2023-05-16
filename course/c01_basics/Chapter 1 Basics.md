@@ -6,19 +6,21 @@
 
 **Table of Contents**
 - [Chapter 1: Python Basics](#chapter-1-python-basics)
-    - [What is python?](#what-is-python)
-    - [What is an interpreter](#what-is-an-interpreter)
-    - [Features of python](#features-of-python)
-        - [Python is easy to code](#python-is-easy-to-code)
-        - [Among programming languages, Python grammar is closest to English grammar.](#among-programming-languages-python-grammar-is-closest-to-english-grammar)
-        - [Some notable features of python for programmers coming from other programming languages](#some-notable-features-of-python-for-programmers-coming-from-other-programming-languages)
-    - [Why we choose python?](#why-we-choose-python)
-    - [Installing Python](#installing-python)
-        - [Windows](#windows)
-        - [Linux and Mac OS](#linux-and-mac-os)
-    - [Getting Started](#getting-started)
-    - [Hello World with IDLE](#hello-world-with-idle)
-    - [Creating, editing, and running python files.](#creating-editing-and-running-python-files)
+  - [What is python?](#what-is-python)
+  - [What is an interpreter](#what-is-an-interpreter)
+  - [Features of python](#features-of-python)
+    - [Python is easy to code](#python-is-easy-to-code)
+      - [Hello world program in **`C++`** and **`Java`** vs **`Python`**](#hello-world-program-in-c-and-java-vs-python)
+    - [Among programming languages, Python grammar is closest to English grammar.](#among-programming-languages-python-grammar-is-closest-to-english-grammar)
+    - [Some notable features of python for programmers coming from other programming languages](#some-notable-features-of-python-for-programmers-coming-from-other-programming-languages)
+  - [Why we choose python?](#why-we-choose-python)
+  - [Installing Python](#installing-python)
+    - [Windows](#windows)
+    - [Linux and Mac OS](#linux-and-mac-os)
+  - [Getting Started](#getting-started)
+  - [Hello World with IDLE](#hello-world-with-idle)
+  - [Creating, editing, and running python files.](#creating-editing-and-running-python-files)
+  - [Comment lines](#comment-lines)
 
 ## What is python?
 
@@ -211,6 +213,7 @@ the output will be shown in the shell below
 Hello world!!
 ```
 
+
 ## Creating, editing, and running python files.
 
 We can create a new file and save with `.py` extension to create a new python file. Since python file is a normal text file, you should be able to open with any text editor. If you want better syntax highlighting and code completion, you can use IDEs or code editors such as VSCode.
@@ -246,4 +249,48 @@ If you're using CMD or powershell, The command would be like:
 C:\Users\john> python C:\Users\john\Documents\hello_world.py
 
 The sum is: 15
+```
+
+## Comment lines
+
+We can create a comment line to either add the documentation to our code or to
+prevent the line to be executed.
+
+The comment line is always started with `#`. The python interpreter
+ignores the line once it detects the `#` symbol in the line.
+
+If we want to add a short comment to the statement, we can inline the comment
+just after the statement so that only the statement executes.
+
+> **Note**: _adding hash `#` within quotes is not detected as a comment._
+> _They are just regular string literals._
+
+Example:
+```py
+# the lines below  adds two numbers a and b and assign the value to c.
+a = 10  # inline comment
+b = 20
+c = a + b   # this is the result
+
+# The statement below never executes since it is commented out.
+# print(c)
+
+# Here the hash after Hello will not be regarded as a comment
+print('Hello # World')
+
+```
+
+We can also add multi-line comments using triple quotes. `'''` or `"""`. We add
+multi-line comment to either add the documentation to the code or to comment out
+codes spanning large number of lines.
+
+```py
+
+"""
+This is a multi-line comment.
+I do not need to add # on every line to this type of comment
+and I have a good purpose too, which is documentation.
+"""
+print('Hello world')
+
 ```
