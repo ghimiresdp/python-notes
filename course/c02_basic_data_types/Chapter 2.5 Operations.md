@@ -341,6 +341,34 @@ print(20 not in x)  # True
 
 ## bitwise operations
 
+Bitwise operation, as suggested by name, work on bits. They work only with
+numeric values (specifically integers) since we need to convert the number to
+corresponding binary equivalent to perform operation. Bitwise operation is done
+on a bit-by-bit rather than a number as a whole.
+
+For example: If we want to perform bitwise operation on 9 and 26, then we need
+to convert them to the equivalent binary representation.
+
+- The binary equivalent of `9` is `1001`.
+- The binary equivalent of 26 is `11010`.
+
+If the number of bits  between 2 numbers are not equal to perform operations,
+the number with less number of bits is automatically zero-padded.
+
+Example:
+```
+26  = 1 1 0 1 0  =   1 1 0 1 0
+ 9  =   1 0 0 1  =   0 1 0 0 1
+```
+
+Now, each bit of a number is performed logical operation with the same position
+of another number.
+
+- The unit digit of 26 interacts with the unit digit of 9.
+- The second digit of 26 interacts with the second digit of 9.
+- ...
+- The foremost digit of 26 interacts with the foremost (padded) digit of 9.
+
 
 
 ## assignment operations
