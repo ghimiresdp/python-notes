@@ -10,30 +10,36 @@
 **Table of Contents**
 
 - [Chapter 2.5. Basic Operations](#chapter-25-basic-operations)
-    - [arithmetic operations](#arithmetic-operations)
-        - [Addition](#addition)
-        - [Subtraction](#subtraction)
-        - [Multiplication](#multiplication)
-        - [Division](#division)
-        - [Modulus](#modulus)
-        - [Exponentiation](#exponentiation)
-        - [Integer Division](#integer-division)
-    - [Relational Operations](#relational-operations)
-        - [equals (`==`)](#equals-)
-        - [not equals (`!=`)](#not-equals-)
-        - [less than (`<`)](#less-than-)
-        - [less than or equals (`<=`)](#less-than-or-equals-)
-        - [greater than (`>`)](#greater-than-)
-        - [greater than or equals (`>=`)](#greater-than-or-equals-)
-    - [logical operations](#logical-operations)
-        - [`and` operation](#and-operation)
-        - [`or` operation](#or-operation)
-        - [`not` operation](#not-operation)
-        - [Compound logical operations](#compound-logical-operations)
-    - [identity operations](#identity-operations)
-    - [membership operations](#membership-operations)
-    - [bitwise operations](#bitwise-operations)
-    - [assignment operations](#assignment-operations)
+  - [arithmetic operations](#arithmetic-operations)
+    - [Addition](#addition)
+    - [Subtraction](#subtraction)
+    - [Multiplication](#multiplication)
+    - [Division](#division)
+    - [Modulus](#modulus)
+    - [Exponentiation](#exponentiation)
+    - [Integer Division](#integer-division)
+  - [Relational Operations](#relational-operations)
+    - [equals (`==`)](#equals-)
+    - [not equals (`!=`)](#not-equals-)
+    - [less than (`<`)](#less-than-)
+    - [less than or equals (`<=`)](#less-than-or-equals-)
+    - [greater than (`>`)](#greater-than-)
+    - [greater than or equals (`>=`)](#greater-than-or-equals-)
+  - [logical operations](#logical-operations)
+    - [`and` operation](#and-operation)
+    - [`or` operation](#or-operation)
+    - [`not` operation](#not-operation)
+    - [Compound logical operations](#compound-logical-operations)
+  - [identity operations](#identity-operations)
+  - [membership operations](#membership-operations)
+  - [bitwise operations](#bitwise-operations)
+    - [Bitwise AND `&`](#bitwise-and-)
+    - [Bitwise OR `|`](#bitwise-or-)
+    - [Bitwise XOR `^`](#bitwise-xor-)
+    - [Bitwise NOT `~`](#bitwise-not-)
+    - [Bitwise shift left `<<`](#bitwise-shift-left-)
+    - [Bitwise shift right `>>`](#bitwise-shift-right-)
+  - [assignment operations](#assignment-operations)
 
 ## arithmetic operations
 
@@ -281,20 +287,21 @@ else:
 
 Identity operation compares whether 2 objects are same objects or not. Remember,
 They are not used to compare for equality. There are 2 basic identity operations
+
 1. `is`
 2. `is not`
 
 ```python
-print(type('abc') is str)       # True
+print(type('abc') is str)  # True
 ```
 
 ```python
 list1 = ['abc', 'def']
-list2 = list1           # same object is referenced here
-list3 = list1.copy()    # shallow copy is made here
+list2 = list1  # same object is referenced here
+list3 = list1.copy()  # shallow copy is made here
 
-print(list1 is list2)   # True
-print(list1 is list3)   # False
+print(list1 is list2)  # True
+print(list1 is list3)  # False
 
 print(type(list1) is not int)  # True
 
@@ -305,6 +312,7 @@ print(type(list1) is not int)  # True
 ```python
 print((1 + 4) is (6 - 1))
 ```
+
 The above statement gives the equality, but still shows warning suggesing `==`
 instead of `is` operator.
 
@@ -322,20 +330,22 @@ Example 1:
 
 ```py
 sentence = 'A quick brown fox jumps over the lazy dog.'
-print('fox' in sentence)    # True
-print('monkey' in sentence) # False
+print('fox' in sentence)  # True
+print('monkey' in sentence)  # False
 
-print('fox' not in sentence)    # False
-print('monkey' not in sentence) # True
+print('fox' not in sentence)  # False
+print('monkey' not in sentence)  # True
 
 ```
+
 Example 2:
+
 ```py
 x = [1, 2, 3, 4, 5]
-print(5 in x)   # True
+print(5 in x)  # True
 print(10 in x)  # False
 
-print(2 not in x)   # False
+print(2 not in x)  # False
 print(20 not in x)  # True
 ```
 
@@ -349,17 +359,29 @@ on a bit-by-bit rather than a number as a whole.
 For example: If we want to perform bitwise operation on 9 and 26, then we need
 to convert them to the equivalent binary representation.
 
-- The binary equivalent of `9` is `1001`.
-- The binary equivalent of 26 is `11010`.
+- The binary equivalent of `9` is `01001`.
+- The binary equivalent of 26 is `011010`.
 
-If the number of bits  between 2 numbers are not equal to perform operations,
+If the number of bits between 2 numbers are not equal to perform operations,
 the number with less number of bits is automatically zero-padded.
 
 Example:
+
 ```
-26  = 1 1 0 1 0  =   1 1 0 1 0
- 9  =   1 0 0 1  =   0 1 0 0 1
+Positive numbers are preceed by by 0
+ 26  = 0 1 1 0 1 0  =   [0] 1 1 0 1 0
+  9  =   0 1 0 0 1  =   [0] 0 1 0 0 1
+
+Negative numbers are preceed by by 1
+(representation might be different on different programming languages)
+-10  =   1 0 1 1 0  =   [1] 0 1 1 0
 ```
+
+> **Note**:
+> - _1's complement of `1010` is `0101`._
+> - _2's complement of `1010` is `0101` + `1` = `0110`._
+> - _Number starting with `0` represents the positive number_
+> - _Number starting with `1` represents the negative number_
 
 Now, each bit of a number is performed logical operation with the same position
 of another number.
@@ -369,33 +391,147 @@ of another number.
 - ...
 - The foremost digit of 26 interacts with the foremost (padded) digit of 9.
 
+The following are bitwise operations supported in python:
 
+### Bitwise AND `&`
+
+This operation performs logical `AND` operations on each bits of 2 numbers
+
+```py
+print(9 & 26)   # 8
+```
+
+Explanation:
+
+```
+26    = 0 1 1 0 1 0
+ 9    = 0 0 1 0 0 1
+_________________________
+AND   = 0 0 1 0 0 0  = 8
+ ```
+
+### Bitwise OR `|`
+
+This operation performs logical `OR` operations on each bits of 2 numbers
+
+```py
+print(9 | 26)   # 27
+```
+
+Explanation:
+
+```
+26    = 0 1 1 0 1 0
+ 9    = 0 0 1 0 0 1
+_________________________
+OR    = 0 1 1 0 1 1  = 27
+ ```
+
+### Bitwise XOR `^`
+
+This operation performs logical `XOR` operations on each bits of 2 numbers
+
+```py
+print(9 ^ 26)   # 19
+```
+
+Explanation:
+
+```
+26    = 0 1 1 0 1 0
+ 9    = 0 0 1 0 0 1
+_________________________
+XOR   = 0 1 0 0 1 1  = 19
+```
+
+### Bitwise NOT `~`
+
+Bitwise `NOT` operation is performed on a single variable since it negates all
+the bits of the given number. remember, the representation of negative number is
+a bit weird than a regular positive integer.
+
+```py
+print(~9)   # -10
+```
+
+Explanation:
+
+```
+ 9    = 0 1 0 0 1
+_________________________
+NOT   = 1 0 1 1 0  = -10
+ ```
+
+> **Note**: _To understand the negative number, you need to understand:_
+> - 1's Complement
+> - 2's Complement
+
+### Bitwise shift left `<<`
+
+This process shifts all bits towards the left by specified number of times. The
+bit-wise shift left doubles the number for each shift.
+
+Example:
+```py
+print(6 << 1)   # 12
+print(6 << 2)   # 24
+```
+
+Explanation:
+```
+   6  = |     0 1 1 0 |        We can prepend any number of zeros for positive.
+<< 1  = |   0 1 1 0 _ |        the vacant place is padded with zero
+      = |   0 1 1 0 0 |  = 12  (6 << 1)
+<< 1  = | 0 1 1 0 0 0 |  = 24  (6 << 2)
+
+```
+
+### Bitwise shift right `>>`
+
+This process shifts all bits towards the right by specified number of times. The
+bit-wise shift right halves the number (with integer division) for each shift.
+
+Example:
+```py
+print(6 >> 1)   # 3
+print(6 >> 2)   # 1
+```
+
+Explanation:
+```
+   6  = | 0 1 1 0 |
+>> 1  = | _ 0 1 1 | 0          the right-most value (0) is discarded
+      = | _ 0 1 1 | x     = 3   (6 >> 1)
+>> 1  = | _ _ 0 1 | 1     = 1  the right-most value (1) is discarded
+      = | _ _ 0 1 | X     = 1  (6 >> 2)
+
+```
 
 ## assignment operations
 
 Assignment Operations assign values from right side operands to left side
 operand/operands. Following are assignment operations used in python:
 
-1.  `=`
+1. `=`
     - example: `x = 5`
 
-1.  `+=`
+2. `+=`
     - example: `x += 5`
     - equivalent code: `x = x + 5`
 
-1.  `-=`
+3. `-=`
     - example: `x -= 5`
     - equivalent code: `x = x - 5`
 
 **Other assignment operations:**
 
-1.  `*=`
-2.  `/=`
-3.  `%=`
-4.  `//=`
-5.  `**=`
-6.  `&=`
-7.  `|=`
-8.  `^=`
-9.  `>>=`
+1. `*=`
+2. `/=`
+3. `%=`
+4. `//=`
+5. `**=`
+6. `&=`
+7. `|=`
+8. `^=`
+9. `>>=`
 10. `<<=`
