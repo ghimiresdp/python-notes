@@ -188,7 +188,7 @@ We can not access individual item of the set, however we can iterate through all
 prime = {2, 3, 5, 7, 11, 13, 17}
 
 for item in prime:
-    print(prime)
+    print(item)
 ```
 
 ## Some useful Set Methods
