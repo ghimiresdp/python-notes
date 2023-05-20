@@ -17,7 +17,7 @@ Write a program to input a number from the terminal and check whether a number i
 ## Quiz Q0402
 Write a program to input a word and find out if it is palindrome.
 
-A word is palindrome if it reads the same from both backward and forward. `EVE` `HANNAH` `BOB`, `ROTATOR` `REPEATER`, etc. are some of palindrome words
+A word is palindrome if it reads the same from both backward and forward. `EVE` `HANNAH` `BOB`, `ROTATOR`, `ANNA`, etc. are some of palindrome words
 
 The output in the console should look like below:
 ```

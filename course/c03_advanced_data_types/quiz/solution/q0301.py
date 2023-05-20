@@ -23,7 +23,8 @@ my_list.extend(more_items)
 print(f"The list after extending with {more_items} is {my_list}")
 
 # 4
-print(f"Length of the list is {my_list.__len__()}")
+print(f"Length of the list is {len(my_list)}")  # using len() function
+print(f"Length of the list is {my_list.__len__()}") # using class method
 
 # 5
 print("List before popping out second item:", my_list)

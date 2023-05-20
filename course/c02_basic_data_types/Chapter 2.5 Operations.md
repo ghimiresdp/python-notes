@@ -15,9 +15,9 @@
     - [Subtraction](#subtraction)
     - [Multiplication](#multiplication)
     - [Division](#division)
-    - [Modulus](#modulus)
-    - [Exponentiation](#exponentiation)
-    - [Integer Division](#integer-division)
+    - [Modulus ( `%` )](#modulus---)
+    - [Exponentiation ( `**` )](#exponentiation---)
+    - [Integer Division ( `//` )](#integer-division---)
   - [Relational Operations](#relational-operations)
     - [equals (`==`)](#equals-)
     - [not equals (`!=`)](#not-equals-)
@@ -93,19 +93,25 @@ d3 = 4.7 / 2  # integer and float
 d4 = (5 + 4j) / (6 + 5j)  # complex and complex
 ```
 
-### Modulus
+### Modulus ( `%` )
+
+Modulus operation finds out the remainder whenever the number is divided by
+another number. for example if `10` is divided by `3`, it gives remainder `1`.
 
 **Syntax**: `a % b`
 
 ```python
-e1 = 55 % 4  # integer and integer
+e1 = 55 % 4  # integer and integer      gives: 3 
 e2 = 5.5 % 2.3  # float and float
 e3 = 4.7 % 2  # integer and float
 ```
 
-### Exponentiation
+### Exponentiation ( `**` )
 
-**Syntax**: a ** b`
+Exponentiation is also known as power. In python we can find out the
+n<sup>th</sup> power of a number using `**` symbol. example  `10 ** 2` means 10<sup>2</sup> = 100.
+
+**Syntax**: `a ** b`
 
 ```python
 f1 = 5 ** 4  # integer and integer
@@ -113,9 +119,14 @@ f2 = 5.5 ** 2.3  # float and float
 f3 = 4.7 ** 2  # integer and float
 ```
 
-### Integer Division
+### Integer Division ( `//` )
 
-**Syntax**: a // b`
+Integer division always gives the integer equivalent value of the result when
+a number is divided by another. For example `10/4` is `2.5` but the integer
+division gives out the integer part only i.e. `10 // 4` gives `2`.
+
+
+**Syntax**: `a // b`
 
 ```python
 print(5 // 2)
