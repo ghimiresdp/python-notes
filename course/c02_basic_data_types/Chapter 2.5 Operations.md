@@ -11,20 +11,20 @@
 
 - [Chapter 2.5. Basic Operations](#chapter-25-basic-operations)
   - [arithmetic operations](#arithmetic-operations)
-    - [Addition](#addition)
-    - [Subtraction](#subtraction)
-    - [Multiplication](#multiplication)
-    - [Division](#division)
+    - [Addition ( `+` )](#addition---)
+    - [Subtraction ( `-` )](#subtraction----)
+    - [Multiplication ( `*` )](#multiplication---)
+    - [Division ( `/` )](#division---)
     - [Modulus ( `%` )](#modulus---)
     - [Exponentiation ( `**` )](#exponentiation---)
     - [Integer Division ( `//` )](#integer-division---)
   - [Relational Operations](#relational-operations)
-    - [equals (`==`)](#equals-)
-    - [not equals (`!=`)](#not-equals-)
-    - [less than (`<`)](#less-than-)
-    - [less than or equals (`<=`)](#less-than-or-equals-)
-    - [greater than (`>`)](#greater-than-)
-    - [greater than or equals (`>=`)](#greater-than-or-equals-)
+    - [equals ( `==` )](#equals---)
+    - [not equals ( `!=` )](#not-equals---)
+    - [less than ( `<` )](#less-than---)
+    - [less than or equals ( `<=` )](#less-than-or-equals---)
+    - [greater than ( `>` )](#greater-than---)
+    - [greater than or equals ( `>=` )](#greater-than-or-equals---)
   - [logical operations](#logical-operations)
     - [`and` operation](#and-operation)
     - [`or` operation](#or-operation)
@@ -46,7 +46,7 @@
 Arithmetic operations includes the basic arithmetic operations to different data types. The following are the basic
 arithmetic operations
 
-### Addition
+### Addition ( `+` )
 
 **Syntax**: `a + b`
 
@@ -58,7 +58,7 @@ a4 = "Hello " + "world"  # string and string
 a5 = (5 + 4j) + (6 + 5j)  # complex and complex
 ```
 
-### Subtraction
+### Subtraction ( `-` )
 
 **Syntax**: `a - b`
 
@@ -70,7 +70,7 @@ b3 = 4.7 - 2  # integer and float
 b5 = (5 + 4j) - (6 + 5j)  # complex and complex
 ```
 
-### Multiplication
+### Multiplication ( `*` )
 
 **Syntax**: `a * b`
 
@@ -82,7 +82,7 @@ c4 = "Hello " * 5  # string and int
 c5 = (5 + 4j) * (6 + 5j)  # complex and complex
 ```
 
-### Division
+### Division ( `/` )
 
 **Syntax**: `a / b`
 
@@ -141,7 +141,7 @@ Relational operations or comparison operations compare 2 values and returns eith
 comparing `less than` or `greater than` in strings or sequences, it compares the ASCII value using lexicographical
 ordering.
 
-### equals (`==`)
+### equals ( `==` )
 
 ```python
 print(5 == 6)  # False
@@ -149,7 +149,7 @@ print(4 + 1 == 6 - 1)  # True
 print('John' == 'John')  # True
 ```
 
-### not equals (`!=`)
+### not equals ( `!=` )
 
 ```python
 print(5 != 6)  # True
@@ -158,7 +158,7 @@ print('John' != 'John')  # False
 
 ```
 
-### less than (`<`)
+### less than ( `<` )
 
 ```python
 print(4 < 5)  # True
@@ -168,7 +168,7 @@ print('Jane' < 'John')  # True
 
 ```
 
-### less than or equals (`<=`)
+### less than or equals ( `<=` )
 
 ```python
 print(4 <= 5)  # True
@@ -178,7 +178,7 @@ print([1, 2, 3] <= [1, 3, 2])  # True
 
 ```
 
-### greater than (`>`)
+### greater than ( `>` )
 
 ```python
 print(4 > 5)  # False
@@ -189,7 +189,7 @@ print([1, 2, 3] > [1, 3, 2])  # False
 
 ```
 
-### greater than or equals (`>=`)
+### greater than or equals ( `>=` )
 
 ```python
 print(4 >= 5)  # False
