@@ -57,6 +57,6 @@ Write a program that asks a user score in percentage and display the grade with 
 | `61%` to `70%` |   B    | Your result is satisfactory.                       |
 | `71%` to `80%` |   B+   | Good Job, Keep doing better.                       |
 | `81%` to `90%` |   A    | Amazing Your hard work paid off.                   |
-|    above `90%` |   B+   | Excellent work, Congratulations topper!!           |
+|    above `90%` |   A+   | Excellent work, Congratulations topper!!           |
 
 
