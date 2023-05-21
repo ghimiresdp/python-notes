@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "python-notes"
+version = "0.1.0"
+description = "A repository for Python course notes, examples, and lab exercises targeted to my students and interns."
+authors = ["Sudip Ghimire <ghimiresdp@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "python_notes"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.30.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
