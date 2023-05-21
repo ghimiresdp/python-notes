@@ -149,27 +149,20 @@ The repository has its folder structure as shown in example below:
 python-notes
 ├── LICENSE
 ├── README.md
-├── course
-│   ├── c01_basics
-│   │   ├── Chapter 1 Basics.md
-│   │   ├── README.md
-│   │   ├── code
-│   │   │   ├── c0101_hello_world.py
-│   │   │   └── c0102_comments.py
-│   │   └── quiz
-│   │       ├── README.md
-│   │       └── solution
-│   │           ├── q0101.py
-│   │           └── q0102.py
-│   └── ...
+├── c01_basics
+│   ├── Chapter 1 Basics.md
+│   ├── README.md
+│   ├── code
+│   │   ├── c0101_hello_world.py
+│   │   └── c0102_comments.py
+│   └── quiz
+│       ├── README.md
+│       └── solution
+│           ├── q0101.py
+│           └── q0102.py
+├── c02_...
+├── c03_...
 │
-├── projects
-│   ├── project_01
-│   │   ├── project_01_requirements.md
-│   │   └── rock_paper_scissor
-│   │       ├── README.md
-│   │       └── game.py
-│   └── ...
 ```
 
 
