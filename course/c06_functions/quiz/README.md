@@ -3,18 +3,41 @@ https://sudipghimire.com.np
 
 Please read the note carefully and try to solve the problem below:
 
-## Quiz Q0601
+**Table of Contents**
+- [Chapter 6 Functions Quiz](#chapter-6-functions-quiz)
+  - [Quiz Q0601 _largest number_](#quiz-q0601-largest-number)
+  - [Quiz Q0602 _upper case characters count_](#quiz-q0602-upper-case-characters-count)
+  - [Quiz Q0603  _coffee specialist_](#quiz-q0603--coffee-specialist)
+  - [Quiz Q0604 _multiplication table_](#quiz-q0604-multiplication-table)
+  - [Quiz Q0605 _palindrome_](#quiz-q0605-palindrome)
+  - [Quiz Q0606 _sorted word_](#quiz-q0606-sorted-word)
+  - [Quiz Q0607 _linear equation_](#quiz-q0607-linear-equation)
+  - [Quiz Q0608 _multiply or divide and add_](#quiz-q0608-multiply-or-divide-and-add)
+  - [Quiz Q0609 _lambda_](#quiz-q0609-lambda)
+  - [Quiz Q0610 _lambdas_](#quiz-q0610-lambdas)
+  - [Quiz Q0611   _recursion_](#quiz-q0611---recursion)
+
+
+
+> **Note**:
+> 
+> please refer to the repository
+> **[python projects](https://github.com/ghimiresdp/python-projects)** for more
+> exercises and projects related to this chapter.
+> 
+
+## Quiz Q0601 _largest number_
 Write a python function to find the largest out of 3 numbers.
 You should use comparison operator to find out the maximum of 3 numbers.
 
 
-## Quiz Q0602
+## Quiz Q0602 _upper case characters count_
 Write a python function that calculates the number of upper case characters, lower case characters and spaces in the string and returns them as a tuple.
 
 For example: We have a string as `"Hello World"`. The function should be able to return `(2, 8, 1)` where the first element is the count of Upper case characters, the second element is the count of lower case characters and third element is the count of spaces.
 
 
-## Quiz Q0603
+## Quiz Q0603  _coffee specialist_
 Suppose you went to a coffee shop. A shopkeeper asked you to create a program that serves coffee according to the customer's requirements.
 
 The coffee machine should ask user to enter any numbers below that should make a coffee and serve it to the user.
@@ -32,7 +55,7 @@ should give the error saying not acceptable.
 Finally print the line describing the coffee you prepared along with  milk and water composition.
 
 
-## Quiz Q0604
+## Quiz Q0604 _multiplication table_
 
 Write a program to create a multiplication table of the given number.
 The `mul_table()` function should have the following arguments:
@@ -54,7 +77,7 @@ Example multiplication table for 13 should look similar to the output below:
 | 13  X  10 |   130 |
 ```
 
-## Quiz Q0605
+## Quiz Q0605 _palindrome_
 Write a function that takes a string and checks whether the word is palindrome or not.
 
 - A palindrome is a string that reads the same backward or forward.
@@ -64,7 +87,7 @@ Your program should be able to ask user to enter the word and check whether it i
 
 The output should show inside a box as shown below with text justified center.
 
-```shell
+```
 ===================[ Palindrome Finder ]===================
 Enter a word: rotator
 
@@ -88,7 +111,7 @@ Do you want to check again? [yes/no]: no
 ======================[ exiting now ]=====================
 ```
 
-## Quiz Q0606
+## Quiz Q0606 _sorted word_
 
 Write a function that accepts words that are separated by hyphen returns the alphabetically sorted words
 separated by hyphen.
@@ -110,7 +133,8 @@ print(sorted_words)
 # "apple-ball-cat-dog-ears-fish-goose"
 ```
 
-## Quiz Q0607
+## Quiz Q0607 _linear equation_
+
 Write a function that accepts a number `x`
 - If `x` is a multiple of `2`, it should return the value `y` = `x**2 + 2x + 3`
 - If `x` is a multiple of `3`, it should return the value `y` = `x**3 + 4x + 5`
@@ -118,14 +142,16 @@ Write a function that accepts a number `x`
 - In other cases it should return negative value of the given number
 
 
-## Quiz Q0608
+## Quiz Q0608 _multiply or divide and add_
+
 Write a function that accepts any number of arguments
 find out the sum of all numbers by multiplying by `2` if it is odd and dividing by `2` if it is even.
 
 Example:  if arguments are `(5,6,7,8)`, then the result should be ` 31` (5 * 2 + 6 / 2 + 7 * 2 + 8 / 2)
 
 
-## Quiz Q0609
+## Quiz Q0609 _lambda_
+
 Convert the following function to a lambda function
 
 ```python
@@ -136,7 +162,8 @@ def odd_or_even(num):
         return 'odd'
 ```
 
-## Quiz Q0610
+## Quiz Q0610 _lambdas_
+
 Create lambda functions for the following:
 
 1. A lambda function that accepts a number and returns the square of it.
@@ -152,7 +179,8 @@ Create lambda functions for the following:
    ```
 
 
-# Quiz Q0611
+## Quiz Q0611   _recursion_
+
 Write recursive functions to find out the following:
 
 1. sum of first n natural numbers

@@ -7,6 +7,13 @@
 
 # Chapter 7 Object-Oriented Programming (OOP)
 
+> **Note**:
+> 
+> please refer to the repository
+> **[python projects](https://github.com/ghimiresdp/python-projects)** for more
+> exercises and projects related to this chapter.
+>
+
 **Table of contents**:
 
 - [Introduction to OOP](Chapter%207.1%20oop.md)
