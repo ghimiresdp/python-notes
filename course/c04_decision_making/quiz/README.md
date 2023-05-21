@@ -51,12 +51,12 @@ Write a program that accepts a number from the terminal and checks whether it is
 
 ## Quiz Q0405
 Write a program that asks a user score in percentage and display the grade with some remarks as follows:
-|    Temperature | Grade | Remarks                                            |
-| -------------: | :---: | -------------------------------------------------- |
-|    below `60%` |   C   | Work hard otherwise you're going to fail the exam. |
-| `61%` to `70%` |   B   | Your result is satisfactory.                       |
-| `71%` to `80%` |   B   | Good Job, Keep doing better.                       |
-| `81%` to `90%` |   B   | Amazing Your hard work paid off.                   |
-|    above `90%` |   B   | Excellent work, Congratulations topper!!           |
+|    Temperature | Grade  | Remarks                                            |
+| -------------: | :---:  | -------------------------------------------------- |
+|    below `60%` |   C    | Work hard otherwise you're going to fail the exam. |
+| `61%` to `70%` |   B    | Your result is satisfactory.                       |
+| `71%` to `80%` |   B+   | Good Job, Keep doing better.                       |
+| `81%` to `90%` |   A    | Amazing Your hard work paid off.                   |
+|    above `90%` |   B+   | Excellent work, Congratulations topper!!           |
 
 
