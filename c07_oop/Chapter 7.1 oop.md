@@ -8,20 +8,19 @@
 # Chapter 7.1 Object-Oriented Programming (OOP)
 
 **Table of contents**:
+
 - [Chapter 7.1 Object-Oriented Programming (OOP)](#chapter-71-object-oriented-programming-oop)
     - [Introduction to OOP](#introduction-to-oop)
         - [Building blocks of an OOP](#building-blocks-of-an-oop)
         - [Features Of Object-Oriented Programming](#features-of-object-oriented-programming)
     - [Python Classes](#python-classes)
-        - [PEP-8 Conventions for creating a class](#pep-8-conventions-for-creating-a-class)
+        - [PEP-8 Conventions for prototyping a class](#pep-8-conventions-for-prototyping-a-class)
     - [Basic Building block of Classes](#basic-building-block-of-classes)
         - [Attributes, Methods, and the `self` parameter](#attributes-methods-and-the-self-parameter)
         - [Initializing the class, Constructor Method, and uses of `self`.](#initializing-the-class-constructor-method-and-uses-of-self)
         - [Class Attributes and Instance attributes](#class-attributes-and-instance-attributes)
-        - [Built-in Class Attributes](#built-in-class-attributes)
+        - [Built-in Class/Instance Attributes](#built-in-classinstance-attributes)
         - [Object](#object)
-    - [In python, everything are objects](#in-python-everything-are-objects)
-
 
 ## Introduction to OOP
 
@@ -36,17 +35,21 @@ by structuring the data and binding the methods to specific object rather than
 creating an independent functional block.
 
 **Example 1:**
+
 ```python
 height = 50
 temperature = 90
 
+
 def add_values(a, b):
     return a + b
 
+
 print(height + temperature)
 ```
+
 In the above example, `height` can be added with `temperature` since they both
-are integers, but there is no relationship between them so there is no binding
+are integers, but there is no sense adding those values. There is no binding
 of the function `add_values()` to those data. Furthermore, if we had 2 different
 values for height, subtracting one from another would give negative value, which
 would also be illogical since there can not be negative height. If we solve the
@@ -87,26 +90,31 @@ attributes all of these can be represented with the following:
 Python classes can be created using a `class` keyword.
 
 **Basic Structure of a class**
+
 ```python
 class ClassName:
-    attr_1 = value
-    attr_2 = value
+    attr_1 = "value"
+    attr_2 = "value"
 
-    def method_1(self):
-        function body
+    def method(self):
+        """function body"""
+        pass
 ```
 
-### PEP-8 Conventions for creating a class
+### PEP-8 Conventions for prototyping a class
 
-- class names should be written in `UpperCamelCase`.
-- class attributes and methods should be written in `snake_case`.
+- Class names should be written in `UpperCamelCase`.
+- Class attributes and methods should be written in `snake_case`.
 - We should separate classes with 2 blank lines and methods with a blank line.
+- objects or instances are defined with `snake_case` representation as in
+  variables.
 
 **Example:**
+
 ```python
 class Person:
-    first_name = ''
-    last_name = ''
+    first_name = 'John'
+    last_name = 'Doe'
 
     def show_full_name(self):
         return f'{self.first_name} {self.last_name}'
@@ -123,11 +131,11 @@ Classes are made up of the following building blocks:
     - Class Attribute
     - Instance Attribute
 - Methods
-    - Class Methods
-    - Static Methods
-    - initializer method
+    - Instance Methods (Bounded to the instance)
+    - Class Methods (Bounded to the class)
+    - Static Methods (Unbounded methods)
+    - Initializer method (called upon creaton of the instance)
 - Instance
-
 
 ### Attributes, Methods, and the `self` parameter
 
@@ -136,13 +144,18 @@ Classes are made up of the following building blocks:
 - All functions defined inside a class are known as methods
 - All instance methods use the first parameter `self` which references the
   instance itself.
+- the `__init__()` method do not need to be called and gets automatically called
+  once the object gets initialized.
 
 ```python
 class Person:
-    first_name = '' # Attribute
-    last_name = ''
+    species = 'Human'  # Attribute
 
-    def show_fullname(self):    # method
+    def __init__(self, first_name, last_name):  # initializer method
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def fullname(self):  # method
         print(f"{self.first_name} {self.last_name}")
 ```
 
@@ -163,60 +176,65 @@ by the class `Person`.
 
 ```python
 class Person:
-    first_name = ''
-    last_name = ''
+    species = 'Human'  # Attribute
 
-    def __init__(self, first_name, last_name):
+    def __init__(self, first_name, last_name):  # initializer method
         print("Hi I am Initialized")
         self.first_name = first_name
         self.last_name = last_name
 
-    def full_name(self):
-        return f'{self.first_name} {self.last_name}'
-
+    def fullname(self):  # method
+        print(f'{self.first_name} {self.last_name}')
 
 person_1 = Person('John', 'Doe')
 # prints out "Hi I am Initialized"
 ```
 
 Here, the statement, `self.first_name = first_name` will set the first name
-for an instance `person_1`.
+for an instance `person_1` once `person_1 = Person('John', 'Doe')` gets
+executed.
 
 We use `.` notation to access attributes and methods of the instance.
 
-for example, to access the first name, we can write `person_1.first_name`.
+for example, to access `first_name`, we can write `person_1.first_name`.
 
 ```python
 person = Person('John', 'Lennon')
 
 # Accessing the attribute
-print(person.first_name)    # John
+print(person.first_name)  # John
 
 # Accessing the method
-print(person.full_name())   # John Lennon
+print(person.full_name())  # John Lennon
 ```
+
+>**Note**: _Even though methods has `self` as the first parameter, we do not
+> need to pass the `self` argument manually to call the function. It
+> automatically gets passed by the python interpreter in the time of calling._
 
 ### Class Attributes and Instance attributes
 
 Those Attributes that are declared during the class definition are known as
-class attributes. Unless overridden, the class attribute points out the class
-and is accessible even before initialization of the class. If we want to declare
-an instance attribute, we need to define an attribute after `self` keyword
-otherwise it would create a local variable instead of an instance attribute.
+_class attributes_. Unless overridden, the class attribute points out the class
+and is accessible even before initialization of the class.
 
 On the other hand, Instance attributes are declared inside the `__init__()`
-method and are only accessible after initializing the class. The example below
-shows different attributes declared within a class.
+method and are only accessible after initializing the class.
+If we want to declare an instance attribute, we need to define an attribute
+using `self` annotation otherwise it would create a local variable instead of an
+instance attribute.
+The example below shows different attributes declared within a class.
 
 ```python
 class Animal:
-    category = 'Vertibrate'     # Class Attribute
+    category = 'Vertebrate'  # Class Attribute
     legs = 4
 
     def __init__(self, name, child):
-        self.name = name        # Instance Attribute
+        self.name = name  # Instance Attribute
         self.child = child
-        word = 'Moo'    # Local variable (Inaccessible outside of a method)
+        word = 'Moo'  # Local variable (Inaccessible outside of a method)
+
 
 print(Animal.category)  # Vertebrate
 
@@ -225,7 +243,7 @@ print(Animal.category)  # Vertebrate
 
 cow = Animal(name='Cow', child='calf')
 
-print(cow.name) # Cow
+print(cow.name)  # Cow
 ```
 
 - To access the class attribute `category`, we do not need to instantiate the
@@ -247,12 +265,14 @@ classes. some of the attributes are as follows:
 - `object.__sizeof__()`: returns the size of object in bytes
 
 **Example:**
+
 ```python
 class Person:
     """
     The class Person stores the first_name, last_name, and age of a
     person
     """
+
     def __init__(self, first_name, last_name, age):
         self.first_name = first_name
         self.last_name = last_name
@@ -260,6 +280,7 @@ class Person:
 
     def __str__(self):
         return f'Person<{self.first_name}>'
+
 
 john = Person('John', 'Lennon', 50)
 
@@ -270,6 +291,7 @@ print('The size of a class is:', john.__sizeof__())
 ```
 
 **Output:**
+
 ```
 The String Representation is: Person<John>
 The dictionary representation is: {'first_name': 'John', 'last_name': 'Lennon', 'age': 50}
@@ -282,4 +304,14 @@ The size of a class is: 32
 
 ### Object
 
-## In python, everything are objects
+In python, everything are objects. Even basic data types such as `int`, `float`,
+etc. are also represented using classes.
+
+**Example**:
+
+```py
+x = 5
+print(type(x))
+
+# <class 'int'>
+```
