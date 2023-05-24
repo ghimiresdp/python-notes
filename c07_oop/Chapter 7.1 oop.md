@@ -139,7 +139,7 @@ Classes are made up of the following building blocks:
 
 ### Attributes, Methods, and the `self` parameter
 
-- All the variables defined inside a class are attributes.
+- All the **variables** defined inside a class are **attributes**.
 - Attribute acts as a state of the class which changes over time and condition
 - All functions defined inside a class are known as methods
 - All instance methods use the first parameter `self` which references the
@@ -167,7 +167,7 @@ of the class. When we create an object of the class, the `__init__()` method is
 called first. The `__init__()` method also requires `self` as the first
 parameter.
 
-To initialize the class, we write the name of the class along with parameters
+To initialize a class, we write the name of the class along with parameters
 that is accepted by an initializer class. The example below uses a class
 `Person` with the initializer method that accepts `first_name`, and `last_name`.
 The `self` parameter is itself passed by the class whenever it is called. The
@@ -237,29 +237,35 @@ class Animal:
 
 
 print(Animal.category)  # Vertebrate
-
-# print(Animal.name)
-# AttributeError: type object 'Animal' has no attribute 'name'
-
-cow = Animal(name='Cow', child='calf')
-
-print(cow.name)  # Cow
+cow = Animal(name='My Cow', child='calf')
+print(cow.name)  # My Cow
 ```
 
 - To access the class attribute `category`, we do not need to instantiate the
   class.
 - To access the instance attribute `name`, we need to instantiate the class by
-  using `Animal(name='cow', child='calf')`
+  using `Animal(name='My Cow', child='calf')`
 - If we try to access the attribute `name` without initialization of the class,
   it throws an `AttributeError` saying
-  `type object 'Animal' has no attribute 'name'`.
+  `type object 'Animal' has no attribute 'name'` as below.
+
+```pycon
+>>> print(Animal.name)
+
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    Animal.name
+AttributeError: type object 'Animal' has no attribute 'name'
+```
 
 ### Built-in Class/Instance Attributes
 
 Python classes has some built-in attributes which will be available to all
 classes. some of the attributes are as follows:
 
-- `object.__str__()`: returns the string representation of the object
+- `object.__str__()`: returns the readable string representation of the object
+- `object.__repr__()`: returns the unambiguous string representation similar to
+ the `__str__()` method.
 - `object.__dict__`: the dictionary representation of the object
 - `object.__doc__`: the documentation string of the class
 - `object.__sizeof__()`: returns the size of object in bytes
@@ -302,7 +308,7 @@ The document string is:
 The size of a class is: 32
 ```
 
-### Object
+### Object or Instance
 
 In python, everything are objects. Even basic data types such as `int`, `float`,
 etc. are also represented using classes.
@@ -315,3 +321,23 @@ print(type(x))
 
 # <class 'int'>
 ```
+Here `x` is an object of a class `int`. Hence it inherits all the properties and
+features defined in the class `int`.
+
+In python once we initialize a class and assign the instance to the variable,
+the variable is called as an object or instance. for example:
+
+```python
+class Animal:
+    def __init__(self, name, word):
+        self.name = name
+        self.word = word
+
+        def speak(self):
+            print(f'I speak with {self.word}')
+
+cow = Animal('My Cow', 'Moo')
+```
+
+Here `cow` is an instance of `Animal()` hence `cow` inherits all properties of
+the class `Animal` such as `speak()`.
