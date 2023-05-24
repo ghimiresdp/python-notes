@@ -9,6 +9,10 @@
 
 **Table of contents**:
 
+- [Chapter 7.3: Operator Overloading](#chapter-73-operator-overloading)
+    - [Introduction to Operator Overloading](#introduction-to-operator-overloading)
+    - [Methods for overloading operations in python](#methods-for-overloading-operations-in-python)
+
 ## Introduction to Operator Overloading
 
 An operator overloading is the process of making the use of basic arithmetic
@@ -85,7 +89,6 @@ appended and `students` merged.
 | `>=`   | Greater than or Equal to | `__ge__(self, other)`            | `a1 >= a2`  |
 | `[1]`  | Index operator           | `__getitem__(self, index)`       | `a1[index]` |
 | `in`   | In operator              | `__contains__(self, other)`      | `a2 in a1`  |
-
 
 > **Note:** If the bitwise OR `|` operation rendered as `\|` in the above table
 > then please remember that the same pipe operator `|` is used as a table column
