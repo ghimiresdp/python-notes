@@ -11,11 +11,11 @@
 
 - [Chapter 5.2: For Loop](#chapter-52-for-loop)
 - [Introduction to For Loop](#introduction-to-for-loop)
-    - [The Range Function](#the-range-function)
-    - [Using For loop with string, list, tuple, set, and dictionary](#using-for-loop-with-string-list-tuple-set-and-dictionary)
-    - [Nested For Loop](#nested-for-loop)
-    - [The `enumerate()` function](#the-enumerate-function)
-    - [The `zip()` function](#the-zip-function)
+  - [The Range Function](#the-range-function)
+  - [Using For loop with string, list, tuple, set, and dictionary](#using-for-loop-with-string-list-tuple-set-and-dictionary)
+  - [Nested For Loop](#nested-for-loop)
+  - [The `enumerate()` function](#the-enumerate-function)
+  - [The `zip()` function](#the-zip-function)
 
 # Introduction to For Loop
 
