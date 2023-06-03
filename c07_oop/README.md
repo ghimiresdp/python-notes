@@ -2,13 +2,13 @@
 - **URL**: https://www.sudipghimire.com.np
 - **GitHub**: https://github.com/ghimiresdp
 
-[go to course contents](https://github.com/ghimiresdp/python-level1/)
+[go to course contents](https://github.com/ghimiresdp/python-notes/)
 <hr>
 
 # Chapter 7 Object-Oriented Programming (OOP)
 
 > **Note**:
-> 
+>
 > please refer to the repository
 > **[python projects](https://github.com/ghimiresdp/python-projects)** for more
 > exercises and projects related to this chapter.

@@ -1,9 +1,23 @@
 - **created by**: Sudip Ghimire
 - **URL**: https://www.sudipghimire.com.np
-- **Github**: https://github.com/ghimiresdp
+- **GitHub**: https://github.com/ghimiresdp
 
-# File Handling in Python
+[go to course contents](https://github.com/ghimiresdp/python-notes/)
+<hr>
 
+# Chapter 9: File Handling in Python
+- [Chapter 9: File Handling in Python](#chapter-9-file-handling-in-python)
+  - [Introduction to File Handling](#introduction-to-file-handling)
+  - [File Opening Modes](#file-opening-modes)
+  - [Opening and closing a file in python](#opening-and-closing-a-file-in-python)
+  - [Reading a file](#reading-a-file)
+    - [The newer approach using `with` keyword.](#the-newer-approach-using-with-keyword)
+  - [Writing into a file](#writing-into-a-file)
+  - [Appending into a file](#appending-into-a-file)
+  - [Reading a file line by line](#reading-a-file-line-by-line)
+
+
+## Introduction to File Handling
 - Python is capable of handling or manipulating data stored in files.
 - We can open a file using inbuilt `open()` function.
 - While opening a file, we have to pass different modes as a parameter to specify what we're trying to do with the file.
@@ -56,7 +70,7 @@
 
 **Basic Syntax**
 ```python
-file_obj = open(filename, mode)
+file_obj = open("<filename>", "<mode>")
 # do our stuff over here
 file_obj.close()
 ```
@@ -74,7 +88,7 @@ file.close()
 - It automatically closes the file whenever it goes out of the scope.
 
 ```python
-with open(filename, 'r') as f:
+with open('my_file.txt', 'r') as f:
     # do our stuff here
     f.read()
 print("At this point, the file is closed")
@@ -82,22 +96,29 @@ print("At this point, the file is closed")
 
 ## Writing into a file
 ```python
-with open(filename, 'w') as f:
-    f.write(filedata)
+with open('my_file.txt', 'w') as f:
+    f.write("This is the content to the file.")
 ```
 
 
 ## Appending into a file
 ```python
-with open(filename, 'a') as f:
-    f.write(filedata)
+with open('my_file.txt', 'a') as f:
+    f.write("This is the appended content to the file.")
 ```
 
 
 ## Reading a file line by line
 
 ```python
-with open (filename, 'r') as f:
-    for line in f:  # or  # for line in f.readlines()"
+with open ('my_file.txt', 'r') as f:
+    for line in f:
+        print(line)
+```
+we can also achieve the same result using `readlines()` method.
+
+```python
+with open ('my_file.txt', 'r') as f:
+    for line in f.readlines():
         print(line)
 ```

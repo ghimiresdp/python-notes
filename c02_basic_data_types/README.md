@@ -2,7 +2,8 @@
 - **URL**: https://www.sudipghimire.com.np
 - **GitHub**: https://github.com/ghimiresdp
 
-[go to course contents](https://github.com/ghimiresdp/python-level1/)
+[go to course contents](https://github.com/ghimiresdp/python-notes/)
+
 <hr>
 
 # Chapter 2 Variables, basic data type and operations

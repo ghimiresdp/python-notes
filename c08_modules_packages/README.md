@@ -2,11 +2,18 @@
 - **URL**: https://www.sudipghimire.com.np
 - **GitHub**: https://github.com/ghimiresdp
 
-[go to course contents](https://github.com/ghimiresdp/python-level1/)
+[go to course contents](https://github.com/ghimiresdp/python-notes/)
 <hr>
 
 # Chapter 8 Modules and Packages
 
+> **Note**:
+>
+> please refer to the repository
+> **[python projects](https://github.com/ghimiresdp/python-projects)** for more
+> exercises and projects related to this chapter.
+>
+>
 **Table of contents**:
 
 - [Chapter 8.1 Python Modules](chapter%208.1%20modules.md)
