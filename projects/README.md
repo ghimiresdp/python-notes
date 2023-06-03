@@ -1,4 +1,20 @@
+- **created by**: Sudip Ghimire
+- **URL**: https://www.sudipghimire.com.np
+- **GitHub**: https://github.com/ghimiresdp
+
+[go to course contents](https://github.com/ghimiresdp/python-notes/)
+<hr>
+
 # Projects
+
+> **Note**:
+>
+> The **Projects** part has been moved to the
+> **[python projects](https://github.com/ghimiresdp/python-projects)**
+> repository. The purpose of this is to host all projects and solutions to the
+> single repository and isolate the note with project since it requires
+> different libraries to be installed.
+> exercises and projects related to this chapter.
 
 **Table of Contents**
 - [Projects](#projects)

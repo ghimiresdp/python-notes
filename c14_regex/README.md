@@ -5,7 +5,7 @@
 [go to course contents](https://github.com/ghimiresdp/python-notes/)
 <hr>
 
-# Chapter 14 Regular Expressions (REGEX)
+# Chapter 14: Regular Expressions (REGEX)
 
 > **Note**:
 >
