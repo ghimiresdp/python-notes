@@ -16,17 +16,17 @@ You can `clone` or `fork` the repository and review the course contents, example
 ## Course Contents _(Links will be updated accordingly)_
 
 1. **[Fundamentals of Python](c01_basics/)**
-   - [Introduction to Python](c01_basics/Chapter%201%20Basics.md)
-   - [Python Environment Setup, IDE Setup](c01_basics/Chapter%201%20Basics.md#installing-python)
-   - [Hello World in Python](c01_basics/Chapter%201%20Basics.md#hello-world-with-idle)
-   - [Running Python Programs](c01_basics/Chapter%201%20Basics.md#creating-editing-and-running-python-files)
-   - comments and documentation
-       - Single Line Comments
-       - inline Comments
-       - Multiline Comments
-       - Docstrings
-   - indentation
-   - [Chapter 1 Quiz](c01_basics/quiz)
+    - [Introduction to Python](c01_basics/Chapter%201%20Basics.md)
+    - [Python Environment Setup, IDE Setup](c01_basics/Chapter%201%20Basics.md#installing-python)
+    - [Hello World in Python](c01_basics/Chapter%201%20Basics.md#hello-world-with-idle)
+    - [Running Python Programs](c01_basics/Chapter%201%20Basics.md#creating-editing-and-running-python-files)
+    - comments and documentation
+        - Single Line Comments
+        - inline Comments
+        - Multiline Comments
+        - Docstrings
+    - indentation
+    - [Chapter 1 Quiz](c01_basics/quiz)
 
 2. **[Variables, basic data type and operations](c02_basic_data_types)**
     - [Variables, constants, and keywords](c02_basic_data_types/Chapter%202.1%20Variables.md)
@@ -69,8 +69,8 @@ You can `clone` or `fork` the repository and review the course contents, example
         - the `pass` statement
         - Local Variables and Global variables
     - [default arguments](c06_functions/Chapter%206.2%20default%20arguments.md)
-    - [arguments and keyword arguments](c06_functions/Chapter%206.Chapter%206.3%20args%20kwargs.md)
-    - [Recursive Functions](c06_functions/Chapter%206.Chapter%206.4%20recursive%20functions.md)
+    - [arguments and keyword arguments](c06_functions/Chapter%206.3%20args%20kwargs.md)
+    - [Recursive Functions](c06_functions/Chapter%206.4%20recursive%20functions.md)
     - [Lambda functions](c06_functions/Chapter%206.5%20lambda.md)
 
 7. **[Classes](c07_oop)**
@@ -80,15 +80,16 @@ You can `clone` or `fork` the repository and review the course contents, example
         - the Constructor method
         - built-in class attributes
         - object
-    - [Encapsulation in python ( `_` , `__` in identifier)](c07_oop/Chapter%207.2%20Encapsulation.md)
+    - [Class methods and Static methods](c07_oop/Chapter%207.2%20Class%20Methods%20and%20Static%20Methods.md)
+    - [Operator Overloading](c07_oop/Chapter%207.3%20Operator%20Overloading.md)
+      -[Encapsulation in python ( `_` , `__` in identifier)](c07_oop/Chapter%207.4%20Encapsulation.md)
         - getters and setters
-    - [Operator Overloading](c07_oop/Chapter%207.Chapter%207.3%20Operator%20Overloading.md)
-    - [Class methods and Static methods](c07_oop/Chapter%207.Chapter%207.4%20Class%20Methods%20and%20Static%20Methods.md)
-    - [Inheritance and Polymorphism](c07_oop/Chapter%207.Chapter%207.5%20Inheritance%20and%20Polymorphism.md)
-      - Parent Class
-      - Child Class
-      - `super()` function
-      - Mixins
+        - `@property` Decorator
+    - [Inheritance and Polymorphism](c07_oop/Chapter%207.5%20Inheritance%20and%20Polymorphism.md)
+        - Parent Class
+        - Child Class
+        - `super()` function
+        - Mixins
 
 8. **[Python Modules and packages](c08_modules_packages)**
     - Introduction to modular programming
@@ -99,14 +100,14 @@ You can `clone` or `fork` the repository and review the course contents, example
     - `random` module
     - `json` module
 
-9.  **[File I/O](c09_file)**
-   - `open()` function
-   - `close()` method
-   - `write()` method
-   - `read()` method
-   - `with` keyword
+9. **[File I/O](c09_file)**
+    - `open()` function
+    - `close()` method
+    - `write()` method
+    - `read()` method
+    - `with` keyword
 
-11. **[Exceptions and Exception Handling](c10_exceptions)**
+10. **[Exceptions and Exception Handling](c10_exceptions)**
     - Introduction to Exceptions in Python
     - Standard Errors
     - `try`, `except` keyword
@@ -116,14 +117,14 @@ You can `clone` or `fork` the repository and review the course contents, example
     - User Defined Exceptions
     - Total
 
-12. **[Python Package Management](c11_pip)**
-	- [Introduction to Symantic Versioning](c11_pip/c1101%20symver.md)
-	- [PIP and its usage](c11_pip/c1102%20pip.md)
+11. **[Python Package Management with PIP](c11_pip)**
+    - [Introduction to Symantic Versioning](c11_pip/chapter%2011.1%20symver.md)
+    - [PIP and its usage](c11_pip/chapter%2011.2%20pip.md)
 
 12. **[Virtual Environments](c12_virtual_environment)**
-	- [Introduction to virtual enviromnemts](c12_virtual_environment/c1201%20virtual%20environment%20intro.md)
-	- [VENV and its usage](c12_virtual_environment/c1202%20venv.md)
-	- [PIPENV and its usage](c12_virtual_environment/c1203%20pipenv.md)
+    - [Introduction to virtual enviromnemts](c12_virtual_environment/c1201%20virtual%20environment%20intro.md)
+    - [VENV and its usage](c12_virtual_environment/c1202%20venv.md)
+    - [PIPENV and its usage](c12_virtual_environment/c1203%20pipenv.md)
 
 13. **[Python Advanced Functions](c13_advanced_functions)**
     - [`groupby()` function](c13_advanced_functions/chapter%2013.1%20groupby.md)
@@ -144,7 +145,9 @@ You can `clone` or `fork` the repository and review the course contents, example
 20. [**Advanced Type hinting**](c20_advanced_type_hinting)
 
 ## Folder Structure
+
 The repository has its folder structure as shown in example below:
+
 ```
 python-notes
 ├── LICENSE
@@ -164,7 +167,6 @@ python-notes
 ├── c03_...
 │
 ```
-
 
 > If you're directly **cloning** the repository, I suggest you to solve in the different branch than the `main` branch
 > to avoid conflicts if the course content changes.

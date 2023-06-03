@@ -5,7 +5,7 @@
 [go to course contents](https://github.com/ghimiresdp/python-level1/)
 <hr>
 
-# Chapter 7.4: Class Methods and Static Methods
+# Chapter 7.2: Class Methods and Static Methods
 
 **Table of contents**:
 

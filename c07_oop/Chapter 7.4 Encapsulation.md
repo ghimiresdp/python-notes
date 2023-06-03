@@ -5,7 +5,7 @@
 [go to course contents](https://github.com/ghimiresdp/python-level1/)
 <hr>
 
-# Chapter 7.2 Encapsulation
+# Chapter 7.4 Encapsulation
 
 **Table of contents**:
 
