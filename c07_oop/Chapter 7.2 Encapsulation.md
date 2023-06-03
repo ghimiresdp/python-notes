@@ -8,12 +8,13 @@
 # Chapter 7.2 Encapsulation
 
 **Table of contents**:
+
 - [Chapter 7.2 Encapsulation](#chapter-72-encapsulation)
-    - [Introduction](#introduction)
-        - [Why do we use Getters and Setters instead of public attributes?](#why-do-we-use-getters-and-setters-instead-of-public-attributes)
-    - [The `@property` decorator](#the-property-decorator)
-        - [Why do we use `@property` instead of getters and setters?](#why-do-we-use-property-instead-of-getters-and-setters)
-        - [decorators that we can use to create a property](#decorators-that-we-can-use-to-create-a-property)
+  - [Introduction](#introduction)
+  - [Getter and Setter Methods](#getter-and-setter-methods)
+    - [Why do we use Getters and Setters instead of public attributes?](#why-do-we-use-getters-and-setters-instead-of-public-attributes)
+  - [The `@property` decorator](#the-property-decorator)
+    - [Decorators that are used to create a property in python](#decorators-that-are-used-to-create-a-property-in-python)
 
 ## Introduction
 
@@ -26,132 +27,121 @@ The methods that are bound with protected attributes are called as getters and
 setters. the **getter** method takes no arguments and **setter** takes one
 argument except `self`.
 
+## Getter and Setter Methods
+
+Getter and setter methods are methods that are used to get and set the value of
+the private and protected attribute. The example of a getter and setter is as
+follows.
+
+```python
+class Person:
+  def __init__(self):
+    self._nickname = 'Unknown'  # Protected Attribute
+    self.__age = 0  # Private attribute
+
+  def get_age(self):  # Getter Method
+    return self.__age
+
+  def set_age(self, age):  # Setter Method
+    self.__age = age
+
+
+john = Person()
+john.set_age(20)
+john.get_age()  # 20
+```
+
 ### Why do we use Getters and Setters instead of public attributes?
 
+> **Teacher**: We Should use setter and getter to access and update private
+> attributes
+
+> **Student**: I am now confused !!
+> - Getter and setter method will help access and update private attributes.
+> - Doesn't it mean those attributes are now public?
+> - If yes, why don't we use public attributes instead?
+
+**Explanation**:
+
 - It helps hiding or prevents modifying the state of the structured data
-  preventing the unauthorized access.
-- Suppose changing the state of an attribute should affect another attribute,
+  preventing the unauthorized access randomly.
+- Suppose changing the state of an attribute should affect another attribute
   the user modifying the public attribute might forget to reflect changes in
   the another.
+- Adding the Getter and Setter methods will also help validating the data before
+  (and some times after) it gets accessed and updated.
 
-**example**
-
-```python
-class MyClass:
-    # protected attribute (accessible from outside of class)
-    _name = 'Unknown'
-
-    # private attribute (not accessible from outside of class)
-    __age = 20
-
-    def get_age(self):
-        return self.__age
-
-    def set_age(self, age):
-        self.__age = age
-        # Here, the state of _name is also influenced by the private attribute
-        # __age.
-        self._name = f'Unknown: {age}'
-
-
-c1 = MyClass()
-
-# print(c1.__age)
-# raises an exception saying no attribute
-
-print()
-
-c1.set_age(30)
-# here the age is set to 30 and also the state _name is changed accordingly.
-
-print(c1.get_age())  # 30
-
-# We can access the protected member if it starts with a single _
-print(c1._name)  # Unknown: 30
-```
-
-**Example 2:** An advanced class representation which takes list of
-`Student` objects and changes the state `__is_large` when the number of
-students is more than 3
+**Example:**
 
 ```python
-class Student:
+class Person:
+  # protected attribute (accessible from outside of class)
+  def __init__(self):
+    self._age = 0
+    self.is_adult = False  # should be true whenever age >=18
 
-    def __init__(self, name, roll):
-        self.name = name
-        self.roll = roll
+  def get_age(self):
+    return self._age
 
-    def __str__(self) -> str:
-        return self.name
+  def set_age(self, age):
+    self._age = age
+    self.is_adult = self._age >= 18
 
 
-class ClassRoom:
-    def __init__(self, name):
-        self.__is_large = False
-        self.__students = []
-        self.name = name
+john = Person()
+john._age = 20
+print(john.is_adult)  # False (not updated)
 
-    def add_student(self, student: Student):  # setter
-        self.__students.append(student)
-        self.__is_large = True if self.__students.__len__() > 3 else False
-
-    def remove_student(self, student: Student):  # setter / deleter
-        if student in self.__students:
-            self.__students.remove(student)
-            self.__is_large = True if self.__students.__len__() > 3 else False
-        else:
-            print(f"Student with name {student.name} does not exist")
-
-john = Student("Jon Doe", 1)
-py_class = ClassRoom("Python for Beginners")
-py_class.add_student(john)
-py_class.add_student(Student("John Lennon", 2))
-py_class.add_student(Student("John Legend", 3))
-py_class.add_student(Student("John Denver", 4))
-# here the value __is_large will be set to True
-
-py_class.remove_student(john)
-# here the value __is_large will be set to False
+john.set_age(20)
+print(john.is_adult)  # True (updated)
 ```
+
+Here, when we set age using `john._age = 20`, the value of `is_adult` is not
+changed. but as we know, the attribute `is_adult` is dependent on the age value,
+the setter method `set_age()` properly handles setting the age as well as the
+`is_adult` property too.
 
 ## The `@property` decorator
 
 - They look like regular object variables but are capable of attaching custom behavior to the class.
 - They are used as better alternative of getters and setters
-- whenever we create a property inside a class, it's behavior will be tightly
+- Whenever we create a property inside a class, it's behavior will be tightly
   controlled.
+- Python properties work similar to methods and behaves similar to variables.
 
-### Why do we use `@property` instead of getters and setters?
+**Why do we use `@property` instead of getters and setters?**
 
 - Property decorators make the function behave like an attribute so that we can
   just use an assignment operator instead of calling a method to access or set
   values of the variable.
 - It makes the code look much cleaner than using getters and setters.
 
-### decorators that we can use to create a property
+### Decorators that are used to create a property in python
+
 - `@property`: used for creating a getter
-- `@property_name.setter`: Used for creating a setter
-- `@property_name.deleter`: Used for creating a deleter
+- `@<property_name>.setter`: Used for creating a setter
+- `@<property_name>.deleter`: Used for creating a deleter
 
 **Example:**
+
 ```python
 class Students:
 
-    def __init__(self, count: int):
-        self.__count = count
+  def __init__(self, count: int):
+    self.__count = count
 
-    @property
-    def count(self):  # Getter
-        return self.__count
+  @property
+  def count(self):  # Getter
+    return self.__count
 
-    @count.setter  # Setter
-    def count(self, value):
-        print("I can do other things while updating my value")
-        self.__count = value
+  @count.setter  # Setter
+  def count(self, value):
+    print("I can do other things while updating my value")
+    self.__count = value
 
-    @count.deleter
-    def count(self):
-        self.__count=0
+  @count.deleter
+  def count(self):
+    self.__count = 0
 
 
 class_1 = Students(10)
