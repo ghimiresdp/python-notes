@@ -43,23 +43,28 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [Tuple](c03_advanced_data_types/chapter%203.2%20tuple.md)
     - [Dictionary](c03_advanced_data_types/chapter%203.3%20dictionary.md)
     - [Set](c03_advanced_data_types/chapter%203.4%20set.md)
+    - [Chapter 3 Quiz](c03_advanced_data_types/quiz)
 
 4. **[Decision Making](c04_decision_making)**
-    - [if statement](c04_decision_making/README.md#if-condition)
-    - [if else statement](c04_decision_making/README.md#if-else-condition)
-    - [if elif else statement](c04_decision_making/README.md#if-elif-else-condition)
-    - [the `match` statement](c04_decision_making/README.md#the-match-condtion)
+    - [`if` condition](c04_decision_making/README.md#the-if-condition)
+    - [`if`-`else` condition](c04_decision_making/README.md#the-if-else-condition)
+    - [`if`-`elif`-`else` conditions](c04_decision_making/README.md#the-if-elif-else-condition)
+    - [the `match` condition](c04_decision_making/README.md#the-match-condtion)
     - [ternary operators](c04_decision_making/README.md#ternary-operators)
     - [Nested conditions](c04_decision_making/README.md#nested-conditions)
+    - [Chapter 4 Quiz](c04_decision_making/quiz)
 
 5. **[Loops, Pattern Generation, and Comprehension](c05_loops)**
-    - [While Loop](c05_loops/chapter%205.1%20while%20loop.md)
-    - [For Loop](c05_loops/chapter%205.2%20for%20loop.md)
-        - the `enumerate()` function
-        - the `zip()` function
-    - `break`, `continue`, and `pass` statements
+    - [While Loop](c05_loops/Chapter%205.1%20while%20loop.md)
+        - [The `break` and the `continue` statement](c05_loops/Chapter%205.1%20while%20loop.md#the-break-and-the-continue-statement)
+        - [`while`-`else`](c05_loops/Chapter%205.1%20while%20loop.md#while-else)
+        - [Nested `while` loop](c05_loops/Chapter%205.1%20while%20loop.md#nested-while-loop)
+    - [For Loop](c05_loops/Chapter%205.2%20for%20loop.md)
+        - [the `enumerate()` function](c05_loops/Chapter%205.2%20for%20loop.md#the-enumerate-function)
+        - [the `zip()` function](c05_loops/Chapter%205.2%20for%20loop.md#the-zip-function)
     - [Pattern Generation](c05_loops/Chapter%205.3%20Pattern%20Generation.md)
     - [Comprehensions](c05_loops/Chapter%205.4%20Comprehensions.md)
+    - [Chapter 5 Quiz](c05_loops/quiz)
 
 6. **[Functions](c06_functions)**
     - [Introduction to Functions](c06_functions/Chapter%206.1%20function.md)
@@ -72,6 +77,7 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [arguments and keyword arguments](c06_functions/Chapter%206.3%20args%20kwargs.md)
     - [Recursive Functions](c06_functions/Chapter%206.4%20recursive%20functions.md)
     - [Lambda functions](c06_functions/Chapter%206.5%20lambda.md)
+    - [Chapter 6 Quiz](c06_functions/quiz)
 
 7. **[Classes](c07_oop)**
     - [Introduction to Object Oriented Programming](c07_oop/Chapter%207.1%20oop.md)
@@ -90,6 +96,7 @@ You can `clone` or `fork` the repository and review the course contents, example
         - Child Class
         - `super()` function
         - Mixins
+    - [Chapter 7 Quiz](c07_oop/quiz)
 
 8. **[Python Modules and packages](c08_modules_packages)**
     - Introduction to modular programming
@@ -122,9 +129,9 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [PIP and its usage](c11_pip/chapter%2011.2%20pip.md)
 
 12. **[Virtual Environments](c12_virtual_environment)**
-    - [Introduction to virtual enviromnemts](c12_virtual_environment/c1201%20virtual%20environment%20intro.md)
-    - [VENV and its usage](c12_virtual_environment/c1202%20venv.md)
-    - [PIPENV and its usage](c12_virtual_environment/c1203%20pipenv.md)
+    - [Introduction to virtual enviromnemts](c12_virtual_environment/chapter%2012.1%20virtual%20environment%20intro.md)
+    - [VENV and its usage](c12_virtual_environment/chapter%2012.2%20venv.md)
+    - [PIPENV and its usage](c12_virtual_environment/chapter%2012.3%20pipenv.md)
 
 13. **[Python Advanced Functions](c13_advanced_functions)**
     - [`groupby()` function](c13_advanced_functions/chapter%2013.1%20groupby.md)
@@ -135,7 +142,7 @@ You can `clone` or `fork` the repository and review the course contents, example
 14. **[Regular Expressions (REGEX)](c14_regex)**
     - [Introduction to regular expressions](c14_regex/chapter%2014.1%20regular%20expressions.md)
     - [REGEX special characters](c14_regex/chapter%2014.2%20regex%20special%20characters.md)
-    - [The `re` module](c14_regex/chapter%2014.3%20the%20re%20module)
+    - [The `re` module](c14_regex/chapter%2014.3%20the%20re%20module.md)
 
 15. [**Advanced Data Structures**](c15_data_structures)
 16. [**Decorators**](c16_decorators)
