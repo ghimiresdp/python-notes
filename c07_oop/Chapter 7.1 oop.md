@@ -10,17 +10,18 @@
 **Table of contents**:
 
 - [Chapter 7.1 Object-Oriented Programming (OOP)](#chapter-71-object-oriented-programming-oop)
-    - [Introduction to OOP](#introduction-to-oop)
-        - [Building blocks of an OOP](#building-blocks-of-an-oop)
-        - [Features Of Object-Oriented Programming](#features-of-object-oriented-programming)
-    - [Python Classes](#python-classes)
-        - [PEP-8 Conventions for prototyping a class](#pep-8-conventions-for-prototyping-a-class)
-    - [Basic Building block of Classes](#basic-building-block-of-classes)
-        - [Attributes, Methods, and the `self` parameter](#attributes-methods-and-the-self-parameter)
-        - [Initializing the class, Constructor Method, and uses of `self`.](#initializing-the-class-constructor-method-and-uses-of-self)
-        - [Class Attributes and Instance attributes](#class-attributes-and-instance-attributes)
-        - [Built-in Class/Instance Attributes](#built-in-classinstance-attributes)
-        - [Object](#object)
+  - [Introduction to OOP](#introduction-to-oop)
+    - [Building blocks of an OOP](#building-blocks-of-an-oop)
+    - [Features Of Object-Oriented Programming](#features-of-object-oriented-programming)
+  - [Python Classes](#python-classes)
+    - [PEP-8 Conventions for prototyping a class](#pep-8-conventions-for-prototyping-a-class)
+    - [What is Self?](#what-is-self)
+  - [Basic Building block of Classes](#basic-building-block-of-classes)
+    - [Attributes, Methods, and the `self` parameter](#attributes-methods-and-the-self-parameter)
+    - [Initializing the class, Constructor Method, and uses of `self`.](#initializing-the-class-constructor-method-and-uses-of-self)
+    - [Class Attributes and Instance attributes](#class-attributes-and-instance-attributes)
+    - [Built-in Class/Instance Attributes](#built-in-classinstance-attributes)
+    - [Object or Instance](#object-or-instance)
 
 ## Introduction to OOP
 
@@ -87,6 +88,9 @@ attributes all of these can be represented with the following:
 
 ## Python Classes
 
+A class is a building block of an OOP. A class creates a block of a code that is
+used to bind attributes to its methods.
+
 Python classes can be created using a `class` keyword.
 
 **Basic Structure of a class**
@@ -97,7 +101,11 @@ class ClassName:
     attr_2 = "value"
 
     def method(self):
-        """function body"""
+        """
+        # function body
+        The regular method always takes first argument as an instance of the
+        same class. generally we use `self` parameter as the first parameter.
+        """
         pass
 ```
 
@@ -123,19 +131,26 @@ class Person:
 The above example uses `first_name` and `last_name` as attributes of the class
 `Person` whereas `show_full_name()` as the method that binds to the person
 
+### What is Self?
+
+`self` is just an identifier or a variable name that holds the instance of
+the class. `self` is not a python keyword and can be replaced with any other
+identifier, but to make code consistent, pep-8 prefers using `self` as the
+first parameter.
+
 ## Basic Building block of Classes
 
 Classes are made up of the following building blocks:
 
-- Attributes
-    - Class Attribute
-    - Instance Attribute
-- Methods
+- **Attributes**
+    - Class Attributes
+    - Instance Attributes
+- **Methods**
     - Instance Methods (Bounded to the instance)
     - Class Methods (Bounded to the class)
     - Static Methods (Unbounded methods)
     - Initializer method (called upon creaton of the instance)
-- Instance
+- **Instance**
 
 ### Attributes, Methods, and the `self` parameter
 
@@ -186,6 +201,7 @@ class Person:
     def fullname(self):  # method
         print(f'{self.first_name} {self.last_name}')
 
+
 person_1 = Person('John', 'Doe')
 # prints out "Hi I am Initialized"
 ```
@@ -208,7 +224,7 @@ print(person.first_name)  # John
 print(person.full_name())  # John Lennon
 ```
 
->**Note**: _Even though methods has `self` as the first parameter, we do not
+> **Note**: _Even though methods has `self` as the first parameter, we do not
 > need to pass the `self` argument manually to call the function. It
 > automatically gets passed by the python interpreter in the time of calling._
 
@@ -265,7 +281,7 @@ classes. some of the attributes are as follows:
 
 - `object.__str__()`: returns the readable string representation of the object
 - `object.__repr__()`: returns the unambiguous string representation similar to
- the `__str__()` method.
+  the `__str__()` method.
 - `object.__dict__`: the dictionary representation of the object
 - `object.__doc__`: the documentation string of the class
 - `object.__sizeof__()`: returns the size of object in bytes
@@ -321,6 +337,7 @@ print(type(x))
 
 # <class 'int'>
 ```
+
 Here `x` is an object of a class `int`. Hence it inherits all the properties and
 features defined in the class `int`.
 
@@ -335,6 +352,7 @@ class Animal:
 
         def speak(self):
             print(f'I speak with {self.word}')
+
 
 cow = Animal('My Cow', 'Moo')
 ```

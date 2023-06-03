@@ -18,26 +18,26 @@ Static Methods
 class Animal:
     legs = 4
 
-    @classmethod    # bound to the class so class is passed as the first argument instead of self
+    @classmethod  # bound to the class so class is passed as the first argument instead of self
     def print_legs(cls):
         print('Total no. of legs: ', cls.legs)
 
-    def print_legs_1(self): # Regular method that is bound to the instance so self is passed as the first argument
+    def print_legs_1(self):  # Regular method that is bound to the instance so self is passed as the first argument
         print('Total no. of legs: ', self.legs)
 
 
-print(Animal.legs)      # 4
+print(Animal.legs)  # 4
 
-Animal.print_legs()   # 4           # not instantiated
-Animal().print_legs()   # 4         # instantiated
+Animal.print_legs()  # 4           # not instantiated
+Animal().print_legs()  # 4         # instantiated
 
 human = Animal()
 human.legs = 2
-human.print_legs()      # 4         # instantiated and attribute is changed but still prints 4 instead of 2
+human.print_legs()  # 4         # instantiated and attribute is changed but still prints 4 instead of 2
 
-print(human.legs)       # 2
+print(human.legs)  # 2
 
-print(Animal.legs)      # 4
+print(Animal.legs)  # 4
 
 
 # def cm_to_m(value: float):
@@ -59,9 +59,10 @@ print(Animal.legs)      # 4
 
 class Length:
     cm = 5438
-    @staticmethod               # unbound since it does not invoke either of class or an instance.
+
+    @staticmethod  # unbound since it does not invoke either of class or an instance.
     def cm_to_m(value: float):
-        return value/100
+        return value / 100
 
     @staticmethod
     def m_to_cm(value: float):
@@ -76,5 +77,6 @@ class Weight:
     @staticmethod
     def lb_to_kg(value: float):
         return value / 2.20462
+
 
 print(Length.cm_to_m(Length.cm))

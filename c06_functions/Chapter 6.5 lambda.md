@@ -9,9 +9,9 @@
 
 **Table of Contents:**
 - [Chapter 6.5: Lambda Expressions](#chapter-65-lambda-expressions)
-    - [Introduction](#introduction)
-    - [Lambda function with Zero arguments](#lambda-function-with-zero-arguments)
-    - [Ternary operators on lambda functions](#ternary-operators-on-lambda-functions)
+  - [Introduction](#introduction)
+  - [Lambda function with Zero arguments](#lambda-function-with-zero-arguments)
+  - [Ternary operators on lambda functions](#ternary-operators-on-lambda-functions)
 
 ## Introduction
 
