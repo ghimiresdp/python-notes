@@ -10,8 +10,9 @@
 **Table of contents**:
 
 - [Chapter 7.3: Operator Overloading](#chapter-73-operator-overloading)
-    - [Introduction to Operator Overloading](#introduction-to-operator-overloading)
-    - [Methods for overloading operations in python](#methods-for-overloading-operations-in-python)
+  - [Introduction to Operator Overloading](#introduction-to-operator-overloading)
+  - [Methods for overloading operations in python](#methods-for-overloading-operations-in-python)
+  - [Quick Exercise](#quick-exercise)
 
 ## Introduction to Operator Overloading
 
@@ -94,3 +95,29 @@ appended and `students` merged.
 > then please remember that the same pipe operator `|` is used as a table column
 > separator in markdown files. Hence it is escaped using `\|`.
 > But the actual operation should be written in format `a | b` but not `a \| b`.
+
+## Quick Exercise
+
+Create a class named `Line` and add the attribute `length` to it. Now create a
+method that overloads the addition operation. the operation should return the
+new `Line` instance with added length into it.
+
+```python
+class Line:
+    def __init__(self, length):
+        self.length = length
+
+    # add your method here
+
+
+
+    # end of your answer
+
+
+l1 = Line(5)
+l2 = Line(10)
+
+l3 = l1 + l2
+print(type(l3))     # It should print `<class `__main__.Line`>`
+print(l3.length)    # It should print `15`
+```
