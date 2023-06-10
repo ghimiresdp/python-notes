@@ -10,14 +10,15 @@
 **Table of contents**:
 
 - [Chapter 7.5: Inheritance and Polymorphism](#chapter-75-inheritance-and-polymorphism)
-  - [Introduction to Inheritance](#introduction-to-inheritance)
+  - [Inheritance](#inheritance)
     - [The `super()` function](#the-super-function)
     - [Types of Inheritance](#types-of-inheritance)
-  - [Builtin Functions to check the relationship between different classes](#builtin-functions-to-check-the-relationship-between-different-classes)
-    - [the `isinstance()` function](#the-isinstance-function)
-    - [the `issubclass()` function](#the-issubclass-function)
+    - [Builtin Functions to check the relationship between different classes](#builtin-functions-to-check-the-relationship-between-different-classes)
+      - [the `isinstance()` function](#the-isinstance-function)
+      - [the `issubclass()` function](#the-issubclass-function)
+- [Polymorphism](#polymorphism)
 
-## Introduction to Inheritance
+## Inheritance
 
 Inheritance is the process of transferring the attributes and behaviors of the
 parent class to the child class. This concept is similar to the biological
@@ -133,12 +134,12 @@ There are various types of inheritance which are as follows:
 4. **Multilevel Inheritance**: Child, Parent, Grandparent, etc.
 5. **Hybrid Inheritance**
 
-## Builtin Functions to check the relationship between different classes
+### Builtin Functions to check the relationship between different classes
 
 There are some methods that is used to check an object is an instance of a class
 or a parent class.
 
-### the `isinstance()` function
+#### the `isinstance()` function
 
 The `isinstance()` method returns true if the object is an instance of the class
 or any parent classes (if exists).
@@ -166,7 +167,7 @@ print(isinstance(v, Car))  # False
 Here, we can see that the object of a child class is an instance of the parent
 class, but the object of a parent class is not an instance of the child class.
 
-### the `issubclass()` function
+#### the `issubclass()` function
 
 The `issubclass()` method returns true if the class is a subclass of another
 class. This function is useful when we need to check if there is inheritance
@@ -184,3 +185,40 @@ class Car(Vehicle):
 print(issubclass(Car, Vehicle))  # True
 print(issubclass(Vehicle, Car))  # False (it is a superclass instead)
 ```
+# Polymorphism
+
+The term polymorphism refers to the state of having many forms. In OOP concept,
+an abstract class defines the function and the behavior of the function is
+different across classes inherited from that class.
+
+
+**Example**
+
+```python
+class Shape:
+    def area(self):
+        pass
+
+
+class Rectangle(Shape):
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.1415 * self.radius ** 2
+```
+
+Here, the method `area()` has different forms in the above example. if it is a
+rectangle, the value of `area()` will depend upon the length and width of the
+rectangle however, the same `area()` function behave differently in case of the
+`Circle` class. This difference in the behavior of the same function in OOP is
+known as polymorphism.
