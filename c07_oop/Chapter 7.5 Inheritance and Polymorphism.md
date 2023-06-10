@@ -61,10 +61,27 @@ class Square(Rectangle):
     def __init__(self, length):
         # here, Square is also a rectangle which has width same as the length.
         super().__init__(length=length, width=length)
+
+r1 = Rectangle(10, 20)
+print(r1.area())    # 200
+
+sq1 = Square(10)
+print(sq1.area())   # 100
 ```
 In the above example, the class Square do not have any method defined to find
-the area, but as it is inherited from the parent class, it is still available
-from the class `Rectangle`.
+the area, but as it is a child of a class `Rectangle`, it inherits the method
+`area()` from the parent class `Rectangle`.
+
+### The `super()` function
+
+In an above example we could see the usage of `super()` function. The `super()`
+function returns objects represented in the parent's class and is very useful in
+case of inheritance.
+
+The Benefits of using `super()` method in python are as follows:
+- We can directly access the attributes of the parent class
+- We can isolate the changes of the super class with the child class with the
+  help of a `super()` method.
 
 ### Types of Inheritance
 
