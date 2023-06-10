@@ -23,7 +23,7 @@ mathematical operation without instructing the class to do so. The process of
 giving the instruction to perform certain mathematical operation can be called
 as operator overloading.
 
-We use Magic methods such as `__add__`, `_sub_`, etc to perform overload the
+We use Magic methods such as `__add__`, `__sub__`, etc to perform overload the
 mathematical operations.
 
 The example below explains how two classes can be merged and splited using
