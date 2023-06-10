@@ -11,6 +11,7 @@
 
 - [Chapter 7.5: Inheritance and Polymorphism](#chapter-75-inheritance-and-polymorphism)
   - [Introduction to Inheritance](#introduction-to-inheritance)
+    - [The `super()` function](#the-super-function)
     - [Types of Inheritance](#types-of-inheritance)
 
 
@@ -82,6 +83,34 @@ The Benefits of using `super()` method in python are as follows:
 - We can directly access the attributes of the parent class
 - We can isolate the changes of the super class with the child class with the
   help of a `super()` method.
+
+**Example**
+
+```python
+class Animal:
+    def __init__(self):
+        self.legs = 4
+        self.tail = True
+
+class Dog(Animal):
+    def __init__(self):
+        self.is_domestic = True
+        super().__init__()
+
+
+d1 = Dog()
+print(d1.legs, d1.tail)  # 4 True
+```
+Here, the instance of Dog only has the instance attribute `is_domestic`, but if
+we check `d1.legs`, then it gives `4` since the initializer method of the class
+`Dog` also initializes the parent class `Animal` with the help of `super()` as
+shown below.
+
+```python
+def __init__(self):
+    ...
+    super().__init__()
+```
 
 ### Types of Inheritance
 
