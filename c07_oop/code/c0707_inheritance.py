@@ -33,7 +33,7 @@ class Rectangle:  # Parent Class
         return self.width * self.height
 
     def diagonal_length(self):
-        return (self.width**2 + self.height**2)**(1 / 2)
+        return (self.width ** 2 + self.height ** 2) ** (1 / 2)
 
 
 # Child Class
@@ -43,7 +43,7 @@ class Square(Rectangle):  # Here, the class `Square` is inheriting all the prope
         super().__init__(width=width, height=width)  # in python3, super() does not require any arguments
 
     def diagonal_length(self):
-        return self.width * (2**.5)
+        return self.width * (2 ** .5)
 
 
 # %%
@@ -62,7 +62,7 @@ print(f'Diagonal length of room 2: {room_2.diagonal_length()}')
 # %% builtin functions that work with inheritance
 """
 isinstance()
-the method returns True if an object is the instance of the class ir any of the derrived classes of a class
+the method returns True if an object is the instance of the class ir any of the derived classes of a class
 
 """
 

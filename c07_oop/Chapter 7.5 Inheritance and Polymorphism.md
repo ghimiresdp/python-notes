@@ -10,12 +10,16 @@
 **Table of contents**:
 
 - [Chapter 7.5: Inheritance and Polymorphism](#chapter-75-inheritance-and-polymorphism)
-  - [Inheritance](#inheritance)
-    - [The `super()` function](#the-super-function)
-    - [Types of Inheritance](#types-of-inheritance)
-    - [Builtin Functions to check the relationship between different classes](#builtin-functions-to-check-the-relationship-between-different-classes)
-      - [the `isinstance()` function](#the-isinstance-function)
-      - [the `issubclass()` function](#the-issubclass-function)
+    - [Inheritance](#inheritance)
+        - [The `super()` function](#the-super-function)
+        - [Single Inheritance](#single-inheritance)
+        - [Multiple Inheritance](#multiple-inheritance)
+        - [Hierarchical Inheritance](#hierarchical-inheritance)
+        - [Multilevel Inheritance](#multilevel-inheritance)
+        - [Hybrid Inheritance](#hybrid-inheritance)
+        - [Builtin Functions to check the relationship between different classes](#builtin-functions-to-check-the-relationship-between-different-classes)
+            - [the `isinstance()` function](#the-isinstance-function)
+            - [the `issubclass()` function](#the-issubclass-function)
 - [Polymorphism](#polymorphism)
 
 ## Inheritance
@@ -124,7 +128,7 @@ def __init__(self):
     super().__init__()
 ```
 
-### Types of Inheritance
+**Types of Inheritance**
 
 There are various types of inheritance which are as follows:
 
@@ -133,6 +137,127 @@ There are various types of inheritance which are as follows:
 3. **Hierarchical Inheritance**: Single parent and multiple children
 4. **Multilevel Inheritance**: Child, Parent, Grandparent, etc.
 5. **Hybrid Inheritance**
+
+### Single Inheritance
+
+Single Inheritance refers to the inheritance in which a child class inherits
+attributes and features from a parent class.
+
+```python
+class Animal:
+    has_tails = True
+
+
+class Cow(Animal):
+    # Here, Cow inherits attribute (has_tails) from the parent class Animal.
+    pass
+```
+
+### Multiple Inheritance
+
+Multiple Inheritance is a type of inheritance in which a class inherits features
+from more than 1 parent classes. In multiple inheritance, Python uses C3
+Linearization algorithm to determine the order in which to resolve class
+attributes and methods. The process is also known as Method Resolution Order
+(MRO). To learn more about C3 linearization, you can check the link below:
+https://en.wikipedia.org/wiki/C3_linearization
+
+```python
+class CoffeeShop:
+    latte = 2
+    Espresso = 1.5
+
+    def prepare_coffee(self):
+        pass
+
+
+class Bakery:
+    doughnut = 2
+    latte = 2.5
+
+    def make_doughnut(self):
+        pass
+
+
+class Restaurant(CoffeeShop, Bakery):
+    Burger = 3
+
+    def prepare_burger(self):
+        pass
+```
+
+Here, Class Restaurant inherits all attributes and methods from its parent
+classes however as `latte` is available in both of the parent classes, it uses
+MRO to select the attribute `latte` from `CoffeeShop` since it is the first
+parent class.
+
+### Hierarchical Inheritance
+
+Hierarchical inheritance is similar to single inheritance. In Hierarchical
+inheritance, one parent class is inherited by multiple children classes. We can
+see, each child class can be separately seen as a singly inherited class.
+
+```python
+class Vehicle:
+    wheels = 4
+    engine = 'Diesel'
+
+    def ignite(self):
+        pass
+
+    def horn(self):
+        pass
+
+
+class Bus(Vehicle):
+    wheels = 6
+
+
+class Car(Vehicle):
+    engine = 'Petrol'
+```
+
+Here, A single Parent class `Vehicle` is inherited by multiple child classes
+`Bus` and `Car`. In `Bus`, the attribute `wheels` is overwritten but `engine` is
+inherited from parent whereas in `Car`, `engine` is overwritten but `wheels` is
+inherited. all classes that inherit `Vehicle` also inherits function such as
+`horn()` and `ignite()`.
+
+### Multilevel Inheritance
+
+```python
+class Vehicle:
+    pass
+
+
+class TwoWheeler(Vehicle):
+    pass
+
+
+class Scooter(TwoWheeler):
+    pass
+
+```
+
+### Hybrid Inheritance
+
+```python
+class Vehicle:
+    pass
+
+
+class Bus(Vehicle):
+    pass
+
+
+class TwoWheeler(Vehicle):
+    pass
+
+
+class Bike(TwoWheeler):
+    pass
+
+```
 
 ### Builtin Functions to check the relationship between different classes
 
@@ -185,12 +310,12 @@ class Car(Vehicle):
 print(issubclass(Car, Vehicle))  # True
 print(issubclass(Vehicle, Car))  # False (it is a superclass instead)
 ```
+
 # Polymorphism
 
 The term polymorphism refers to the state of having many forms. In OOP concept,
 an abstract class defines the function and the behavior of the function is
 different across classes inherited from that class.
-
 
 **Example**
 
