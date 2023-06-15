@@ -225,19 +225,34 @@ inherited. all classes that inherit `Vehicle` also inherits function such as
 
 ### Multilevel Inheritance
 
+Multilevel inheritance is a type of inheritance in which a child class inherits
+its characteristics from a parent class, which also inherit characteristics from
+its parent class. We can also call the base class as a grandparent class.
+
 ```python
 class Vehicle:
-    pass
+    wheels = 4
+    transmission = 'manual'
+
+    def ignite(self):
+        pass
 
 
 class TwoWheeler(Vehicle):
-    pass
+    wheels = 2
+    engine = 'Petrol'
+
 
 
 class Scooter(TwoWheeler):
-    pass
+    transmission = 'Automatic'
 
 ```
+Here the class `Scooter` inherits attributes and methods from `TwoWheeleer` and
+the `TwoWheeler` inherits attributes from `Vehicle`, hence, the class inherits
+features from `Vehicle` too. This type of inheritance is known as multilevel
+inheritance. Here, `TwoWheeler` is a parent class and `Vehicle` is a grandparent
+class of `Scooter` so it inherits `ignite()` method from the grandparent class.
 
 ### Hybrid Inheritance
 
