@@ -243,11 +243,11 @@ class TwoWheeler(Vehicle):
     engine = 'Petrol'
 
 
-
 class Scooter(TwoWheeler):
     transmission = 'Automatic'
 
 ```
+
 Here the class `Scooter` inherits attributes and methods from `TwoWheeleer` and
 the `TwoWheeler` inherits attributes from `Vehicle`, hence, the class inherits
 features from `Vehicle` too. This type of inheritance is known as multilevel
@@ -256,23 +256,41 @@ class of `Scooter` so it inherits `ignite()` method from the grandparent class.
 
 ### Hybrid Inheritance
 
+Hybrid Inheritance is a mix of all inheritance where we can see different levels
+of classes are inherited.
+
 ```python
-class Vehicle:
-    pass
+class Engine:
+    def ignite(self):
+        pass
 
 
-class Bus(Vehicle):
-    pass
+class Vehicle(Engine):
+    max_seat = 6
+
+    def horn(self):
+        pass
 
 
-class TwoWheeler(Vehicle):
-    pass
+class RoadTransport:
+    has_wheels = True
 
 
-class Bike(TwoWheeler):
-    pass
+class Bus(Vehicle, RoadTransport):
+    max_seats = 50
+
+
+class Helicopter(Vehicle):
+    def take_off(self):
+        pass
 
 ```
+Here `Helicopter` inherits `Vehicle` which again inherits `Engine`, which is a
+kind of multilevel inheritance but the class `Bus` inherits `Vehicle` as well as
+`RoadTransport` where we can see Hybrid inheritance. In this case if we see
+class `Vehicle`, we can see multilevel inheritance, but if we consider both of
+the parent classes, then it is multiple inheritance. Such mixed inheritance is
+also known as hybrid inheritance.
 
 ### Builtin Functions to check the relationship between different classes
 
