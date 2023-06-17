@@ -2,8 +2,8 @@
 - **URL**: https://www.sudipghimire.com.np
 - **GitHub**: https://github.com/ghimiresdp
 
-[go to course contents](https://github.com/ghimiresdp/python-level1/)
------------------------
+[go to course contents](https://github.com/ghimiresdp/python-notes/)
+<hr>
 
 # Chapter 3.3. Dictionary
 
@@ -103,8 +103,8 @@ person = {
     'age': 21,
 }
 
-print(person['name'])       # Spock
-print(person['married'])    # False
+print(person['name'])  # Spock
+print(person['married'])  # False
 ```
 
 Sometimes we are not sure whether the key exists in the dictionary yet, in this
@@ -121,10 +121,11 @@ income = {
 }
 
 # print(salary['remittance'])       # KeyError
-print(income.get('remittance'))     # None
+print(income.get('remittance'))  # None
 print(income.get('remittance', 0))  # 0
 
 ```
+
 ## Adding/updating an item to the dictionary
 
 We can directly use Assignment operator to add/update values of the dictionary.
@@ -138,8 +139,8 @@ income = {
     'stock': 1200,
 }
 
-income['freelancing'] = 700     # this adds new key `freelancing` to the dict
-income['salary'] = 2200     # this updates the existing key `salary` to 2200
+income['freelancing'] = 700  # this adds new key `freelancing` to the dict
+income['salary'] = 2200  # this updates the existing key `salary` to 2200
 print(income)
 
 # {'salary': 2200, 'lease': 1000, 'stock': 1200, 'freelancing': 700}
@@ -151,6 +152,7 @@ print(income)
 We can add/update multiple items to the dictionary using update method, or using
 unpacking methods.
 **Example 1:**
+
 ```python
 income = {
     'salary': 2000,
@@ -159,16 +161,15 @@ income = {
 }
 
 other_sources = {
-    'uber': 600,            # new item
-    'remittance': 700,      # new item
-    'salary':2400           # existing item
+    'uber': 600,  # new item
+    'remittance': 700,  # new item
+    'salary': 2400  # existing item
 }
 income.update(other_sources)
 print(income)
 
 # {'salary': 2400, 'lease': 1000, 'stock': 1200, 'uber': 600, 'remittance': 700}
 ```
-
 
 ## removing an item from the dictionary
 
@@ -201,6 +202,7 @@ income.pop('occupation')
 ```
 
 ## popping out an arbitrary item from the dictionary
+
 We can use `dict.popitem()` to remove an arbitrary item from the dictionary.
 the `popitem()` method do not take any argument and returns both `key` and
 `value` as a tuple.
@@ -219,12 +221,10 @@ print(key, value)
 # uber 600
 ```
 
-
 ## getting list of keys, values and items of the dictionary
 
 We can use `dict.keys()`, `dict.values()`, and `dict.items()` to get the
 list-like iterables from the dictionary.
-
 
 ```python
 person = {
@@ -242,7 +242,6 @@ print(person.values())
 print(person.items())
 # dict_items([('name', 'Spock'), ('age', 20), ('married', False)])
 ```
-
 
 ## Some useful dictionary methods
 

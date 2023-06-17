@@ -2,8 +2,8 @@
 - **URL**: https://www.sudipghimire.com.np
 - **GitHub**: https://github.com/ghimiresdp
 
-[go to course contents](https://github.com/ghimiresdp/python-level1/)
------------------------
+[go to course contents](https://github.com/ghimiresdp/python-notes/)
+<hr>
 
 # Chapter 3.2. Tuple
 

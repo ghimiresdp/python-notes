@@ -80,7 +80,7 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [Chapter 6 Quiz](c06_functions/quiz)
 
 7. **[Classes](c07_oop)**
-    - [Introduction to Object Oriented Programming](c07_oop/Chapter%207.1%20oop.md)
+    - [Introduction to Object Oriented Programming](c07_oop/Chapter-7.1-oop.md#introduction-to-oop)
         - Class
         - Class attributes, methods, and the `self` parameter
         - the Constructor method
