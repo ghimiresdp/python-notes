@@ -1,6 +1,8 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **Github**: https://github.com/ghimiresdp
+> - **created by**: Sudip Ghimire
+> - **URL**: https://www.sudipghimire.com.np
+> - **GitHub**: https://github.com/ghimiresdp
+>
+> [go to course contents](https://github.com/ghimiresdp/python-notes/)
 
 # 13.1. The `groupby()` Function
 
@@ -12,6 +14,8 @@ Source: https://docs.python.org/3/library/itertools.html#itertools.groupby
 
 **Example 1**
 ```python
+from itertools import groupby
+
 # example 1
 animals = ['Bear', 'Donkey', 'Cat', 'Dog', 'Camel', 'Elephant']
 animals = sorted(animals)

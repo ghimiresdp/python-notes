@@ -16,6 +16,6 @@
 
 **Table of contents**:
 
-- [Regular Expressions](chapter%2014.1%20regular%20expressions.md)
-- [REGEX Special Characters](chapter%2014.2%20regex%20special%20characters.md)
-- [The `re` module](chapter%2014.3%20the%20re%20module.md)
+- [Regular Expressions](chapter-14.1-regular-expressions.md)
+- [REGEX Special Characters](chapter-14.2-regex-special-characters.md)
+- [The `re` module](chapter-14.3-the-re-module.md)

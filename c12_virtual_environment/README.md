@@ -15,6 +15,6 @@
 
 **Table of Contents**
 
-- [c0201 Introduction to Virtual environments](c0201%20virtual%20environment%20intro.md)
-- [c0202 VENV and its usage](c0202%20venv.md)
-- [c0203 PIPENV and its usage](c0203%20pipenv.md)
+- [c0201 Introduction to Virtual environments](chapter-12.1-virtual-environment-intro.md)
+- [c0202 VENV and its usage](chapter-12.2-venv.md)
+- [c0203 PIPENV and its usage](chapter-12.3-pipenv.md)

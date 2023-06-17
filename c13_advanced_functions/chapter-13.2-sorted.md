@@ -1,6 +1,8 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **Github**: https://github.com/ghimiresdp
+> - **created by**: Sudip Ghimire
+> - **URL**: https://www.sudipghimire.com.np
+> - **GitHub**: https://github.com/ghimiresdp
+>
+> [go to course contents](https://github.com/ghimiresdp/python-notes/)
 
 **Table of Contents**
 - [13.2. The `sorted()` Function](#132-the-sorted-function)

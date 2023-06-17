@@ -129,20 +129,20 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [PIP and its usage](c11_pip/chapter-11.2-pip.md)
 
 12. **[Virtual Environments](c12_virtual_environment)**
-    - [Introduction to virtual environments](c12_virtual_environment/chapter%2012.1%20virtual%20environment%20intro.md)
-    - [VENV and its usage](c12_virtual_environment/chapter%2012.2%20venv.md)
-    - [PIPENV and its usage](c12_virtual_environment/chapter%2012.3%20pipenv.md)
+    - [Introduction to virtual environments](c12_virtual_environment/chapter-12.1-virtual-environment-intro.md)
+    - [VENV and its usage](c12_virtual_environment/chapter-12.2-venv.md)
+    - [PIPENV and its usage](c12_virtual_environment/chapter-12.3-pipenv.md)
 
 13. **[Python Advanced Functions](c13_advanced_functions)**
-    - [`groupby()` function](c13_advanced_functions/chapter%2013.1%20groupby.md)
-    - [`sorted()` function](c13_advanced_functions/chapter%2013.2%20sorted.md)
-    - [`filter()` function](c13_advanced_functions/chapter%2013.3%20filter.md)
-    - [`map()` function]()
+    - [`groupby()` function](c13_advanced_functions/chapter-13.1-groupby.md)
+    - [`sorted()` function](c13_advanced_functions/chapter-13.2-sorted.md)
+    - [`filter()` function](c13_advanced_functions/chapter-13.3-filter.md)
+    - [`map()` function](c13_advanced_functions/chapter-13.4-map.md)
 
 14. **[Regular Expressions (REGEX)](c14_regex)**
-    - [Introduction to regular expressions](c14_regex/chapter%2014.1%20regular%20expressions.md)
-    - [REGEX special characters](c14_regex/chapter%2014.2%20regex%20special%20characters.md)
-    - [The `re` module](c14_regex/chapter%2014.3%20the%20re%20module.md)
+    - [Introduction to regular expressions](c14_regex/chapter-14.1-regular-expressions.md)
+    - [REGEX special characters](c14_regex/chapter-14.2-regex-special-characters.md)
+    - [The `re` module](c14_regex/chapter-14.3-the-re-module.md)
 
 15. [**Advanced Data Structures**](c15_data_structures)
 16. [**Decorators**](c16_decorators)

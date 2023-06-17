@@ -1,6 +1,9 @@
 - **created by**: Sudip Ghimire
 - **URL**: https://www.sudipghimire.com.np
-- **Github**: https://github.com/ghimiresdp
+- **GitHub**: https://github.com/ghimiresdp
+
+[go to course contents](https://github.com/ghimiresdp/python-notes/)
+<hr>
 
 # Creating custom Exceptions
 
@@ -26,14 +29,14 @@ class AgeError(Exception):
     def __init__(self, age, *args):
         super().__init__(*args)
         self.age = age
-    
+
     def __str__(self):
         return f'The age {self.age} is not in between {self.min_age} and {self.max_age}'
 ```
 
 ## Example2: `LengthError`
 
-The example below explains how a custom exception can be raised using the 
+The example below explains how a custom exception can be raised using the
 object-oriented oriented approach:
 
 ```py
@@ -43,7 +46,7 @@ class LengthError(Exception):
         super().__init__(*args)
 
     def __str__(self):
-        return(f'The length {self.value} is not possible')
+        return f'The length {self.value} is not possible'
 
 
 class Length:
@@ -51,7 +54,7 @@ class Length:
         if value < 0:
             raise LengthError(value)
         self.value = value
-    
+
 
 l1 = Length(5)
 l2 = Length(-5)     # LengthError: The length -5 is not possible

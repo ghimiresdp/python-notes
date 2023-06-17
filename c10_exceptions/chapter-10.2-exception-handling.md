@@ -1,6 +1,9 @@
 - **created by**: Sudip Ghimire
 - **URL**: https://www.sudipghimire.com.np
-- **Github**: https://github.com/ghimiresdp
+- **GitHub**: https://github.com/ghimiresdp
+
+[go to course contents](https://github.com/ghimiresdp/python-notes/)
+<hr>
 
 # Exception Handling in python
 
@@ -52,7 +55,7 @@ def divide(a, b):
     except Exception as e:
         print(f"An Unknown Error occured. The error is: {e}")
 
-divide("abc", x)    # TypeError is handled
+divide('abc', 'x')    # TypeError is handled
 divide(1, 0)        # ZeroDivisionError is handled
 ```
 

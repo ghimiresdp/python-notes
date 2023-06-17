@@ -15,5 +15,5 @@
 
 **Table of contents**:
 
-- [Introduction to Semantic Versioning(semver)](chapter%2011.1%20symver.md)
-- [PIP package manager](chapter%2011.2%20pip.md)
+- [Introduction to Semantic Versioning(semver)](chapter-11.1-semver.md)
+- [PIP package manager](chapter-11.2-pip.md)
