@@ -15,11 +15,11 @@ You can `clone` or `fork` the repository and review the course contents, example
 
 ## Course Contents _(Links will be updated accordingly)_
 
-1. **[Fundamentals of Python](c01_basics/)**
-    - [Introduction to Python](c01_basics/Chapter%201%20Basics.md)
-    - [Python Environment Setup, IDE Setup](c01_basics/Chapter%201%20Basics.md#installing-python)
-    - [Hello World in Python](c01_basics/Chapter%201%20Basics.md#hello-world-with-idle)
-    - [Running Python Programs](c01_basics/Chapter%201%20Basics.md#creating-editing-and-running-python-files)
+1. **[Fundamentals of Python](c01_basics)**
+    - [Introduction to Python](c01_basics/Chapter-1.1-Basics.md)
+    - [Python Environment Setup, IDE Setup](c01_basics/Chapter-1.1-Basics.md#installing-python)
+    - [Hello World in Python](c01_basics/Chapter-1.1-Basics.md#hello-world-with-idle)
+    - [Running Python Programs](c01_basics/Chapter-1.1-Basics.md#creating-editing-and-running-python-files)
     - comments and documentation
         - Single Line Comments
         - inline Comments
