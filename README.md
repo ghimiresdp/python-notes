@@ -132,6 +132,7 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [Introduction to virtual environments](c12_virtual_environment/chapter-12.1-virtual-environment-intro.md)
     - [VENV and its usage](c12_virtual_environment/chapter-12.2-venv.md)
     - [PIPENV and its usage](c12_virtual_environment/chapter-12.3-pipenv.md)
+    - [Poetry Package manager](c12_virtual_environment/chapter-12.4-poetry.md)
 
 13. **[Python Advanced Functions](c13_advanced_functions)**
     - [`groupby()` function](c13_advanced_functions/chapter-13.1-groupby.md)

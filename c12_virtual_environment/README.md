@@ -15,6 +15,7 @@
 
 **Table of Contents**
 
-- [c0201 Introduction to Virtual environments](chapter-12.1-virtual-environment-intro.md)
-- [c0202 VENV and its usage](chapter-12.2-venv.md)
-- [c0203 PIPENV and its usage](chapter-12.3-pipenv.md)
+- [Introduction to Virtual environments](chapter-12.1-virtual-environment-intro.md)
+- [VENV and its usage](chapter-12.2-venv.md)
+- [PIPENV and its usage](chapter-12.3-pipenv.md)
+- [Poetry package manager](chapter-12.4-poetry.md)
