@@ -1,16 +1,15 @@
 - **created by**: Sudip Ghimire
 - **URL**: https://www.sudipghimire.com.np
-- **Github**: https://github.com/ghimiresdp
+- **GitHub**: https://github.com/ghimiresdp
 
-# 8.6. The `math` Module
-source: https://docs.python.org/3/library/math.html
+[go to course contents](https://github.com/ghimiresdp/python-notes/)
+<hr>
 
-The `math` module provides access to the mathematical functions defined by the C
-standard. The module offers various functions such as ceiling, floor values,
-permutations combinations, factorials, GCD (HCF), LCM, etc.
+# Chapter 8.6. The `math` Module
 
 **Table of Contents**
-- [8.6. The `math` Module](#86-the-math-module)
+- [Chapter 8.6. The `math` Module](#chapter-86-the-math-module)
+  - [Introduction to `math` module](#introduction-to-math-module)
   - [Approximation functions in `math` module](#approximation-functions-in-math-module)
     - [`round` function](#round-function)
     - [`floor` function](#floor-function)
@@ -20,6 +19,14 @@ permutations combinations, factorials, GCD (HCF), LCM, etc.
     - [The `math.dist()` function](#the-mathdist-function)
     - [Angular Conversion](#angular-conversion)
   - [Powers and Exponents](#powers-and-exponents)
+
+## Introduction to `math` module
+
+source: https://docs.python.org/3/library/math.html
+
+The `math` module provides access to the mathematical functions defined by the C
+standard. The module offers various functions such as ceiling, floor values,
+permutations combinations, factorials, GCD (HCF), LCM, etc.
 
 ## Approximation functions in `math` module
 The `math` module provides `floor`, `ceil`, and `trunc` functions to perform

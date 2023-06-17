@@ -1,17 +1,20 @@
 - **created by**: Sudip Ghimire
 - **URL**: https://www.sudipghimire.com.np
-- **Github**: https://github.com/ghimiresdp
+- **GitHub**: https://github.com/ghimiresdp
+
+[go to course contents](https://github.com/ghimiresdp/python-notes/)
+<hr>
+
+# Chapter 8.4. The `random` Module
 
 **Table Of Contents**
-- [8.4. `random` Module](#84-random-module)
+- [Chapter 8.4. The `random` Module](#chapter-84-the-random-module)
   - [Usage](#usage)
     - [Printing out a random number from a range 1 to 6](#printing-out-a-random-number-from-a-range-1-to-6)
     - [Printing out 10 random numbers from a range 1 to 6](#printing-out-10-random-numbers-from-a-range-1-to-6)
     - [Printing out a random character from a string](#printing-out-a-random-character-from-a-string)
     - [Printing out 5 random characters as a list from a string](#printing-out-5-random-characters-as-a-list-from-a-string)
     - [Printing out a random password string with 8 characters.](#printing-out-a-random-password-string-with-8-characters)
-
-# 8.4. `random` Module
 
 Reference: https://docs.python.org/3/library/random.html
 

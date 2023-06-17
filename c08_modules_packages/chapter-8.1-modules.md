@@ -1,6 +1,9 @@
 - **created by**: Sudip Ghimire
 - **URL**: https://www.sudipghimire.com.np
-- **Github**: https://github.com/ghimiresdp
+- **GitHub**: https://github.com/ghimiresdp
+
+[go to course contents](https://github.com/ghimiresdp/python-notes/)
+<hr>
 
 # Chapter 8.1 Python Modules
 
@@ -21,22 +24,22 @@
           📦 extra logic/code
 ```
 
-1. File: `school.py`**
+File 1: `school.py`
 
-    ```python
-    class Student:
-        def __init__(name, roll):
-            self.name = name
-            self.roll = roll
-    ```
+```python
+class Student:
+    def __init__(self, name, roll):
+        self.name = name
+        self.roll = roll
+```
 
-2. File: `my_file.py`
+File 2: `main.py`
 
-    ```python
-    from school import Student
-    john = Student('John Doe', 1)
-    jane = Student('Jane Doe', 1)
-    ```
+```python
+from school import Student
+john = Student('John Doe', 1)
+jane = Student('Jane Doe', 1)
+```
 
 
 ## Importing the whole module

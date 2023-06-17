@@ -1,11 +1,14 @@
 - **created by**: Sudip Ghimire
 - **URL**: https://www.sudipghimire.com.np
-- **Github**: https://github.com/ghimiresdp
+- **GitHub**: https://github.com/ghimiresdp
 
-# 8.7. Complex numbers and `cmath` module
+[go to course contents](https://github.com/ghimiresdp/python-notes/)
+<hr>
+
+# Chapter 8.7. Complex numbers and `cmath` module
 
 **Table of Contents**
-- [8.7. Complex numbers and `cmath` module](#87-complex-numbers-and-cmath-module)
+- [Chapter 8.7. Complex numbers and `cmath` module](#chapter-87-complex-numbers-and-cmath-module)
   - [A complex number](#a-complex-number)
   - [Absolute value of the imaginary number](#absolute-value-of-the-imaginary-number)
   - [the `cmath` module](#the-cmath-module)
