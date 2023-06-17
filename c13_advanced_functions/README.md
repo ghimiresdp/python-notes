@@ -17,4 +17,5 @@
 - [`groupby()` function](chapter-13.1-groupby.md)
 - [`sorted()` function](chapter-13.2-sorted.md)
 - [`filter()` function](chapter-13.3-filter.md)
-- [`map()` function]()
+- [`map()` function](chapter-13.4-map.md)
+- [`reduce()` function](chapter-13.5-reduce.md)

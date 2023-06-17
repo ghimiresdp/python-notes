@@ -1,6 +1,6 @@
-- **created by**: Sudip Ghimire
-- **URL**: [https://www.sudipghimire.com.np](https://www.sudipghimire.com.np)
-- **GitHub**: [https://github.com/ghimiresdp](https://github.com/ghimiresdp)
+> - **created by**: Sudip Ghimire
+> - **URL**: [https://www.sudipghimire.com.np](https://www.sudipghimire.com.np)
+> - **GitHub**: [https://github.com/ghimiresdp](https://github.com/ghimiresdp)
 
 # Python Notes
 
@@ -80,7 +80,7 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [Chapter 6 Quiz](c06_functions/quiz)
 
 7. **[Classes](c07_oop)**
-    - [Introduction to Object Oriented Programming](c07_oop/Chapter-7.1-oop.md#introduction-to-oop)
+    - [Introduction to Object-Oriented Programming](c07_oop/Chapter-7.1-oop.md#introduction-to-oop)
         - Class
         - Class attributes, methods, and the `self` parameter
         - the Constructor method
@@ -138,6 +138,7 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [`sorted()` function](c13_advanced_functions/chapter-13.2-sorted.md)
     - [`filter()` function](c13_advanced_functions/chapter-13.3-filter.md)
     - [`map()` function](c13_advanced_functions/chapter-13.4-map.md)
+    - [`reduce()` function](c13_advanced_functions/chapter-13.5-reduce.md)
 
 14. **[Regular Expressions (REGEX)](c14_regex)**
     - [Introduction to regular expressions](c14_regex/chapter-14.1-regular-expressions.md)
@@ -175,14 +176,27 @@ python-notes
 │
 ```
 
-> If you're directly **cloning** the repository, I suggest you to solve in the different branch than the `main` branch
-> to avoid conflicts if the course content changes.
-
-> If you're **forking**, I suggest you not to make any changes in the `main` branch in your repository too so that you
-> can pull and rebase future changes to your `fork`.
+> If you're directly **cloning** the repository, I suggest you to solve in the
+> different branch than the `main` branch to avoid conflicts if the course
+> content changes.
+>
+> If you're **forking**, I suggest you not to make any changes in the `main`
+> branch in your repository too so that you can pull and rebase future changes
+> to your `fork`.
 
 ## Pulling future changes for your forks
 
-for pulling the future changes you can add `remote` in your local repository with the commands below:
+for pulling the future changes you can add new `remote` as upstream in your
+local repository with the commands below:
+
+```shell
+# step 1: add the upstream remote as git@github.com:ghimiresdp/python-notes.git
+# step 2: pull from the upstream
+# step 3: push to the origin
+
+git remote add upstream git@github.com:ghimiresdp/python-notes.git
+git pull upstream main
+git push origin main
+```
 
 Please do visit my website [sudipghimire.com.np](https://sudipghimire.com.np) to know more about my engagements.
