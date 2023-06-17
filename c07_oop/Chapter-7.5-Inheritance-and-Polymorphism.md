@@ -10,16 +10,16 @@
 **Table of contents**:
 
 - [Chapter 7.5: Inheritance and Polymorphism](#chapter-75-inheritance-and-polymorphism)
-    - [Inheritance](#inheritance)
-        - [The `super()` function](#the-super-function)
-        - [Single Inheritance](#single-inheritance)
-        - [Multiple Inheritance](#multiple-inheritance)
-        - [Hierarchical Inheritance](#hierarchical-inheritance)
-        - [Multilevel Inheritance](#multilevel-inheritance)
-        - [Hybrid Inheritance](#hybrid-inheritance)
-        - [Builtin Functions to check the relationship between different classes](#builtin-functions-to-check-the-relationship-between-different-classes)
-            - [the `isinstance()` function](#the-isinstance-function)
-            - [the `issubclass()` function](#the-issubclass-function)
+  - [Inheritance](#inheritance)
+    - [The `super()` function](#the-super-function)
+    - [Single Inheritance](#single-inheritance)
+    - [Multiple Inheritance](#multiple-inheritance)
+    - [Hierarchical Inheritance](#hierarchical-inheritance)
+    - [Multilevel Inheritance](#multilevel-inheritance)
+    - [Hybrid Inheritance](#hybrid-inheritance)
+    - [Builtin Functions to check the relationship between different classes](#builtin-functions-to-check-the-relationship-between-different-classes)
+      - [the `isinstance()` function](#the-isinstance-function)
+      - [the `issubclass()` function](#the-issubclass-function)
 - [Polymorphism](#polymorphism)
 
 ## Inheritance

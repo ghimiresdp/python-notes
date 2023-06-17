@@ -16,13 +16,13 @@
 
 **Table of contents**:
 
-- [Introduction to OOP](Chapter%207.1%20oop.md)
+- [Introduction to OOP](Chapter-7.1-oop.md)
     - Class
     - Class Attributes, Methods and the `self` parameter
     - The constructor method
     - Built-in class attributes
     - object
-- [Encapsulation](Chapter%207.2%20Encapsulation.md)
-- [Operator Overloading](Chapter%207.3%20Operator%20Overloading.md)
-- [Class Methods and Static Methods](Chapter%207.4%20Class%20Methods%20and%20Static%20Methods.md)
-- [Inheritance and Polymorphism](Chapter%207.5%20Inheritance%20and%20Polymorphism.md)
+- [Class Methods and Static Methods](Chapter-7.2-Class-Methods-and-Static-Methods.md)
+- [Operator Overloading](Chapter-7.3-Operator-Overloading.md)
+- [Encapsulation](Chapter-7.4-Encapsulation.md)
+- [Inheritance and Polymorphism](Chapter-7.5-Inheritance-and-Polymorphism.md)

@@ -86,12 +86,12 @@ You can `clone` or `fork` the repository and review the course contents, example
         - the Constructor method
         - built-in class attributes
         - object
-    - [Class methods and Static methods](c07_oop/Chapter%207.2%20Class%20Methods%20and%20Static%20Methods.md)
-    - [Operator Overloading](c07_oop/Chapter%207.3%20Operator%20Overloading.md)
-      -[Encapsulation in python ( `_` , `__` in identifier)](c07_oop/Chapter%207.4%20Encapsulation.md)
-        - getters and setters
-        - `@property` Decorator
-    - [Inheritance and Polymorphism](c07_oop/Chapter%207.5%20Inheritance%20and%20Polymorphism.md)
+    - [Class methods and Static methods](c07_oop/Chapter-7.2-Class-Methods-and-Static-Methods.md)
+    - [Operator Overloading](c07_oop/Chapter-7.3-Operator-Overloading.md)
+      -[Encapsulation in python](c07_oop/Chapter-7.4-Encapsulation.md)
+        - [getters and setters](c07_oop/Chapter-7.4-Encapsulation.md#getter-and-setter-methods)
+        - [The `@property` Decorator](c07_oop/Chapter-7.4-Encapsulation.md#the-property-decorator)
+    - [Inheritance and Polymorphism](c07_oop/Chapter-7.5-Inheritance-and-Polymorphism.md)
         - Parent Class
         - Child Class
         - `super()` function
@@ -99,13 +99,13 @@ You can `clone` or `fork` the repository and review the course contents, example
     - [Chapter 7 Quiz](c07_oop/quiz)
 
 8. **[Python Modules and packages](c08_modules_packages)**
-    - Introduction to modular programming
-    - `__init__.py` file
-    - An example of modular python program | importing the module
-    - from keyword
-    - `datetime` module
-    - `random` module
-    - `json` module
+    - [Modules](c08_modules_packages/chapter-8.1-modules.md)
+    - [Packages](c08_modules_packages/chapter-8.2-packages.md)
+    - [The `datetime` module](c08_modules_packages/chapter-8.3-datetime.md)
+    - [The `random` module](c08_modules_packages/chapter-8.4-random.md)
+    - [The `json` module](c08_modules_packages/chapter-8.5-json.md)
+    - [The `math` module](c08_modules_packages/chapter-8.6-math.md)
+    - [The `complex` and `cmath` module](c08_modules_packages/chapter-8.7-complex-and-cmath.md)
 
 9. **[File I/O](c09_file)**
     - `open()` function
@@ -125,11 +125,11 @@ You can `clone` or `fork` the repository and review the course contents, example
     - Total
 
 11. **[Python Package Management with PIP](c11_pip)**
-    - [Introduction to Symantic Versioning](c11_pip/chapter%2011.1%20symver.md)
-    - [PIP and its usage](c11_pip/chapter%2011.2%20pip.md)
+    - [Introduction to Semantic Versioning](c11_pip/chapter-11.1-semver.md)
+    - [PIP and its usage](c11_pip/chapter-11.2-pip.md)
 
 12. **[Virtual Environments](c12_virtual_environment)**
-    - [Introduction to virtual enviromnemts](c12_virtual_environment/chapter%2012.1%20virtual%20environment%20intro.md)
+    - [Introduction to virtual environments](c12_virtual_environment/chapter%2012.1%20virtual%20environment%20intro.md)
     - [VENV and its usage](c12_virtual_environment/chapter%2012.2%20venv.md)
     - [PIPENV and its usage](c12_virtual_environment/chapter%2012.3%20pipenv.md)
 

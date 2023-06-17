@@ -2,11 +2,11 @@
 - **URL**: https://www.sudipghimire.com.np
 - **Github**: https://github.com/ghimiresdp
 
-# 11.1. Symantic Versioning system
+# 11.1. Semantic Versioning system
 
 Ref: https://semver.org/
 
-- Symantic Versioning system uses major, minor, and patch release labels to track the current release of the software.
+- Semantic Versioning system uses major, minor, and patch release labels to track the current release of the software.
 
 Eg: Django version `3.2.10`
 
@@ -14,9 +14,11 @@ Eg: Django version `3.2.10`
 - The `minor` release is `2`
 - The `patch` release is `10`
 
-Sometimes, additional labels for pre-releases are also tracked using `dev`, `alpha`, `beta`, `release candidates` or `rc`, and `build_id`.
+Sometimes, additional labels for pre-releases are also tracked using `dev`, `alpha`, `beta`, `release candidates`
+or `rc`, and `build_id`.
 
 Some examples of pre-release versions are as follows:
+
 - `3.2.10-a1`
 - `3.2.10-alpha.1`
 - `3.2.10-beta`
@@ -24,12 +26,14 @@ Some examples of pre-release versions are as follows:
 - `3.2.10-rc.1+41A39F2`, etc.
 
 ## Major Release
+
 - This release introduce new features
 - It is going to break your existing code with previous versions
 - With every major release, the first release number is going to be increased by 1 and other release numbers would be 0
-  - `1.2.10` -> `2.0.0`
+    - `1.2.10` -> `2.0.0`
 
 ## Minor Release
+
 - They introduce some new features, but not with heavy changes.
 - The code might break in this case also, but can be fixed with small refactorings. (Backward Compatible)
 - In this release, features just gets depreciated, but do not get removed.
@@ -43,7 +47,6 @@ Some examples of pre-release versions are as follows:
 - Every changes is going to be internal changes or logical changes.
 - With this release the last release number is going to be increased by 1
 - `11.2.10` -> `11.2.11`
-
 
 The tree below shows an example of the release cycle of a software.
 
