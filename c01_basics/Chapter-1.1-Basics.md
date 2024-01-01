@@ -1,20 +1,16 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 1: Python Basics
 
-**Table of Contents**
+[go to course contents](https://github.com/ghimiresdp/python-notes/)
+
+**Table of Contents**:
+
 - [Chapter 1: Python Basics](#chapter-1-python-basics)
   - [What is python?](#what-is-python)
   - [What is an interpreter](#what-is-an-interpreter)
   - [Features of python](#features-of-python)
     - [Python is easy to code](#python-is-easy-to-code)
       - [Hello world program in **`C++`** and **`Java`** vs **`Python`**](#hello-world-program-in-c-and-java-vs-python)
-    - [Among programming languages, Python grammar is closest to English grammar.](#among-programming-languages-python-grammar-is-closest-to-english-grammar)
+    - [Among programming languages, Python grammar is closest to English grammar](#among-programming-languages-python-grammar-is-closest-to-english-grammar)
     - [Some notable features of python for programmers coming from other programming languages](#some-notable-features-of-python-for-programmers-coming-from-other-programming-languages)
   - [Why we choose python?](#why-we-choose-python)
   - [Installing Python](#installing-python)
@@ -22,7 +18,7 @@
     - [Linux and Mac OS](#linux-and-mac-os)
   - [Getting Started](#getting-started)
   - [Hello World with IDLE](#hello-world-with-idle)
-  - [Creating, editing, and running python files.](#creating-editing-and-running-python-files)
+  - [Creating, editing, and running python files](#creating-editing-and-running-python-files)
   - [Comment lines](#comment-lines)
 
 ## What is python?
@@ -84,7 +80,7 @@ class Main{
 print('Hello World!')
 ```
 
-### Among programming languages, Python grammar is closest to English grammar.
+### Among programming languages, Python grammar is closest to English grammar
 
 Example: Checking if a string is in an array/list of strings
 **C++**
@@ -137,7 +133,7 @@ Unlike other programming languages, python do not need to end the statement with
   }                           # statement will be terminated here
   ```
 
-- Python do not need curly brackets or braces to identify a block of code however *indentation* is used.
+- Python do not need curly brackets or braces to identify a block of code however _indentation_ is used.
 
 - standard indentation type in python is space however tab character in modern IDEs and code editors are automatically converted into spaces by default.
 
@@ -180,20 +176,20 @@ Unlike other programming languages, python do not need to end the statement with
 
 ### Windows
 
-Installing python in windows is so easy. You can just browse https://python.org and download the latest/stable version of your choice and follow the instructions.
+Installing python in windows is so easy. You can just browse <https://python.org> and download the latest/stable version of your choice and follow the instructions.
 
 > Note: It is recommended to **add python to path** while installing.
 
 ### Linux and Mac OS
 
-Linux and Mac os comes with python pre-installed so we do not need to download the one. If we want to install the latest version, then we can follow instructions from https://python.org
+Linux and Mac os comes with python pre-installed so we do not need to download the one. If we want to install the latest version, then we can follow instructions from <https://python.org>
 
 ## Getting Started
 
 To verify the python is installed in your machine, you can run the following in your command prompt or the terminal
 
 ```shell
-$ python --version
+python --version
 ```
 
 ## Hello World with IDLE
@@ -216,8 +212,7 @@ the output will be shown in the shell below
 Hello world!!
 ```
 
-
-## Creating, editing, and running python files.
+## Creating, editing, and running python files
 
 We can create a new file and save with `.py` extension to create a new python file. Since python file is a normal text file, you should be able to open with any text editor. If you want better syntax highlighting and code completion, you can use IDEs or code editors such as VSCode.
 
@@ -233,7 +228,7 @@ print('The sum is:', x + y)
 To run the python file, we can now open our favorite terminal and run the command below:
 
 ```shell
-$ python hello_world.py
+python hello_world.py
 ```
 
 If you're not in the location where the python file exists, you can give the full path of the file.
@@ -269,6 +264,7 @@ just after the statement so that only the statement executes.
 > _They are just regular string literals._
 
 Example:
+
 ```py
 # the lines below  adds two numbers a and b and assign the value to c.
 a = 10  # inline comment
