@@ -1,13 +1,6 @@
-- **created by**: Sudip Ghimire
-- **URL**: [https://www.sudipghimire.com.np](https://www.sudipghimire.com.np)
-- **GitHub**: [https://github.com/ghimiresdp](https://github.com/ghimiresdp)
-
-[go to course contents](https://github.com/ghimiresdp/python-level1/)
------------------------
-
 # Chapter 2.5. Basic Operations
 
-**Table of Contents**
+**Table of Contents**:
 
 - [Chapter 2.5. Basic Operations](#chapter-25-basic-operations)
   - [arithmetic operations](#arithmetic-operations)
@@ -101,7 +94,7 @@ another number. for example if `10` is divided by `3`, it gives remainder `1`.
 **Syntax**: `a % b`
 
 ```python
-e1 = 55 % 4  # integer and integer      gives: 3 
+e1 = 55 % 4  # integer and integer      gives: 3
 e2 = 5.5 % 2.3  # float and float
 e3 = 4.7 % 2  # integer and float
 ```
@@ -124,7 +117,6 @@ f3 = 4.7 ** 2  # integer and float
 Integer division always gives the integer equivalent value of the result when
 a number is divided by another. For example `10/4` is `2.5` but the integer
 division gives out the integer part only i.e. `10 // 4` gives `2`.
-
 
 **Syntax**: `a // b`
 
@@ -389,6 +381,7 @@ Negative numbers are preceed by by 1
 ```
 
 > **Note**:
+>
 > - _1's complement of `1010` is `0101`._
 > - _2's complement of `1010` is `0101` + `1` = `0110`._
 > - _Number starting with `0` represents the positive number_
@@ -474,6 +467,7 @@ NOT   = 1 0 1 1 0  = -10
  ```
 
 > **Note**: _To understand the negative number, you need to understand:_
+>
 > - 1's Complement
 > - 2's Complement
 
@@ -483,12 +477,14 @@ This process shifts all bits towards the left by specified number of times. The
 bit-wise shift left doubles the number for each shift.
 
 Example:
+
 ```py
 print(6 << 1)   # 12
 print(6 << 2)   # 24
 ```
 
 Explanation:
+
 ```
    6  = |     0 1 1 0 |        We can prepend any number of zeros for positive.
 << 1  = |   0 1 1 0 _ |        the vacant place is padded with zero
@@ -503,12 +499,14 @@ This process shifts all bits towards the right by specified number of times. The
 bit-wise shift right halves the number (with integer division) for each shift.
 
 Example:
+
 ```py
 print(6 >> 1)   # 3
 print(6 >> 2)   # 1
 ```
 
 Explanation:
+
 ```
    6  = | 0 1 1 0 |
 >> 1  = | _ 0 1 1 | 0          the right-most value (0) is discarded
