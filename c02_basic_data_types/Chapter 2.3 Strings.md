@@ -1,18 +1,14 @@
-- **created by**: Sudip Ghimire
-- **URL**: [https://www.sudipghimire.com.np](https://www.sudipghimire.com.np)
-- **GitHub**: [https://github.com/ghimiresdp](https://github.com/ghimiresdp)
-
-[go to course contents](https://github.com/ghimiresdp/python-level1/)
------------------------
 # Chapter 2.3 Strings
-**Table of Contents**
+
+**Table of Contents**:
+
 - [Chapter 2.3 Strings](#chapter-23-strings)
-    - [Introduction to Strings](#introduction-to-strings)
-    - [Escape Characters](#escape-characters)
-    - [String Concatenation](#string-concatenation)
-    - [Finding out the length of the string](#finding-out-the-length-of-the-string)
-    - [Capitalization, Upper Case and Lower Case conversion](#capitalization-upper-case-and-lower-case-conversion)
-    - [Finding out the index of a sub-string](#finding-out-the-index-of-a-sub-string)
+  - [Introduction to Strings](#introduction-to-strings)
+  - [Escape Characters](#escape-characters)
+  - [String Concatenation](#string-concatenation)
+  - [Finding out the length of the string](#finding-out-the-length-of-the-string)
+  - [Capitalization, Upper Case and Lower Case conversion](#capitalization-upper-case-and-lower-case-conversion)
+  - [Finding out the index of a sub-string](#finding-out-the-index-of-a-sub-string)
 
 ## Introduction to Strings
 
@@ -48,7 +44,7 @@ Escape character is a character, that invokes the alternative interpretation of 
 | `\r`             | Carriage Return       |
 | `\v`             | Vertical Tab          |
 
-for more detail about escape characters, please see https://docs.python.org
+for more detail about escape characters, please see <https://docs.python.org>
 
 Examples:
 
@@ -109,6 +105,7 @@ print(text.upper())    # A QUICK BROWN FOX JUMPS OVER THE LAZY DOG
 ```
 
 ## Finding out the index of a sub-string
+
 We can use `str.index()` method to find out the index of the sub-string. If a
 string contains more than one substring of same value, it returns the index of
 the first substring.
@@ -117,6 +114,7 @@ the first substring.
 data = "My name is John."
 print(data.index('John'))       # 11
 ```
+
 The above code finds out the index from where the sub-string `John` starts from.
 
 ```python
