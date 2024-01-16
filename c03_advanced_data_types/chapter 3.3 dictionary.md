@@ -1,24 +1,17 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 3.3. Dictionary
 
-**Table of Contents**
+**Table of Contents**:
 
 - [Chapter 3.3. Dictionary](#chapter-33-dictionary)
-    - [Introduction](#introduction)
-    - [Creating a dictionary](#creating-a-dictionary)
-    - [Getting values from the dictionary](#getting-values-from-the-dictionary)
-    - [Adding/updating an item to the dictionary](#addingupdating-an-item-to-the-dictionary)
-    - [Adding/updating multiple items to the dictionary](#addingupdating-multiple-items-to-the-dictionary)
-    - [removing an item from the dictionary](#removing-an-item-from-the-dictionary)
-    - [popping out an arbitrary item from the dictionary](#popping-out-an-arbitrary-item-from-the-dictionary)
-    - [getting list of keys, values and items of the dictionary](#getting-list-of-keys-values-and-items-of-the-dictionary)
-    - [Some useful dictionary methods](#some-useful-dictionary-methods)
+  - [Introduction](#introduction)
+  - [Creating a dictionary](#creating-a-dictionary)
+  - [Getting values from the dictionary](#getting-values-from-the-dictionary)
+  - [Adding/updating an item to the dictionary](#addingupdating-an-item-to-the-dictionary)
+  - [Adding/updating multiple items to the dictionary](#addingupdating-multiple-items-to-the-dictionary)
+  - [removing an item from the dictionary](#removing-an-item-from-the-dictionary)
+  - [popping out an arbitrary item from the dictionary](#popping-out-an-arbitrary-item-from-the-dictionary)
+  - [getting list of keys, values and items of the dictionary](#getting-list-of-keys-values-and-items-of-the-dictionary)
+  - [Some useful dictionary methods](#some-useful-dictionary-methods)
 
 ## Introduction
 
@@ -37,7 +30,7 @@ Some of the features of dictionary are as follows:
 - Dictionaries are mutable.
 - Dictionaries can have multiple data types in their key-value pair
 
-**Structure/syntax**
+**Structure/syntax**:
 
 ```python
 {key_1: value_1, key_2: value2, ...}

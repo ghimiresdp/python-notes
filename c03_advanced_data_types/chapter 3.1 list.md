@@ -1,37 +1,30 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 3.1. Lists
 
-**Table of Contents**
+**Table of Contents**:
 
 - [Chapter 3.1. Lists](#chapter-31-lists)
-    - [Creating a list](#creating-a-list)
-    - [Accessing an item of a list](#accessing-an-item-of-a-list)
-    - [Getting the slice of a list](#getting-the-slice-of-a-list)
-    - [Updating values from a list](#updating-values-from-a-list)
-    - [Updating a slice of a list](#updating-a-slice-of-a-list)
-    - [Finding out the length of a list](#finding-out-the-length-of-a-list)
-    - [Adding items to the list](#adding-items-to-the-list)
-        - [The `list.append()` method](#the-listappend-method)
-        - [The `list.insert()` method](#the-listinsert-method)
-        - [The `list.extend()` method](#the-listextend-method)
-    - [Removing items from the list](#removing-items-from-the-list)
-        - [The `list.pop()` method](#the-listpop-method)
-        - [The `list.remove()` method](#the-listremove-method)
-        - [The `list.clear()` method](#the-listclear-method)
-    - [Some Useful List Methods](#some-useful-list-methods)
-        - [`copy()`](#copy)
-        - [`reverse()`](#reverse)
-        - [`sort()`](#sort)
-        - [`index()`](#index)
-        - [`count()`](#count)
+  - [Creating a list](#creating-a-list)
+  - [Accessing an item of a list](#accessing-an-item-of-a-list)
+  - [Getting the slice of a list](#getting-the-slice-of-a-list)
+  - [Updating values from a list](#updating-values-from-a-list)
+  - [Updating a slice of a list](#updating-a-slice-of-a-list)
+  - [Finding out the length of a list](#finding-out-the-length-of-a-list)
+  - [Adding items to the list](#adding-items-to-the-list)
+    - [The `list.append()` method](#the-listappend-method)
+    - [The `list.insert()` method](#the-listinsert-method)
+    - [The `list.extend()` method](#the-listextend-method)
+  - [Removing items from the list](#removing-items-from-the-list)
+    - [The `list.pop()` method](#the-listpop-method)
+    - [The `list.remove()` method](#the-listremove-method)
+    - [The `list.clear()` method](#the-listclear-method)
+  - [Some Useful List Methods](#some-useful-list-methods)
+    - [`copy()`](#copy)
+    - [`reverse()`](#reverse)
+    - [`sort()`](#sort)
+    - [`index()`](#index)
+    - [`count()`](#count)
 
-**Ref**: https://docs.python.org/3.9/tutorial/introduction.html#lists
+**Ref**: <https://docs.python.org/3.9/tutorial/introduction.html#lists>
 
 Python list is a compound data type that can store collection of data. List is written as comma separated values/items
 inside large brackets `[]`.

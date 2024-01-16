@@ -1,29 +1,22 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 3.4. Set
 
-**Table of Contents**
+**Table of Contents**:
 
 - [Chapter 3.4. Set](#chapter-34-set)
-    - [Introduction](#introduction)
-    - [Creating a set](#creating-a-set)
-    - [Adding an item to the set](#adding-an-item-to-the-set)
-    - [Adding multiple items to the set](#adding-multiple-items-to-the-set)
-    - [Removing items from the set](#removing-items-from-the-set)
-    - [finding out the length of the set](#finding-out-the-length-of-the-set)
-    - [Mathematical model of the set](#mathematical-model-of-the-set)
-        - [Union](#union)
-        - [Intersection](#intersection)
-        - [Difference](#difference)
-        - [Symmetric Difference](#symmetric-difference)
-    - [Accessing items of a set](#accessing-items-of-a-set)
-    - [Some useful Set Methods](#some-useful-set-methods)
-    - [Practical Implementation: removing duplicate of a list](#practical-implementation-removing-duplicate-of-a-list)
+  - [Introduction](#introduction)
+  - [Creating a set](#creating-a-set)
+  - [Adding an item to the set](#adding-an-item-to-the-set)
+  - [Adding multiple items to the set](#adding-multiple-items-to-the-set)
+  - [Removing items from the set](#removing-items-from-the-set)
+  - [finding out the length of the set](#finding-out-the-length-of-the-set)
+  - [Mathematical model of the set](#mathematical-model-of-the-set)
+    - [Union](#union)
+    - [Intersection](#intersection)
+    - [Difference](#difference)
+    - [Symmetric Difference](#symmetric-difference)
+  - [Accessing items of a set](#accessing-items-of-a-set)
+  - [Some useful Set Methods](#some-useful-set-methods)
+  - [Practical Implementation: removing duplicate of a list](#practical-implementation-removing-duplicate-of-a-list)
 
 ## Introduction
 
@@ -152,7 +145,6 @@ print(odd & prime)              # {11, 3, 5, 7}
 Difference gives sets that are contained in only the specified set. If there are any common, they are discarded. In
 mathematics, it is represented by `A - B` or `B - A`. It is also called as `A-Only` and `B-only`
 
-
 ```python
 odd = {1, 3, 5, 7, 9, 11}
 prime = {2, 3, 5, 7, 11}
@@ -178,7 +170,6 @@ print(odd.symmetric_difference(prime))  # {1, 2, 9}
 print(odd ^ prime)                      # {1, 2, 9}
 
 ```
-
 
 ## Accessing items of a set
 
