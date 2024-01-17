@@ -1,23 +1,15 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-
-<hr>
-
 # Chapter 4. Decision Making
 
-**Table of Contents**
+**Table of Contents**:
 
 - [Chapter 4. Decision Making](#chapter-4-decision-making)
-    - [Introduction](#introduction)
-    - [The `if` condition](#the-if-condition)
-    - [The `if else` condition](#the-if-else-condition)
-    - [The `if elif else` condition](#the-if-elif-else-condition)
-    - [The `match` condition](#the-match-condtion)
-    - [Ternary operators](#ternary-operators)
-    - [Nested Conditions](#nested-conditions)
+  - [Introduction](#introduction)
+  - [The `if` condition](#the-if-condition)
+  - [The `if else` condition](#the-if-else-condition)
+  - [The `if elif else` condition](#the-if-elif-else-condition)
+  - [The `match` Condtion](#the-match-condtion)
+  - [Ternary operators](#ternary-operators)
+  - [Nested Conditions](#nested-conditions)
 
 ## Introduction
 
@@ -36,7 +28,7 @@ We use `if`, `elif`, and `else` conditions to perform conditional branching.
 
 Syntax:
 
-```
+```python
 if <contition>:
     statements that need to run when the condition fulfills
     ...
@@ -80,16 +72,16 @@ I am outside of the code block
 The `if else` condition is similar to the `if` condition but has another code
 block that runs when the condition is not satisfied.
 
-**Syntax**
+**Syntax**:
 
-```
+```python
 if <condition>:
     code block that runs only when condition is satisfied
 else:
     code block that runs if the condition is not satisfied
 ```
 
-**Example**
+**Example**:
 
 ```python
 x = 5
@@ -106,7 +98,7 @@ else:
 The `if elif else` condition adds more flexibility to branching providing more
 than one conditions.
 
-**Syntax**
+**Syntax**:
 
 ```python
 if < condition 1 >:
@@ -120,7 +112,7 @@ else:
     # code block that runs only if all of above condition does not satisfy
 ```
 
-**example**
+**example**:
 
 ```python
 num = 12
@@ -209,6 +201,7 @@ enables us to match the following:
 - multiple conditions
 
 **Example**: matching multiple values with wildcards
+
 ```py
 (x, y) = (5, 0)
 match (x, y):
