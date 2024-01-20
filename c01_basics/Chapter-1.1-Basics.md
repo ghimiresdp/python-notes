@@ -1,7 +1,5 @@
 # Chapter 1: Python Basics
 
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-
 **Table of Contents**:
 
 - [Chapter 1: Python Basics](#chapter-1-python-basics)

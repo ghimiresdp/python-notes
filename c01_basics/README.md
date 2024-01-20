@@ -1,7 +1,5 @@
 # Chapter 1 Fundamentals of Python
 
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-
 **Table of Contents**:
 
 - [Introduction to Python](Chapter-1.1-Basics.md)
