@@ -1,13 +1,6 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 5.2: For Loop
 
-**Table of Contents:**
+**Table of Contents**:
 
 - [Chapter 5.2: For Loop](#chapter-52-for-loop)
 - [Introduction to For Loop](#introduction-to-for-loop)
@@ -208,6 +201,7 @@ print(list(enumerate(items)))
 We can also use for loop within `enumerate()` function
 
 **Example:**
+
 ```python
 casts = ['Robert Downey Jr.', 'Scarlett Joahnsson', 'Chris Evans', 'Mark Ruffalo', 'Chris Hemsworth']
 
@@ -216,12 +210,13 @@ for index, cast in enumerate(casts):
 ```
 
 **Output:**
+
 ```
-0)	Robert Downey Jr.
-1)	Scarlett Joahnsson
-2)	Chris Evans
-3)	Mark Ruffalo
-4)	Chris Hemsworth
+0) Robert Downey Jr.
+1) Scarlett Joahnsson
+2) Chris Evans
+3) Mark Ruffalo
+4) Chris Hemsworth
 ```
 
 ## The `zip()` function
@@ -249,7 +244,9 @@ print(list(zip(casts, characters)))
 for cast, character in zip(casts, characters):
     print(f'- {cast} played as "{character}" in Avengers')
 ```
+
 **Output:**
+
 ```
 - Robert Downey Jr. played as "Iron Man" in Avengers
 - Scarlett Joahnsson played as "Black Widow" in Avengers
@@ -261,6 +258,7 @@ for cast, character in zip(casts, characters):
 We can also zip multiple lists
 
 **Example:**
+
 ```python
 roll = [1, 2, 3, 4]
 name = ['John Lennon', 'John Legend', 'John Mayer', 'John Denver']
@@ -271,6 +269,7 @@ for items in zip(roll, name, songs):
 ```
 
 *Output:**
+
 ```
 (1, 'John Lennon', 'Imagine')
 (2, 'John Legend', 'All of Me')

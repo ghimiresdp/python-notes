@@ -1,19 +1,13 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 5.1: While Loops
 
-**Table of Contents:**
+**Table of Contents**:
+
 - [Chapter 5.1: While Loops](#chapter-51-while-loops)
-    - [Introduction to while loop](#introduction-to-while-loop)
-    - [A generic while loop](#a-generic-while-loop)
-    - [While else](#while-else)
-    - [The `break` and the `continue` Statement](#the-break-and-the-continue-statement)
-    - [Nested While Loop](#nested-while-loop)
+  - [Introduction to while loop](#introduction-to-while-loop)
+  - [A generic while loop](#a-generic-while-loop)
+  - [While else](#while-else)
+  - [The `break` and the `continue` Statement](#the-break-and-the-continue-statement)
+  - [Nested While Loop](#nested-while-loop)
 
 ## Introduction to while loop
 
@@ -27,6 +21,7 @@ To skip statements for one time, we use `continue` statement and to terminate th
 
 The `while` loop is used for iterating until the condition fails to satisfy.
 Generally, the `while` loop contains:
+
 - A _condition_ to check whether it satisfies to run further
 - A _statement_ that runs when it satisfied
 - An _update_ statement that is capable of dynamically changing the state that
@@ -39,6 +34,7 @@ while <condition>:
 ```
 
 **Example**: print the value from 1 upto 10
+
 ```python
 x = 1
 while x <=10:
@@ -48,6 +44,7 @@ print('The loop is completed')
 ```
 
 **Output**:
+
 ```
 The current value of x is:  1
 The current value of x is:  2
@@ -79,8 +76,8 @@ while name.lower() != 'exit':
 print(name_list[:-1])
 ```
 
-
 **Output**
+
 ```
 Enter the name: ABC
 Enter the name: DEF
@@ -92,7 +89,9 @@ Enter the name: exit
 ```
 
 ## While else
+
 **Syntax:**
+
 ```python
 while <condition>:
     statements
@@ -112,6 +111,7 @@ else:
 ```
 
 **Output**
+
 ```
 The current value of x is:  1
 The current value of x is:  2
@@ -134,6 +134,7 @@ useful when we have infinite number of iterations and want to break on some
 conditions.
 
 **Syntax:**
+
 ```python
 while <condition>:
     statements
@@ -160,6 +161,7 @@ while x < 100:  # this indicates x can loop until it is 100
 ```
 
 **Output:**
+
 ```
 The current value of x is:  1
 The current value of x is:  2
@@ -170,9 +172,9 @@ The current value of x is:  8
 The current value of x is:  10
 ```
 
-
 **Example 2:**
 Write a program that displays all words entered by the user.
+
 - The program should sensor slightly offensive words and skip execution for one time
 - The program should immediately exit when highly offensive words are used
 - Check the word if it is palindrome if it is not offensive.
@@ -197,6 +199,7 @@ while True:
 ```
 
 **Output:**
+
 ```
 Enter The word: human
 The word is not palindrome
@@ -213,7 +216,6 @@ The word s**** is offensive, so skipping execution...
 Enter The word: dog
 You used Highly offensive word, Good Bye!!
 ```
-
 
 ## Nested While Loop
 
@@ -236,6 +238,7 @@ while num <= 6:
 ```
 
 **Output:**
+
 ```
  4  X  1  =   4
  4  X  2  =   8
@@ -290,6 +293,7 @@ while hour < 24:
 ```
 
 **Output:** _example at 3 minutes and 39 seconds_
+
 ```
 Time Elapsed: 00 : 03 : 59
 ```
