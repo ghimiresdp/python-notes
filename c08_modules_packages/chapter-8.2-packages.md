@@ -1,10 +1,3 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 8.2 Python Packages
 
 - A python package is a directory that contains multiple python files or modules
@@ -12,6 +5,7 @@
 - it might contain subdirectories or subpackages too.
 
 ## Basic Package directory structure
+
 ```
 📁 my_package/
   |-- 📄 module_1.py
@@ -20,7 +14,8 @@
   |-- 📄 __init__.py
 ```
 
-## Basic Package structure with subpackage inside it.
+## Basic Package structure with subpackage inside it
+
 ```
 📁 my_package/
   |-- 📁 pkg_1/
@@ -35,6 +30,7 @@
 ```
 
 ## The `__init__.py` file
+
 The `__init__.py` file is the initializer for the package that is capable of importing all the components inside of the modules of the package.
 
 It is capable of creating shortcuts so that user do not need to go deeper to import required components. To create a shortcut, we can simply import everything from the modules from the package.
@@ -53,7 +49,9 @@ from my_package.module_1 import Class1
 from my_package.pkg_1.module_1 import ABC
 
 ```
+
 with the following command:
+
 ```python
 from my_package import Class1, ABC
 ```
