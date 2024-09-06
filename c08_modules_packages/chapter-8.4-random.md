@@ -8,7 +8,7 @@
     - [Printing out 10 random numbers from a range 1 to 6](#printing-out-10-random-numbers-from-a-range-1-to-6)
     - [Printing out a random character from a string](#printing-out-a-random-character-from-a-string)
     - [Printing out 5 random characters as a list from a string](#printing-out-5-random-characters-as-a-list-from-a-string)
-    - [Printing out a random password string with 8 characters.](#printing-out-a-random-password-string-with-8-characters)
+    - [Printing out a random password string with 8 characters](#printing-out-a-random-password-string-with-8-characters)
 
 Reference: <https://docs.python.org/3/library/random.html>
 
