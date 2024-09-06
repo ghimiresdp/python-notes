@@ -24,5 +24,3 @@ file.close()
 # using with statement
 with open(file_name, "w") as file:
     file.write(content)
-    # we need to close the file once we don't need anymore
-    file.close()
