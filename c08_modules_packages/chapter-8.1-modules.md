@@ -5,7 +5,7 @@
 
 ## basic structure of a module
 
-```
+```shell
 📁 working_dir/
     |-- 📄 module.py
     |     📦 variables
@@ -42,7 +42,7 @@ if `animal.py` is the filename for the module, the name of the module would be `
 import animal
 ```
 
-Importing the whole module imports everythong that is defined, imported, and initialized inside the module.
+Importing the whole module imports everything that is defined, imported, and initialized inside the module.
 
 ## Importing individual elements from the module
 
@@ -50,7 +50,7 @@ we can use `from` keyword to import the individual component from the module. Fo
 
 ```python
 from animal import DomesticAnimal
-# we can also import multiple elements in the single line using commaa
+# we can also import multiple elements in the single line using comma
 from animal import DomesticAnimal, WildAnimal
 
 # we can also use small brackets so that we can import in different lines
