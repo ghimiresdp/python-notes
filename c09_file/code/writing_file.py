@@ -5,11 +5,21 @@
 
 # Please use this path if you run this script from the project directory
 file_name = "c09_file/code/file2.txt"
+binary_file_name = "c09_file/code/binary_file.txt"
 
 content = """This is a content to the written file.
 - This is a point 1
 - This is a point 2
 """
+
+binary_content = (
+    """{
+    "name": "Tony Stark 🙂",
+    "affiliation": "Avengers",
+    "age": 40,
+}
+"""
+).encode("utf-8")
 
 # ------------------------------------------------------------------------------
 # opening the file in writing mode
@@ -24,3 +34,8 @@ file.close()
 # using with statement
 with open(file_name, "w") as file:
     file.write(content)
+
+# ------------------------------------------------------------------------------
+# writing a binary file
+with open(binary_file_name, "wb") as file:
+    file.write(binary_content)
