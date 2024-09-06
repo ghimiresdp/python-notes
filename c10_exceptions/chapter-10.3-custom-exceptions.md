@@ -1,10 +1,3 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Creating custom Exceptions
 
 We can create a new `Exception` by inheriting the `BaseException` class. The
@@ -14,7 +7,6 @@ following is an example of a CustomException:
 class MyCustomException(Exception):
     pass
 ```
-
 
 ## Example1: AgeError
 
