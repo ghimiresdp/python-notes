@@ -1,13 +1,6 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 8.3 The `datetime` module
 
-**Table of Contents**
+**Table of Contents**:
 
 - [Chapter 8.3 The `datetime` module](#chapter-83-the-datetime-module)
   - [`datetime` Constants](#datetime-constants)
@@ -26,7 +19,7 @@
     - [Formatting a datetime string](#formatting-a-datetime-string)
     - [Some useful datetime formatting codes:](#some-useful-datetime-formatting-codes)
 
-Reference: https://docs.python.org/3/library/datetime.html
+Reference: <https://docs.python.org/3/library/datetime.html>
 
 The `datetime` module supplies different classes for manipulating date and time instances. We can perform different
 mathematical operations
@@ -122,7 +115,7 @@ tz1 = timezone(offset=timedelta(hours=5, minutes=45))
 
 ## Datetime Operations
 
-### Adding `timedelta` to the`datetime` instance.
+### Adding `timedelta` to the`datetime` instance
 
 We can add `timedelta` value to `date` or `datetime` instance to get the new `date` or `datetime`.
 
@@ -187,7 +180,7 @@ dt1 = datetime(1999, 12, 31, 23, 59, 30)
 dt_str = dt1.strftime('%Y/%m/%d, %HH:%MM:%SS')  # 1999/12/31, 23H:59M:30S
 ```
 
-### Some useful datetime formatting codes:
+### Some useful datetime formatting codes
 
 - `%a`: Weekday abbreviated name (`Sun`, `Mon`, ..., `Sat`)
 - `%A`: Weekday full name (`Sunday`, `Monday`, ..., `Saturday`)

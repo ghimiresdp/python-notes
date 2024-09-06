@@ -1,21 +1,15 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 3.2. Tuple
 
-**Table of Contents**
+**Table of Contents**:
+
 - [Chapter 3.2. Tuple](#chapter-32-tuple)
-    - [Introduction](#introduction)
-    - [Creating/Constructing a tuple](#creatingconstructing-a-tuple)
-    - [accessing an item of a tuple](#accessing-an-item-of-a-tuple)
-    - [getting the slice of a tuple](#getting-the-slice-of-a-tuple)
-    - [Hack: Changing the value of the tuple](#hack-changing-the-value-of-the-tuple)
-    - [finding out the length of tuple](#finding-out-the-length-of-tuple)
-    - [some useful functions of tuple that are similar to list](#some-useful-functions-of-tuple-that-are-similar-to-list)
+  - [Introduction](#introduction)
+  - [Creating/Constructing a tuple](#creatingconstructing-a-tuple)
+  - [accessing an item of a tuple](#accessing-an-item-of-a-tuple)
+  - [getting the slice of a tuple](#getting-the-slice-of-a-tuple)
+  - [Hack: Changing the value of the tuple](#hack-changing-the-value-of-the-tuple)
+  - [finding out the length of tuple](#finding-out-the-length-of-tuple)
+  - [some useful functions of tuple that are similar to list](#some-useful-functions-of-tuple-that-are-similar-to-list)
 
 ## Introduction
 
@@ -43,7 +37,6 @@ Tuples can be constructed with various methods which are as follows:
 - Using a trailing comma for a singleton tuple. Eg: `(a, )`
 - Using multiple values separated with commas within parenthesis. Eg: `(1, 2, 3)`
 - Using the `tuple()` method. Eg: `tuple([1,2,3])`
-
 
 Some examples:
 
@@ -75,7 +68,6 @@ t1: tuple = (1, 2, 3)   # type hinting for tuple
 _initializes an integer with value `1` rather than initializing the_
 _tuple containing single element._
 
-
 ## accessing an item of a tuple
 
 Accessing an item of a tuple is similar to that of the list. The index
@@ -83,6 +75,7 @@ of tuple also starts at zero. We use index inside large brackets `[]`
 to access an item of the tuple at that index
 
 example:
+
 ```python
 numbers = (1, 2, 3, 4, 5)
 
@@ -120,6 +113,7 @@ So If we want to change the value of tuple, then we can add a new value to the
 existing tuple and re-initialize it.
 
 Example:
+
 ```python
 tuple_1 = (1, 2, 3)
 tuple_1 = tuple_1 + (4, 5, 6)
@@ -145,6 +139,7 @@ even = (2, 4, 6, 8)
 other_even = (10, 12, 14)
 even = (*even, *other_even, 16) # (2, 4, 6, 8, 10, 12, 14, 16)
 ```
+
 **Note**: _we will learn more about unpacking once we complete advanced data types._
 
 ## finding out the length of tuple

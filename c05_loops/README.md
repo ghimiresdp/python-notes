@@ -1,19 +1,11 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 5. Loops and Comprehension
 
-**Table Of Contents**
+**Table Of Contents**:
 
 - [While Loop](chapter%205.1%20while%20loop.md)
 - [For Loop](chapter%205.chapter%205.2%20for%20loop.md)
 - [Pattern Generation](chapter%205.1%20while%20loop.md)
 - [List Comprehensions](chapter%205.1%20while%20loop.md)
-
 
 ## Introduction to loops
 

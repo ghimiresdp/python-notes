@@ -1,13 +1,7 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 8.6. The `math` Module
 
-**Table of Contents**
+**Table of Contents**:
+
 - [Chapter 8.6. The `math` Module](#chapter-86-the-math-module)
   - [Introduction to `math` module](#introduction-to-math-module)
   - [Approximation functions in `math` module](#approximation-functions-in-math-module)
@@ -22,21 +16,22 @@
 
 ## Introduction to `math` module
 
-source: https://docs.python.org/3/library/math.html
+source: <https://docs.python.org/3/library/math.html>
 
 The `math` module provides access to the mathematical functions defined by the C
 standard. The module offers various functions such as ceiling, floor values,
 permutations combinations, factorials, GCD (HCF), LCM, etc.
 
 ## Approximation functions in `math` module
+
 The `math` module provides `floor`, `ceil`, and `trunc` functions to perform
 various mathematical approximations.
 
 ### `round` function
+
 Rounding is the process of replacing a precise number by another number of
 approximately the same value but having fewer digits. example `9.99` can be
 approximated to `10` by rounding the decimal digits.
-
 
 The `round` function does not require `math` module however other functions
 related to rounding is available in the module so this function is included in
@@ -104,7 +99,8 @@ x = math.trunc(-5.678)  # -5
 ```
 
 ## Trigonometry
-source: https://docs.python.org/3/library/math.html#trigonometric-functions
+
+source: <https://docs.python.org/3/library/math.html#trigonometric-functions>
 
 The `math` module provides different functions to perform trigonometric
 measurements. the `math` function takes angles in radians but not in degrees.
@@ -128,7 +124,6 @@ math.cos(0.5*math.pi)   # 6.123233995736766e-17 ≈ 0.00000000000000006123
 # finding out the inverse (arc) of a number
 math.asin(0.5)  # 0.5235987755982988 ≈ 30°
 ```
-
 
 ### The `math.dist()` function
 
@@ -168,8 +163,8 @@ some of the methods are as follows:
 - etc.
 
 Example:
+
 ```py
 print(math.sqrt(16))  # 4.0
 print(math.exp(5))    # 148.4131591025766
 ```
-

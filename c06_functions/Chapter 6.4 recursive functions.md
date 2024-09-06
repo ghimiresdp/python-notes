@@ -1,16 +1,9 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 6.4: Recursive Function
 
-**Table of Contents:**
-- [Chapter 6.4: Recursive Function](#chapter-64-recursive-function)
-    - [Introduction](#introduction)
+**Table of Contents**:
 
+- [Chapter 6.4: Recursive Function](#chapter-64-recursive-function)
+  - [Introduction](#introduction)
 
 ## Introduction
 
@@ -21,8 +14,8 @@ recursion limit. Recursive function contains 2 different elements:
 1. recursion limit
 2. recursive function call
 
-
 **Basic Syntax**
+
 ```python
 def function_name(params):
     if condition:
@@ -30,7 +23,6 @@ def function_name(params):
     else:   # recursion Limit
         return final_value
 ```
-
 
 **Example 1:** A recursive function that prints out the factorial of a number.
 
@@ -46,7 +38,6 @@ def factorial(n):
 print(factorial(7))     # 5040
 ```
 
-
 **Example 2:** A recursive function that prints out the first nth item of a
 fibonacci series `1, 1, 2, 3, 5, 8, 13, 21, 34, ...`.
 
@@ -60,7 +51,6 @@ item = fibonacci(7)
 
 print(item)     # 13
 ```
-
 
 **Example 3:** A recursive function to convert decimal to binary
 

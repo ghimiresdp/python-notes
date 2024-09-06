@@ -1,17 +1,9 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 6.2: Default parameters in functions
 
+**Table of Contents**:
 
-**Table of Contents**
 - [Chapter 6.2: Default parameters in functions](#chapter-62-default-parameters-in-functions)
-    - [Introduction](#introductions)
-
+  - [Introduction](#introduction)
 
 ## Introduction
 
@@ -21,6 +13,7 @@ function. We need to add default parameters only after required parameters are
 added otherwise it raises an exception
 
 **Example 1:** A program that can add either 2 or 3 numbers
+
 ```python
 def add_numbers(a, b, c = 0):
     return a + b + c
@@ -28,6 +21,7 @@ def add_numbers(a, b, c = 0):
 print(add_numbers(1, 2))        # 3
 print(add_numbers(1, 2, 3))     # 6
 ```
+
 Here, in this example, if we pass 2 arguments `(1,2)`, the default value of `c`
 is already `0` so when we call function, it does not give us exception.
 
@@ -39,7 +33,6 @@ def add_numbers(a=0, b, c):
     return a + b + c
 # SyntaxError: non-default argument follows default argument
 ```
-
 
 **Example 2:** internationalization
 

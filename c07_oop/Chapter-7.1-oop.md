@@ -1,10 +1,3 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 7.1 Object-Oriented Programming (OOP)
 
 **Table of contents**:
@@ -160,7 +153,7 @@ class Person:
 
 ```
 
-### Initializing the class, Constructor Method, and uses of `self`.
+### Initializing the class, Constructor Method, and uses of `self`
 
 The constructor method is a method that initializes the class. in python,
 `__init__()` method is used as a constructor method which prototypes an instance

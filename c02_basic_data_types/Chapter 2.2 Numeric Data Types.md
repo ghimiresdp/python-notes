@@ -1,18 +1,12 @@
-- **created by**: Sudip Ghimire
-- **URL**: [https://www.sudipghimire.com.np](https://www.sudipghimire.com.np)
-- **GitHub**: [https://github.com/ghimiresdp](https://github.com/ghimiresdp)
-
-[go to course contents](https://github.com/ghimiresdp/python-level1/)
------------------------
-
 # Chapter 2.2: Numeric Data types
 
-**Table of Contents**
+**Table of Contents**:
+
 - [Chapter 2.2: Numeric Data types](#chapter-22-numeric-data-types)
-    - [1. Integers `int`](#1-integers-int)
-    - [2. Floating Point Numbers `float`](#2-floating-point-numbers-float)
-    - [3. Complex data types `complex`](#3-complex-data-types-complex)
-    - [4. Boolean Data types `bool`](#4-boolean-data-types-bool)
+  - [1. Integers `int`](#1-integers-int)
+  - [2. Floating Point Numbers `float`](#2-floating-point-numbers-float)
+  - [3. Complex data types `complex`](#3-complex-data-types-complex)
+  - [4. Boolean Data types `bool`](#4-boolean-data-types-bool)
 
 ## 1. Integers `int`
 

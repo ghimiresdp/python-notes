@@ -1,13 +1,7 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 6.5: Lambda Expressions
 
-**Table of Contents:**
+**Table of Contents**:
+
 - [Chapter 6.5: Lambda Expressions](#chapter-65-lambda-expressions)
   - [Introduction](#introduction)
   - [Lambda function with Zero arguments](#lambda-function-with-zero-arguments)
@@ -21,6 +15,7 @@ called as anonymous functions or one-liner functions. Lambdas are useful when
 we have to do small repetitive tasks.
 
 **Basic Syntax:**
+
 ```python
 value = lambda arg_1, arg_2, ..., arg_n : return_expression
 ```
@@ -29,7 +24,6 @@ here, everything separated with comma before `:` are arguments and the
 expression after `:` is used as the return value or expression. Lambda
 expression do not expect `return` keyword however whatever expression is
 written after the colon `:`, will be treated as return statement.
-
 
 **Example 1:** A lambda to add 2 values
 

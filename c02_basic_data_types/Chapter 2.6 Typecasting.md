@@ -1,20 +1,10 @@
-- **created by**: Sudip Ghimire
-- **URL**: [https://www.sudipghimire.com.np](https://www.sudipghimire.com.np)
-- **GitHub**: [https://github.com/ghimiresdp](https://github.com/ghimiresdp)
-
-[go to course contents](https://github.com/ghimiresdp/python-level1/)
------------------------
-
 # Chapter 2.6. Typecasting
 
-**Table of Contents**
-- [Chapter 2.6. Typecasting](#chapter-26-typecasting)
-    - [Implicit typecasting](#implicit-typecasting)
-    - [Explicit typecasting](#explicit-typecasting)
+**Table of Contents**:
 
-- Type casting or type conversion is the process of converting the data from one type to another.
-- We perform type casting to unify the data types for better and efficient calculation
-- Sometimes we perform typecasting to display the equivalent and readable value of the variable.
+- [Chapter 2.6. Typecasting](#chapter-26-typecasting)
+  - [Implicit typecasting](#implicit-typecasting)
+  - [Explicit typecasting](#explicit-typecasting)
 
 In case of python there are 2 types of type conversion
 
@@ -29,9 +19,11 @@ In case of python there are 2 types of type conversion
 - example: `int` can be implicitly type casted to `float`
 
 Example:
+
 ```python
 print(5 + 4.5)
 ```
+
 In this case, the integer, `5` is  automatically converted into `float` data
 type and is then added to `4.5` since 4.5 is higher precision number.
 
@@ -43,6 +35,7 @@ Example:
 x = 45
 sentence = f'The value of x is {x}'
 ```
+
 In this case, the value of x will automatically be typecasted into `str` and replaced inside `{}`.
 
 ## Explicit typecasting
@@ -54,6 +47,7 @@ explicit typecasting.
 - it is more useful when we want to convert numeric to non-numeric and vice-versa.
 
 **Example**: _Converting string input to integer while parsing value from command line_
+
 ```python
 rate = 2
 quantity = input('Enter the number of apples you want to buy: ')
@@ -74,6 +68,7 @@ higher precision data type into lower precision one.
 **example**: _float to int type casting omits all numbers after the decimal point._
 
 **Example 1:** Explicit typecasting before adding `45.5` and `54.5` will result `99` instead of `100.0` in which the difference might be negligible.
+
 ```python
 x = 45.5
 y = 54.5
@@ -82,6 +77,7 @@ print(int(x) + int(y))      # 99
 ```
 
 **Example 2:** Explicit typecasting before taking power of `10.9` by `5.7` will result `100000` instead of `777168.88` in which the difference is significant and will lead to wrong results.
+
 ```python
 x = 10.9
 y = 5.7

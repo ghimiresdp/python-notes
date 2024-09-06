@@ -1,13 +1,7 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 8.7. Complex numbers and `cmath` module
 
-**Table of Contents**
+**Table of Contents**:
+
 - [Chapter 8.7. Complex numbers and `cmath` module](#chapter-87-complex-numbers-and-cmath-module)
   - [A complex number](#a-complex-number)
   - [Absolute value of the imaginary number](#absolute-value-of-the-imaginary-number)
@@ -44,7 +38,6 @@ print(abs(x))
 # 3.605551275463989
 ```
 
-
 ## the `cmath` module
 
 The `cmath` module deals with the complex numbers functions. It is able to perform complex calculations such as finding out the square root, changing the coordinate from rectangular to polar coordinates, etc.
@@ -66,6 +59,7 @@ print(cmath.rect(4, 3))
 ```
 
 ### Constants
+
 Some constants such as `pi` or `e` are provided with cmath module however constants such as `inf` and `nan` are available in `math` module since python >=3.5
 
 ```python
@@ -86,6 +80,7 @@ print(math.nan)
 ```
 
 ### finding out the phase of the complex number
+
 ```python
 import cmath
 

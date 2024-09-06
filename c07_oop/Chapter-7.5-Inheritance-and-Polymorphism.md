@@ -1,10 +1,3 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 7.5: Inheritance and Polymorphism
 
 **Table of contents**:
@@ -160,7 +153,7 @@ from more than 1 parent classes. In multiple inheritance, Python uses C3
 Linearization algorithm to determine the order in which to resolve class
 attributes and methods. The process is also known as Method Resolution Order
 (MRO). To learn more about C3 linearization, you can check the link below:
-https://en.wikipedia.org/wiki/C3_linearization
+<https://en.wikipedia.org/wiki/C3_linearization>
 
 ```python
 class CoffeeShop:
@@ -285,6 +278,7 @@ class Helicopter(Vehicle):
         pass
 
 ```
+
 Here `Helicopter` inherits `Vehicle` which again inherits `Engine`, which is a
 kind of multilevel inheritance but the class `Bus` inherits `Vehicle` as well as
 `RoadTransport` where we can see Hybrid inheritance. In this case if we see

@@ -1,16 +1,12 @@
-- **created by**: Sudip Ghimire
-- **URL**: [https://www.sudipghimire.com.np](https://www.sudipghimire.com.np)
-- **GitHub**: [https://github.com/ghimiresdp](https://github.com/ghimiresdp)
-
-[go to course contents](https://github.com/ghimiresdp/python-level1/)
------------------------
-
 # Chapter 2.1: Python Variables and Constants
-**Table of Contents**
+
+**Table of Contents**:
+
 - [Chapter 2.1: Python Variables and Constants](#chapter-21-python-variables-and-constants)
-    - [Variables](#variables)
-    - [Constants](#constants)
-    - [Python Keywords](#python-keywords)
+  - [Variables](#variables)
+  - [Constants](#constants)
+  - [Python Keywords](#python-keywords)
+
 ## Variables
 
 let us suppose we have a statement as follows:
@@ -68,8 +64,10 @@ etc.
    name-one = "John Doe"       # incorrect identifier name
    """
    # instead
+
 we can use underscore character to separate 2 words
    name_one = "John Doe"
+
    ```
 
 5. We use `snake_case` for variable definition
@@ -113,7 +111,6 @@ constants
 or any other identifiers.
 
 Some of the keywords that are used in python are as follows:
-
 
 | Keyword    | Description                                       |
 | ---------- | ------------------------------------------------- |

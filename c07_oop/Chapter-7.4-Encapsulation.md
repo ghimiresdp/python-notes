@@ -1,15 +1,8 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 7.4 Encapsulation
 
 **Table of contents**:
 
-- [Chapter 7.2 Encapsulation](#chapter-72-encapsulation)
+- [Chapter 7.4 Encapsulation](#chapter-74-encapsulation)
   - [Introduction](#introduction)
   - [Getter and Setter Methods](#getter-and-setter-methods)
     - [Why do we use Getters and Setters instead of public attributes?](#why-do-we-use-getters-and-setters-instead-of-public-attributes)
@@ -57,6 +50,7 @@ john.get_age()  # 20
 > attributes
 
 > **Student**: I am now confused !!
+>
 > - Getter and setter method will help access and update private attributes.
 > - Doesn't it mean those attributes are now public?
 > - If yes, why don't we use public attributes instead?

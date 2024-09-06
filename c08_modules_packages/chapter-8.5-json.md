@@ -1,25 +1,18 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 8.5 The `json` module
 
-**Table of Contents:**
+**Table of Contents**:
 
 - [Chapter 8.5 The `json` module](#chapter-85-the-json-module)
-    - [introduction to JSON](#introduction-to-json)
-    - [JSON Data Types and its python equivalent](#json-data-types-and-its-python-equivalent)
-    - [JSON basic Example](#json-basic-example)
-    - [JSON example with nested objects](#json-example-with-nested-objects)
-    - [Dumping Python dictionary into a json string or a file](#dumping-python-dictionary-into-a-json-string-or-a-file)
-        - [Dumping the dictionary into JSON string](#dumping-the-dictionary-into-json-string)
-        - [Dumping the dictionary into JSON file](#dumping-the-dictionary-into-json-file)
-    - [Loading the JSON file or a JSON string](#loading-the-json-file-or-a-json-string)
-        - [Loading the JSON string](#loading-the-json-string)
-        - [Loading the JSON file](#loading-the-json-file)
+  - [introduction to JSON](#introduction-to-json)
+  - [JSON Data Types and its python equivalent](#json-data-types-and-its-python-equivalent)
+  - [JSON basic Example](#json-basic-example)
+  - [JSON example with nested objects](#json-example-with-nested-objects)
+  - [Dumping Python dictionary into a json string or a file](#dumping-python-dictionary-into-a-json-string-or-a-file)
+    - [Dumping the dictionary into JSON string](#dumping-the-dictionary-into-json-string)
+    - [Dumping the dictionary into JSON file](#dumping-the-dictionary-into-json-file)
+  - [Loading the JSON file or a JSON string](#loading-the-json-file-or-a-json-string)
+    - [Loading the JSON string](#loading-the-json-string)
+    - [Loading the JSON file](#loading-the-json-file)
 
 ## introduction to JSON
 

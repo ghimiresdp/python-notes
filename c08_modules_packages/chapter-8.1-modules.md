@@ -1,10 +1,3 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 8.1 Python Modules
 
 - Module is a collection of different classes, functions and variables
@@ -41,16 +34,20 @@ john = Student('John Doe', 1)
 jane = Student('Jane Doe', 1)
 ```
 
-
 ## Importing the whole module
+
 if `animal.py` is the filename for the module, the name of the module would be `animal`. so we can import the whole module by the following command.
+
 ```python
 import animal
 ```
+
 Importing the whole module imports everythong that is defined, imported, and initialized inside the module.
 
 ## Importing individual elements from the module
+
 we can use `from` keyword to import the individual component from the module. For example the module `animal` contains the class `DomesticAnimal`, we can import it using the following command.
+
 ```python
 from animal import DomesticAnimal
 # we can also import multiple elements in the single line using commaa

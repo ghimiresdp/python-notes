@@ -1,21 +1,17 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 6.1: Function
 
+**Table of Contents**:
+
 - [Chapter 6.1: Function](#chapter-61-function)
-    - [Introduction](#introduction)
-    - [The `return` statement](#the-return-statement)
-    - [Function with arguments](#function-with-arguments)
-    - [Local, Non-local and Global variables](#local-non-local-and-global-variables)
-        - [The `global` keyword](#the-global-keyword)
-        - [The `nonlocal` keyword](#the-nonlocal-keyword)
+  - [Introduction](#introduction)
+  - [The `return` statement](#the-return-statement)
+  - [Function with arguments](#function-with-arguments)
+  - [Local, Non-local and Global variables](#local-non-local-and-global-variables)
+    - [The `global` keyword](#the-global-keyword)
+    - [The `nonlocal` keyword](#the-nonlocal-keyword)
 
 ## Introduction
+
 Function is a block of code that runs when it is called. Unlike other statements
 function does not execute unless it is called. There are 2 steps in using a
 function in our code, i.e. **Function Definition** and **Function Call**. We
@@ -38,17 +34,20 @@ Some of the characteristics of function are as follows:
 - similar to branching and loops, function body also needs indented code block.
 
 example of builtin functions:
+
 - `print()`
 - `input()`
 - `len()`
 
 **Basic structure**
+
 ```python
 def <function_name> (<arg1>, <arg2>, .., <arg_n>,):
     statement[s]
 ```
 
 **PEP 8 Guidelines for defining a python function**
+
 - python functions are created using `snake_case` names
 - top level functions are separated with 2 blank lines
 - parameters inside functions are separated by comma`,` along with spaces
@@ -67,11 +66,11 @@ print('I am outside of the function')
 my_function()
 my_function()
 ```
+
 In the above code, the function `my_function()` is defined or prototyped using
 `def` keyword. the empty parenthesis `()` represents that there are no
 arguments that needs to be passed to the function. Whenever it is called, it
 should print `'I am inside the function'`.
-
 
 ## The `return` statement
 
@@ -81,6 +80,7 @@ can be assigned to other variable or printed directly to the console, or
 sometimes passed as an argument to other functions also.
 
 **Example:**
+
 ```python
 def say_hi():
     return 'Hi there!!'
@@ -92,8 +92,8 @@ print(say_hi())
 # another function `print()`
 ```
 
-
 ## Function with arguments
+
 Programming is made dynamic with the help of functions that accept arguments.
 Whenever we call the function, we can pass arguments so that our code can be
 made more modular and reusable.
@@ -146,6 +146,7 @@ print_multiple('Hello there!!', 5)
 ```
 
 **Output:**
+
 ```
 iteration 1: Hello there!!
 iteration 2: Hello there!!
@@ -181,8 +182,8 @@ print(list_1)
 - **Local Variables** are those variables which are defined inside a
   function and it's scope is limited to that function only.
 
-
 **Example 1:** variable scopes
+
 ```python
 x = 10  # global variable
 def my_function():
@@ -198,6 +199,7 @@ my_function()
 ```
 
 **Example 2:**
+
 ```python
 message = 'Hello world'
 
@@ -207,6 +209,7 @@ def my_function():
 my_function()
 print(message)  # Hello world
 ```
+
 Here, even the variable `message` was initialized as a global variable,
 redefining it inside the function does not impact the global variable. once the
 scope of the local variable ends, the value will be default to the global value.
@@ -250,6 +253,7 @@ print('After calling outer function, x = ', x)
 ```
 
 **Output:**
+
 ```
 Before calling inner function, x =  20
 The value of non-local x =  30

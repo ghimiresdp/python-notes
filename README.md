@@ -1,14 +1,10 @@
-> - **created by**: Sudip Ghimire
-> - **URL**: [https://www.sudipghimire.com.np](https://www.sudipghimire.com.np)
-> - **GitHub**: [https://github.com/ghimiresdp](https://github.com/ghimiresdp)
-
 # Python Notes
 
 **_A repository for Python course notes, examples, and lab exercises targeted to my students and interns._**
 
 You can `clone` or `fork` the repository and review the course contents, examples, and attend exercises.
 
-## Course Difficulty Level:
+## Course Difficulty Level
 
 - **Chapter 1 - 10**: Easy
 - **Chapter 11 - 20**: Medium

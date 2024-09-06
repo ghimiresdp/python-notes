@@ -1,15 +1,8 @@
-- **created by**: Sudip Ghimire
-- **URL**: https://www.sudipghimire.com.np
-- **GitHub**: https://github.com/ghimiresdp
-
-[go to course contents](https://github.com/ghimiresdp/python-notes/)
-<hr>
-
 # Chapter 7.2: Class Methods and Static Methods
 
 **Table of contents**:
 
-- [Chapter 7.4: Class Methods and Static Methods](#chapter-74-class-methods-and-static-methods)
+- [Chapter 7.2: Class Methods and Static Methods](#chapter-72-class-methods-and-static-methods)
   - [Bound and Unbound methods](#bound-and-unbound-methods)
   - [Class Methods](#class-methods)
   - [Static Methods](#static-methods)
@@ -133,4 +126,3 @@ print(Length.cm_to_m(100))  # 1.0
 l = Length()
 l.m_to_cm(2)  # 200
 ```
-
