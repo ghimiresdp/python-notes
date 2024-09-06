@@ -132,7 +132,6 @@ dmypy.json
 
 # ide settings
 .idea
-.vscode
 
 **/records/
 tmp/

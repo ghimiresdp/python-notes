@@ -195,5 +195,3 @@ git remote add upstream git@github.com:ghimiresdp/python-notes.git
 git pull upstream main
 git push origin main
 ```
-
-Please do visit my website [sudipghimire.com.np](https://sudipghimire.com.np) to know more about my engagements.
